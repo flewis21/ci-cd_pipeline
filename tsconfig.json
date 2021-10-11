@@ -2,7 +2,8 @@
 	"compilerOptions": {
 		"outDir": "output",
 		"module": "commonjs",
-		"target": "ES6"
+		"target": "ES6",
+		"strictNullChecks": true
 	},
 	"include": ["./", "src"],
 	"exclude": []

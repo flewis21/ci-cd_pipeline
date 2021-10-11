@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile_typescript": "tsc",
     "start": "npm run lint && npm run compile_typescript &&  node output/index",
-    "lint": "standard --fix"
+    "lint": "ts-standard --fix"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "@types/node": "^16.10.3",
     "simple-git": "^2.46.0",
     "standard": "^16.0.4",
+    "ts-standard": "^10.0.0",
     "typescript": "^4.4.3"
   },
   "dependencies": {
