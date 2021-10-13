@@ -5,8 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile_typescript": "tsc",
-    "start": "npm run lint && npm run compile_typescript &&  node output/index",
+    "compile_typescript": "tsc -w",
+    "nodedev": "nodemon -w output output/index",
+    "dev": "npm run lint && concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run compile_typescript\" \"npm run nodedev\"",
+    "start": "NODE_ENV=development node output/index",
     "lint": "ts-standard --fix"
   },
   "repository": {
@@ -23,6 +25,8 @@
   "devDependencies": {
     "@types/express": "^4.17.13",
     "@types/node": "^16.10.3",
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.13",
     "simple-git": "^2.46.0",
     "standard": "^16.0.4",
     "ts-standard": "^10.0.0",

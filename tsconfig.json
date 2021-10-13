@@ -2,9 +2,12 @@
 	"compilerOptions": {
 		"outDir": "output",
 		"module": "commonjs",
-		"target": "ES6",
-		"strictNullChecks": true
+		"moduleResolution": "node",
+		"strict": true,
+		"esModuleInterop": true,
+		"target": "ESNext",
+		"strictNullChecks": true,
 	},
-	"include": ["./", "src"],
+	"include": ["src/index.ts"],
 	"exclude": []
 }
