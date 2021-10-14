@@ -8,6 +8,6 @@
 		"target": "ESNext",
 		"strictNullChecks": true,
 	},
-	"include": ["src/index.ts"],
+	"include": ["src/server.ts"],
 	"exclude": []
 }

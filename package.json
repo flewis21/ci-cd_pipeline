@@ -2,14 +2,14 @@
   "name": "ci-cd_pipeline",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "output/server",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile_typescript": "tsc -w",
-    "nodedev": "nodemon -w output output/index",
-    "dev": "npm run lint && concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run compile_typescript\" \"npm run nodedev\"",
-    "start": "NODE_ENV=development node output/index",
-    "lint": "ts-standard --fix"
+    "compile_typescript": "npm run lint && tsc -w",
+    "nodedev": "npm run lint && nodemon -w output output/server",
+    "dev": "concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run compile_typescript\" \"npm run nodedev\"",
+    "start": "npm run lint && NODE_ENV=development node output/server",
+    "lint": "ts-standard src/server.ts --fix"
   },
   "repository": {
     "type": "git",
