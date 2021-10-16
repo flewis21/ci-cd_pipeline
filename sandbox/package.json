@@ -3,7 +3,4 @@
   "version": "1.0.0",
   "description": "",
   "main": "output/script",
-  "scripts": {
-    "start": "npm run lint && NODE_ENV=development node output/script"
-  }
 }
