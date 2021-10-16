@@ -2,14 +2,17 @@
   "name": "ci-cd_pipeline",
   "version": "1.0.0",
   "description": "",
-  "main": "output/server",
+  "main": "backend/output/server",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile_typescript": "npm run lint && tsc -w",
-    "nodedev": "npm run lint && nodemon -w output output/backend/server",
-    "dev": "concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run compile_typescript\" \"npm run nodedev\"",
-    "start": "npm run lint && NODE_ENV=development node output/backend/server",
-    "lint": "ts-standard src/backend/server.ts --fix"
+    "start": "npm run lint && NODE_ENV=development node sandbox/output/script",
+    "compile_typescript": "tsc -w && npm run ts-lint",
+    "backend_dev": "npm run lint && nodemon -w output backend/output/server",
+    "simpleGit_dev": "npm run lint && nodemon -w output simpleGit/output/index",
+    "sandbox_dev": "npm run lint && nodemon -w output sandbox/output/script",
+    "dev": "concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run compile_typescript\" \"npm run simpleGit_dev\" && npm run ts-lint",
+    "ts-lint": "ts-standard --fix",
+    "lint": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -23,16 +26,11 @@
   },
   "homepage": "https://github.com/flewis21/ci-cd_pipeline#readme",
   "devDependencies": {
-    "@types/express": "^4.17.13",
     "@types/node": "^16.10.3",
     "concurrently": "^6.3.0",
     "nodemon": "^2.0.13",
-    "simple-git": "^2.46.0",
     "standard": "^16.0.4",
     "ts-standard": "^10.0.0",
     "typescript": "^4.4.3"
-  },
-  "dependencies": {
-    "express": "^4.17.1"
   }
 }

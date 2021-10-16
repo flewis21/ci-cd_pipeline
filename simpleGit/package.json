@@ -1,0 +1,9 @@
+{
+  "name": "a_simple_git_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "output/index",
+  "devDependencies": {
+    "simple-git": "^2.46.0"
+  }
+}

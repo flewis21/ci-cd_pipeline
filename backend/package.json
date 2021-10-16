@@ -1,0 +1,12 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "output/server",
+  "devDependencies": {
+    "@types/express": "^4.17.13"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

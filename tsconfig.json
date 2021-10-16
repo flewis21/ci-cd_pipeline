@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"outDir": "output/backend",
+		"outDir": "simpleGit/output",
 		"module": "commonjs",
 		"moduleResolution": "node",
 		"strict": true,
@@ -8,6 +8,6 @@
 		"target": "ESNext",
 		"strictNullChecks": true,
 	},
-	"include": ["src/backend/server.ts"],
+	"include": ["simpleGit/src/index.ts"],
 	"exclude": []
 }

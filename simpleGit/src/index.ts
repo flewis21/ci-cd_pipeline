@@ -1,7 +1,7 @@
-import * as simpleGit from 'simple-git/promise'
+import simpleGit, { SimpleGit } from 'simple-git/promise'
 
-async function build (): void {
-  const git = simpleGit()
+async function build (): Promise<void> {
+  const git: SimpleGit = simpleGit()
 
   // list commits
   // git log accepts an options object - from ts definition
@@ -19,7 +19,7 @@ async function build (): void {
   const createdDate = new Date(log.all.slice(-1)[0].date)
 
   // get latest modified date of file
-  const modifiedDate = new Date(log.latest.date)
+  const modifiedDate = new Date(log.latest!.date)
 
   // output formatted time stamps
   console.log(createdDate.toLocaleDateString())
