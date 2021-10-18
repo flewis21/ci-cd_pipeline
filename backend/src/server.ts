@@ -6,7 +6,7 @@ const baseUrl = `http://localhost:${port}`
 
 app.set('views', path.resolve(__dirname, '../views/pages/'))
 app.set('view engine', 'ejs')
-app.get('/1972/09/11', (req, res) => {
+app.get('/1972/09/11', (req, res, next) => {
   res.status(200).render('index')
 })
 
