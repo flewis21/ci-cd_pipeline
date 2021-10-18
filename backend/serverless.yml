@@ -20,4 +20,4 @@ functions:
             -   http: 'ANY (proxy+)'
 
 plugins:
-  - serverless-offline
+    -   serverless-offline
