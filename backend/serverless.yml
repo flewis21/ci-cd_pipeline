@@ -3,7 +3,7 @@ service: backend
 projectDir: ./
 
 frameworkVersion: '2'
-variableResolutionMode: 20210326
+variablesResolutionMode: 20210326
 useDotenv: true
 
 provider:
