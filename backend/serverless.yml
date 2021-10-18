@@ -3,14 +3,14 @@ service: backend
 projectDir: ./
 
 frameworkVersion: '2'
-
 variableResolutionMode: 20210326
+useDotenv: true
 
 provider:
     name: aws
     runtime: nodejs14.x
     stage: ${opt:stage, 'dev'}
-    lambdaHashingVerssion: 20201221
+    lambdaHashingVersion: 20201221
 
 functions:
     app:
