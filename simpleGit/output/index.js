@@ -1,11 +1,11 @@
 'use strict'
-var __importDefault = (this && this.__importDefault) || function (mod) {
+const __importDefault = (this && this.__importDefault) || function (mod) {
   return (mod && mod.__esModule) ? mod : { default: mod }
 }
 Object.defineProperty(exports, '__esModule', { value: true })
-const promise_1 = __importDefault(require('simple-git/promise'))
+const promise1 = __importDefault(require('simple-git/promise'))
 async function build () {
-  const git = (0, promise_1.default)()
+  const git = (0, promise1.default)()
   // list commits
   // git log accepts an options object - from ts definition
   /*
