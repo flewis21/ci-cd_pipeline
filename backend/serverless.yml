@@ -1,5 +1,7 @@
 service: backend
-
+package:
+  patterns:
+    - '!src/**'     
 projectDir: ./
 
 frameworkVersion: '2'
