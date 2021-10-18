@@ -1,6 +1,5 @@
 import express from 'express'
 import path from 'path'
-import ejs from 'ejs'
 const app = express()
 const port = process.env.PORT || 4000
 const baseUrl = `http://localhost:${port}`
