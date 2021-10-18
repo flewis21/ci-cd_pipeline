@@ -19,7 +19,7 @@ functions:
         handler: output/server.handler
         events: 
             -   http: ANY /1972/09/11
-            -   http: 'ANY (proxy+)'
+            -   http: 'ANY {proxy+}'
 
 
 plugins:
