@@ -1,0 +1,20 @@
+service: backend
+
+projectDir: ./
+
+frameworkVersion: '2'
+
+variableResolutionMode: 20210326
+
+provider:
+    name: aws
+    runtime: nodejs14.x
+    stage: ${opt:stage, 'dev'}
+    lambdaHashingVerssion: 20201221
+
+functions:
+    app:
+        handler: output/server.handler
+        events: 
+            -   http: ANY /1972/09/11
+            -   http: 'ANY (proxy+)'
