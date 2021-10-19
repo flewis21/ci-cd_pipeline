@@ -1,5 +1,5 @@
 node_modules/
 hellhtml/
 .serverless
-.clasp*
+.clasp.json
 
