@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"outDir": "backend/output",
+		"outDir": "frontend/output",
 		"module": "commonjs",
 		"moduleResolution": "node",
 		"strict": true,
@@ -8,6 +8,6 @@
 		"target": "ESNext",
 		"strictNullChecks": true,
 	},
-	"include": ["backend/src/server.ts"],
+	"include": ["frontend/src/Code.ts"],
 	"exclude": []
 }
