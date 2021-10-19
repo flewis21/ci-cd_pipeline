@@ -1,7 +1,12 @@
 {
 	"compilerOptions": {
 		"outDir": "frontend/output",
-		"module": "none",
+		"experimentalDecorators": true,
+		"isolatedModules": true,
+		"noImplicitUseStrict": true,
+		"module": "None",
+		"noLib": true,
+		"noResolve": true,
 		"moduleResolution": "node",
 		"strict": true,
 		"esModuleInterop": true,
