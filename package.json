@@ -12,7 +12,7 @@
     "frontend_dev": "nodemon -w output frontend/output/Code",
     "simpleGit_dev": "npm run lint && nodemon -w output simpleGit/output/index",
     "sandbox_dev": "npm run lint && nodemon -w output sandbox/output/script",
-    "common_dev": "concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run compile_typescript\" \"npm run frontend_dev\" && npm run ts-lint",
+    "common_dev": "concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run compile_typescript\" \"npm run backend_dev\" && npm run ts-lint",
     "none_dev": "concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run gas\" \"npm run frontend_dev\" && npm run ts-lint",
     "ts-lint": "ts-standard --fix",
     "lint": "standard --fix"
