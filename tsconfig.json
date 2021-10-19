@@ -1,7 +1,7 @@
 {
 	"compilerOptions": {
 		"outDir": "frontend/output",
-		"module": "commonjs",
+		"module": "none",
 		"moduleResolution": "node",
 		"strict": true,
 		"esModuleInterop": true,
