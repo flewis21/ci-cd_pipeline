@@ -8,13 +8,13 @@
     "start": "npm run lint && NODE_ENV=development node sandbox/output/script",
     "compile_typescript": "tsc -w && npm run ts-lint",
     "compile_gas": "$HOME/.nvm/versions/node/v16.4.0/bin/clasp push --watch && npm run ts-lint",
-    "backend_dev": "npm run lint && nodemon -w output backend/output/server",
+    "backend_dev": "concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run compile_typescript\" \"npm run backend_dev\"",
     "simpleGit_dev": "npm run lint && nodemon -w output simpleGit/output/index",
     "sandbox_dev": "npm run lint && nodemon -w output sandbox/output/script",
-    "backend_dev": "concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run compile_typescript\" \"npm run backend_dev\"",
     "frontend_dev": "concurrently -k -n COMPILER_1,COMPILER_2 -c gray,blue \"npm run compile_gas\" \"npm run compile_typescript\"",
     "ts-lint": "ts-standard --fix",
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "format": "prettier --write **.{ts,json}"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "@types/node": "^16.10.3",
     "concurrently": "^6.3.0",
     "nodemon": "^2.0.13",
+    "prettier": "^2.4.1",
     "standard": "^16.0.4",
     "ts-standard": "^10.0.0",
     "typescript": "^4.4.3"
