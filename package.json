@@ -15,7 +15,7 @@
     "frontend_dev": "concurrently -k -n COMPILER_1,COMPILER_2 -c gray,blue \"npm run compile_gas\" \"npm run compile_typescript\"",
     "ts-lint": "ts-standard --fix",
     "lint": "standard --fix",
-    "PS1": ". $HOME/.bashrc"
+    "PS1": "source $HOME/.bashrc"
   },
   "repository": {
     "type": "git",
