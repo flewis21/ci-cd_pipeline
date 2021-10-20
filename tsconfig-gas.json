@@ -50,7 +50,7 @@
     // Make Google Apps Script type definitions ambient
     // "noLib": false,
     // "skipLibCheck": false,
-    "types": ["google-apps-script"],
+    "types": ["google-apps-script"]
     // "typeRoots": ["src/types", "./frontend/node_modules/@types"],
   }
 }
