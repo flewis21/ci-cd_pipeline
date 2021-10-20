@@ -12,6 +12,6 @@
 		"target": "ESNext",
 		"strictNullChecks": true,
 	},
-	"include": ["frontend/src/Code.ts"],
+	"include": ["frontend/src/macros.ts"],
 	"exclude": []
 }
