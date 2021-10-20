@@ -1,0 +1,51 @@
+{
+	"compilerOptions": {
+		"composite": true,
+		"rootDir": "backend/",
+		
+		"outDir": "output",
+		"experimentalDecorators": true,
+		"isolatedModules": true,
+		// "noImplicitUseStrict": true,
+		"strict": true,
+		// "alwaysStrict": true,
+		// "noImplicitAny": true,
+		// "noImplicitReturns": true,
+		// "strictBindCallApply": true,
+		// "strictFunctionTypes": true,
+		// "strictPropertyInitialization": true,
+			
+		"noEmitOnError": true,
+		// "noErrorTruncation": true,
+		"noFallThroughCasesInSwitch": true,
+		"noImplicitTHis": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		// "preserveConstEnums": true,
+		// "removeComments": true,
+		// "skipLibCheck": true,
+		// "module": "commons",
+		// "noLib": false,
+		"checkJs": true,
+		"lib": "esnext",
+		"allowNonTsExtentions": true,
+		"noResolve": true,
+		"moduleResolution": "node",
+		"esModuleInterop": true,
+		"target": "ESNext",
+		"types": [],
+			
+		// "strictNullChecks": true,
+		// "suppressExcessPropertyErrors": true,
+		// "suppressImplicitAnyIndexErrors": true,
+			
+		"declaration": true,
+		// "declarationDir": "../types",
+		// "declarationMap": true,
+		"newLine": "lf",
+		"pretty": true,
+		"sourceMap": true
+	},
+	"include": ["src/server.ts"],
+	"exclude": ["node_modules"]
+}
