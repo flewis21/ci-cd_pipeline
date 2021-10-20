@@ -13,5 +13,5 @@
 		"strictNullChecks": true,
 	},
 	"include": ["frontend/src/macros.ts"],
-	"exclude": []
+	"exclude": ["node_modules"]
 }
