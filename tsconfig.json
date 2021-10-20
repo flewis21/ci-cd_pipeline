@@ -14,6 +14,5 @@
     //  "path": "frontend"
     }
   ],
-  "include": [],
-  "exclude": []
+  "include": []
 }
