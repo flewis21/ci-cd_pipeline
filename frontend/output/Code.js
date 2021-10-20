@@ -1,4 +1,4 @@
-function doGet (e) {
-  const params = JSON.stringify(e)
-  return HtmlService.createHtmlOutput(params)
+function doGet(e) {
+    var params = JSON.stringify(e);
+    return HtmlService.createHtmlOutput(params);
 }
