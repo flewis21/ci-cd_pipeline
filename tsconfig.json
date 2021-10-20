@@ -1,13 +1,17 @@
 {
 	"compilerOptions": {
-		"outDir": "backend/output",
-		"module": "commonjs",
+		"outDir": "frontend/output",
+		"experimentalDecorators": true,
+		"isolatedModules": true,
+		"noImplicitUseStrict": true,
+		"module": "None",
+		"noLib": true,
+		"noResolve": true,
 		"moduleResolution": "node",
-		"strict": true,
 		"esModuleInterop": true,
 		"target": "ESNext",
 		"strictNullChecks": true,
 	},
-	"include": ["backend/src/server.ts"],
+	"include": ["frontend/src/Code.ts"],
 	"exclude": []
 }
