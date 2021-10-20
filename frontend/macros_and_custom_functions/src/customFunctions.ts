@@ -7,6 +7,6 @@
  * @customFunction
  */
 function USDTOCHF(dollars) {
-    var swissFrancs = dollars * .99;
-    return swissFrancs;
+  var swissFrancs = dollars * 0.99;
+  return swissFrancs;
 }
