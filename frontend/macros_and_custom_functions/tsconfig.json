@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig-gas",
   "compilerOptions": {
-    "outDir": "output"
+    "outDir": "output/"
   },
   "include": [
     "**src/*.ts"
