@@ -43,7 +43,7 @@
     // "noResolve": false,
     // "preserveConstEnums": false,
     // "removeComments": false,
-    "rootDir": "./frontend/macros_and_custom_functions/",
+    "rootDir": "./frontend/",
     // "sourceMap": false,
     // "stripInternal": false,
 
@@ -51,6 +51,6 @@
     // "noLib": false,
     // "skipLibCheck": false,
     "types": ["google-apps-script"]
-    // "typeRoots": ["src/types", "./frontend/node_modules/@types"],
+    // "typeRoots": ["src/types", "node_modules/@types"],
   }
 }
