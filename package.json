@@ -12,7 +12,8 @@
     "sandbox_dev": "npm run lint && nodemon -w output sandbox/output/script",
     "dev": "concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run compile_typescript\" \"npm run backend_dev\" && npm run ts-lint",
     "ts-lint": "ts-standard --fix",
-    "lint": "standard --fix"
+    "lint": "standard --fix",
+    "PS1": "`. ~/.bashrc`"
   },
   "repository": {
     "type": "git",
