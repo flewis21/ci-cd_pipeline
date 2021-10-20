@@ -2,7 +2,7 @@
 	"compilerOptions": {
 		"outDir": "frontend/output",
 		"experimentalDecorators": true,
-		"isolatedModules": true,
+		"isolatedModules": false,
 		"noImplicitUseStrict": true,
 		"module": "None",
 		"noLib": false,
