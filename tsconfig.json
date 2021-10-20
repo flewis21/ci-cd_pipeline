@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"outDir": "frontend/output",
+		"outDir": "frontend/macros_and_custom_functions/output",
 		"experimentalDecorators": true,
 		"isolatedModules": false,
 		"noImplicitUseStrict": true,
@@ -12,6 +12,6 @@
 		"target": "ESNext",
 		"strictNullChecks": true,
 	},
-	"include": ["frontend/src/macros.ts"],
+	"include": ["frontend/macros_and_custom_functions/src/customFunctions.ts"],
 	"exclude": ["node_modules"]
 }
