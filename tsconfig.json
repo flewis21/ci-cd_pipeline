@@ -1,19 +1,19 @@
 {
-  "files": [],
-  "references": [
-    // Sample project 1
-    {
-      "path": "./frontend/macros_and_custom_functions/src/customFunctions.ts"
-    },
-    // Sample project 2
-    {
-      "path": "./frontend/sipoc/src/Code.ts"
-    },
-    // Sample common component
-    {
-      "path": "./frontend"
-    }
-  ]
+	"files": [],
+  	"references": [
+    	// Sample project 1
+    	{
+      		"path": "./frontend/macros_and_custom_functions/src/customFunctions.ts"
+    	},
+    	// Sample project 2
+    	{
+      		"path": "./frontend/sipoc/src/Code.ts"
+    	},
+    	// Sample common component
+    	{
+      		"path": "./frontend"
+    	}
+  	]
 	},
 	"include": [],
 	"exclude": []
