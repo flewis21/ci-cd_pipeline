@@ -5,7 +5,7 @@
 		"isolatedModules": true,
 		"noImplicitUseStrict": true,
 		"module": "None",
-		"noLib": true,
+		"noLib": false,
 		"noResolve": true,
 		"moduleResolution": "node",
 		"esModuleInterop": true,
