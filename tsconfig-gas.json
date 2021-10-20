@@ -43,7 +43,7 @@
     // "noResolve": false,
     // "preserveConstEnums": false,
     // "removeComments": false,
-    "rootDir": "./frontend/",
+    "rootDir": "frontend/",
     // "sourceMap": false,
     // "stripInternal": false,
 
@@ -51,6 +51,6 @@
     // "noLib": false,
     // "skipLibCheck": false,
     "types": ["google-apps-script"]
-    // "typeRoots": ["src/types", "node_modules/@types"],
+    // "typeRoots": ["node_modules/@types"],
   }
 }
