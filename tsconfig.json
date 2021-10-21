@@ -8,19 +8,19 @@
     },
     // Sample project 2
     {
-      "path": "frontend/sipoc"
+    //  "path": "frontend/sipoc"
     },
     // Sample project 3
     {
-      "path": "backend"
+    //  "path": "backend"
     },
     // Sample project 3
     {
-      "path": "simpleGit"
+    //  "path": "simpleGit"
     },
     // Sample project 3
     {
-      "path": "sandbox"
+    //  "path": "sandbox"
     },
   ],
 }
