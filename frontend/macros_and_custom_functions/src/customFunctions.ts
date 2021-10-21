@@ -19,7 +19,7 @@ function USDTOCHF(dollars) {
 	if (!rate) {
 		var response =
 	UrlFetchApp.fetch('www.atlbudgetstudio.studio4510.com');
-		var result = JSON.parse(response.getContentText());
+		var result = response.getContentText();
 		rate = result.rates.CHF ;
 		cache.put('rates.CHF', rate);
 	}
