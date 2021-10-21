@@ -1,15 +1,10 @@
 {
-  "extends": "../../tsconfig-node",
+  "extends": "../tsconfig-node",
   "compilerOptions": {
-    "outDir": "output/"
+    "outDir": "output"
   },
-  "include": [
-    "**src/*.ts"
-  ],
-  "references": [
-    {
-      "path": "./",
-      "prepend": true
-    }
-  ]
+
+  "references": [],
+    
+  "include": ["**src/*.ts"],
 }
