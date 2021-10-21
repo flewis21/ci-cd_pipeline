@@ -18,7 +18,7 @@ function USDTOCHF(dollars) {
 	// for later convenience.
 	if (!rate) {
 		var response =
-	UrlFetchApp.fetch('https://api.exchangeratesapi.io/latest?base=USD');
+	UrlFetchApp.fetch('atlbudgetstudio.studio4510.com');
 		var result = JSON.parse(response.getContentText());
 		rate = result.rates.CHF ;
 		cache.put('rates.CHF', rate);
