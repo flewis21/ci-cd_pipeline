@@ -1,5 +1,5 @@
 {
-  "extends": "../../tsconfig-gas",
+  "extends": "../tsconfig-gas",
   "compilerOptions": {
     "outDir": "output"
   },
