@@ -8,11 +8,19 @@
     },
     // Sample project 2
     {
-      "paths": "frontend/sipoc"
+      "path": "frontend/sipoc"
     },
     // Sample project 3
     {
-//      "paths": "frontend/macros_and_custom_functions/src/renameSpreadsheet.ts"
-    }
+      "path": "backend"
+    },
+    // Sample project 3
+    {
+      "path": "simpleGit"
+    },
+    // Sample project 3
+    {
+      "path": "sandbox"
+    },
   ],
 }
