@@ -1,10 +1,10 @@
 {
   //"extends": "../tsconfig-gas",
-  "compilerOptions": {
-    "outDir": "./output"
+  //"compilerOptions": {
+  //  "outDir": "./output"
   },
 
-  "references": [],
+  //"references": [],
     
-  "include": ["**./src/*.ts"],
+  //"include": ["**./src/*.ts"],
 }
