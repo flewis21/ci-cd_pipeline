@@ -1,10 +1,10 @@
 {
   //"files": [],
   //"include": [],
-  //"references": [
+  "references": [
     // Sample project 1
     {
-    //  "path": "frontend/macros_and_custom_functions"
+      "path": "frontend/macros_and_custom_functions"
     },
     // Sample project 2
     {
