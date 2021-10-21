@@ -4,15 +4,18 @@
   "references": [
     // Sample project 1
     {
-      "paths": "./frontend/macros_and_custom_functions/src/customFunctions.ts"
+      "paths": {
+      	"frontend/macros_and_custom_functions/src/customFunctions.ts".
+      	"frontend/macros_and_custom_functions/src/renameSpreadsheet.ts"
+      }
     },
     // Sample project 2
     {
-      "paths": "./frontend/sipoc/src/Code.ts"
+      "paths": "frontend/sipoc/src/Code.ts"
     },
-    // Sample common component
+    // Sample project 3
     {
-    //  "paths": "frontend"
+//      "paths": "frontend/macros_and_custom_functions/src/renameSpreadsheet.ts"
     }
   ],
 }
