@@ -3,6 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "backend/output/server",
+  "keywords": [
+    "gas",
+    "google-apps-script",
+    "ts",
+    "typescript",
+    "v8"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run lint && NODE_ENV=development node sandbox/output/script",
