@@ -1,5 +1,6 @@
 {
   "files": [],
+  "include": [],
   "references": [
     // Sample project 1
     {
@@ -14,5 +15,4 @@
     //  "paths": "frontend"
     }
   ],
-  "include": []
 }
