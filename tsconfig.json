@@ -4,10 +4,9 @@
   "references": [
     // Sample project 1
     {
-      "paths": { [
-      	"frontend/macros_and_custom_functions/src/customFunctions.ts",
-      	"frontend/macros_and_custom_functions/src/renameSpreadsheet.ts"
-      ]
+      "paths": { 
+      	"customFunctions": "frontend/macros_and_custom_functions/src/customFunctions.ts",
+      	"renameSpreadsheets": "frontend/macros_and_custom_functions/src/renameSpreadsheet.ts"
      },
     },
     // Sample project 2
