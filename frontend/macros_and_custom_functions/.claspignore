@@ -1,0 +1,4 @@
+**/output/**
+**/src/**
+!src/macros.ts
+!src/customFunctions.ts
