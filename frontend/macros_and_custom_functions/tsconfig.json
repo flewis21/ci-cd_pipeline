@@ -3,8 +3,8 @@
   "compilerOptions": {
     "outDir": "output"
   },
-  "include": [
-    "**src/*.ts"
-  ],
+
   "references": [],
+    
+  "include": ["**src/*.ts"],
 }
