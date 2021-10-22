@@ -6,6 +6,6 @@
 function onOpen() {
 	var ui = SpreadsheetApp.getUi();
 	ui.createMenu('Book-list')
-	.addItem('Load Book-list', 'loadBooklist')
+	.addItem('Load Book-list', 'loadBookList')
 	.addToUi();
 }
