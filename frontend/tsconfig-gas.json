@@ -1,6 +1,6 @@
 {
-  //"compilerOptions": {
-    //"composite": true,
+  "compilerOptions": {
+    "composite": true,
     //"incremental": true,
 
     // Enforce strict coding style
