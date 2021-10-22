@@ -4,6 +4,6 @@ function renameSpreadsheet() {
 }
 
 function duplicateAndOrganizeActiveSheet() {
-	var mySS = SpreadsheetApp.getActiveSpreadsheet();
+	var mySS = SpreadsheetApp.getActiveSheet();
 	var duplicateSheet = mySS.duplicateActiveSheet();
 }
