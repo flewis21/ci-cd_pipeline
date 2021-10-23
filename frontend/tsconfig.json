@@ -1,8 +1,5 @@
 {
   "extends": "macros/tsconfig-gas",
-  "compilerOptions": {
-    "outDir": "output"
-  },
 
   "references": [],
     
