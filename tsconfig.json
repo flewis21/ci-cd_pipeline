@@ -1,27 +1,30 @@
 {
-  "files": [],
-  "include": ["**/*.ts"],
-  "references": [
-    // Sample project 1
-    {
-      "path": "frontend"
-    },
-    // Sample project 2
-    //{
-    //  "path": "frontend/sipoc"
-    //},
-    // Sample project 3
-    //{
-    //  "path": "backend"
-    //},
-    // Sample project 3
-    //{
-    //  "path": "simpleGit"
-    //},
-    // Sample project 3
-    //{
-    //  "path": "sandbox"
-    //},
-  ],
-  "exclude": [],
+	"compilerOptions": {
+		"strictNullChecks": true
+	}
+  	"files": [],
+  	"include": ["**/*.ts"],
+  	"references": [
+    	// Sample project 1
+    	{
+      		"path": "frontend"
+    	},
+    	// Sample project 2
+    	//{
+    		//  "path": "frontend/sipoc"
+    	//},
+    	// Sample project 3
+    	//{
+    		//  "path": "backend"
+    	//},
+    	// Sample project 3
+    	//{
+    		//  "path": "simpleGit"
+    	//},
+    	// Sample project 3
+    	{
+    		"path": "sandbox"
+    	},
+  		],
+  	"exclude": [],
 }
