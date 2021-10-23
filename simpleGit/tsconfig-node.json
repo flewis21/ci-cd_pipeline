@@ -1,11 +1,11 @@
 {
   "compilerOptions": {
     "composite": true,
-    "rootDir": ".",
+//    "rootDir": ".",
 
-    "outDir": "backend/output",
-    "experimentalDecorators": true,
-    "isolatedModules": true,
+//    "outDir": "output",
+//    "experimentalDecorators": true,
+//    "isolatedModules": true,
     // "noImplicitUseStrict": true,
     "strict": true,
     // "alwaysStrict": true,
@@ -15,23 +15,23 @@
     // "strictFunctionTypes": true,
     // "strictPropertyInitialization": true,
 
-    "noEmitOnError": true,
+//    "noEmitOnError": true,
     // "noErrorTruncation": true,
-    "noFallThroughCasesInSwitch": true,
-    "noImplicitTHis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
+//    "noFallThroughCasesInSwitch": true,
+//    "noImplicitTHis": true,
+//    "noUnusedLocals": true,
+//    "noUnusedParameters": true,
     // "preserveConstEnums": true,
     // "removeComments": true,
     // "skipLibCheck": true,
     "module": "commonjs",
     // "noLib": false,
-    "checkJs": true,
-    "lib": "esnext",
-    "allowNonTsExtentions": true,
-    "noResolve": true,
+//    "checkJs": true,
+//    "lib": "esnext",
+//    "allowNonTsExtentions": true,
+//    "noResolve": true,
     "moduleResolution": "node",
-    "esModuleInterop": true,
+//    "esModuleInterop": true,
     "target": "ESNext",
     "types": [],
 
@@ -39,13 +39,13 @@
     // "suppressExcessPropertyErrors": true,
     // "suppressImplicitAnyIndexErrors": true,
 
-    "declaration": true,
+//    "declaration": true,
     // "declarationDir": "../types",
     // "declarationMap": true,
-    "newLine": "lf",
+//    "newLine": "lf",
     "pretty": true,
-    "sourceMap": true
+//    "sourceMap": true
   },
-  "include": ["src/server.ts"],
+  "include": ["**./src/*.ts"],
   "exclude": ["node_modules"]
 }
