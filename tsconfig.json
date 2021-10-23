@@ -1,11 +1,11 @@
 {
   "files": [],
-  "include": [**/*.ts],
+  "include": ["**/*.ts"],
   "references": [
     // Sample project 1
-    //{
-    //  "path": "frontend"
-    //},
+    {
+      "path": "frontend"
+    },
     // Sample project 2
     //{
     //  "path": "frontend/sipoc"
@@ -15,9 +15,9 @@
     //  "path": "backend"
     //},
     // Sample project 3
-    {
-      "path": "simpleGit"
-    },
+    //{
+    //  "path": "simpleGit"
+    //},
     // Sample project 3
     //{
     //  "path": "sandbox"
