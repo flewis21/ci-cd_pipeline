@@ -30,7 +30,7 @@ function loadBookList() {
 	// Add those values to the active sheet in the current
 	// spreadsheet. This overwrites any values already there.
 	sheet.getRange(1, 1, bookRange.getHeight(), bookRange.getWidth())
-	.setValues(bookListValues);
+	.setValues([bookListValues]);
 
 	// Rename the destination sheet and resize the data
 	// columns for easier reading.
