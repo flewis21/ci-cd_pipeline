@@ -2,5 +2,5 @@
 	"complileOptions": {
 		"strict": true
 	},
-	"include": [],
+	"include": ["frontend/"],
 }
