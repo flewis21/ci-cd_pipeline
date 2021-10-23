@@ -3,11 +3,12 @@
 		"strict": true
 	},
 	"include": [
-		"**/*.ts"
+		"**/backend/src/*.ts",
+		"**/simpleGit/src/*.ts".
+		"**/sandbox/src/*.ts"
 	],
 	"exclude": {
-		"**/node_modules/**",
-		"**/frontend/macros/**",
-		"**/frontend/sipoc/**"
+		"**/frontend/macros/src/*.ts",
+		"**/frontend/sipoc/src/*.ts"
 	},
 }
