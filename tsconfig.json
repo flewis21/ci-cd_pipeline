@@ -3,7 +3,7 @@
 		"strictNullChecks": true
 	}
   	"files": [],
-  	"include": ["**/*.ts"],
+  	"include": [],
   	"references": [
     	// Sample project 1
     	{
