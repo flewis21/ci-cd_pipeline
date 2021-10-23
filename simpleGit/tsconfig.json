@@ -1,8 +1,8 @@
 {
   "extends": "../tsconfig-node",
-  "compilerOptions": {
-    "outDir": "output"
-  },
+  //"compilerOptions": {
+  //  "outDir": "output"
+  //},
 
   "references": [],
     
