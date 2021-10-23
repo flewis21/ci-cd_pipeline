@@ -1,6 +1,7 @@
 {
 	"complileOptions": {
-		"strict": true
+		"strict": true,
+		"strictNullChecks": true
 	},
 	"include": ["frontend/", "sandbox/"],
 }
