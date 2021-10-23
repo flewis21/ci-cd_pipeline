@@ -1,7 +1,7 @@
 {
 	"complileOptions": {
-		"strict": true,
-		"strictNullChecks": true
+		"strict": true,s
+		"useSourceofProjectReferenceRedirect": true
 	},
 	"include": ["sandbox/"],
 }
