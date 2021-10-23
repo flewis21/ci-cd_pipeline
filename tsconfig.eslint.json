@@ -1,11 +1,8 @@
 {
-	"compilerOptions": {
-		"strict": true,
-		"allowJs": false
+	"complileOptions": {
+		"strict": true
 	},
 	"include": [
-		"**/backend/src/**/*.ts",
-		"**/simpleGit/src/**/*.ts".
-		"**/sandbox/src/**/*.ts"
-	],
+		"**/simpleGit/**/*.ts"
+	]
 }
