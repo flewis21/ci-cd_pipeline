@@ -44,7 +44,7 @@
     // "preserveConstEnums": false,
     // "removeComments": false,
     "outDir": "output",
-    // "rootDir": "..",
+    "rootDir": "../",
     // "sourceMap": false,
     // "stripInternal": false,
 
