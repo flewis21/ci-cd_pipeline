@@ -23,7 +23,7 @@ function loadBookList() {
 
 	// Gets the sheet, data range, and values of the
 	// spreadsheet stored in bookSS.
-	var bookSheet = bookSS.getSheetByName('');
+	var bookSheet = bookSS.getSheetByName("");
 	var bookRange = bookSheet.getDataRange();
 	var bookListValues = bookRange.getValues;
 
