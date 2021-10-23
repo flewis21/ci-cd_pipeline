@@ -4,7 +4,7 @@
   "references": [
     // Sample project 1
     {
-      "path": "./frontend/macros_and_custom_functions"
+      "path": "frontend"
     },
     // Sample project 2
     {
