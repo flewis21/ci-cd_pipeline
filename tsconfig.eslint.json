@@ -3,5 +3,5 @@
 		"strict": true,
 		"strictNullChecks": true
 	},
-	"include": ["frontend/", "sandbox/"],
+	"include": ["sandbox/"],
 }
