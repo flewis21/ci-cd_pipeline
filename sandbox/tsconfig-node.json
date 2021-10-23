@@ -3,7 +3,7 @@
     "composite": true,
     "rootDir": ".",
 
-    "outDir": "output",
+    "outDir": 'output',
     "experimentalDecorators": true,
     "isolatedModules": true,
     // "noImplicitUseStrict": true,
@@ -26,16 +26,16 @@
     // "skipLibCheck": true,
     "module": "commonjs",
     // "noLib": false,
-    "checkJs": true,
-    "lib": "esnext",
+    // "checkJs": true,
+    // "lib": "esnext",
     "allowNonTsExtentions": true,
-    "noResolve": true,
+    // "noResolve": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "target": "ESNext",
     "types": [],
 
-    // "strictNullChecks": true,
+    "strictNullChecks": true,
     // "suppressExcessPropertyErrors": true,
     // "suppressImplicitAnyIndexErrors": true,
 
@@ -46,6 +46,6 @@
     "pretty": true,
     "sourceMap": true
   },
-  "include": ["src/server.ts"],
+  "include": ["*.ts"],
   "exclude": ["node_modules"]
 }
