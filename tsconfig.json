@@ -15,13 +15,13 @@
     //  "path": "backend"
     //},
     // Sample project 3
-    //{
-    //  "path": "simpleGit"
-    //},
-    // Sample project 3
     {
-      "path": "sandbox"
+      "path": "simpleGit"
     },
+    // Sample project 3
+    //{
+    //  "path": "sandbox"
+    //},
   ],
   "exclude": []
 }
