@@ -4,7 +4,7 @@
     //"incremental": true,
 
     // Enforce strict coding style
-    //"strict": true,
+    "strict": true,
     //"alwaysStrict": true,
     // "allowUnreachableCode": false,
     // "allowUnusedLabels": false,
@@ -50,7 +50,7 @@
     // Make Google Apps Script type definitions ambient
     // "noLib": false,
     // "skipLibCheck": false,
-    //"types": ["google-apps-script"]
+    "types": ["google-apps-script"]
     // "typeRoots": ["node_modules/@types"],
   }
 }
