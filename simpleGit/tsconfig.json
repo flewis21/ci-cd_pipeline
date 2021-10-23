@@ -7,6 +7,6 @@
 
   "references": [],
     
-  "include": ["**./src/*.ts"],
+  "include": ["**/*.ts"],
   "exclude": ["**/**"]
 }
