@@ -1,14 +1,11 @@
 {
 	"compilerOptions": {
-		"strict": true
+		"strict": true,
+		"allowJs": false
 	},
 	"include": [
-		"**/backend/src/*.ts",
-		"**/simpleGit/src/*.ts".
-		"**/sandbox/src/*.ts"
+		"**/backend/src/**/*.ts",
+		"**/simpleGit/src/**/*.ts".
+		"**/sandbox/src/**/*.ts"
 	],
-	"exclude": {
-		"**/frontend/macros/src/*.ts",
-		"**/frontend/sipoc/src/*.ts"
-	},
 }
