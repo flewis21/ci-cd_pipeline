@@ -2,7 +2,5 @@
 	"complileOptions": {
 		"strict": true
 	},
-	"include": [
-		"**/simpleGit/**/*.ts"
-	]
+	"include": [],
 }
