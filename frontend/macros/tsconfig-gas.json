@@ -43,7 +43,8 @@
     // "noResolve": false,
     // "preserveConstEnums": false,
     // "removeComments": false,
-    "rootDir": "..",
+    "outDir": "output",
+    // "rootDir": "..",
     // "sourceMap": false,
     // "stripInternal": false,
 
