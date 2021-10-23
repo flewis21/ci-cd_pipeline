@@ -43,7 +43,7 @@
     // "noResolve": false,
     // "preserveConstEnums": false,
     // "removeComments": false,
-    "rootDir": "macros_and_custom_functions/",
+    "rootDir": ".",
     // "sourceMap": false,
     // "stripInternal": false,
 
