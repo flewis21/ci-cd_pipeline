@@ -6,6 +6,8 @@
 		"**/*.ts"
 	],
 	"exclude": {
-		"**/node_modules/**"
+		"**/node_modules/**",
+		"**/frontend/macros/**",
+		"**/frontend/sipoc/**"
 	},
 }
