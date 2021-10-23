@@ -3,7 +3,7 @@
 		"strictNullChecks": true
 	},
   	"files": [],
-  	"include": [],
+  	"include": ["sandbox/"],
   	"references": [
     	// Sample project 1
     	{
