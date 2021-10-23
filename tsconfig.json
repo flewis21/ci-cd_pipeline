@@ -4,7 +4,7 @@
   "references": [
     // Sample project 1
     {
-      "path": "frontend"
+    //  "path": "frontend"
     },
     // Sample project 2
     {
@@ -20,7 +20,7 @@
     },
     // Sample project 3
     {
-    //  "path": "sandbox"
+      "path": "sandbox"
     },
   ],
   "exclude": []
