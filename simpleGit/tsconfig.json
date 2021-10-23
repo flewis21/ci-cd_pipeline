@@ -1,6 +1,7 @@
 {
   "extends": "tsconfig-node",
   "compilerOptions": {
+  	"rootDir": "."
     "outDir": "output"
   },
 
