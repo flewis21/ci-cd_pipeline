@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "composite": true,
-//    "rootDir": ".",
+    "rootDir": ".",
 
-//    "outDir": "output",
+    "outDir": "output",
 //    "experimentalDecorators": true,
 //    "isolatedModules": true,
     // "noImplicitUseStrict": true,
@@ -46,6 +46,6 @@
     "pretty": true,
 //    "sourceMap": true
   },
-  "include": ["**./src/*.ts"],
+  "include": ["**/*.ts"],
   "exclude": ["node_modules"]
 }
