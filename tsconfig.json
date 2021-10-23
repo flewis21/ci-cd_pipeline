@@ -1,6 +1,6 @@
 {
   "files": [],
-  "include": [],
+  "include": [**/*.ts],
   "references": [
     // Sample project 1
     //{
