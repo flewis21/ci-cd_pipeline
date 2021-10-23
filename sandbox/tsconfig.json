@@ -4,7 +4,7 @@
   //  "outDir": "output"
   //},
 
-  "references": [],
+  //"references": [],
     
   //"include": ["**./src/*.ts"],
 }
