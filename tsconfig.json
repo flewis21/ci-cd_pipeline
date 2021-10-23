@@ -3,7 +3,7 @@
 		"strictNullChecks": true
 	},
   	"files": [],
-  	"include": ["sandbox/", "frontend/macros_and_custom_functions/"],
+  	"include": [],
   	"references": [
     	// Sample project 1
     	{
