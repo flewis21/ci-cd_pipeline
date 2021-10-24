@@ -23,7 +23,7 @@
     "ts-lint": "ts-standard --fix",
     "lint": "standard --fix",
     "format": "prettier --write **.{ts,json}",
-    "style_simple": "concurrently -k -n LINT,FORMAY -c grey,blue \"npm run lint\" \"npm run formaat\"",
+    "style_simple": "concurrently -k -n LINT,FORMAY -c grey,blue \"npm run lint\" \"npm run format\"",
     "style_advanced": "concurrently -k -n TS-LINT,FORMAT -c grey,blue \"npm run ts-lint\" \"npm run format\""
   },
   "repository": {
