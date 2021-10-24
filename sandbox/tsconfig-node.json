@@ -1,9 +1,7 @@
 {
   "compilerOptions": {
     "composite": true,
-    "rootDir": ".",
 
-    "outDir": 'output',
     "experimentalDecorators": true,
     "isolatedModules": true,
     // "noImplicitUseStrict": true,
