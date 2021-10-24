@@ -22,7 +22,9 @@
     "frontend_dev": "concurrently -k -n COMPILER_1,COMPILER_2 -c gray,blue \"npm run compile_typescript\" \"npm run compile_gas\"",
     "ts-lint": "ts-standard --fix",
     "lint": "standard --fix",
-    "format": "prettier --write **.{ts,json}"
+    "format": "prettier --write **.{ts,json}",
+    "style_simple": "concurrently -k -n LINT,FORMAY -c grey,blue \"npm run lint\" \"npm run formaat\"",
+    "style_advanced": "concurrently -k -n TS-LINT,FORMAT -c grey,blue \"npm run ts-lint\" \"npm run format\""
   },
   "repository": {
     "type": "git",
