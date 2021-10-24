@@ -20,8 +20,8 @@
     "server_dev": "npm run lint && nodemon -w output backend/output/server",
     "backend_dev": "concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run compile_typescript\" \"npm run server_dev\"",
     "frontend_dev": "concurrently -k -n COMPILER_1,COMPILER_2 -c gray,blue \"npm run compile_typescript\" \"npm run compile_gas\"",
-    "ts-lint": "ts-standard --fix",
-    "lint": "standard --fix",
+    "ts-lint": "ts-standard --verbose --fix",
+    "lint": "standard --verbose --fix",
     "format": "prettier --write **.{ts,json}",
     "style_simple": "concurrently -k -n LINT,FORMAY -c grey,blue \"npm run lint\" \"npm run format\"",
     "style_advanced": "concurrently -k -n TS-LINT,FORMAT -c grey,blue \"npm run ts-lint\" \"npm run format\""
@@ -45,5 +45,11 @@
     "standard": "^16.0.4",
     "ts-standard": "^10.0.0",
     "typescript": "^4.4.3"
+  },
+  "standard": {
+  	"ignore": [
+  		"frontend/macros_and_custom_functions/",
+  		"frontend/sipoc/"
+  	],
   }
 }
