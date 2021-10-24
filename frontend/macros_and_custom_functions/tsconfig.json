@@ -1,5 +1,5 @@
 {
-  "extends": "../macros/tsconfig-gas",
+  "extends": "../config/tsconfig-gas",
   "compilerOptions": {
     "outDir": 'output',
     "rootDir": "../macros"
