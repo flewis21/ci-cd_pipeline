@@ -1,25 +1,25 @@
 {
-  	"files": [],
-   	"references": [
-    	// Sample project 1
-    	{
-      		"path": "frontend/macros_and_custom_functions"
-    	},
-    	// Sample project 2
-    	{
-    		"path": "frontend/sipoc"
-    	},
-    	// Project 3
-    	{
-    		"path": "backend"
-    	},
-    	// Sample project 4
-    	{
-    		"path": "simpleGit"
-    	},
-    	// Sample project 5
-    	{
-    		"path": "sandbox"
-    	},
-  	],
+  "files": [],
+  "references": [
+    // Sample project 1
+    {
+      "path": "frontend/macros_and_custom_functions"
+    },
+    // Sample project 2
+    {
+      "path": "frontend/sipoc"
+    },
+    // Project 3
+    {
+      "path": "backend"
+    },
+    // Sample project 4
+    {
+      "path": "simpleGit"
+    },
+    // Sample project 5
+    {
+      "path": "sandbox"
+    }
+  ]
 }

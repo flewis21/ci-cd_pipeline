@@ -7,6 +7,6 @@
  * @customFunction
  */
 function USDTOCHF (dollars) {
-  var swissFrancs = dollars * 0.99
+  const swissFrancs = dollars * 0.99
   return swissFrancs
 }

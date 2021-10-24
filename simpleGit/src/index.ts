@@ -1,4 +1,4 @@
-import simpleGit, { SimpleGit } from "simple-git/promise";
+import simpleGit, {SimpleGit} from 'simple-git/promise';
 
 async function build(): Promise<void> {
   const git: SimpleGit = simpleGit();
@@ -13,7 +13,7 @@ async function build(): Promise<void> {
     symmetric?: boolean;
     to?: string;
   */
-  const log = await git.log({ file: "README.md" });
+  const log = await git.log({file: 'README.md'});
 
   // get first commit date of a file
   const createdDate = new Date(log.all.slice(-1)[0].date);

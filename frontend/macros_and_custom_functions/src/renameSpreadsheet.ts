@@ -1,4 +1,4 @@
 function renameSpreadsheet() {
-	var mySS = SpreadsheetApp.getActiveSpreadsheet();
-	mySS.rename("Define Sipoc and create value stream")
+  var mySS = SpreadsheetApp.getActiveSpreadsheet();
+  mySS.rename('Define Sipoc and create value stream');
 }
