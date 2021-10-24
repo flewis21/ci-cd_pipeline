@@ -50,6 +50,6 @@
   	"ignore": [
   		"frontend/macros_and_custom_functions/",
   		"frontend/sipoc/"
-  	],
+  	]
   }
 }
