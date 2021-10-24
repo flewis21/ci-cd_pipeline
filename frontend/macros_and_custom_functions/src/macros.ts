@@ -1,5 +1,6 @@
 // Compiled using ci-cd_pipeline 1.0.0 (TypeScript 4.4.4)
 
+/* global Header */
 function Header() {
   var spreadsheet = SpreadsheetApp.getActive();
   var sheet = spreadsheet.getActiveSheet();
