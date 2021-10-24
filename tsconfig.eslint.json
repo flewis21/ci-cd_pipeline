@@ -2,6 +2,7 @@
 	// extend your base config so you do not have to redefine your compilerOptions.
 	"extends": "./tsconfig.json",
 	"include": [
-		"sandbox/"
+		"sandbox/",
+		"frontend"
 	],
 }
