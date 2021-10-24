@@ -1,9 +1,9 @@
 {
 	// extend your base config so you do not have to redefine your compilerOptions.
-	"references": [
-		"path": "sandbox/",
-		"path": "frontend/",
-		"path": "backend/",
-		"path": "simpleGit/"
+	"include": [
+		"sandbox/",
+		"frontend/",
+		"backend/",
+		"simpleGit/"
 	],
 }
