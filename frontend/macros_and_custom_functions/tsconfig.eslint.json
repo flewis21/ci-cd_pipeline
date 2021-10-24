@@ -1,5 +1,5 @@
 {
-	"extends": "../macro/tsconfig-gas",
+	"extends": "../config/tsconfig-gas",
 	"include": [
 		"**/src/*.ts"
 	]
