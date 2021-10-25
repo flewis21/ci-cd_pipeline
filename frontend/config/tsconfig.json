@@ -1,7 +1,7 @@
 {
-	"extends": "../../tsconfig",
+	"extends": "../tsconfig",
 	"include": [
-		"../macros_and_custom_functions/src/*.ts"
+		"macros_and_custom_functions/src/*.ts"
 	]
     "compilerOptions": {
     	"composite": true,
@@ -47,8 +47,8 @@
     	// "noResolve": false,
     	// "preserveConstEnums": false,
     	"removeComments": false,
-    	"outDir": "../macros_and_custom_functions/output",
-    	"rootDir": ".",
+    	"outDir": "macros_and_custom_functions/output",
+    	"rootDir": "../",
     	// "sourceMap": false,
     	// "stripInternal": false,
 
