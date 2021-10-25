@@ -1,5 +1,5 @@
 {
-	"extends": "../../tsconfig",
+	"extends": "../tsconfig",
 	"include": [
 		"macros_and_custom_functions/src/*.ts"
 	]
