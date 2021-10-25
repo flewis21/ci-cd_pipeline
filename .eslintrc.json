@@ -1,5 +1,11 @@
 {
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": [
+      "./tsconfig.json",
+      "./sandbox/tsconfig.json",
+      "./simpleGit/tsconfig.json",
+      "./backend/tsconfig.json",
+      "./frontend/tsconfig.json"
+    ]
   }
 }
