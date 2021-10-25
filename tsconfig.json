@@ -1,5 +1,10 @@
 {
   "files": [],
   "include": [],
-  "references": []
+  "references": [
+    // Project
+    {
+      "path": "sandbox"
+    }
+  ]
 }
