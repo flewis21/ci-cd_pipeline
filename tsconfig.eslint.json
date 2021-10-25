@@ -35,7 +35,7 @@
     "target": "ESNext",
     "types": [],
     "outDir": "./output",
-    "rootDir": "./sandbox",
+    "rootDir": "./frontend",
 
     "strictNullChecks": true,
     // "suppressExcessPropertyErrors": true,
