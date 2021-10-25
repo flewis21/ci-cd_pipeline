@@ -31,6 +31,7 @@
 		//    "lib": "esnext",
 		//    "allowNonTsExtentions": true,
 		//    "noResolve": true,
+		"allowSyntheticDefaultImports": true,
     	"moduleResolution": "node",
 		// "esModuleInterop": true,
     	"target": "ESNext",
