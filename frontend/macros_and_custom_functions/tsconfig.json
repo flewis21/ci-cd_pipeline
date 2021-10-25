@@ -47,7 +47,7 @@
     "removeComments": false,
     // "sourceMap": false,
     // "stripInternal": false,
-    "rootDir": "../",
+    "rootDir": ".",
     "outDir": "macros_and_custom_functions/output",
 
     // Make Google Apps Script type definitions ambient
