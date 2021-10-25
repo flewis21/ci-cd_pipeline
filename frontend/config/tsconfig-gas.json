@@ -1,5 +1,6 @@
 {
-  "compilerOptions": {
+    "extends": "../macros_and_custom_functions/tsconfig.json",
+    "compilerOptions": {
     "composite": true,
     "incremental": true,
 
