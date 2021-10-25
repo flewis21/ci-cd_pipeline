@@ -1,5 +1,5 @@
 {
-  "extends": "../tsconfig",
+  "extends": "../../../tsconfig",
 
   "compilerOptions": {
     "composite": true,
@@ -48,7 +48,7 @@
     // "sourceMap": false,
     // "stripInternal": false,
     "rootDir": "../",
-    "outdir": "macros_and_custom_functions/output",
+    "outDir": "macros_and_custom_functions/output",
 
     // Make Google Apps Script type definitions ambient
     // "noLib": false,
