@@ -35,7 +35,7 @@
     "target": "ESNext",
     "types": [],
     "outDir": "./output",
-    "rootDir": "./frontend",
+    "rootDir": "./frontend/macros_and_custom_functions",
 
     "strictNullChecks": true,
     // "suppressExcessPropertyErrors": true,
