@@ -2,3 +2,4 @@ node_modules/
 hellhtml/
 .serverless
 .clasp.json
+.tsbuildinfo
