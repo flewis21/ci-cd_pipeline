@@ -1,9 +1,11 @@
 {
 	"extends": "../tsconfig",
+	
 	"references": [
 		"path": "macros_and_custom_functions",
 		"path": "sipoc"
 	],
+	
     "compilerOptions": {
     	"composite": true,
     	"incremental": true,
@@ -48,8 +50,8 @@
     	// "noResolve": false,
     	// "preserveConstEnums": false,
     	"removeComments": false,
-    	"outDir": "macros_and_custom_functions/output",
-    	"rootDir": "../",
+    	// "outDir": "macros_and_custom_functions/output",
+    	// "rootDir": "../",
     	// "sourceMap": false,
     	// "stripInternal": false,
 
