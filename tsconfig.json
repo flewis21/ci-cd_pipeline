@@ -3,23 +3,23 @@
   "references": [
     // Sample project 1
     {
-      "path": "frontend/macros_and_custom_functions/src"
+      "path": "frontend/macros_and_custom_functions/"
     },
     // Sample project 2
     {
-      "path": "frontend/sipoc/src"
+      "path": "frontend/sipoc/"
     },
     // Project 3
     {
-      "path": "backend/src"
+      "path": "backend/"
     },
     // Sample project 4
     {
-      "path": "simpleGit/src"
+      "path": "simpleGit/"
     },
     // Sample project 5
     {
-      "path": "sandbox/src"
+      "path": "sandbox/"
     }
   ]
 }
