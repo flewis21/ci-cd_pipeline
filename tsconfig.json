@@ -2,23 +2,7 @@
   "files": [],
   "include": [],
   "references": [
-    // Sample project 1
-    {
-      //  "path": "frontend"
-    },
-    // Sample project 2
-    {
-      //  "path": "frontend"
-    },
-    // Project 3
-    {
-      //  "path": "backend"
-    },
-    // Sample project 4
-    {
-      //  "path": "simpleGit"
-    },
-    // Sample project 5
+    // Project
     {
       "path": "sandbox"
     }
