@@ -1,12 +1,14 @@
 {
 	"extends": "../tsconfig",
 	
-	"references": {
-		[
+	"references": [
+		{
 			"path": "macros_and_custom_functions",
+		},
+		{
 			"path": "sipoc"
-		],
-	},
+		},
+	],
 	
     "compilerOptions": {
     	"composite": true,
