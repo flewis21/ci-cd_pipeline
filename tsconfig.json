@@ -7,19 +7,19 @@
     },
     // Sample project 2
     {
-      "path": "frontend/sipoc/"
+      "path": "frontend/"
     },
     // Project 3
     {
-      "path": "backend/"
+      "path": "./"
     },
     // Sample project 4
     {
-      "path": "simpleGit/"
+      "path": "./"
     },
     // Sample project 5
     {
-      "path": "sandbox/"
+      "path": "./"
     }
   ],
   "compilerOptions": {
