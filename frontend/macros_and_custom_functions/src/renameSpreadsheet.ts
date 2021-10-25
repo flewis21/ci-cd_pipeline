@@ -1,3 +1,4 @@
+/* eslint-env es2017 */
 /* global renameSpreadsheet */
 function renameSpreadsheet() {
   var mySS = SpreadsheetApp.getActiveSpreadsheet();
