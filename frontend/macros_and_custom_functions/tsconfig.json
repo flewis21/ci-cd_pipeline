@@ -2,9 +2,8 @@
   "extends": "../tsconfig",
   "compilerOptions": {
   	"outDir": "output"
-  }
+  },
   
-
   "references": [],
 
   "include": ["src/*.ts"]
