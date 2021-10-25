@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "composite": true,
-    //"incremental": true,
+    "incremental": true,
 
     // Enforce strict coding style
     "strict": true,
@@ -17,7 +17,7 @@
     //"noUnusedLocals": true,
     //"noUnusedParameters": true,
     //"strictBindCallApply": true,
-    //"strictNullChecks": true,
+    "strictNullChecks": true,
     //"strictFunctionTypes": true,
     //"strictPropertyInitialization": true,
     // "suppressExcessPropertyErrors": false,
@@ -36,13 +36,13 @@
     // "importHelpers": false,
 
     // Define files produced by the compiler
-    //"newLine": "lf",
+    "newLine": "lf",
     //"noEmitOnError": true,
     // "declaration": false,
     // "declarationMap": false,
     // "noResolve": false,
     // "preserveConstEnums": false,
-    // "removeComments": false,
+    "removeComments": false,
     "outDir": "output",
     "rootDir": "../",
     // "sourceMap": false,
