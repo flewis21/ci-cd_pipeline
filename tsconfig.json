@@ -3,7 +3,7 @@
   "references": [
     // Sample project 1
     {
-      "path": "frontend/config/"
+      "path": "frontend/"
     },
     // Sample project 2
     {
