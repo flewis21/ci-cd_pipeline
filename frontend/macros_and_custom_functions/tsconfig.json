@@ -3,11 +3,11 @@
   "compilerOptions": {
   	"noEmit": false,
     "outDir": 'output',
-    "rootDir": "../macros"
+    "rootDir": "../.."
   },
 
   "references": [],
     
-  "include": ["**./src/*.ts"],
+  "include": ["src/*.ts"],
   "exclude": [],
 }
