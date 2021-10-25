@@ -54,9 +54,7 @@
     	// "noResolve": false,
     	// "preserveConstEnums": false,
     	"removeComments": false,
-    	// "outDir": "macros_and_custom_functions/output",
-    	// "rootDir": "../",
-    	// "sourceMap": false,
+       	// "sourceMap": false,
     	// "stripInternal": false,
 
     	// Make Google Apps Script type definitions ambient
