@@ -1,7 +1,7 @@
 service: backend
 package:
   patterns:
-    - '!src/**'     
+    - '!src/**'
 projectDir: ./
 
 frameworkVersion: '2'
@@ -9,18 +9,17 @@ variablesResolutionMode: 20210326
 useDotenv: true
 
 provider:
-    name: aws
-    runtime: nodejs14.x
-    stage: ${opt:stage, 'dev'}
-    lambdaHashingVersion: 20201221
+  name: aws
+  runtime: nodejs14.x
+  stage: ${opt:stage, 'dev'}
+  lambdaHashingVersion: 20201221
 
 functions:
-    app:
-        handler: output/server.handler
-        events: 
-            -   http: ANY /1972/09/11
-            -   http: 'ANY {proxy+}'
-
+  app:
+    handler: output/server.handler
+    events:
+      - http: ANY /1972/09/11
+      - http: 'ANY {proxy+}'
 
 plugins:
   - serverless-offline

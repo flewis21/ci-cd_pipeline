@@ -1,13 +1,14 @@
 {
   "timeZone": "America/New_York",
-  "dependencies": {
-  },
+  "dependencies": {},
   "exceptionLogging": "STACKDRIVER",
   "runtimeVersion": "V8",
   "sheets": {
-    "macros": [{
-      "menuName": "Header",
-      "functionName": "Header"
-    }]
+    "macros": [
+      {
+        "menuName": "Header",
+        "functionName": "Header"
+      }
+    ]
   }
 }

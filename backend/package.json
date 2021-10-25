@@ -4,7 +4,7 @@
   "description": "",
   "main": "output/server",
   "scripts": {
-  	"offline_dev": "serverless offline"
+    "offline_dev": "serverless offline"
   },
   "devDependencies": {
     "@types/ejs": "^3.1.0",

@@ -5,6 +5,6 @@
   },
 
   "references": [],
-    
-  "include": ["src/*.ts"],
+
+  "include": ["src/*.ts"]
 }
