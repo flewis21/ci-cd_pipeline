@@ -2,8 +2,10 @@
 	"extends": "../tsconfig",
 	
 	"references": {
-		"path": "macros_and_custom_functions",
-		"path": "sipoc"
+		[
+			"path": "macros_and_custom_functions",
+			"path": "sipoc"
+		],
 	},
 	
     "compilerOptions": {
