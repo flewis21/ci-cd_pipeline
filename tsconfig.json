@@ -4,19 +4,19 @@
   "references": [
     // Sample project 1
     {
-      "path": "frontend"
+      //  "path": "frontend"
     },
     // Sample project 2
     {
-      "path": "frontend"
+      //  "path": "frontend"
     },
     // Project 3
     {
-      "path": "backend"
+      //  "path": "backend"
     },
     // Sample project 4
     {
-      "path": "simpleGit"
+      //  "path": "simpleGit"
     },
     // Sample project 5
     {
