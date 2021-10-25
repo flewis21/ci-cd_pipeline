@@ -1,4 +1,4 @@
-import simplegit, {SimpleGit} from 'simple-git/promise';
+import simpleGit, {Simplegit} from 'simple-git/promise';
 
 async function build(): Promise<void> {
   const git: SimpleGit = simpleGit();
