@@ -1,13 +1,9 @@
 {
   "extends": "../../tsconfig.json",
-  "compilerOptions": {
-  	"noEmit": false,
-    "outDir": 'output',
-    "rootDir": "."
-  },
+  
 
-  "references": ["../config"],
+  "references": [
+  	"path": "../config/"
+  ],
     
-  "include": ["src/*.ts"],
-  "exclude": [],
 }
