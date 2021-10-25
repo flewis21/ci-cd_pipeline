@@ -15,7 +15,7 @@
     "start": "concurrently -k -n STYLING,CODE -c grey,blue \"npm run style_simple\" \"NODE_ENV=development node sandbox/output/script\"",
     "compile_typescript": "concurrently -k -n COMPILER,STYLING -c grey,blue \"tsc -w\" \"npm run style_advanced\"",
     "compile_gas": "concurrently -k -n COMPILER,STYLING -c grea,blue \"$HOME/.nvm/versions/node/v16.4.0/bin/clasp push --watch\" \"npm run style_advanced\"",
-    "simpleGit_dev": "concurrently -k -n STULING,CODE -c grey,blue \"npm run style_simple\" \"nodemon -w output simpleGit/output/index\"",
+    "simpleGit_dev": "concurrently -k -n STYLING,CODE -c grey,blue \"npm run style_simple\" \"nodemon -w output simpleGit/output/index\"",
     "sandbox_dev": "concurrently -k -n STYLING,CODE -c grey,blue \"npm run stule_simple\" \"nodemon -w output sandbox/output/script\"",
     "server_dev": "concurrently -k -n STYLING,CODE -c grey,blue \"npm run style_simple\" \"nodemon -w output backend/output/server\"",
     "backend_dev": "concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run compile_typescript\" \"npm run server_dev\"",
