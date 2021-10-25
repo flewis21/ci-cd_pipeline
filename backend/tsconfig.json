@@ -1,5 +1,5 @@
 {	
-	"extends": "../tsconfig"
+	"extends": "../tsconfig",
   	"compilerOptions": {
     	"composite": true,
     	"rootDir": ".",
@@ -28,8 +28,8 @@
     	// "module": "commons",
     	// "noLib": false,
     	"checkJs": true,
-    	"lib": "[esnext]",
-    	"allowNonTsExtentions": true,
+    	"lib": ["esnext"],
+    	// "allowNonTsExtentions": true,
     	"noResolve": true,
     	"moduleResolution": "node",
     	"esModuleInterop": true,
