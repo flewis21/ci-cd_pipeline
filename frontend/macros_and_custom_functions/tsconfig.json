@@ -1,12 +1,12 @@
 {
-  "extends": "../config/tsconfig-gas",
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
   	"noEmit": false,
     "outDir": 'output',
-    "rootDir": "../.."
+    "rootDir": "."
   },
 
-  "references": [],
+  "references": ["../config"],
     
   "include": ["src/*.ts"],
   "exclude": [],
