@@ -3,23 +3,23 @@
   "references": [
     // Sample project 1
     {
-      "path": "frontend/"
+      "path": "../"
     },
     // Sample project 2
     {
-      "path": "frontend/"
+      "path": "../"
     },
     // Project 3
     {
-      "path": "./"
+      "path": "../"
     },
     // Sample project 4
     {
-      "path": "./"
+      "path": "../"
     },
     // Sample project 5
     {
-      "path": "./"
+      "path": "../"
     }
   ],
   "compilerOptions": {
