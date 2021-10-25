@@ -1,7 +1,7 @@
 import * as simpleGit from 'simple-git/promise';
 
 async function build(): Promise<void> {
-  const git: simple-git = simpleGit();
+  const git: Git = simpleGit();
 
   // list commits
   // git log accepts an options object - from ts definition
