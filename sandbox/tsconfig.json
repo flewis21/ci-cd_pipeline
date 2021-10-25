@@ -34,8 +34,8 @@
     "esModuleInterop": true,
     "target": "ESNext",
     "types": [],
-    "rootDir": ".",
-    "outDir": "output",
+    "outDir": "./output",
+    "rootDir": "./",
 
     "strictNullChecks": true,
     // "suppressExcessPropertyErrors": true,
@@ -48,6 +48,6 @@
     "pretty": true,
     "sourceMap": true
   },
-  "include": ["src/*.ts"],
-  "exclude": ["node_modules"]
+  "include": ["./src/**/*.ts"],
+  "exclude": []
 }
