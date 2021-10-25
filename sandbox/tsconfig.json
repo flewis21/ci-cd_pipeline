@@ -36,6 +36,7 @@
     "types": [],
     "outDir": "./output",
     "rootDir": "./",
+    "ignorePatterns": ["**../"],
 
     "strictNullChecks": true,
     // "suppressExcessPropertyErrors": true,
