@@ -23,6 +23,6 @@
     }
   ],
   "compilerOptions": {
-  	"rootDir": "."
+  	"rootDir": "frontend"
   }
 }
