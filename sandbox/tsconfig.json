@@ -1,10 +1,10 @@
 {
-	"extends": "../tsconfig"
+	"extends": "../tsconfig",
   	"compilerOptions": {
     	"composite": true,
 
     	"experimentalDecorators": true,
-    	"isolatedModules": true,
+    	// "isolatedModules": true,
     	// "noImplicitUseStrict": true,
     	"strict": true,
     	// "alwaysStrict": true,
@@ -16,8 +16,8 @@
 
     	"noEmitOnError": true,
     	// "noErrorTruncation": true,
-    	"noFallThroughCasesInSwitch": true,
-    	"noImplicitTHis": true,
+    	"noFallthroughCasesInSwitch": true,
+    	"noImplicitThis": true,
     	"noUnusedLocals": true,
     	"noUnusedParameters": true,
     	// "preserveConstEnums": true,
@@ -27,7 +27,7 @@
     	// "noLib": false,
     	// "checkJs": true,
     	// "lib": "esnext",
-    	"allowNonTsExtentions": true,
+    	// "allowNonTsExtentions": true,
     	// "noResolve": true,
     	"moduleResolution": "node",
     	"esModuleInterop": true,
