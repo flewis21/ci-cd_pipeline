@@ -1,3 +1,4 @@
+/* global duplicateAndOrganizeActiveSheet:writable */
 function duplicateAndOrganizeActiveSheet() {
   var mySS = SpreadsheetApp.getActiveSpreadsheet();
   var activeSheet = SpreadsheetApp.getActiveSheet();
