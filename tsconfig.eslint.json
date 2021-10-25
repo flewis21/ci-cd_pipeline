@@ -1,4 +1,5 @@
 {
+  "extends": "./tsconfig.json",
   "compilerOptions": {
     "composite": true,
     "incremental": true,
@@ -34,7 +35,7 @@
     "target": "ESNext",
     "types": [],
     "outDir": "./output",
-    "rootDir": "./",
+    "rootDir": "./sandbox",
 
     "strictNullChecks": true,
     // "suppressExcessPropertyErrors": true,
