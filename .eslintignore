@@ -1,4 +1,3 @@
-frontend/macros/
-frontend/sipoc/
-backend/
-simpleGit/
+frontend
+backend
+simpleGit
