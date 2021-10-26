@@ -28,7 +28,7 @@
 
     // Enable latest Javascriptt syntax and target V8 engine
     "experimentalDecorators": true,
-    // "lib": ["esnext"],
+    "lib": ["esnext", "es2019", "dom"],
     "target": "ES2019",
 
     // Limit use of `export` statements
@@ -56,7 +56,7 @@
     "outDir": "../output",
 
     // Make Google Apps Script type definitions ambient
-    "noLib": true,
+    // "noLib": true,
     // "skipLibCheck": false,
     "types": ["google-apps-script", "node"]
     // "typeRoots": ["node_modules/@types"],
