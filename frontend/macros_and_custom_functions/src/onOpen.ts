@@ -3,7 +3,7 @@
  * opened or reloaded. onOpen() is used to add custom menu
  * iteems to the spreadsheet.
  */
-/* global onOpen:writable */
+/* eslint no-unused-vars: ["error", { "caughtErrorsIgnorePattern": "onOpen" }] */
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
   ui.createMenu('Book-list').addItem('Load Book-list', 'loadBookList').addToUi();
