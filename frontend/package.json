@@ -1,7 +1,8 @@
 {
   "scripts": {
     "clasp": "$HOME/.nvm/versions/node/v16.4.0/bin/clasp push --watch",
-    "type": "$HOME/.nvm/versions/node/v16.4.0/bin/npx tsc -w"
+    "type": "$HOME/.nvm/versions/node/v16.4.0/bin/npx tsc -w",
+    "dev": "$HOME/.nvm/versions/node/v16.4.0/bin/npx concurrently -k -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run clasp\""
   },
   "devDependencies": {
     "@types/google-apps-script": "^1.0.37",
