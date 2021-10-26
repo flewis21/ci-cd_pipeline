@@ -6,7 +6,6 @@
  * @return {number} swissFrancs The converted total of Swiss francs.
  * @customFunction
  */
-/* eslint no-unused-vars: ["error", { "caughtErrorsIgnorePattern": "USDTOCHF" }] */
 function USDTOCHF(dollars) {
   // Gets a cache that is common to all users of the script.
   var cache = CacheService.getScriptCache();
@@ -28,3 +27,4 @@ function USDTOCHF(dollars) {
   // Returns the CHF value
   return 'CHF' + swissFrancs;
 }
+window.USDTOCHF = USDTOCHF;
