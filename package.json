@@ -16,7 +16,7 @@
     "compile_server": "concurrently -k -n COMPILER,ADVANCED -c grey,blue \"tsc -w\" \"npm run advanced\"",
     "compile_simpleGit": "concurrently -k -n COMPILER,ADVANCED -c grey,blue \"tsc -w\" \"npm run simple\"",
     "compile_sandbox": "concurrently -k -n COMPILER,ADVANCED -c grey,blue \"tsc -w\" \"npm run sandbox\"",
-    "compile_gas": "concurrently -k -n COMPILER,ADVANCED -c grey,blue \"tsc -w\" \"npm run gas\"",
+    "compile_gas": "concurrently -k -n COMPILER,CLASP -c grey,blue \"tsc -w\" \"npm run gas_dev\"",
     "gas_dev": "$HOME/.nvm/versions/node/v16.4.0/bin/clasp push --watch",
     "simpleGit_dev": "nodemon -w output simpleGit/output/index",
     "sandbox_dev": "nodemon -w output sandbox/output/script",
@@ -28,8 +28,7 @@
     "format": "prettier --write",
     "simple": "concurrently -k -n TS-LINT,CODE -c grey,blue \"npm run ts-lint\" \"npm run simpleGit_dev\"",
     "server": "concurrently -k -n TS-LINT,CODE -c grey,blue \"npm run ts-lint\" \"npm run server_dev\"",
-    "sandbox": "concurrently -k -n TS-LINT,CODE -c grey,blue \"npm run ts-lint\" \"npm run sandbox_dev\"",
-    "gas": "concurrently -k -n PRETTIER,CODE -c gray,blue \"npm run format -- frontend/**/*.ts\" \"npm run gas_dev\""
+    "sandbox": "concurrently -k -n TS-LINT,CODE -c grey,blue \"npm run ts-lint\" \"npm run sandbox_dev\""
   },
   "repository": {
     "type": "git",
