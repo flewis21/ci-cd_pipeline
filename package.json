@@ -25,7 +25,7 @@
     "frontend_dev": "concurrently -k -n COMPILER_1,COMPILER_2 -c gray,blue \"npm run compile_typescript\" \"npm run compile_gas\"",
     "ts-lint": "ts-standard --verbose --fix",
     "lint": "standard --verbose --fix",
-    "format": "prettier --write **.{ts,json}",
+    "format": "prettier --write",
     "simple": "concurrently -k -n TS-LINT,CODE -c grey,blue \"npm run ts-lint\" \"npm run simpleGit_dev\"",
     "server": "concurrently -k -n TS-LINT,CODE -c grey,blue \"npm run ts-lint\" \"npm run server_dev\"",
     "sandbox": "concurrently -k -n TS-LINT,CODE -c grey,blue \"npm run ts-lint\" \"npm run sandbox_dev\"",
