@@ -1,8 +1,8 @@
 {
-  "extends": "tsconfig",
+  // "extends": "tsconfig",
 
   "compilerOptions": {
-    "composite": true,
+    // "composite": true,
     // "incremental": true,
 
     // Enforce strict coding style
@@ -56,7 +56,7 @@
     "outDir": "../output",
 
     // Make Google Apps Script type definitions ambient
-    "noLib": true,
+    // "noLib": true,
     // "skipLibCheck": false,
     "types": ["google-apps-script"]
     // "typeRoots": ["node_modules/@types"],
