@@ -1,4 +1,3 @@
-/* eslint no-unused-vars: ["error", { "caughtErrorsIgnorePattern": "duplicateAndOrganizeActiveSheet" }] */
 function duplicateAndOrganizeActiveSheet() {
   var mySS = SpreadsheetApp.getActiveSpreadsheet();
   var activeSheet = SpreadsheetApp.getActiveSheet();
@@ -19,3 +18,4 @@ function duplicateAndOrganizeActiveSheet() {
   myRange = duplicateSheet.getRange('A3:D55');
   myRange.sort(3);
 }
+window.duplicateAndOrganizeActiveSheet = duplicateAndOrganizeActiveSheet;
