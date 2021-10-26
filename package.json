@@ -29,7 +29,7 @@
     "simple": "concurrently -k -n TS-LINT,CODE -c grey,blue \"npm run ts-lint\" \"npm run simpleGit_dev\"",
     "server": "concurrently -k -n TS-LINT,CODE -c grey,blue \"npm run ts-lint\" \"npm run server_dev\"",
     "sandbox": "concurrently -k -n TS-LINT,CODE -c grey,blue \"npm run ts-lint\" \"npm run sandbox_dev\"",
-    "gas": "concurrently -k -n TS-LINT,CODE -c gray,blue \"npm run ts-lint\" \"npm run gas_dev\""
+    "gas": "concurrently -k -n PRETTIER,CODE -c gray,blue \"npm run format\" \"npm run gas_dev\""
   },
   "repository": {
     "type": "git",
