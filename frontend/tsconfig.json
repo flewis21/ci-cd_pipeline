@@ -3,10 +3,10 @@
 
   "compilerOptions": {
     "composite": true,
-    "incremental": true,
+    // "incremental": true,
 
     // Enforce strict coding style
-    "strict": true,
+    // "strict": true,
     "noImplicitUseStrict": true,
     // "alwaysStrict": true,
     // "allowUnreachableCode": false,
