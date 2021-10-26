@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "gas_dev": "$HOME/.nvm/versions/node/v16.4.0/bin/clasp push --watch",
+    "gas_dev": "$HOME/.nvm/versions/node/v16.4.0/bin/clasp push --watch"
   },
   "devDependencies": {
     "@types/google-apps-script": "^1.0.37",
