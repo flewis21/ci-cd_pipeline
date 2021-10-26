@@ -1,4 +1,6 @@
 {
+  "name": "frontend",
+  "version": "1.0.0",
   "scripts": {
     "clasp": "$HOME/.nvm/versions/node/v16.4.0/bin/clasp push --watch",
     "type": "$HOME/.nvm/versions/node/v16.4.0/bin/npx tsc -w",
