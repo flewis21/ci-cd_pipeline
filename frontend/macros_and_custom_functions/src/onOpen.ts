@@ -34,5 +34,3 @@ function loadBookList() {
   sheet.setName('Book-list');
   sheet.autoResizeColumns(1, 3);
 }
-window.onOpen = onOpen;
-window.loadBookList = loadBookList;
