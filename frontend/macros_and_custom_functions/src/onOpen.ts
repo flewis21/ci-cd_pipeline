@@ -3,7 +3,6 @@
  * opened or reloaded. onOpen() is used to add custom menu
  * iteems to the spreadsheet.
  */
-/* eslint no-unused-vars: ["error", { "caughtErrorsIgnorePattern": "onOpen" }] */
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
   ui.createMenu('Book-list').addItem('Load Book-list', 'loadBookList').addToUi();
@@ -35,3 +34,5 @@ function loadBookList() {
   sheet.setName('Book-list');
   sheet.autoResizeColumns(1, 3);
 }
+window.onOpen = onOpen;
+window.loadBookList = loadBookList;
