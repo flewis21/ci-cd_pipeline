@@ -1,4 +1,4 @@
-/* global duplicateAndOrganizeActiveSheet:writable */
+/* eslint no-unused-vars: ["error", { "caughtErrorsIgnorePattern": "duplicateAndOrganizeActiveSheet" }] */
 function duplicateAndOrganizeActiveSheet() {
   var mySS = SpreadsheetApp.getActiveSpreadsheet();
   var activeSheet = SpreadsheetApp.getActiveSheet();
