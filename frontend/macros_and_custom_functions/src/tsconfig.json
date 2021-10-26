@@ -55,5 +55,7 @@
     // "skipLibCheck": false,
     "types": ["google-apps-script"]
     // "typeRoots": ["node_modules/@types"],
-  }
+  },
+  "include": ["*.ts"],
+  "exclude": []
 }
