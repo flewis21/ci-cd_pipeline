@@ -6,7 +6,7 @@
  * @return {number} swissFrancs The converted total of Swiss francs.
  * @customFunction
  */
-function USDTOCHF (dollars) {
-  const swissFrancs = dollars * 0.99
-  return swissFrancs
+function USDTOCHF(dollars) {
+  const swissFrancs = dollars * 0.99;
+  return swissFrancs;
 }
