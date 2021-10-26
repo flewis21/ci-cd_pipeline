@@ -18,4 +18,3 @@ function duplicateAndOrganizeActiveSheet() {
   myRange = duplicateSheet.getRange('A3:D55');
   myRange.sort(3);
 }
-window.duplicateAndOrganizeActiveSheet = duplicateAndOrganizeActiveSheet;
