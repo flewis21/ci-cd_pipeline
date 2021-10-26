@@ -12,8 +12,8 @@
     // "allowUnreachableCode": false,
     // "allowUnusedLabels": false,
     // "downlevelIteration": false,
-    // "forceConsistentCasingInFileNames": true,
-    // "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
     // "noImplicitAny": true,
     // "noImplicitReturns": true,
     // "noImplicitThis": true,
@@ -28,30 +28,32 @@
 
     // Enable latest Javascriptt syntax and target V8 engine
     "experimentalDecorators": true,
-    // "lib": ["ESNext"],
+    "lib": ["esnext"],
     "target": "ES2019",
 
     // Limit use of `export` statements
-    "module": "None",
+    "module": "esnext",
     "moduleResolution": "node",
-    // "allowSyntheticDefaultImports": false,
-    // "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
     // "importHelpers": false,
 
     // Define files produced by the compiler
     "isolatedModules": true,
     "newLine": "lf",
+    "allowJs": true,
     //"noEmitOnError": true,
     // "declaration": false,
     // "declarationMap": false,
-    // "noResolve": false,
+    "noResolve": true,
+    "noEmit": true,
     // "preserveConstEnums": false,
     "removeComments": false,
     // "sourceMap": false,
     // "stripInternal": false,
     "rootDir": "macros_and_custom_functions/src",
     "outDir": "../output",
-    "noResolve": true,
 
     // Make Google Apps Script type definitions ambient
     "noLib": true,
@@ -59,6 +61,6 @@
     "types": ["google-apps-script"]
     // "typeRoots": ["node_modules/@types"],
   },
-  "include": ["*.ts"],
+  "include": ["src"],
   "exclude": []
 }
