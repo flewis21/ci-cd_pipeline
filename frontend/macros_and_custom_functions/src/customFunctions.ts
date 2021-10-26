@@ -27,4 +27,3 @@ function USDTOCHF(dollars) {
   // Returns the CHF value
   return 'CHF' + swissFrancs;
 }
-window.USDTOCHF() = USDTOCHF();
