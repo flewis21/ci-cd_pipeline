@@ -40,7 +40,7 @@
     // "importHelpers": false,
 
     // Define files produced by the compiler
-    "isolatedModules": true,
+    // "isolatedModules": true,
     "newLine": "lf",
     "allowJs": true,
     //"noEmitOnError": true,
