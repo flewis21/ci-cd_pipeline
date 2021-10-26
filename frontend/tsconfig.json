@@ -61,6 +61,6 @@
     "types": ["google-apps-script"]
     // "typeRoots": ["node_modules/@types"],
   },
-  "include": ["src"],
+  "include": ["**/src"],
   "exclude": []
 }
