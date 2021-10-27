@@ -7,7 +7,7 @@
 **/macros.ts
 **/customFunctions.ts
 !**/duplicateSpreadsheet.ts
-**/renameSpreadsheet.ts
+!**/renameSpreadsheet.ts
 **/Code.ts
 !**/*.html
 
