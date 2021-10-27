@@ -29,7 +29,7 @@
     // Enable latest Javascriptt syntax and target V8 engine
     "experimentalDecorators": true,
     // "noLib": true,
-    "lib": ["es3"],
+    "lib": ["es2017"],
     "target": "es6",
 
     // Limit use of `export` statements
