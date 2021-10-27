@@ -30,7 +30,7 @@
     "experimentalDecorators": true,
     // "noLib": true,
     "lib": ["es6", "DOM"],
-    "target": "ES2019",
+    "target": "es3",
 
     // Limit use of `export` statements
     "module": "esnext",
