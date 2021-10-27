@@ -34,7 +34,7 @@
 
     // Limit use of `export` statements
     "module": "none",
-    "moduleResolution": "node",
+    // "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     // "resolveJsonModule": true,
