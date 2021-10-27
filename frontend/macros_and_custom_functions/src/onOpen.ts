@@ -201,5 +201,5 @@ function fillInTheBlanks() {
 		}
 	}
 	// Insert the updated book data values into the spreadsheet.
-	dataRange.setvalues(bookValues);
+	dataRange.setValues(bookValues);
 }
