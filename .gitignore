@@ -3,3 +3,4 @@ hellhtml/
 .serverless
 .clasp.json
 .tsbuildinfo
+output/
