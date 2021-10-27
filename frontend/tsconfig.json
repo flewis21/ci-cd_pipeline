@@ -37,7 +37,7 @@
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    "resolveJsonModule": true,
+    // "resolveJsonModule": true,
     // "importHelpers": false,
 
     // Define files produced by the compiler
