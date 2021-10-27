@@ -17,7 +17,7 @@ function USDTOCHF(dollars) {
   // CHF rate from an API and stores the rate in the cache
   // for later convenience.
   if (!rate) {
-    var response = UrlFetchApp.fetch('www.atlbudgetstudio.studio4510.com');
+    var response = UrlFetchApp.fetch('');
     var result = response.getContentText();
     rate = result.rates.CHF;
     cache.put('rates.CHF', rate);
