@@ -59,7 +59,7 @@ function splitAtFirstComma() {
 	// Update vaalues where commas are found. Assumes the presence
 	// of a comma indicates an "authors, title" pattern.
 	for (var row = 0; row < titleAuthorValues.length; row++) {
-		var indexOfFiratComma =
+		var indexOfFirstComma =
 			titleAuthorValues[row][0].indexOf(", ");
 
 		if(indexOfFirstComma >= 0) {
