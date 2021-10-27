@@ -5,9 +5,9 @@
 !**/appsscript.json
 **/onOpen.ts
 **/macros.ts
-**/customFunctions.ts
+!**/customFunctions.ts
 !**/duplicateSpreadsheet.ts
-!**/renameSpreadsheet.ts
+**/renameSpreadsheet.ts
 **/Code.ts
 !**/*.html
 
