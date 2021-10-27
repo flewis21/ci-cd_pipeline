@@ -46,17 +46,17 @@ function loadBookList() {
  * at the first comma, if present.
  */
 function splitAtFirstComma() {
-	// Get the active (currently highlighted) raange.
+	// Get the active (currently highlighted) range.
 	var activeRange = SpreadsheetApp.getActiveRange();
 	var titleAuthorRange = activeRange.offset(
 		0, 0, activeRange.getHeight(), activeRange.getWidth() + 1
 	);
 
 	// Get the current values of the selected title column cells.
-	//This is a 2D array.
+	// This is a 2D array.
 	var titleAuthorValues = titleAuthorRange.getValues();
 
-	// Update vaalues where commas are found. Assumes the presence
+	// Update values where commas are found. Assumes the presence
 	// of a comma indicates an "authors, title" pattern.
 	for (var row = 0; row < titleAuthorValues.length; row++) {
 		var indexOfFirstComma =
@@ -71,7 +71,7 @@ function splitAtFirstComma() {
 			titleAuthorValues[row][0] =
 				titlesAndAuthors.slice(indexOfFirstComma + 2);
 
-			// Updaate the author value in the array.
+			// Update the author value in the array.
 			titleAuthorValues[row][1] =
 				titlesAndAuthors.slice(0, indexOfFirstComma);
 		}
