@@ -172,7 +172,7 @@ function fillInTheBlanks() {
 		var title = bookValues[row][TITLE_COLUMN];
 		var author = bookValues[row][AUTHOR_COLUMN];
 
-		if(isbn != "" && (title === || author === "") ) {
+		if(isbn != "" && (title === "" || author === "") ) {
 			// Only call the API if you have an ISBN number and 
 			// either the title or author is missing.
 			var bookData = fetchBookData_(isbn);
