@@ -5,7 +5,14 @@
  */
 function onOpen() {
   var ui = SpreadsheetApp.getUi();
-  ui.createMenu('Book-list').addItem('Load Book-list', 'loadBookList').addToUi();
+  ui.createMenu('Book-list')
+    .addItem('Load Book-list', 'loadBookList')
+    .addSeperator()
+    .addItem('Seperate title/author at first comma', 'splitAtFirstComma')
+    .addItem('Seperate title/author at last "by"', 'splitAtLastBy')
+    .addSeperator()
+    .addItem('Fill in blank titles and author cells', 'fillInTheBlanks')
+    .addToUi();
 }
 
 /**
