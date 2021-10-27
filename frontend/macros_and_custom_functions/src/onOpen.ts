@@ -158,11 +158,11 @@ function fillInTheBlanks() {
 
 	// Get the existing book information in the active sheet. The data
 	// is placed into a 2D array.
-	var dataRange = Spreadsheet.getActiveSpreadsheet()
+	var dataRange = SpreadsheetApp.getActiveSpreadsheet()
 		.getDataRange();
 	var bookValues = dataRange.getValues();
 
-	// Rxamine each row of data (excluding the header row).
+	// Examine each row of data (excluding the header row).
 	// If the ISBN is present, and a title or author is missing,
 	// use the fetchBookData_(ISBN) method to retrieve the
 	// missing data from the Open Library API. Fill in the
