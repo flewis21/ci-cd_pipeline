@@ -29,15 +29,15 @@
     // Enable latest Javascriptt syntax and target V8 engine
     "experimentalDecorators": true,
     // "noLib": true,
-    "lib": ["es2017"],
-    "target": "es6",
+    "lib": ["esnext"],
+    "target": "es3",
 
     // Limit use of `export` statements
-    "module": "none",
-    // "moduleResolution": "node",
+    "module": "es6",
+    "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
-    // "resolveJsonModule": true,
+    "resolveJsonModule": true,
     // "importHelpers": false,
 
     // Define files produced by the compiler
