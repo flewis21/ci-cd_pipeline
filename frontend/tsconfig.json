@@ -33,7 +33,7 @@
     "target": "es3",
 
     // Limit use of `export` statements
-    "module": "es6",
+    "module": "commonjs",
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
