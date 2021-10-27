@@ -4,6 +4,7 @@
 # except the extensions...
 !**/appsscript.json
 !**/onOpen.ts
+!**/macros.ts
 !**/*.html
 
 # ignore even valid files if in...
