@@ -12,15 +12,15 @@ function formatDataset() {
 	// Apply row banding to the data, excluding the header
 	// row and column. Only apply the banding if the range
 	// doesn't already have banding set.
-	var noHeaderRange = fullDataRange.offset(
+	var noHeadersRange = fullDataRange.offset(
 		1, 1,
 		fullDataRange.getNumRows() - 1,
 		fullDataRange.getNumColumns() - 1);
 
-	if (! noHeadeRange.getBandings()[0]) {
+	if (! noHeadersRange.getBandings()[0]) {
 		// The range doesn't already have banding, so it's
 		// safe to apply it.
-		noHeaderRange.applyRowBanding();
+		noHeadersRange.applyRowBanding();
 	}
 
 	// Call a helper function to apply date formatting
