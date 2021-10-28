@@ -7,7 +7,7 @@ function formatDataset() {
 	// Get the active sheet and data range.
 	var spreadsheet = SpreadsheetApp.getActive();
 	var sheet = spreadsheet.getActiveSheet();
-	var fullDataRange = sheet,getdataRange();
+	var fullDataRange = sheet.getdataRange();
 
 	// Apply row banding to the data, excluding the header
 	// row and column. Only apply the banding if the range
