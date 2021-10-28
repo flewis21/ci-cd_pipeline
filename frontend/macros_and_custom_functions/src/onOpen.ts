@@ -41,6 +41,7 @@ function loadBookList() {
   sheet.setName('Book-list');
   sheet.autoResizeColumns(1, 3);
 }
+
 /** 
  * Reformats title and author columns by splitting the title column
  * at the first comma, if present.
