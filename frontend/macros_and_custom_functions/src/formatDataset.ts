@@ -62,7 +62,7 @@ function formatDataset() {
 	// columns and rows to fit.
 	fullDataRange.setBorder();
 
-	sheet.autoResizeColumn(1, fullDataRange.getNumColumns());
+	sheet.autoResizeColumns(1, fullDataRange.getNumColumns());
 	sheet.autoResizeRows(1, fullDataRange.getNumRows());
  }
 
