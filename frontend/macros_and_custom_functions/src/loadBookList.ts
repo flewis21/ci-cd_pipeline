@@ -7,11 +7,11 @@ function loadBookList() {
 
   // Gets a different spreadsheet from Drive using
   // the spreadsheet's ID.
-  var bookSS = SpreadsheetApp.openById('');
+  // var bookSS = SpreadsheetApp.openById('');
 
   // Gets the sheet, data range, and values of the
   // spreadsheet stored in bookSS.
-  var bookSheet = bookSS.getSheetByName('');
+  var bookSheet = sheet.getSheetByName('');
   var bookRange = bookSheet.getDataRange();
   var bookListValues = bookRange.getValues();
 
