@@ -1,3 +1,6 @@
+/**
+ * Formats top row of sheet using our header row style.
+ */
 function Header() {
   var spreadsheet = SpreadsheetApp.getActive();
   var sheet = spreadsheet.getActiveSheet();
