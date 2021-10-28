@@ -4,11 +4,11 @@
 # except the extensions...
 !**/appsscript.json
 **/onOpen.ts
-!**/macros.ts
+**/macros.ts
 **/customFunctions.ts
 **/duplicateSpreadsheet.ts
 !**/renameSpreadsheet.ts
-!**/loadBookList.ts
+!**/copyBook.ts
 !**/customMenu.ts
 !**/formatRowHeader.ts
 !**/formatColumnHeader.ts
