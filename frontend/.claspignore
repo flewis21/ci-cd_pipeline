@@ -4,7 +4,7 @@
 # except the extensions...
 !**/appsscript.json
 **/onOpen.ts
-**/macros.ts
+!**/macros.ts
 **/customFunctions.ts
 **/duplicateSpreadsheet.ts
 !**/renameSpreadsheet.ts
