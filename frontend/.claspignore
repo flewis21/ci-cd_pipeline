@@ -3,11 +3,11 @@
 
 # except the extensions...
 !**/appsscript.json
-!**/onOpen.ts
-!**/macros.ts
+**/onOpen.ts
+**/macros.ts
 **/customFunctions.ts
-!**/duplicateSpreadsheet.ts
-**/renameSpreadsheet.ts
+**/duplicateSpreadsheet.ts
+!**/renameSpreadsheet.ts
 **/Code.ts
 !**/*.html
 
