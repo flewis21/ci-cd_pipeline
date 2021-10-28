@@ -15,5 +15,10 @@ function onOpen() {
     .addItem('', '')
     .addSeparator()
     .addItem('', '')
+    .addSubMenu(ui.createMenu('')
+    			.addItem('')
+    			.addItem('')
+    			.addItem('')
+    			)
     .addToUi();
 }
