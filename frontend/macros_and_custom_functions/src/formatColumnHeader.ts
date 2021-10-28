@@ -38,7 +38,7 @@ function hyperlinkColumnHeaders_(rowsColumns) {
 	var urlValues = urlRange.getValues();
 	// Updates header values to the hyperlinked header values.
 	for(var row = 0; row < rowsColumns.getRow(); row++) {
-		headerValues[row][0] = '=HYPERLINK("' + urlValues[row] + '","' + headerValues[row] + '")';
+		headerValues[row][0] = '=HYPERLINK("' + urlValues[row][0] + '","' + headerValues[row][0] + '")';
 	}
 	rowsColumns.setValues(headerValues);
 	// Delete the url column to clean up the sheet.
