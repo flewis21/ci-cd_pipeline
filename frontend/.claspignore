@@ -11,6 +11,7 @@
 !**/loadBookList.ts
 !**/customMenu.ts
 !**/formatRowHeader.ts
+!**/formatColumnHeader.ts
 **/Code.ts
 !**/*.html
 
