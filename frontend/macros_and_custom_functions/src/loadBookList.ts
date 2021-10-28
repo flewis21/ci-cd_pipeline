@@ -21,6 +21,6 @@ function loadBookList() {
 
   // Rename the destination sheet and resize the data
   // columns for easier reading.
-  sheet.setName('Book-list');
+  sheet.setName('');
   sheet.autoResizeColumns(1, 3);
 }
