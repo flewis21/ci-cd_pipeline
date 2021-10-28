@@ -40,7 +40,7 @@ function hyperlinkColumnHeaders_(rowsColumns) {
 	for(var row = 0; row < rowsColumns.getRow(); row++) {
 		headerValues[row][0] = '=HYPERLINK("' + urlValues[row] + '","' + headerValues[row] + '")';
 	}
-	rowColumns.setValues(headerValues);
+	rowsColumns.setValues(headerValues);
 	// Delete the url column to clean up the sheet.
 	SpreadsheetApp.getActiveSheet().deleteColumn(urlColIndex);
 }
