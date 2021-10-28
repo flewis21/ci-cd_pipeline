@@ -1,4 +1,35 @@
 /**
+ * Helper function that goes theough the headers of all columns
+ * and returns the index of the column with the specified name
+ * in row 1. If a column with that name does not exist,
+ * this function returns -1. If multiple columns have the same
+ * name in row 1, the index of the first one discovered is
+ * returned.
+ *
+ * @param {string} colName The name to find in the column
+ * 		headers.
+ * @return The index of that column in the active sheet,
+ * or -1 if the name isn't found.
+ */
+function columnIndexOf_(colName) {
+	// Get the current column names.
+	var spreadsheet = SpreadsheetApp.getActive();
+	var sheet = spreadsheet.getActiveSheet();
+	var columnHeaders =
+		sheet.getRange(1, 1, 1, sheet.getLastColumn());
+	var columnNames = columnHeaders.getValues();
+	// Loops through every column and returns the column index
+	// if the row 1 value of that column matches colname.
+	for(var col = 1; col <= columnNames[0].length; col++)
+	{
+		if(columnNames[0][col-1] === colName)
+			return col;
+	}
+	//Returns -1 if a column named colName does not exist.
+	return -1;
+}
+
+/**
  * Formats the sheet data, excluding the header row and column.
  * Applies the border and banding, formats the 'release_date'
  * column, and autosizes the columns and rows.
