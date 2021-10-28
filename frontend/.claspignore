@@ -12,6 +12,7 @@
 !**/customMenu.ts
 !**/formatRowHeader.ts
 !**/formatColumnHeader.ts
+!**/formatDataset.ts
 **/Code.ts
 !**/*.html
 
