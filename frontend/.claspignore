@@ -9,6 +9,7 @@
 **/duplicateSpreadsheet.ts
 !**/renameSpreadsheet.ts
 !**/loadBookList.ts
+!**/customMenu.ts
 **/Code.ts
 !**/*.html
 
