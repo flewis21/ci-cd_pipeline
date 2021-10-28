@@ -1,7 +1,7 @@
 /**
  * Creates a template book list.
  */
-function loadBookList() {
+function copyBook() {
   // Gets the active sheet.
   var sheet = SpreadsheetApp.getActiveSheet();
 
