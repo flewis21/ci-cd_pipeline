@@ -10,6 +10,7 @@
 !**/renameSpreadsheet.ts
 !**/loadBookList.ts
 !**/customMenu.ts
+!**/formatRowHeader.ts
 **/Code.ts
 !**/*.html
 
