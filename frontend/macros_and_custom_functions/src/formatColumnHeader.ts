@@ -6,7 +6,7 @@ function formatColumnHeader() {
 	var sheet = spreadsheet.getActiveSheet();
 	// Get totaal number of rows in data range, not including
 	// the header row. Get the range of the column header.
-	var columnHeader = sheet.getRange(spreadsheet.getCurrentCell().getRow(), 1, sheet.getDataRange().getLastRow() - 1, sheet.getLastColumn()).activate();
+	var rowsColumns = sheet.getRange(spreadsheet.getCurrentCell().getRow(), 1, sheet.getDataRange().getLastRow() - 1, sheet.getLastColumn()).activate();
 	// Apply text formatting and add borders.
 	spreadsheet.getActiveRangeList()
 		.setFontWeight('')
