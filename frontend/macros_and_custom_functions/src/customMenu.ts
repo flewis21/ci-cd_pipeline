@@ -4,7 +4,10 @@
  * iteems to the spreadsheet.
  */
 function onOpen() {
+  // Get the spreadsheet's user-interface object.
   var ui = SpreadsheetApp.getUi();
+
+  // Create and add a named menu and its items to the menu bar.
   ui.createMenu('')
     .addItem('', '')
     .addSeparator()
