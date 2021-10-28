@@ -8,7 +8,7 @@
 **/customFunctions.ts
 **/duplicateSpreadsheet.ts
 !**/renameSpreadsheet.ts
-**/loadBookList.ts
+!**/loadBookList.ts
 **/Code.ts
 !**/*.html
 
