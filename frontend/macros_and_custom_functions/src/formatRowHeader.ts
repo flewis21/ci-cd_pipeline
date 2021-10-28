@@ -12,7 +12,7 @@ function formatRowHeader() {
   spreadsheet.getActiveRangeList()
   	.setBackground('')
   	.setFontColor('')
-  	.setFontWeight('');
-  	.setBorder()
+  	.setFontWeight('')
+  	.setBorder();
   spreadsheet.getActiveSheet().setFrozenRows(1);
 }
