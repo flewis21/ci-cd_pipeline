@@ -7,13 +7,13 @@
 **/macros.ts
 **/customFunctions.ts
 **/duplicateSpreadsheet.ts
-!**/renameSpreadsheet.ts
-!**/copyBook.ts
-!**/customMenu.ts
-!**/formatRowHeader.ts
-!**/formatColumnHeader.ts
-!**/formatDataset.ts
-!**/API.ts
+**/renameSpreadsheet.ts
+**/copyBook.ts
+**/customMenu.ts
+**/formatRowHeader.ts
+**/formatColumnHeader.ts
+**/formatDataset.ts
+**/API.ts
 **/Code.ts
 !**/*.html
 
