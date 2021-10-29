@@ -15,7 +15,7 @@ function createPeopleSheetV() {
 }
 
 /**
- * Wrapper function that passess arguments to create a
+ * Wrapper function that passes arguments to create a
  * resource sheet describing the characters from Episode VI.
  */
 function createPeopleSheetVI(){
@@ -37,7 +37,7 @@ function createResourceSheet_(
 	resourceType, idNumber, episodeNumber) {
 
 		// Fetch the basic film data from the API.
-		var filmData = fetchApiResourceOgject_("" + idNumber);
+		var filmData = fetchApiResourceObject_("" + idNumber);
 
 		// Extract the API URLs for each resource so the code can
 		// call the API to get more data about each individually.
@@ -87,31 +87,31 @@ function fetchApiResourceObject_(url) {
 	var response = 
 		UrlFetchApp.fetch(url, {'muteHttpExceptions': true});
 
-	// Parse and return the reponse as a JSON  object.
+	// Parse and return the reponse as a JSON object.
 	var json = response.getContentText();
 	var responseObject = JSON.parse(json);
 	return responseObject;
 }
 
 /**
- * Helper function that create or returns an exiting
+ * Helper function that creates a sheet or returns an existing
  * sheet with the same name.
  *
  * @param {string} name The name of the sheet.
  * @return {object} The created or existing sheet
- *		of the same name. This sheet become active.
+ *		of the same name. This sheet becomes active.
  */
 function createNewSheet_(name) {
 	var ss = SpreadsheetApp.getActiveSheet();
 
 	// Returns an existing sheet if it has the specified
-	// name. Activate the sheet before returning.
+	// name. Activates the sheet before returning.
 	var sheet = ss.getSheetByName(name);
 	if (sheet) {
 		return sheet.activate();
 	}
 
-	// Otherwise it makes a sheet, set its name, and returns it.
+	// Otherwise it makes a sheet, sets its name, and returns it.
 	// New sheets created this way automatically become the active
 	// sheet.
 	sheet = ss.insertSheet(name);
@@ -120,7 +120,7 @@ function createNewSheet_(name) {
 
 /**
  * Helper function that adds API data to the sheet.
- * Each object key is used as a column  header in the new sheet.
+ * Each object key is used as a column header in the new sheet.
  *
  * @param (object) resourceSheet The sheet object being modified.
  * @param {object} objectKeys The list of keys for the resources.
@@ -150,7 +150,7 @@ function fillSheetWithData_(
 		// Read and set each row in this column.
 		for (var row = 1; row < numRows + 1; row++) {
 			var resource = resourceDataList[row - 1];
-			var values = resource[columnHeader];
+			var value = resource[columnHeader];
 			resourceValues[row][column] = value;
 		}
 	}
