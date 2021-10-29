@@ -82,4 +82,80 @@ function createResourceSheet_(
  * @return {object} resourceObject the JSON object fetched
  * 		from the URL request to the API.
  */
-function fetchAPI
+function fetchApiResourceObject_(url) {
+	// Make request to API and get response.
+	var response = 
+		UrlFetchApp.fetch(url, {'muteHttpExceptions': true});
+
+	// Parse and return the reponse as a JSON  object.
+	var json = response.getContentText();
+	var responseObject = JSON.parse(json);
+	return responseObject;
+}
+
+/**
+ * Helper function that create or returns an exiting
+ * sheet with the same name.
+ *
+ * @param {string} name The name of the sheet.
+ * @return {object} The created or existing sheet
+ *		of the same name. This sheet become active.
+ */
+function createNewSheet_(name) {
+	var ss = SpreadsheetApp.getActiveSheet();
+
+	// Returns an existing sheet if it has the specified
+	// name. Activate the sheet before returning.
+	var sheet = ss.getSheetByName(name);
+	if (sheet) {
+		return sheet.activate();
+	}
+
+	// Otherwise it makes a sheet, set its name, and returns it.
+	// New sheets created this way automatically become the active
+	// sheet.
+	sheet = ss.insertSheet(name);
+	return sheet;
+}
+
+/**
+ * Helper function that adds API data to the sheet.
+ * Each object key is used as a column  header in the new sheet.
+ *
+ * @param (object) resourceSheet The sheet object being modified.
+ * @param {object} objectKeys The list of keys for the resources.
+ * @param {object} resourceDataList The list of API
+ * 	 resource objects containing data to add to the sheet.
+ */
+function fillSheetWithData_(
+	resourceSheet, objectKeys, resourceDataList) {
+	// Set the dimensions of the data range being added to the sheet.
+	var numRows = resourceDataList.length;
+	var numColumns = objectKeys.length;
+
+	// Get the resource range and associated values array. Add an
+	// extra row for the column headers.
+	var resourceRange =
+		resourceSheet.getRange(1, 1, numRows + 1, numColumns);
+	var resourceValues = resourceRange.getValues();
+
+	// Loop over each key value and resource, extracting data to
+	// place in tbe 2D resourceValues array.
+	for (var column = 0; column < numColumns; column++) {
+
+		// Set the column header.
+		var columnHeader = objectKeys[column];
+		resourceValues[0][column] = columnHeader;
+
+		// Read and set each row in this column.
+		for (var row = 1; row < numRows + 1; row++) {
+			var resource = resourceDataList[row - 1];
+			var values = resource[columnHeader];
+			resourceValues[row][column] = value;
+		}
+	}
+
+	// Remove any existing data in the sheet and set the new values.
+	resourceSheet.clear()
+	resourceRange.setValues(resourceValues); 
+}
