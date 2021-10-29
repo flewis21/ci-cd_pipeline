@@ -16,9 +16,9 @@ function onOpen() {
     .addSeparator()
     .addItem('', '')
     .addSubMenu(ui.createMenu('')
-    			.addItem('')
-    			.addItem('')
-    			.addItem('')
+    			.addItem('', '')
+    			.addItem('', '')
+    			.addItem('', '')
     			)
     .addToUi();
 }
