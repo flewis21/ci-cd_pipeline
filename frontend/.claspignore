@@ -9,11 +9,11 @@
 **/duplicateSpreadsheet.ts
 **/renameSpreadsheet.ts
 **/copyBook.ts
-!**/customMenu.ts
+**/customMenu.ts
 **/formatRowHeader.ts
 **/formatColumnHeader.ts
-!**/formatDataset.ts
-**/API.ts
+**/formatDataset.ts
+!**/API.ts
 **/Code.ts
 !**/*.html
 
