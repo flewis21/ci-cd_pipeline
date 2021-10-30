@@ -4,7 +4,7 @@
   "references": [
     // Project
     {
-      "path": "./fro"
+      "path": "./backend"
     }
   ]
 }
