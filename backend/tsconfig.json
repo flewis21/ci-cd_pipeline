@@ -1,7 +1,8 @@
 {
-  "extends": "../tsconfig",
+  "extends": "../tsconfig.json",
   "compilerOptions": {
     "composite": true,
+    "incremental": true,
     "rootDir": ".",
 
     "outDir": "./output",
