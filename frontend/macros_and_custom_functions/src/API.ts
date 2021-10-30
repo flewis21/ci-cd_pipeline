@@ -102,7 +102,7 @@ function fetchApiResourceObject_(url) {
  *		of the same name. This sheet becomes active.
  */
 function createNewSheet_(name) {
-	var ss = SpreadsheetApp.getActiveSheet();
+	var ss = SpreadsheetApp.getActiveSpreadsheet();
 
 	// Returns an existing sheet if it has the specified
 	// name. Activates the sheet before returning.
