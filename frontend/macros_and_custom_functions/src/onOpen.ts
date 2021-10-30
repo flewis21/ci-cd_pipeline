@@ -1,21 +1,4 @@
 /**
- * A special function that runs when the spreadsheet is first
- * opened or reloaded. onOpen() is used to add custom menu
- * iteems to the spreadsheet.
- */
-function onOpen() {
-  var ui = SpreadsheetApp.getUi();
-  ui.createMenu('Book-list')
-    .addItem('Load Book-list', 'loadBookList')
-    .addSeparator()
-    .addItem('Separate title/author at first comma', 'splitAtFirstComma')
-    .addItem('Separate title/author at last "by"', 'splitAtLastBy')
-    .addSeparator()
-    .addItem('Fill in blank titles and author cells', 'fillInTheBlanks')
-    .addToUi();
-}
-
-/**
  * Creates a template book list.
  */
 function loadBookList() {
