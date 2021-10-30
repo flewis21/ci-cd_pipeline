@@ -3,7 +3,7 @@
   "references": [
   	//Project
   	{
-  		"path": "./backend"
+  		"path": "./backend/src"
   	}
   ]
 }
