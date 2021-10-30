@@ -3,7 +3,7 @@
  * resource sheet describing the characters from Episode IV.
  */
 function createPeopleSheetIV() {
-	createResourceSheet_();
+	createResourceSheet_('', 1, "");
 }
 
 /**
@@ -11,7 +11,7 @@ function createPeopleSheetIV() {
  * resource sheet describing the characters from Episode V.
  */
 function createPeopleSheetV() {
-	createResourceSheet_();
+	createResourceSheet_('', 2, "");
 }
 
 /**
@@ -19,7 +19,7 @@ function createPeopleSheetV() {
  * resource sheet describing the characters from Episode VI.
  */
 function createPeopleSheetVI(){
-	createResourceSheet_();
+	createResourceSheet_('', 3, "");
 }
 
 /**
