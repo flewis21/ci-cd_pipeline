@@ -1,6 +1,15 @@
 {
   "timeZone": "America/New_York",
-  "dependencies": {},
+  "dependencies": {
+    "libraries": [
+      {
+        "userSymbol": "quickFormats",
+        "version": "7",
+        "libraryId": "1EcDu8RLqksGN4WjYrXXC-BQhAUe0CafsQffl-A4PoJHc0usEe2TP5Qrt",
+        "developmentMode": false
+      }
+    ]
+  },
   "exceptionLogging": "STACKDRIVER",
   "runtimeVersion": "V8",
   "sheets": {
