@@ -1,9 +1,3 @@
 {
-  "include": ["./backend/**/*.ts"],
-  "references": [
-    // Project
-    {
-      "path": "./backend"
-    }
-  ]
+  "include": ["./backend/**/*.ts"]
 }
