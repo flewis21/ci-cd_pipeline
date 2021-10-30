@@ -1,6 +1,6 @@
 {
-  "extends": "../tsconfig",
-  "compilerOptions": {
+  //"extends": "../tsconfig",
+  //"compilerOptions": {
     //"composite": true,
     // "rootDir": ".",
 
