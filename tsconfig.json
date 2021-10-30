@@ -1,7 +1,7 @@
 {
   "files": [],
   "include": ["src"],
-  "rootDir": ".",
+  "rootDir": "backend",
   "exclude": [],
   "references": [
     // Project
