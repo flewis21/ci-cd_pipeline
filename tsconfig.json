@@ -1,10 +1,10 @@
 {
   "files": [],
-  "include": [],
+  "include": ["src"],
   "references": [
     // Project
     {
-      "path": "./backend/src"
+      "path": "./backend"
     }
   ]
 }
