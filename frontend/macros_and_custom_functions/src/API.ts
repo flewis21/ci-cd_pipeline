@@ -3,7 +3,7 @@
  * resource sheet describing the characters from Episode IV.
  */
 function createPeopleSheetIV() {
-	createResourceSheet_('');
+	createResourceSheet_();
 }
 
 /**
@@ -11,7 +11,7 @@ function createPeopleSheetIV() {
  * resource sheet describing the characters from Episode V.
  */
 function createPeopleSheetV() {
-	createResourceSheet_('');
+	createResourceSheet_();
 }
 
 /**
@@ -19,7 +19,7 @@ function createPeopleSheetV() {
  * resource sheet describing the characters from Episode VI.
  */
 function createPeopleSheetVI(){
-	createResourceSheet_('');
+	createResourceSheet_();
 }
 
 /**
@@ -45,7 +45,7 @@ function createResourceSheet_(
 
 		// Fetch each resource from the API individually and push
 		// them into a new object list.
-		var resourceDataList = [];
+		var resourceDataList = ([] as any);
 		for(var i = 0; i < resourceUrls.length; i++) {
 			resourceDataList.push(
 				fetchApiResourceObject_(resourceUrls[i])
