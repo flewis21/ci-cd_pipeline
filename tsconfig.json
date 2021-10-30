@@ -1,9 +1,10 @@
 {
+  "files": [],
   "include": ["./backend/**/*.ts"],
   "references": [
   	//Project
   	{
-  		"path": "./backend/src"
+  		"path": "./backend"
   	}
   ]
 }
