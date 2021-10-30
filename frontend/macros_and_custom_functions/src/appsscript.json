@@ -10,9 +10,5 @@
         "functionName": "Header"
       }
     ]
-  },
-  "webapp": {
-    "executeAs": "USER_ACCESSING",
-    "access": "ANYONE"
   }
 }
