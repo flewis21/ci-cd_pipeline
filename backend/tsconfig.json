@@ -2,9 +2,9 @@
   "extends": "../tsconfig",
   "compilerOptions": {
     "composite": true,
-    "rootDir": ".",
+    // "rootDir": ".",
 
-    "outDir": "output",
+    "outDir": "./output",
     "experimentalDecorators": true,
     "isolatedModules": true,
     // "noImplicitUseStrict": true,
