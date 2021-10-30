@@ -1,6 +1,7 @@
 {
   "files": [],
   "include": ["src"],
+  "exclude": [],
   "references": [
     // Project
     {
