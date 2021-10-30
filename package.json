@@ -12,20 +12,22 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "concurrently -k -n STYLING,CODE -c grey,blue \"npm run style_simple\" \"NODE_ENV=development node sandbox/output/script\"",
-    "compile_server": "concurrently -k -n COMPILER,ADVANCED -c grey,blue \"tsc -w\" \"npm run advanced\"",
-    "compile_simpleGit": "concurrently -k -n COMPILER,ADVANCED -c grey,blue \"tsc -w\" \"npm run simple\"",
-    "compile_sandbox": "concurrently -k -n COMPILER,ADVANCED -c grey,blue \"tsc -w\" \"npm run sandbox\"",
+    "type": "tsc -w"
+    "dev": "NODE_ENV=development nodemon -w output ./"
+    "start": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\"",
+    "compile_server": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\"",
+    "compile_simpleGit": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\"",
+    "compile_sandbox": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\"",
     "simpleGit_dev": "nodemon -w output simpleGit/output/index",
     "sandbox_dev": "nodemon -w output sandbox/output/script",
     "server_dev": "nodemon -w output backend/output/server",
-    "backend_dev": "concurrently -k -n COMPILER,NODEMON -c gray,blue \"npm run compile_typescript\" \"npm run server_dev\"",
+    "backend_dev": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,NODEMON -c gray,blue \"npm run type\" \"npm run dev\"",
     "ts-lint": "ts-standard --verbose --fix",
     "lint": "standard --verbose --fix",
     "format": "prettier --write",
-    "simple": "concurrently -k -n TS-LINT,CODE -c grey,blue \"npm run ts-lint\" \"npm run simpleGit_dev\"",
-    "server": "concurrently -k -n TS-LINT,CODE -c grey,blue \"npm run ts-lint\" \"npm run server_dev\"",
-    "sandbox": "concurrently -k -n TS-LINT,CODE -c grey,blue \"npm run ts-lint\" \"npm run sandbox_dev\""
+    "simple": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\"",
+    "server": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\"",
+    "sandbox": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\""
   },
   "repository": {
     "type": "git",
