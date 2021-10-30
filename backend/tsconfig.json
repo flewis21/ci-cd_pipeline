@@ -4,7 +4,7 @@
     "composite": true,
     "rootDir": ".",
 
-    //"outDir": "./output",
+    "outDir": "./output",
     //"experimentalDecorators": true,
     //"isolatedModules": true,
     // "noImplicitUseStrict": true,
