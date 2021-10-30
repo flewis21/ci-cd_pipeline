@@ -79,26 +79,3 @@ function splitAtLastBy() {
 	titleAuthorRange.setValues(titleAuthorValues);
 }
 
-/**
- * Helper function to retrieve book data from the Open Library
- * public API.
- *
- * @params {number} ISBN - The ISBN number of the book to find.
- * @return {object} The book's data, in JSON format.
- */
-function fetchBookData_(ISBN) {
-	// Connect to the public API.
-	var url = ""
-		+ ISBN + "";
-	var response = UrlFetchApp.fetch(
-		url, {'muteHttpExceptions': true}
-	);
-
-	// Make request to API and get response before this point.
-	var json = response.getContentText();
-	var bookData = JSON.parse(json);
-
-	// Return only the data we're interested in.
-	return bookData['ISBN:' + ISBN];
-}
-
