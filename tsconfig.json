@@ -12,10 +12,10 @@
 	},
   	"files": [],
   	//"include": ["*.ts"],
-  	"references": [
+  	//"references": [
   	// Project
-  	{
-  		"path": "./backend"
-  	}
-  ]
+  	//{
+  	//	"path": "./backend"
+  	//}
+  //]
 }
