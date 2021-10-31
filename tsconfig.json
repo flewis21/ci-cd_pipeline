@@ -6,11 +6,10 @@
 		"isolatedModules": true,
 		"skipDefaultLibCheck": true,
 		"skipLibCheck": true,
-		"declaration": true,
-		"outDir": "./backend/output/"
+		"declaration": true
 	},
   	"files": [],
-  	"includes": ["./backend/src/*.ts"],
+  	"include": ["./backend/src/*.ts"],
   	"references": [
   	// Project
   	{
