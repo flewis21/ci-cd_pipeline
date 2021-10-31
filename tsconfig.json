@@ -4,7 +4,7 @@
 		"outDir": "./backend/output/"
 	},
   	"files": [],
-  	"includes": ["./backend/src/**/*.ts"],
+  	"includes": ["./backend/src/*.ts"],
   	"references": [
   	// Project
   	{
