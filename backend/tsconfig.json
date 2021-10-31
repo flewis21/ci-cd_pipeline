@@ -1,13 +1,6 @@
 {
-  //"extends": "../tsconfig.json",
-  //"references": [
-  	// Project
-  	//{
-  	//	"path": "../"
-  	//}
-  //],
   "compilerOptions": {
-  	"composite": true,
+  	//"composite": true,
     //"incremental": true,
     "outDir": "./output",
     "rootDir": "./src",
