@@ -48,6 +48,6 @@
     //"pretty": true,
     //"sourceMap": true
   },
-  //"include": ["./src/**/*.ts"],
+  "include": [],
   "exclude": ["node_modules"]
 }
