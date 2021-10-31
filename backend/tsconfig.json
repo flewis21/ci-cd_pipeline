@@ -32,7 +32,7 @@
     // "allowNonTsExtentions": true,
     //"noResolve": true,
     //"moduleResolution": "node",
-    //"esModuleInterop": true,
+    "esModuleInterop": true,
     //"Target": "ESNext",
     "types": [],
 
