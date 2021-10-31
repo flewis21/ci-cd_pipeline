@@ -1,9 +1,9 @@
 {
   "extends": "../tsconfig.json",
+  "references": [],
+  "include": ["src/**/*.ts"],
   "compilerOptions": {
-    "composite": true,
     "incremental": true,
-    "rootDir": ".",
     "outDir": "./output",
 
     //"experimentalDecorators": true,
