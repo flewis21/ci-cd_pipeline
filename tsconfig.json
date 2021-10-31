@@ -1,8 +1,8 @@
 {
 	"compilerOptions": {
 		"rootDir": ".",
-		"outDir": "./backend/output/",
-	}
+		"outDir": "./backend/output/"
+	},
   	"files": [],
   	"references": [
   	//Project
