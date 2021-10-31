@@ -1,4 +1,5 @@
 {
+	//"extends": "./backend.tsconfig.json",
 	"compilerOptions": {
 		"composite": true,
 		"incremental": true,
