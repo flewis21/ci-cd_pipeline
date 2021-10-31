@@ -5,7 +5,7 @@
 		"incremental": true,
 		"noEmit": false,
 		//"rootDir": "./backend/src",
-		//"outDir": "./backend/outpput/",
+		"outDir": "./backend/outpput/",
 		"isolatedModules": true,
 		"esModuleInterop": true,
 		"skipDefaultLibCheck": true,
