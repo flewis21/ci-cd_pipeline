@@ -4,8 +4,8 @@
 		"composite": true,
 		"incremental": true,
 		"noEmit": false,
-		"rootDir": "./backend/src",
-		"outDir": "./backend/outpput/",
+		//"rootDir": "./backend/src",
+		//"outDir": "./backend/outpput/",
 		"isolatedModules": true,
 		"esModuleInterop": true,
 		"skipDefaultLibCheck": true,
@@ -13,7 +13,7 @@
 		"declaration": true
 	},
   	"files": [],
-  	"include": ["*.ts"],
+  	//"include": ["*.ts"],
   	"references": [
   	// Project
   	{
