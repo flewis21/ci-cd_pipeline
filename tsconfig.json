@@ -3,7 +3,7 @@
 		"composite": true,
 		"incremental": true,
 		"noEmit": false,
-		"rootDir": "./backend/src",
+		//"rootDir": "./backend/src",
 		"outDir": "./backend/outpput/",
 		"isolatedModules": true,
 		"esModuleInterop": true,
@@ -12,7 +12,7 @@
 		"declaration": true
 	},
   	"files": [],
-  	"include": ["*.ts"],
+  	//"include": ["*.ts"],
   	"references": [
   	// Project
   	{
