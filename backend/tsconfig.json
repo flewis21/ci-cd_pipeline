@@ -40,7 +40,7 @@
     //"noResolve": true,
     //"moduleResolution": "node",
     "esModuleInterop": true,
-    "Target": "ESNext",
+    "target": "ESNext",
     "types": [],
 
     "strictNullChecks": true,
