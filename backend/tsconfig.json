@@ -1,7 +1,6 @@
 {
   "extends": "../tsconfig.json",
   "references": [],
-  "include": ["src/**/*.ts"],
   "compilerOptions": {
     "incremental": true,
     "outDir": "./output",
