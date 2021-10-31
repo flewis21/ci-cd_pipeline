@@ -12,7 +12,7 @@
 		"declaration": true
 	},
   	"files": [],
-  	"include": ["**/*.ts"],
+  	//"include": ["*.ts"],
   	"references": [
   	// Project
   	{
