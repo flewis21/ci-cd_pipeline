@@ -5,7 +5,7 @@
   	"composite": true,
     "incremental": true,
     "outDir": "./output",
-    //"rootDir": "./src"
+    "rootDir": "./src"
 
     //"experimentalDecorators": true,
     //"isolatedModules": true,
@@ -49,6 +49,6 @@
     //"pretty": true,
     //"sourceMap": true
   },
-  "include": ["../**/*.ts"],
+  "include": ["./**/*.ts"],
   "exclude": ["node_modules"]
 }
