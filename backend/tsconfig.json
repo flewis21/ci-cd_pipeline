@@ -4,10 +4,11 @@
     "outDir": "./output",
     "rootDir": "./src",
 
-    //"experimentalDecorators": true,
-    //"isolatedModules": true,
+    "experimentalDecorators": true,
+    "isolatedModules": true,
     // "noImplicitUseStrict": true,
-    //"strict": true,
+    "strict": true,
+    "strictNullChecks": true,
     // "alwaysStrict": true,
     // "noImplicitAny": true,
     // "noImplicitReturns": true,
@@ -15,7 +16,7 @@
     // "strictFunctionTypes": true,
     // "strictPropertyInitialization": true,
 
-    //"noEmitOnError": true,
+    "noEmitOnError": true,
     // "noErrorTruncation": true,
     //"noFallthroughCasesInSwitch": true,
     //"noImplicitThis": true,
@@ -39,12 +40,12 @@
     // "suppressExcessPropertyErrors": true,
     // "suppressImplicitAnyIndexErrors": true,
 
-    //"declaration": true,
-    // "declarationDir": "../types",
-    // "declarationMap": true,
+   	"declaration": true,
+    "declarationDir": "./types",
+    "declarationMap": true,
     "newLine": "lf",
-    //"pretty": true,
-    //"sourceMap": true
+    "pretty": true,
+    "sourceMap": true
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]
