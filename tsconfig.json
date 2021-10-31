@@ -1,7 +1,10 @@
 {
-  "files": [],
-  "include": ["./backend/**/*.ts"],
-  "references": [
+	"compilerOptions": {
+		"rootDir": ".",
+		"outDir": "./backend/output/",
+	}
+  	"files": [],
+  	"references": [
   	//Project
   	{
   		"path": "./backend"
