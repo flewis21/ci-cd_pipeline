@@ -1,20 +1,20 @@
 {
-	"extends": "./backend/tsconfig.json",
-	"compilerOptions": {
-		//"rootDir": "./backend/src",
-		"outDir": "./backend/output/",
-		"isolatedModules": true,
-		"esModuleInterop": true,
-		"skipDefaultLibCheck": true,
-		"skipLibCheck": true,
-		"declaration": true
-	},
-  	"files": [],
-  	//"include": ["*.ts"],
-  	//"references": [
-  	// Project
-  	//{
-  	//	"path": "./backend"
-  	//}
+  "extends": "./backend/tsconfig.json",
+  "compilerOptions": {
+    //"rootDir": "./backend/src",
+    "outDir": "./backend/output/",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+    //"declaration": true
+  },
+  "files": []
+  //"include": ["*.ts"],
+  //"references": [
+  // Project
+  //{
+  //	"path": "./backend"
+  //}
   //]
 }
