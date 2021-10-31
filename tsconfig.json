@@ -1,8 +1,7 @@
 {
 	"extends": "./backend/tsconfig.json",
 	"compilerOptions": {
-		//"composite": true,
-		//"incremental": true,
+		"composite": true,
 		"noEmit": false,
 		//"rootDir": "./backend/src",
 		"outDir": "./backend/output/",
