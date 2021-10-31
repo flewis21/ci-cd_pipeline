@@ -5,7 +5,7 @@
 	},
   	"files": [],
   	"references": [
-  	//Project
+  	// Project
   	{
   		"path": "./backend"
   	}
