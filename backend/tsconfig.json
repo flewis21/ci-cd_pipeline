@@ -5,7 +5,7 @@
   	"composite": true,
     "incremental": true,
     "outDir": "./output",
-    "rootDir": "./src"
+    "rootDir": "../"
 
     //"experimentalDecorators": true,
     //"isolatedModules": true,
