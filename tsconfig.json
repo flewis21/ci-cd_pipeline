@@ -3,7 +3,7 @@
 		"composite": true,
 		"incremental": true,
 		"noEmit": false,
-		"rootDir": "./",
+		//"rootDir": "./backend/src",
 		"outDir": "./backend/outpput/",
 		"isolatedModules": true,
 		"esModuleInterop": true,
