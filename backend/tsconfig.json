@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
-  	//"composite": true,
-    //"incremental": true,
+  	"composite": true,
     "outDir": "./output",
     "rootDir": "./src",
 
