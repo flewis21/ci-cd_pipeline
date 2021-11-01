@@ -1,0 +1,13 @@
+<!-- this is my nav.ejs partial! -->
+
+<div class="navbar">
+
+	<% var sections = sections || ['Home'] %>
+
+	<% sections.foEach(function(sec) { %>
+
+		<div><a href="/1972/09/11<%= sec %>"><%= sec %></div>
+		
+	<% }); %>
+
+</div>
