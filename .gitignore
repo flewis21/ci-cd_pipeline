@@ -4,3 +4,4 @@ hellhtml/
 .clasp.json
 .tsbuildinfo
 output/
+types/
