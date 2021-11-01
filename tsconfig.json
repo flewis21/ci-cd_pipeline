@@ -5,11 +5,11 @@
     "outDir": "./backend/output/",
     "isolatedModules": true,
     "esModuleInterop": true,
-    "skipDefaultLibCheck": true,
-    "skipLibCheck": true
+    "skipDefaultLibCheck": true
+    //"skipLibCheck": true
     //"declaration": true
   },
-  "files": []
+  "files": [],
   //"include": ["*.ts"],
   //"references": [
   // Project
@@ -17,4 +17,5 @@
   //	"path": "./backend"
   //}
   //]
+  "exclude": ["node_modules", "./backend/output/"]
 }
