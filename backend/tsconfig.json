@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-  	"composite": true,
+    "composite": true,
     "outDir": "./output",
     "rootDir": "./src",
 
@@ -40,8 +40,8 @@
     // "suppressExcessPropertyErrors": true,
     // "suppressImplicitAnyIndexErrors": true,
 
-   	"declaration": true,
-    "declarationDir": "./types",
+    "declaration": true,
+    "declarationDir": "./output/types",
     "declarationMap": true,
     "newLine": "lf",
     "pretty": true,
