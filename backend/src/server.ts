@@ -12,7 +12,7 @@ app.set('view engine', 'ejs');
 // One main middleware for / using express.static and res.render.
 app.use('/1972/09/11', [
   // Use express.static first to look for a static resource.
-  express.static(app.get('static')),
+  express.static(app.get('static'), {index: false}),
 
   // If not found render main index, but only for / else next.
   function (req: any, res: any, next: any) {
