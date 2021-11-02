@@ -19,6 +19,6 @@ ejs.renderFile(
     }
 
     // Resolve with  the  html.
-    condole.log(html);
+    console.log(html);
   }
 );
