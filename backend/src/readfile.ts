@@ -3,7 +3,7 @@ import ejs from 'ejs';
 // the renderFile method in action.
 ejs.renderFile(
   // first I give it a path to an *.ejs file.
-  '../../frontend/views/pages/first.ejs',
+  '../frontend/views/pages/first.ejs',
 
   // Some data to use when rendering.
   {
