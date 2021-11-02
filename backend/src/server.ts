@@ -8,7 +8,7 @@ const baseUrl = `http://localhost:${port}`;
 app.set('views', path.resolve(__dirname, '../../frontend/views/pages/'));
 app.set('view engine', 'ejs');
 app.get('/1972/09/11', (req, res, next) => {
-  res.status(200).render('_base-layout', {
+  res.status(200).render('index', {
     title: 'My Family Tree - Part I',
     short_description: 'Pro Bono Volunteer Agency',
   });
