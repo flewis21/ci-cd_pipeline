@@ -5,14 +5,14 @@ const app = express();
 const port = process.env.PORT || 4000;
 const baseUrl = `http://localhost:${port}`;
 
-app.set('/css', path.resolve(__dirname, '../../frontend/public/css'));
+app.set('css', path.resolve(__dirname, '../../frontend/public/css'));
 app.set('views', path.resolve(__dirname, '../../frontend/views/pages/'));
 app.set('view engine', 'ejs');
 
 // One main middleware for / using express.static and res.render.
 app.use('/1972/09/11', [
   // Use express.static first to look for a static resource.
-  express.static(app.get('/css')),
+  express.static(app.get('css')),
 
   // If not found render main index, but only for / else next.
   function (req: any, res: any, next: any) {
@@ -20,7 +20,6 @@ app.use('/1972/09/11', [
       res.status(200).render('index', {
         title: 'My Family Tree - Part I',
         short_description: 'Pro Bono Volunteer Agency',
-        myCss: '../frontend/public/css/style.css',
       });
     }
   },
