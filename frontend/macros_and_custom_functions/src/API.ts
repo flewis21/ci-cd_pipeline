@@ -3,7 +3,7 @@
  * resource sheet describing the characters from Episode IV.
  */
 function createPeopleSheetIV() {
-	createResourceSheet_('', 1, "");
+  createResourceSheet_('', 1, '');
 }
 
 /**
@@ -11,15 +11,15 @@ function createPeopleSheetIV() {
  * resource sheet describing the characters from Episode V.
  */
 function createPeopleSheetV() {
-	createResourceSheet_('', 2, "");
+  createResourceSheet_('', 2, '');
 }
 
 /**
  * Wrapper function that passes arguments to create a
  * resource sheet describing the characters from Episode VI.
  */
-function createPeopleSheetVI(){
-	createResourceSheet_('', 3, "");
+function createPeopleSheetVI() {
+  createResourceSheet_('', 3, '');
 }
 
 /**
@@ -33,49 +33,44 @@ function createPeopleSheetVI(){
  * @param {number} episodeNumber The Star Wars film episode number.
  * 		This is only used in the sheet name.
  */
-function createResourceSheet_(
-	resourceType, idNumber, episodeNumber) {
+function createResourceSheet_(resourceType, idNumber, episodeNumber) {
+  // Fetch the basic film data from the API.
+  var filmData = fetchApiResourceObject_('' + idNumber);
 
-		// Fetch the basic film data from the API.
-		var filmData = fetchApiResourceObject_("" + idNumber);
+  // Extract the API URLs for each resource so the code can
+  // call the API to get more data about each individually.
+  var resourceUrls = filmData[resourceType];
 
-		// Extract the API URLs for each resource so the code can
-		// call the API to get more data about each individually.
-		var resourceUrls = filmData[resourceType];
+  // Fetch each resource from the API individually and push
+  // them into a new object list.
+  var resourceDataList = [] as any;
+  for (var i = 0; i < resourceUrls.length; i++) {
+    resourceDataList.push(fetchApiResourceObject_(resourceUrls[i]));
+  }
 
-		// Fetch each resource from the API individually and push
-		// them into a new object list.
-		var resourceDataList = ([] as any);
-		for(var i = 0; i < resourceUrls.length; i++) {
-			resourceDataList.push(
-				fetchApiResourceObject_(resourceUrls[i])
-			);
-		}
+  // Get the keys used to reference each part of the data within
+  // the resources. The keys are assumed to be identical for
+  // each object since they're all the same resource type.
+  var resourceObjectKeys = Object.keys(resourceDataList[0]);
 
-	// Get the keys used to reference each part of the data within
-	// the resources. The keys are assumed to be identical for
-	// each object since they're all the same resource type.
-	var resourceObjectKeys = Object.keys(resourceDataList[0]);
+  // Create the sheet with the appropriate name. It
+  // automatically becomes the active sheet when it's created.
+  var resourceSheet = createNewSheet_('' + episodeNumber + ' ' + resourceType);
 
-	// Create the sheet with the appropriate name. It
-	// automatically becomes the active sheet when it's created.
-	var resourceSheet = createNewSheet_("" + episodeNumber + " " + resourceType);
+  // Add the API data to the new sheet, using each object
+  // key as a column header.
+  fillSheetWithData_(resourceSheet, resourceObjectKeys, resourceDataList);
 
-	// Add the API data to the new sheet, using each object
-	// key as a column header.
-	fillSheetWithData_(resourceSheet, resourceObjectKeys, resourceDataList);
-
-	// Format the new sheet using the same styles the
-	// 'Quick Formats' menu items apply. These methods all
-	// act on the active sheet, which is the one just created.
-	formatRowHeader();
-	formatColumnHeader();
-	formatDataset();
-
-}	
+  // Format the new sheet using the same styles the
+  // 'Quick Formats' menu items apply. These methods all
+  // act on the active sheet, which is the one just created.
+  formatRowHeader();
+  formatColumnHeader();
+  formatDataset();
+}
 
 /**
- * Helper function that retrieves a JSON object containing a 
+ * Helper function that retrieves a JSON object containing a
  * response from a public API.
  *
  * @param {string} url The URL of the API object being fetched.
@@ -83,14 +78,13 @@ function createResourceSheet_(
  * 		from the URL request to the API.
  */
 function fetchApiResourceObject_(url) {
-	// Make request to API and get response.
-	var response = 
-		UrlFetchApp.fetch(url, {'muteHttpExceptions': true});
+  // Make request to API and get response.
+  var response = UrlFetchApp.fetch(url, {muteHttpExceptions: true});
 
-	// Parse and return the reponse as a JSON object.
-	var json = response.getContentText();
-	var responseObject = JSON.parse(json);
-	return responseObject;
+  // Parse and return the reponse as a JSON object.
+  var json = response.getContentText();
+  var responseObject = JSON.parse(json);
+  return responseObject;
 }
 
 /**
@@ -102,20 +96,20 @@ function fetchApiResourceObject_(url) {
  *		of the same name. This sheet becomes active.
  */
 function createNewSheet_(name) {
-	var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
 
-	// Returns an existing sheet if it has the specified
-	// name. Activates the sheet before returning.
-	var sheet = ss.getSheetByName(name);
-	if (sheet) {
-		return sheet.activate();
-	}
+  // Returns an existing sheet if it has the specified
+  // name. Activates the sheet before returning.
+  var sheet = ss.getSheetByName(name);
+  if (sheet) {
+    return sheet.activate();
+  }
 
-	// Otherwise it makes a sheet, sets its name, and returns it.
-	// New sheets created this way automatically become the active
-	// sheet.
-	sheet = ss.insertSheet(name);
-	return sheet;
+  // Otherwise it makes a sheet, sets its name, and returns it.
+  // New sheets created this way automatically become the active
+  // sheet.
+  sheet = ss.insertSheet(name);
+  return sheet;
 }
 
 /**
@@ -127,35 +121,32 @@ function createNewSheet_(name) {
  * @param {object} resourceDataList The list of API
  * 	 resource objects containing data to add to the sheet.
  */
-function fillSheetWithData_(
-	resourceSheet, objectKeys, resourceDataList) {
-	// Set the dimensions of the data range being added to the sheet.
-	var numRows = resourceDataList.length;
-	var numColumns = objectKeys.length;
+function fillSheetWithData_(resourceSheet, objectKeys, resourceDataList) {
+  // Set the dimensions of the data range being added to the sheet.
+  var numRows = resourceDataList.length;
+  var numColumns = objectKeys.length;
 
-	// Get the resource range and associated values array. Add an
-	// extra row for the column headers.
-	var resourceRange =
-		resourceSheet.getRange(1, 1, numRows + 1, numColumns);
-	var resourceValues = resourceRange.getValues();
+  // Get the resource range and associated values array. Add an
+  // extra row for the column headers.
+  var resourceRange = resourceSheet.getRange(1, 1, numRows + 1, numColumns);
+  var resourceValues = resourceRange.getValues();
 
-	// Loop over each key value and resource, extracting data to
-	// place in tbe 2D resourceValues array.
-	for (var column = 0; column < numColumns; column++) {
+  // Loop over each key value and resource, extracting data to
+  // place in tbe 2D resourceValues array.
+  for (var column = 0; column < numColumns; column++) {
+    // Set the column header.
+    var columnHeader = objectKeys[column];
+    resourceValues[0][column] = columnHeader;
 
-		// Set the column header.
-		var columnHeader = objectKeys[column];
-		resourceValues[0][column] = columnHeader;
+    // Read and set each row in this column.
+    for (var row = 1; row < numRows + 1; row++) {
+      var resource = resourceDataList[row - 1];
+      var value = resource[columnHeader];
+      resourceValues[row][column] = value;
+    }
+  }
 
-		// Read and set each row in this column.
-		for (var row = 1; row < numRows + 1; row++) {
-			var resource = resourceDataList[row - 1];
-			var value = resource[columnHeader];
-			resourceValues[row][column] = value;
-		}
-	}
-
-	// Remove any existing data in the sheet and set the new values.
-	resourceSheet.clear()
-	resourceRange.setValues(resourceValues); 
+  // Remove any existing data in the sheet and set the new values.
+  resourceSheet.clear();
+  resourceRange.setValues(resourceValues);
 }

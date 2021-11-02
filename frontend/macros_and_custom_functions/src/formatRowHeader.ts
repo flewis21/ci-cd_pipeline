@@ -9,10 +9,6 @@ function formatRowHeader() {
   // Apply each format to the top row: bold white text,
   // blue-green background, and a solid black border
   // around the cells
-  spreadsheet.getActiveRangeList()
-  	.setBackground('')
-  	.setFontColor('')
-  	.setFontWeight('')
-  	.setBorder();
+  spreadsheet.getActiveRangeList().setBackground('').setFontColor('').setFontWeight('').setBorder();
   spreadsheet.getActiveSheet().setFrozenRows(1);
 }

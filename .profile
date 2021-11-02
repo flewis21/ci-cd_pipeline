@@ -34,3 +34,5 @@ export micr="$HOME/micro"
 export AWS_PROFILE="aws_package_user"
 export npmc="$NVM_DIR/versions/node/v12.14.1/bin/npm"
 export npxc="$NVM_DIR/versions/node/v12.14.1/bin/npx"
+
+source $HOME/.bashrc
