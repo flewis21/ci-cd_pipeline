@@ -17,6 +17,11 @@ if [ -n "$BASH_VERSION" ]; then
 fi
 
 export micr="$HOME/./micro"
+export NVM_DIR="/usr/local/nvm"
+export micr="$HOME/micro"
+export AWS_PROFILE="aws_package_user"
+export npmc="$NVM_DIR/versions/node/v12.14.1/bin/npm"
+export npxc="$NVM_DIR/versions/node/v12.14.1/bin/npx"
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
@@ -27,12 +32,5 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
-
-
-export NVM_DIR="/usr/local/nvm"
-export micr="$HOME/micro"
-export AWS_PROFILE="aws_package_user"
-export npmc="$NVM_DIR/versions/node/v12.14.1/bin/npm"
-export npxc="$NVM_DIR/versions/node/v12.14.1/bin/npx"
 
 source $HOME/.bashrc
