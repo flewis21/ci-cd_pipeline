@@ -1,1 +1,27 @@
 <!Doctype HTML>
+<html>
+
+	<head>
+
+		<!-- use a title value given, or default tothe string 'untitled'. -->
+		<title><%= title || 'Untitled'%></title>
+		<meta Charset="UTF-8">
+		
+	</head>
+	<body>
+
+		<h1>This is my first EJS file.</h1>
+
+		<% var nums = numbers ? numbers: [1,2,3] %>
+
+		<!-- and thenuse it to render -->
+		<ul>
+		<% nums.forEach(function(n) { %>
+
+			<li><%= n %></li>
+
+		<% }) %>
+		</ul>
+	
+	</body>
+</html>
