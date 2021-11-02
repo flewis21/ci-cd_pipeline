@@ -7,6 +7,7 @@ ejs.renderFile(
 
   // Some data to use when rendering.
   {
+    layout: '../../frontend/views/pages/_base-layout.ejs',
     title: 'reading a file from ejs!',
     numbers: [7, 8, 9],
   },
