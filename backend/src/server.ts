@@ -5,7 +5,7 @@ const app = express();
 const port = process.env.PORT || 4000;
 const baseUrl = `http://localhost:${port}`;
 
-app.set('public_html', path.resolve(__dirname, '../../frontend/public/css'));
+app.set('public_html', path.resolve(__dirname, '../../frontend/public/'));
 app.set('views', path.resolve(__dirname, '../../frontend/views/pages/'));
 app.set('view engine', 'ejs');
 
