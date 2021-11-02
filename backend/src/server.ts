@@ -20,6 +20,7 @@ app.use('/1972/09/11', [
       res.status(200).render('index', {
         title: 'My Family Tree - Part I',
         short_description: 'Pro Bono Volunteer Agency',
+        myCss: '../frontend/public/css/style.css',
       });
     }
   },
