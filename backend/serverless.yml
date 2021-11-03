@@ -1,12 +1,9 @@
 service: backend
 package:
   patterns:
-    - '!../**/**'
-    - '!**/**'
-    - '../backend/package.json'
-    - '../backend/node_modules/'
+    - '!../backend/output/**'
+    - '!../backend/src/**'
     - '../backend/output/server.js'
-    - '../frontend/package.json'
     - '../frontend/views/**'
     - '../frontend/public/**'
 projectDir: ./
