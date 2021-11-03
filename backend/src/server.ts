@@ -4,8 +4,8 @@ import path from 'path';
 const app = express();
 const port = process.env.PORT || 4000;
 const baseUrl = `http://localhost:${port}`;
+const script_Src = path.resolve(__dirname, '../output/index.js');
 
-app.set('external_js', path.resolve(__dirname, '../output/index.js'));
 app.set('public_html', path.resolve(__dirname, '../../frontend/public/'));
 app.set('views', path.resolve(__dirname, '../../frontend/views/pages/'));
 app.set('view engine', 'ejs');
@@ -16,14 +16,13 @@ app.use('/1972/09/11', [
   express.static(app.get('public_html')),
 
   // If not found render main index, but only for / else next.
-  express.static('external_js'),
   express.static('public_html'),
   function (req: any, res: any, next: any) {
     if (req.url === '/') {
       res.status(200).render('index', {
         title: 'My Family Tree - Part I',
         short_description: 'Pro Bono Volunteer Agency',
-        myScript_src: 'external_js',
+        myScript_Src: script_Src,
       });
     }
   },
