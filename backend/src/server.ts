@@ -6,7 +6,7 @@ const port = process.env.PORT || 4000;
 const baseUrl = `http://localhost:${port}`;
 
 let script_Src = path.resolve(__dirname, '../output/index.js');
-myScript_Src = script_Src;
+var myScript_Src = script_Src;
 
 app.set('external_Js', path.resolve(__dirname, '../output/'));
 app.set('public_html', path.resolve(__dirname, '../../frontend/public/'));
