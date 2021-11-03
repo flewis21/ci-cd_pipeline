@@ -4,7 +4,9 @@ import path from 'path';
 const app = express();
 const port = process.env.PORT || 4000;
 const baseUrl = `http://localhost:${port}`;
-const script_Src = path.resolve(__dirname, '../output/index.js');
+
+let script_Src = path.resolve(__dirname, '../output/index.js');
+myScript_Src = script_Src;
 
 app.set('external_Js', path.resolve(__dirname, '../output/'));
 app.set('public_html', path.resolve(__dirname, '../../frontend/public/'));
