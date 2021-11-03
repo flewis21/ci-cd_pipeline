@@ -2,12 +2,13 @@ service: backend
 package:
   patterns:
     - '!../**/**'
-    - 'node_modules'
-    - '../frontend/node_modules/'
+    - '!**/**'
+    - 'node_modules/**'
     - 'output/server.js'
+    - '../frontend/node_modules/**'
     - '../frontend/views/**'
     - '../frontend/public/**'
-projectDir: ../
+projectDir: ./
 
 frameworkVersion: '2'
 variablesResolutionMode: 20210326
