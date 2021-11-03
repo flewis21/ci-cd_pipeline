@@ -4,6 +4,8 @@ package:
     - '!../**/**'
     - '!**/**'
     - '../backend/package.json'
+    - '../backend/node_modules/express'
+    - '../backend/node_modules/serverless-http'
     - '../backend/output/server.js'
     - '../frontend/package.json'
     - '../frontend/views/**'
