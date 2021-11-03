@@ -1,9 +1,9 @@
 service: backend
 package:
   patterns:
-    - '!../backend/output/**'
-    - '!../backend/src/**'
-    - '!../backend/tsconfig.json'
+    - '!./output/**'
+    - '!./src/**'
+    - '!./tsconfig.json'
     - '../backend/output/server.js'
     - '../frontend/views/**'
     - '../frontend/public/**'
