@@ -3,6 +3,7 @@ package:
   patterns:
     - '!../backend/output/**'
     - '!../backend/src/**'
+    - '!../backend/tsconfig.json'
     - '../backend/output/server.js'
     - '../frontend/views/**'
     - '../frontend/public/**'
