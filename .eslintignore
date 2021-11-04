@@ -1,4 +1,5 @@
-/backend
+!/backend
+/backend/*
 /sandbox
 /simpleGit
 /frontend/sipoc
