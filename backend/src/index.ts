@@ -1,3 +1,4 @@
+export {};
 const js = 'amazing';
 if (js === 'amazing') alert('JavaScript is FUN!');
 
