@@ -2,7 +2,7 @@ import express from 'express';
 import serverless from 'serverless-http';
 import path from 'path';
 const app = express();
-let port = process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 const baseUrl = `http://localhost:${port}`;
 
 app.set('public_html', path.resolve(__dirname, '../../frontend/public/'));
