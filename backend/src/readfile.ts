@@ -14,7 +14,7 @@ ejs.renderFile(
 
   // Callback with html, or an error.
   function (err, html) {
-    if (err) {
+    if (err != null) {
       // reject if an error happens.
       console.log(err);
     }
