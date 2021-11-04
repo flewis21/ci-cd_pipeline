@@ -66,7 +66,7 @@ function formatColumnHeader() {
     for (var col = 1; col <= columnNames[0].length; col++) {
       if (columnNames[0][col - 1] === colName) return col;
     }
-    //Returns -1 if a column named colName does not exist.
+    // Returns -1 if a column named colName does not exist.
     return -1;
   }
 }
