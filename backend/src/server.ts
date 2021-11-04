@@ -17,7 +17,7 @@ app.use('/1972/09/11', [
   // If not found render main index, but only for / else next.
   express.static('public_html'),
   function (req: any, res: any, next: any) {
-    if (req.url === '/') {
+    if (req.url === '/1972/09/11') {
       res.status(200).render('index', {
         title: 'My Family Tree - Part I',
         short_description: 'Pro Bono Volunteer Agency',
