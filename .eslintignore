@@ -4,5 +4,5 @@
 /frontend/macros_and_custom_functions
 !backend
 backend/*
-!backend/src/server.ts
+\!backend/src/server.ts
 !backend/output/server.js
