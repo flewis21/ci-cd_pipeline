@@ -1,7 +1,7 @@
-backend
-sandbox
-simpleGit
-frontend/sipoc
-frontend/macros_and_custom_functions
-!backend/src/server.ts
-!backend/output/server.js
+/backend
+/sandbox
+/simpleGit
+/frontend/sipoc
+/frontend/macros_and_custom_functions
+!/backend/src/server.ts
+!/backend/output/server.js
