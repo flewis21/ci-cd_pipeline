@@ -1,3 +1,7 @@
-/*
+/backend/src/*
 !/backend/src/server.ts
+/backend/output/*
 !/backend/output/server.js
+/sandbox
+/simpleGit
+/frontend
