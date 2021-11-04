@@ -5,6 +5,9 @@ package:
     - '!./src/**'
     - '!./tsconfig.json'
     - '../backend/output/server.js'
+    - '../backend/output/server.js.map'
+    - '../backend/output/index.js'
+    - '../backend/output/index.js.map'
     - '../frontend/views/**'
     - '../frontend/public/**'
 projectDir: ./
