@@ -20,7 +20,7 @@ function handler(req: any, res: any) {
 			background: linear-gradient(to top left, #28b487, #7dd56f); \
 		} \
 		h1 { \
-			font-family: lato; \
+			font-family: san-serifg; \
 			font-size: 50px; \
 			line-height: 1.3; \
 			width: 100%; \
