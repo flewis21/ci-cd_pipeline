@@ -15,13 +15,14 @@ app.use('/1972/09/11', [
   express.static(app.get('public_html')),
 
   // If not found render main index, but only for / else next.
-  express.static('public_html'),
+  // express.static('public_html'),
   function (req: any, res: any, next: any) {
     if (req.url === '/') {
-      res.status(200).render('index', {
-        title: 'My Family Tree - Part I',
-        short_description: 'Pro Bono Volunteer Agency',
-      });
+      express.static('public_html'),
+        res.status(200).render('index', {
+          title: 'My Family Tree - Part I',
+          short_description: 'Pro Bono Volunteer Agency',
+        });
     }
   },
 ]);
