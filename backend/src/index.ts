@@ -15,7 +15,6 @@ function handler(req: any, res: any) {
 	<style> \
 		body: { \
 			height: 100vh; \
-			display: flex; \
 			align-items: center; \
 			background: linear-gradient(to top left, #28b487, #7dd56f); \
 		} \
