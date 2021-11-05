@@ -11,7 +11,7 @@ function handler(req: any, res: any) {
 <html lang="en"> \
 <head> \
 	<meta charset="UTF-8"> \
-	<link rel="stylesheet" type="text/css" href="../../frontend/public/css/style.css"> \
+	<link rel="stylesheet" href="../../frontend/public/css/style.css"> \
 	<title>JavaScript Fundamentals</title> \
 </head> \
 <body> \
