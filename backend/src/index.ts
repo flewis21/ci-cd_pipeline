@@ -1,5 +1,5 @@
 // Load the http module to create an http server.
-import http from 'http';
+import * as http from 'http';
 
 const js = 'amazing';
 let firstname = 'Fabian';
