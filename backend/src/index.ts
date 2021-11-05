@@ -1,9 +1,6 @@
 // Load the http module to create an http server.
 import * as http from 'http';
 
-const js = 'amazing';
-let firstname = 'Fabian';
-
 // create a function to handle every HTTP request.
 function handler(req: any, res: any) {
 
@@ -44,5 +41,3 @@ http.createServer(handler).listen(3999, function (err?: any) {
     console.log('server running at http://127.0.0.1:3999/ or http://localhost:3999/');
   }
 });
-console.log(40 + 8 + 23 - 10);
-console.log('Fabian');
