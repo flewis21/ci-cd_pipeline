@@ -14,7 +14,19 @@ function handler(req: any, res: any) {
 	<title>JavaScript Fundamentals</title> \
 	<style> \
 		body: { \
-			textalign: center; \
+			height: 100vh; \
+			display: flex; \
+			align-items: center; \
+			background: linear-gradient(to top left, #28b487, #7dd56f); \
+		} \
+		h1 { \
+			font-family: lato; \
+			font-size: 50px; \
+			line-height: 1.3; \
+			width: 100%; \
+			padding: 30px; \
+			text-aligh: center; \
+			color: white; \		
 		} \
 	</style> \
 </head> \
