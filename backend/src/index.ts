@@ -12,7 +12,6 @@ function handler(req: any, res: any) {
 http.createServer(handler).listen(3999, function (err: any) {
   if (err) {
     console.log('Error starting http server ');
-    return;
   } else {
     console.log('server running at http://127.0.0.1:3999/ or http://localhost:3999/');
   }
