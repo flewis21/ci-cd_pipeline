@@ -14,7 +14,7 @@ function handler(req: any, res: any) {
 	<title>JavaScript Fundamentals</title> \
 </head> \
 <body> \
-	<h1>JavaScript Fundamentals - Part I</h1>
+	<h1>JavaScript Fundamentals - Part I</h1> \
 	<script> \
 		let js = "amazing"; \
 		console.log(40 + 8 + 23 - 10); \
