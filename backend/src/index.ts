@@ -24,7 +24,6 @@ function handler(req: any, res: any) {
 			font-size: 50px; \
 			line-height: 1.3; \
 			width: 100%; \
-			padding: 30px; \
 			text-aligh: center; \
 			color: white; \
 		} \
