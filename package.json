@@ -2,7 +2,7 @@
   "name": "ci-cd_pipeline",
   "version": "1.0.0",
   "description": "",
-  "main": "./backend/output/server",
+  "main": "./backend/output/index",
   "keywords": [
     "gas",
     "google-apps-script",
