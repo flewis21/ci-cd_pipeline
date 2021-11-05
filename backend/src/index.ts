@@ -12,6 +12,11 @@ function handler(req: any, res: any) {
 <head> \
 	<meta charset="UTF-8"> \
 	<title>JavaScript Fundamentals</title> \
+	<style> \
+		body: { \
+			textalign: center; \
+		} \
+	</style> \
 </head> \
 <body> \
 	<h1>JavaScript Fundamentals - Part I</h1> \
