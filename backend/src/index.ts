@@ -14,7 +14,7 @@ function handler(req: any, res: any) {
 	<title>JavaScript Fundamentals</title> \
 	<style> \
 		body: { \
-			height: 100vh; \
+			height: 100%; \
 			align-items: center; \
 			background:  #7dd56f; \
 		} \
