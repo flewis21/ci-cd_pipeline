@@ -2,14 +2,14 @@
 import http from 'http';
 
 // create a function to handle every HTTP request.
-function handler(req, res) {
+function handler(req: any, res: any) {
   res.setHeader('Content-Type', 'text/html');
   res.writeHead(200);
   res.end('<html><body><h1>Hello</h1></body></html>');
 }
 
 // Create a serever that invokes `handler` function upon receiving a request
-http.createServer(handler).listen(3999, function (err) {
+http.createServer(handler).listen(3999, function (err: any) {
   if (err) {
     console.log('Error starting http server ');
   } else {
