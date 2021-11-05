@@ -10,14 +10,14 @@ app.set('views', path.resolve(__dirname, '../../frontend/views/pages/'));
 app.set('view engine', 'ejs');
 
 // One main middleware for / using express.static and res.render.
-app.use('/', [
+app.use('/1972/09/11', [
   // Use express.static first to look for a static resource.
   express.static(app.get('public_html')),
 
   // If not found render main index, but only for / else next.
   express.static('public_html'),
   function (req: any, res: any, next: any) {
-    if (req.url === '/1972/09/11') {
+    if (req.url === '/') {
       res.status(200).render('index', {
         title: 'My Family Tree - Part I',
         short_description: 'Pro Bono Volunteer Agency',
