@@ -16,7 +16,7 @@ function handler(req: any, res: any) {
 		body: { \
 			height: 100vh; \
 			align-items: center; \
-			background: linear-gradient(to top left, #28b487, #7dd56f); \
+			background:  #7dd56f; \
 		} \
 		h1 { \
 			font-family: san-serifg; \
