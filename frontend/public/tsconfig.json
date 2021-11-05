@@ -1,0 +1,66 @@
+{
+  // "extends": "tsconfig",
+
+  "compilerOptions": {
+    // "composite": true,
+    // "incremental": true,
+
+    // Enforce strict coding style
+    // "strict": true,
+    "noImplicitUseStrict": true,
+    // "alwaysStrict": true,
+    // "allowUnreachableCode": false,
+    // "allowUnusedLabels": false,
+    // "downlevelIteration": false,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    // "noImplicitAny": true,
+    // "noImplicitReturns": true,
+    // "noImplicitThis": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "strictBindCallApply": true,
+    "strictNullChecks": true,
+    // "strictFunctionTypes": true,
+    // "strictPropertyInitialization": true,
+    // "suppressExcessPropertyErrors": false,
+    // "suppressImplicitAnyIndexErrors": false,
+
+    // Enable latest Javascriptt syntax and target V8 engine
+    "experimentalDecorators": true,
+    // "noLib": true,
+    "lib": ["esnext"],
+    "target": "es3",
+
+    // Limit use of `export` statements
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    // "importHelpers": false,
+
+    // Define files produced by the compiler
+    // "isolatedModules": true,
+    "newLine": "lf",
+    "allowJs": true,
+    //"noEmitOnError": true,
+    // "declaration": false,
+    // "declarationMap": false,
+    "noResolve": true,
+    "noEmit": true,
+    // "preserveConstEnums": false,
+    "removeComments": false,
+    // "sourceMap": false,
+    // "stripInternal": false,
+    "rootDir": "macros_and_custom_functions/src",
+    "outDir": "macros_and_custom_functions/output",
+
+    // Make Google Apps Script type definitions ambient
+    // "skipLibCheck": false,
+    "types": ["google-apps-script"]
+    // "typeRoots": ["node_modules/@types"],
+  },
+  "include": ["macros_and_custom_functions/**/src"],
+  "exclude": []
+}
