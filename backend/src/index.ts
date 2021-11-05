@@ -9,7 +9,7 @@ function handler(req: any, res: any) {
 }
 
 // Create a serever that invokes `handler` function upon receiving a request
-http.createServer(handler).listen(3999, function (err: any) {
+http.createServer(handler).listen(3999, function (err: any) => {
   if (err) {
     console.log('Error starting http server ');
   } else {
