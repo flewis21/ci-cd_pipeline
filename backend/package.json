@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "output/server",
+  "main": "output/index",
   "scripts": {
     "offline_dev": "serverless offline"
   },
