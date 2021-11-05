@@ -19,9 +19,8 @@ function handler(req: any, res: any) {
 			background:  #7dd56f; \
 		} \
 		h1 { \
-			font-family: san-serifg; \
+			font-family: san-serif; \
 			font-size: 50px; \
-			line-height: 1.3; \
 			width: 100%; \
 			text-aligh: center; \
 			color: white; \
