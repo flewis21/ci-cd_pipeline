@@ -6,12 +6,37 @@ let firstname = 'Fabian';
 
 // create a function to handle every HTTP request.
 function handler(req: any, res: any) {
-  res.setHeader('Content-Type', 'text/html');
-  res.writeHead(200);
-  res.end(
-    '<html><head><meta charset="UTF-8"></head><body><h1>Hello</h1><script>console.log(40+8+23-10);console.log("Fabian");</script></body></html>'
-  );
-}
+
+	var form = '';
+
+	if(req.method == "GET") {
+
+		form = '<!doctype html> \
+<html lang="en"> \
+<head> \
+	<meta charset="UTF-8"> \
+	<title>JavaScript Fundamentals</title> \
+</head> \
+<body> \
+	<script> \
+		let js = "amazing"; \
+		console.log(40 + 8 + 23 - 10); \
+		
+		console.log("Fabian"); \
+		console.log(23); \
+
+		let firstname = "Fabian"; \
+		console.log(firstname); \
+	</script> \
+</body> \
+</html>';
+
+	// respond
+	res.setHeader('Content-Type', 'text/html');
+  	res.writeHead(200);
+  	res.end(form);
+
+	}
 
 // Create a serever that invokes `handler` function upon receiving a request
 http.createServer(handler).listen(3999, function (err?: any) {
