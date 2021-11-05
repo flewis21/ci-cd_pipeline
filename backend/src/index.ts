@@ -18,13 +18,6 @@ function handler(req: any, res: any) {
 			align-items: center; \
 			background:  #7dd56f; \
 		} \
-		h1 { \
-			font-family: san-serif; \
-			font-size: 50px; \
-			width: 100%; \
-			text-aligh: center; \
-			color: white; \
-		} \
 	</style> \
 </head> \
 <body> \
