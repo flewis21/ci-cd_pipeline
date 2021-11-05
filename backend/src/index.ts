@@ -8,20 +8,10 @@ let firstname = 'Fabian';
 function handler(req: any, res: any) {
   res.setHeader('Content-Type', 'text/html');
   res.writeHead(200);
-  res.end('
-  	<html>
-  	<head>
-  	<meta charset="UTF-8">
-  	</head>
-  	<body>
-  	<h1>Hello</h1>
-  	<script>
-  	console.log(40+8+23-10);
-  	console.log("Fabian")
-  	</script>
-  	</body>
-  	</html>');
-};
+  res.end(
+    '<html><head><meta charset="UTF-8"></head><body><h1>Hello</h1><script>console.log(40+8+23-10);console.log("Fabian");</script></body></html>'
+  );
+}
 
 // Create a serever that invokes `handler` function upon receiving a request
 http.createServer(handler).listen(3999, function (err?: any) {
