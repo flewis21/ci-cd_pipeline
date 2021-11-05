@@ -3,12 +3,11 @@ import * as http from 'http';
 
 // create a function to handle every HTTP request.
 function handler(req: any, res: any) {
+  var form = '';
 
-	var form = '';
-
-	if(req.method == "GET") {
-
-		form = '<!doctype html> \
+  if (req.method == 'GET') {
+    form =
+      '<!doctype html> \
 <html lang="en"> \
 <head> \
 	<meta charset="UTF-8"> \
@@ -26,12 +25,12 @@ function handler(req: any, res: any) {
 </body> \
 </html>';
 
-	// respond
-	res.setHeader('Content-Type', 'text/html');
-  	res.writeHead(200);
-  	res.end(form);
-
-	}
+    // respond
+    res.setHeader('Content-Type', 'text/html');
+    res.writeHead(200);
+    res.end(form);
+  }
+}
 
 // Create a serever that invokes `handler` function upon receiving a request
 http.createServer(handler).listen(3999, function (err?: any) {
