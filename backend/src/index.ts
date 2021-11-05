@@ -26,7 +26,7 @@ function handler(req: any, res: any) {
 			width: 100%; \
 			padding: 30px; \
 			text-aligh: center; \
-			color: white; \		
+			color: white; \
 		} \
 	</style> \
 </head> \
