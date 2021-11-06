@@ -2,7 +2,7 @@
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
-    "rootDir": "./src",
+    "rootDir": "../../backend/src",
 
     "experimentalDecorators": true,
     "isolatedModules": true,
