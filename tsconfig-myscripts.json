@@ -1,0 +1,11 @@
+{
+  "extends": "./frontend/public/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./frontend/public/output/",
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "skipDefaultLibCheck": true
+  },
+  "files": [],
+  "exclude": ["node_modules", "./frontend/public/output/"]
+}
