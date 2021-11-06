@@ -7,5 +7,5 @@
     "skipDefaultLibCheck": true
   },
   "files": [],
-  "exclude": ["node_modules", "./backend/output/"]
+  "exclude": ["node_modules", "./frontend/public/output/"]
 }
