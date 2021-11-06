@@ -1,7 +1,7 @@
 {
-  "extends": "./backend/tsconfig.json",
+  "extends": "./frontend/public/tsconfig.json",
   "compilerOptions": {
-    "outDir": "./backend/output/",
+    "outDir": "./frontend/public/output/",
     "strict": true,
     "isolatedModules": true,
     "esModuleInterop": true,
@@ -12,5 +12,5 @@
     "allowJs": true
   },
   "files": [],
-  "exclude": ["node_modules", "./backend/output/"]
+  "exclude": ["node_modules", "./frontend/public/output/"]
 }
