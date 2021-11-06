@@ -1,6 +1,6 @@
-interface myInterface {
-
-let js = 'amazing';
+export function let(js: string) {
+  js = 'amazing';
+}
 
 console.log(40 + 8 + 23 - 10);
 
@@ -11,11 +11,3 @@ console.log(23);
 let firstname = 'Fabian';
 
 console.log(firstname);
-
-};
-
-export type {
-
-	myInterface 
-
-}
