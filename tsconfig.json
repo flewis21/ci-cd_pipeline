@@ -6,6 +6,7 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
     "skipDefaultLibCheck": true,
     "checkJs": true,
     "allowJs": true
