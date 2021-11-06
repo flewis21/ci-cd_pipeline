@@ -7,8 +7,6 @@
     "experimentalDecorators": true,
     "isolatedModules": true,
     // "noImplicitUseStrict": true,
-    "strict": true,
-    "strictNullChecks": true,
     // "alwaysStrict": true,
     // "noImplicitAny": true,
     // "noImplicitReturns": true,
@@ -27,17 +25,14 @@
     // "skipLibCheck": true,
     "module": "commonjs",
     // "noLib": false,
-    "allowJs": true,
-    "checkJs": true,
     //"lib": ["esnext"],
     // "allowNonTsExtentions": true,
     //"noResolve": true,
     "moduleResolution": "node",
-    "esModuleInterop": true,
-    "target": "ESNext",
+    "target": "ES3",
     "types": [],
 
-    "strictNullChecks": true,
+    // "strictNullChecks": true,
     // "suppressExcessPropertyErrors": true,
     // "suppressImplicitAnyIndexErrors": true,
 
@@ -48,6 +43,6 @@
     "pretty": true,
     "sourceMap": true
   },
-  "include": ["**/*.ts"],
+  "include": ["../../backend/src/**/*.ts"],
   "exclude": ["node_modules"]
 }
