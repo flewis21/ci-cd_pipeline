@@ -5,6 +5,7 @@
     "strict": true,
     "isolatedModules": true,
     "esModuleInterop": true,
+    "importHelpers": true,
     "skipDefaultLibCheck": true,
     "checkJs": true,
     "allowJs": true
