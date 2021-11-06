@@ -29,7 +29,7 @@
     // "allowNonTsExtentions": true,
     //"noResolve": true,
     "moduleResolution": "node",
-    "target": "ES3",
+    "target": "ES6",
     "types": [],
 
     // "strictNullChecks": true,
