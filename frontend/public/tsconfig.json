@@ -43,6 +43,6 @@
     "pretty": true,
     "sourceMap": true
   },
-  "include": ["**/.js", "../../backend/src/**/*.ts"],
+  "include": ["**/*", "../../backend/src/**/*.ts"],
   "exclude": ["node_modules"]
 }
