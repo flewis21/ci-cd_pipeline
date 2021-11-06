@@ -2,6 +2,7 @@
   "extends": "./frontend/public/tsconfig.json",
   "compilerOptions": {
     "outDir": "./frontend/public/output/",
+    "strict": true,
     "isolatedModules": true,
     "esModuleInterop": true,
     "skipDefaultLibCheck": true,
