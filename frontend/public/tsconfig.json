@@ -23,7 +23,7 @@
     // "preserveConstEnums": true,
     // "removeComments": true,
     // "skipLibCheck": true,
-    "module": "commonjs",
+    "module": "umd",
     // "noLib": false,
     //"lib": ["esnext"],
     // "allowNonTsExtentions": true,
