@@ -1,4 +1,4 @@
-export {};
+export => {};
 
 let js = 'amazing';
 
