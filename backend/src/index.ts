@@ -1,6 +1,4 @@
-export function let(js: string) {
-  js = 'amazing';
-}
+export const js = 'amazing';
 
 console.log(40 + 8 + 23 - 10);
 
