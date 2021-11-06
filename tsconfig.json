@@ -4,7 +4,8 @@
     "outDir": "./backend/output/",
     "isolatedModules": true,
     "esModuleInterop": true,
-    "skipDefaultLibCheck": true
+    "skipDefaultLibCheck": true,
+    "checkJs": true
   },
   "files": [],
   "exclude": ["node_modules", "./backend/output/"]
