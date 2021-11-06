@@ -29,7 +29,7 @@
     //"noResolve": true,
     "module": "none",
     "moduleResolution": "node",
-    "target": "ES5",
+    "target": "esnext",
     "types": [],
 
     // "strictNullChecks": true,
