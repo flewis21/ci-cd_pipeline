@@ -5,7 +5,8 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "skipDefaultLibCheck": true,
-    "checkJs": true
+    "checkJs": true,
+    "allowJs": true
   },
   "files": [],
   "exclude": ["node_modules", "./backend/output/"]
