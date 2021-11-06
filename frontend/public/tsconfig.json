@@ -27,7 +27,7 @@
     //"lib": ["esnext"],
     // "allowNonTsExtentions": true,
     //"noResolve": true,
-    "module": "none",
+    "module": "configJS",
     "moduleResolution": "node",
     "target": "esnext",
     "types": [],
