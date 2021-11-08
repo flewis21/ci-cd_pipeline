@@ -11,7 +11,7 @@
     //"path": "."
     //}
   ],
-  "include": ["./"],
+  "include": ["../"],
   "compilerOptions": {
     "composite": true,
     //"outDir": "./output",
