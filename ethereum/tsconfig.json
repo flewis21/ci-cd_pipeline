@@ -1,9 +1,9 @@
 {
   "references": [
     // reference points
-    {
-      "path": "../backend"
-    }
+    //{
+    //"path": "../backend"
+    //}
     //{
     //"path": "../"
     //}
