@@ -42,5 +42,6 @@
     "newLine": "lf",
     "pretty": true,
     "sourceMap": true
-  }
+  },
+  "include": ["node_modules"]
 }
