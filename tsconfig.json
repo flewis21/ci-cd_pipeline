@@ -21,5 +21,5 @@
   },
   "files": ["./backend/src/solc_example.ts"],
   "include": ["./ethereum/**/*"],
-  "exclude": ["./ethereum/output/"]
+  "exclude": ["//./ethereum/output/"]
 }
