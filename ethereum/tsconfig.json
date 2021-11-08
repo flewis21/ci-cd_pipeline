@@ -1,8 +1,14 @@
 {
   "references": [
-    // reference point
+    // reference points
     {
       "path": "../backend"
+    },
+    {
+      "path": "../"
+    },
+    {
+      "path": "."
     }
   ],
   "compilerOptions": {
