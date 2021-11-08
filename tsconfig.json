@@ -13,6 +13,6 @@
     "allowJs": true
   },
   "files": [],
-  "include": ["./ethereum/node_modules/", "./backend/src/solc_example.ts"],
+  "include": ["node_modules", "./backend/src/solc_example.ts"],
   "exclude": ["./ethereum/output/"]
 }
