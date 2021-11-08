@@ -12,6 +12,7 @@
     "allowJs": true
   },
   "files": [],
+  "include": ["./backend/src/**/*.ts"],
   "exclude": ["node_modules", "./ethereum/output/"],
   "references": [
     // Project
