@@ -26,6 +26,6 @@
     "allowJs": true
   },
   "files": [],
-  "include": ["./backend/src/**/*", "./etherium/"],
+  "include": ["./backend/src/**/*", "./etherium/**"],
   "exclude": ["./ethereum/output/"]
 }
