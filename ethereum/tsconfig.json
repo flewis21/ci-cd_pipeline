@@ -1,0 +1,14 @@
+{
+  "files": [],
+  "include": [],
+  "exclude": [],
+  "compilerOptions": {
+    "outDir": "./output"
+  },
+  "references": [
+    // Source files
+    {
+      "path": "../backend"
+    }
+  ]
+}
