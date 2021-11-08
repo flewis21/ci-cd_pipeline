@@ -2,7 +2,7 @@
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
-    "rootDir": "../../backend/src",
+    "rootDir": "../../backend/src/",
 
     "experimentalDecorators": true,
     "isolatedModules": true,
@@ -42,7 +42,5 @@
     "newLine": "lf",
     "pretty": true,
     "sourceMap": true
-  },
-  "include": ["./output/**/*", "../../backend/src/**/*.ts"],
-  "exclude": ["node_modules"]
+  }
 }

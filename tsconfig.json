@@ -12,12 +12,12 @@
     "allowJs": true
   },
   "files": [],
-  "include": ["./backend/src/**/*.ts"],
+  "include": ["./backend/src/solc_example.ts"],
   "exclude": ["node_modules", "./ethereum/output/"],
   "references": [
     // Project
     {
-      "path": "./backend"
+      "path": "./ethereum"
     }
   ]
 }
