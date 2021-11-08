@@ -11,6 +11,7 @@
     //"path": "./backend"
     //}
   ],
+  "files": [],
   "extends": "./ethereum/tsconfig.json",
   "compilerOptions": {
     "outDir": "./ethereum/output/",
