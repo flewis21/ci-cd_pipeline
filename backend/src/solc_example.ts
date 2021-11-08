@@ -1,4 +1,4 @@
-import * as solc from '../../ethereum/solc';
+import * as solc from 'solc';
 
 let solc_version = 'v0.4.16+commit.d7661dd9';
 
