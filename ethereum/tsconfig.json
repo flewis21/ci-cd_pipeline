@@ -13,11 +13,11 @@
   ],
   "files": [],
   "compilerOptions": {
-    "composite": true,
-    "outDir": "./output",
+    "composite": true
+    // "outDir": "./output",
 
-    "experimentalDecorators": true,
-    "isolatedModules": true,
+    //"experimentalDecorators": true,
+    //"isolatedModules": true,
     // "noImplicitUseStrict": true,
     // "alwaysStrict": true,
     // "noImplicitAny": true,
@@ -26,7 +26,7 @@
     // "strictFunctionTypes": true,
     // "strictPropertyInitialization": true,
 
-    "noEmitOnError": true,
+    //"noEmitOnError": true,
     // "noErrorTruncation": true,
     //"noFallthroughCasesInSwitch": true,
     //"noImplicitThis": true,
@@ -39,20 +39,20 @@
     //"lib": ["esnext"],
     // "allowNonTsExtentions": true,
     //"noResolve": true,
-    "module": "esnext",
-    "moduleResolution": "node",
-    "target": "esnext",
-    "types": [],
+    //"module": "esnext",
+    //"moduleResolution": "node",
+    //"target": "esnext",
+    //"types": [],
 
     // "strictNullChecks": true,
     // "suppressExcessPropertyErrors": true,
     // "suppressImplicitAnyIndexErrors": true,
 
-    "declaration": true,
-    "declarationDir": "./output/types",
-    "declarationMap": true,
-    "newLine": "lf",
-    "pretty": true,
-    "sourceMap": true
+    //"declaration": true,
+    //"declarationDir": "./output/types",
+    //"declarationMap": true,
+    //"newLine": "lf",
+    //"pretty": true,
+    //"sourceMap": true
   }
 }
