@@ -11,7 +11,7 @@
     //"path": "."
     //}
   ],
-  "extends": "../backend",
+  "extends": "../backend/tsconfig",
   "include": ["./**/*"],
   "compilerOptions": {
     "composite": true,
