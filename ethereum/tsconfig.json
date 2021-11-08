@@ -13,9 +13,8 @@
   ],
   "files": [],
   "compilerOptions": {
-    "composite": true
+    //"composite": true
     // "outDir": "./output",
-
     //"experimentalDecorators": true,
     //"isolatedModules": true,
     // "noImplicitUseStrict": true,
@@ -25,7 +24,6 @@
     // "strictBindCallApply": true,
     // "strictFunctionTypes": true,
     // "strictPropertyInitialization": true,
-
     //"noEmitOnError": true,
     // "noErrorTruncation": true,
     //"noFallthroughCasesInSwitch": true,
@@ -43,11 +41,9 @@
     //"moduleResolution": "node",
     //"target": "esnext",
     //"types": [],
-
     // "strictNullChecks": true,
     // "suppressExcessPropertyErrors": true,
     // "suppressImplicitAnyIndexErrors": true,
-
     //"declaration": true,
     //"declarationDir": "./output/types",
     //"declarationMap": true,
