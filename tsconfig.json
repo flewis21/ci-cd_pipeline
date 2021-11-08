@@ -12,7 +12,7 @@
     "checkJs": true,
     "allowJs": true
   },
-  "files": ["./backend/src/sol*.ts"],
-  //"include": ["ethereum/node_modules"],
+  "files": [],
+  //"include": ["./backend/src/sol*.ts", "ethereum/node_modules"],
   "exclude": ["./ethereum/output/"]
 }
