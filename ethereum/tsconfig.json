@@ -1,4 +1,6 @@
 {
+  //"files": [],
+  "include": ["node_modules"],
   "references": [
     // Build this
     {
