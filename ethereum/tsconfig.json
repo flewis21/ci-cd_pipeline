@@ -1,8 +1,14 @@
 {
+  "references": [
+    // Build this
+    {
+      "path": "../"
+    }
+  ],
   "compilerOptions": {
     "composite": true,
-    "outDir": "./output",
-    "rootDir": "../../backend/src/",
+    //"outDir": "./output",
+    //"rootDir": "../../backend/src/",
 
     "experimentalDecorators": true,
     "isolatedModules": true,
