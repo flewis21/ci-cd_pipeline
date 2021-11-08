@@ -14,5 +14,15 @@
   },
   "files": [],
   "include": ["./backend/src/sol*.ts"],
-  "exclude": ["./ethereum/output/"]
+  "exclude": ["./ethereum/output/"],
+  "references": [
+    // All source files.
+    {
+      "path": "./backend"
+    },
+    // Ethereum
+    {
+      "path": "./ethereum"
+    }
+  ]
 }
