@@ -11,6 +11,7 @@
       "path": "../ethereum"
     }
   ],
+  "files": [],
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
