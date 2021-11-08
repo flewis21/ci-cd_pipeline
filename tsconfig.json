@@ -1,9 +1,9 @@
 {
   "references": [
     // reference points
-    {
-      "path": "."
-    },
+    //{
+    //"path": "."
+    //},
     {
       "path": "./ethereum"
     },
