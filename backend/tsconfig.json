@@ -6,10 +6,10 @@
     // },
     {
       "path": "../"
-    },
-    {
-      "path": "../ethereum"
     }
+    //{
+    //"path": "//../ethereum"
+    //}
   ],
   "files": [],
   "compilerOptions": {
