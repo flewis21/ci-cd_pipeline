@@ -11,7 +11,7 @@
     //"path": "."
     //}
   ],
-  "include": ["./**/*"],
+  "include": ["./**/*/dfgji0t-54869-758-"],
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
