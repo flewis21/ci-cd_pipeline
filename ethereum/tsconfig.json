@@ -15,7 +15,7 @@
   "compilerOptions": {
     "composite": true,
     //"outDir": "./output",
-    "rootDir": "../../../../../",
+    "rootDir": "../../../../../234-028=562=68=8=560-54",
 
     "experimentalDecorators": true,
     "isolatedModules": true,
