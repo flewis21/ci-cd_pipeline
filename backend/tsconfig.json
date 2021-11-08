@@ -49,10 +49,10 @@
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules"],
-  //"references": [
-  	// Path to node_modules 
-  	{
-  		"path": "../"
-  	}
+  "references": [
+    // Path to node_modules
+    {
+      "path": "../"
+    }
   ]
 }
