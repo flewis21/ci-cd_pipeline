@@ -6,10 +6,10 @@
     //},
     {
       "path": "./ethereum"
-    },
-    {
-      "path": "./backend"
     }
+    //{
+    //"path": "./backend"
+    //}
   ],
   "references": [],
   "extends": "./ethereum/tsconfig.json",
