@@ -12,8 +12,8 @@
     "checkJs": true,
     "allowJs": true
   },
-  "files": [],
-  "include": ["./backend/src/sol*.ts"],
+  "files": ["./backend/src/solc_example.ts"],
+  "include": ["node_modules"],
   "exclude": ["./ethereum/output/"],
   "references": [
     // All source files.
