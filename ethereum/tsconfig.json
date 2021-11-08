@@ -11,10 +11,11 @@
       "path": "."
     }
   ],
+  "include": ["."],
   "compilerOptions": {
     "composite": true,
     //"outDir": "./output",
-    "rootDir": ".",
+    //"rootDir": ".",
 
     "experimentalDecorators": true,
     "isolatedModules": true,
