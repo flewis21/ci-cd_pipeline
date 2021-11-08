@@ -1,7 +1,7 @@
 {
-  "extends": "./ethereum/tsconfig.json",
+  "extends": "./backend/tsconfig.json",
   "compilerOptions": {
-    "outDir": "./ethereum/output/",
+    "outDir": "./backend/output/",
     "strict": true,
     "isolatedModules": true,
     "esModuleInterop": true,
@@ -12,5 +12,5 @@
     "allowJs": true
   },
   "files": [],
-  "exclude": ["node_modules", "./ethereum/output/"]
+  "exclude": ["node_modules", "./backend/output/"]
 }
