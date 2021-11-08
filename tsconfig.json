@@ -2,7 +2,7 @@
   "references": [
     // reference point
     {
-      "path": "./ethereum"
+      "path": "."
     }
   ],
   "extends": "./ethereum/tsconfig.json",
