@@ -2,7 +2,7 @@
   "references": [
     // reference points
     {
-      "path": "./backend"
+      "path": "./ethereum"
     }
   ],
   "extends": "./ethereum/tsconfig.json",
@@ -20,6 +20,6 @@
     "allowJs": true
   },
   "files": ["./backend/src/solc_example.ts"],
-  "include": ["//./ethereum/**/*"],
-  "exclude": ["//./ethereum/output/"]
+  "include": [],
+  "exclude": []
 }
