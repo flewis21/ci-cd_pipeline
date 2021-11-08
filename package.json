@@ -3,13 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "./backend/output/server",
-  "keywords": [
-    "gas",
-    "google-apps-script",
-    "ts",
-    "typescript",
-    "v8"
-  ],
+  "keywords": [],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "type": "tsc -w",
@@ -33,7 +27,6 @@
     "type": "git",
     "url": "git+https://github.com/flewis21/ci-cd_pipeline.git"
   },
-  "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
