@@ -1,10 +1,4 @@
 {
-  "references": [
-    // Uses backend
-    {
-      "path": "../backend"
-    }
-  ],
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
