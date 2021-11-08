@@ -2,7 +2,6 @@
   "compilerOptions": {
     "composite": true,
     //"outDir": "./output",
-    "rootDir": ".",
 
     "experimentalDecorators": true,
     "isolatedModules": true,
