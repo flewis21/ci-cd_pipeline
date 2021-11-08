@@ -2,7 +2,7 @@
   "extends": "./ethereum/tsconfig.json",
   "compilerOptions": {
     "outDir": "./ethereum/output/",
-    "rootDir": "./backend",
+    "rootDir": "./backend/src",
     "strict": true,
     "isolatedModules": true,
     "esModuleInterop": true,
