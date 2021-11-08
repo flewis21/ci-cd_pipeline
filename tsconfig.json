@@ -1,7 +1,7 @@
 {
-  "extends": "./backend/tsconfig.json",
+  "extends": "./ethereum/tsconfig.json",
   "compilerOptions": {
-    "outDir": "./backend/output/",
+    "outDir": "./ethereum/output/",
     "strict": true,
     "isolatedModules": true,
     "esModuleInterop": true,
@@ -12,5 +12,6 @@
     "allowJs": true
   },
   "files": [],
-  "exclude": ["node_modules", "./backend/output/"]
+  "exclude": ["node_modules", "./ethereum/output/"],
+  "references": ["./backend/src/solc_example.ts"]
 }
