@@ -2,7 +2,7 @@
   "extends": "./ethereum/tsconfig.json",
   "compilerOptions": {
     "outDir": "./ethereum/output/",
-    "rootDir": "./backend/src/",
+    "rootDir": ".",
     "strict": true,
     "isolatedModules": true,
     "esModuleInterop": true,
@@ -13,16 +13,6 @@
     "allowJs": true
   },
   "files": ["./backend/src/solc_example.ts"],
-  "include": [],
-  "exclude": ["./ethereum/output/"],
-  "references": [
-    // All source files.
-    {
-      "path": "./backend"
-    },
-    // Ethereum
-    {
-      "path": "./ethereum"
-    }
-  ]
+  //"include": [],
+  "exclude": ["./ethereum/output/"]
 }
