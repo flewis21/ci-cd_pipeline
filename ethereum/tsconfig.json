@@ -1,4 +1,10 @@
 {
+  "references": [
+ 	// Uses backend 
+ 	{
+ 		"path": "../backend"
+ 	}
+ ]
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
@@ -42,6 +48,5 @@
     "newLine": "lf",
     "pretty": true,
     "sourceMap": true
-  },
-  "include": ["node_modules"]
+  }
 }
