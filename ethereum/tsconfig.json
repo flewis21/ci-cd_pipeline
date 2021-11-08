@@ -11,7 +11,7 @@
     //"path": "."
     //}
   ],
-  //"include": ["../backend"],
+  //"include": ["./"],
   "compilerOptions": {
     "composite": true,
     //"outDir": "./output",
