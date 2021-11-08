@@ -13,5 +13,11 @@
   },
   "files": [],
   "include": ["./backend/src/solc_example.ts"],
-  "exclude": ["node_modules", "./ethereum/output/"]
+  "exclude": ["node_modules", "./ethereum/output/"],
+  "references": [
+    // Has a dependency in backend.
+    {
+      "path": "./backend"
+    }
+  ]
 }
