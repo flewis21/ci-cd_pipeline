@@ -42,12 +42,12 @@
     "newLine": "lf",
     "pretty": true,
     "sourceMap": true
-  }
+  },
 
   "references": [
-  	// depends on source files in backend
-  	{
-  		"path": "../backend"
-  	}
+    // depends on source files in backend
+    {
+      "path": "../backend"
+    }
   ]
 }
