@@ -1,15 +1,9 @@
 {
   "references": [
     // reference points
-    // {
-    //"path": "."
-    // },
     {
       "path": "../"
     }
-    //{
-    //"path": "//../ethereum"
-    //}
   ],
   "files": [],
   "compilerOptions": {
