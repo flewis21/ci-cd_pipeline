@@ -11,11 +11,10 @@
     //"path": "./backend"
     //}
   ],
-  "files": [],
   "extends": "./ethereum/tsconfig.json",
   "compilerOptions": {
     "outDir": "./ethereum/output/",
-    "rootDir": "./backend/src",
+    "rootDir": ".",
     "strict": true,
     "isolatedModules": true,
     "esModuleInterop": true,
@@ -27,5 +26,5 @@
   },
   "files": [],
   "include": ["./backend/src/**/*"],
-  "exclude": ["./ethereum/output/", "./ethereum/node_modules"]
+  "exclude": ["./ethereum/output/", "node_modules"]
 }
