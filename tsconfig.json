@@ -17,7 +17,7 @@
   "references": [
     // Has a dependency in backend.
     {
-      "path": "./backend"
+      "path": "./tsconfig-express.json"
     }
   ]
 }
