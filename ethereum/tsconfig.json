@@ -11,11 +11,10 @@
     //"path": "."
     //}
   ],
-  "extends": "../backend/tsconfig",
   "include": ["./**/*"],
   "compilerOptions": {
     "composite": true,
-    //"outDir": "./output",
+    "outDir": "./output",
 
     "experimentalDecorators": true,
     "isolatedModules": true,
