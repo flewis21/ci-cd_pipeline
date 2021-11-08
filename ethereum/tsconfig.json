@@ -7,7 +7,7 @@
   ],
   "files": [],
   "compilerOptions": {
-    "composite": true.
+    "composite": true,
     "rootDir": "."
     // "outDir": "./output",
     //"experimentalDecorators": true,
