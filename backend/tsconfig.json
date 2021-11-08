@@ -47,12 +47,6 @@
     "pretty": true,
     "sourceMap": true
   },
-  "include": ["**/*.ts", "../ethereum/node_modules"],
-  "exclude": ["node_modules"],
-  "references": [
-    // Build Solidity from here.
-    {
-      "path": "../ethereum"
-    }
-  ]
+  "include": ["**/*.ts"],
+  "exclude": ["node_modules"]
 }
