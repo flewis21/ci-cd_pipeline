@@ -3,6 +3,10 @@
     // Build this
     {
       "path": "../"
+    },
+    // All source files.
+    {
+      "path": "../backend"
     }
   ],
   "compilerOptions": {
