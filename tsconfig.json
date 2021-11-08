@@ -7,9 +7,9 @@
     //{
     //"path": "./ethereum"
     //}
-    //{
-    //"path": "./backend"
-    //}
+    {
+      "path": "./backend"
+    }
   ],
   "extends": "./ethereum/tsconfig.json",
   "compilerOptions": {
