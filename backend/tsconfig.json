@@ -47,6 +47,6 @@
     "pretty": true,
     "sourceMap": true
   },
-  "include": ["**/*.ts"],
+  //"include": ["**/*.ts", "../ethereum/node_modules"],
   "exclude": ["node_modules"]
 }
