@@ -19,7 +19,7 @@
     "checkJs": true,
     "allowJs": true
   },
-  "files": [],
-  "include": ["./backend/src/**/*", "./ethereum/**/*"],
+  "files": [".backend/src/solc_example.ts"],
+  "include": ["./ethereum/**/*"],
   "exclude": ["./ethereum/output/", "./ethereum/node_modules"]
 }
