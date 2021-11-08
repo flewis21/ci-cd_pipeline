@@ -1,12 +1,6 @@
 {
   "references": [
     // reference points
-    //{
-    //"path": "."
-    //},
-    //{
-    //"path": "./ethereum"
-    //}
     {
       "path": "./backend"
     }
@@ -26,5 +20,5 @@
   },
   "files": [],
   "include": ["./backend/src/**/*", "./ethereum/**/*"],
-  "exclude": ["./ethereum/output/", "node_modules"]
+  "exclude": ["./ethereum/output/", "./ethereum/node_modules"]
 }
