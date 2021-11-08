@@ -1,6 +1,6 @@
 {
-  "files": ["../backend/src/solc-example.ts"],
-  "include": ["node_modules"],
+  //"files": ["../backend/src/solc-example.ts"],
+  //"include": ["node_modules"],
   "exclude": [],
   "compilerOptions": {
     "outDir": "./output"
