@@ -1,4 +1,10 @@
 {
+  "references": [
+    // reference point
+    {
+      "path": "./ethereum"
+    }
+  ],
   "extends": "./ethereum/tsconfig.json",
   "compilerOptions": {
     "outDir": "./ethereum/output/",
