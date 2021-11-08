@@ -1,5 +1,16 @@
 {
-  "references": [],
+  "references": [
+    // reference points
+    {
+      "path": "."
+    },
+    {
+      "path": "../"
+    },
+    {
+      "path": "../ethereum"
+    }
+  ],
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
