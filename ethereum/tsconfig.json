@@ -1,16 +1,7 @@
 {
   //"files": [],
   "include": ["node_modules"],
-  "references": [
-    // Build this
-    {
-      "path": "../"
-    },
-    // All source files.
-    {
-      "path": "../backend"
-    }
-  ],
+
   "compilerOptions": {
     "composite": true,
     //"outDir": "./output",
