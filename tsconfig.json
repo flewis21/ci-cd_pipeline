@@ -27,5 +27,5 @@
   },
   "files": [],
   "include": ["./backend/src/**/*", "./ethereum/node_modules"],
-  "exclude": ["./ethereum/output/"]
+  "exclude": ["./ethereum/output/", "./ethereum/node_modules"]
 }
