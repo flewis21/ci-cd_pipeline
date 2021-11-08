@@ -1,0 +1,16 @@
+{
+  "extends": "./ethereum/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./ethereum/output/",
+    "strict": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipDefaultLibCheck": true,
+    "checkJs": true,
+    "allowJs": true
+  },
+  "files": [],
+  "exclude": ["node_modules", "./ethereum/output/"]
+}
