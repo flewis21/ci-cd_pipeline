@@ -6,10 +6,10 @@
     },
     {
       "path": "../"
-    },
-    {
-      "path": "."
     }
+    //{
+    //"path": "."
+    //}
   ],
   //"include": ["../backend"],
   "compilerOptions": {
