@@ -48,11 +48,5 @@
     "sourceMap": true
   },
   "include": ["**/*.ts"],
-  "exclude": ["node_modules"],
-  "references": [
-    // Path to Ethereum node_modules
-    {
-      "path": "../ethereum"
-    }
-  ]
+  "exclude": ["node_modules"]
 }
