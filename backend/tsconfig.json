@@ -50,9 +50,9 @@
   "include": ["**/*.ts"],
   "exclude": ["node_modules"],
   "references": [
-    // Path to node_modules
+    // Path to Ethereum node_modules
     {
-      "path": "../"
+      "path": "../ethereum"
     }
   ]
 }
