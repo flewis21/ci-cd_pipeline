@@ -1,4 +1,4 @@
-import * as solc from 'solc';
+import * as solc from '../../ethereum/node_nodules/solcjs';
 import * as fs from 'fs';
 
 let solc_version = 'v0.4.16+commit.d7661dd9';
