@@ -41,9 +41,9 @@
     // "suppressImplicitAnyIndexErrors": true,
 
     // debuggers
-    "declaration": true,
-    "declarationDir": "./output/types",
-    "declarationMap": true,
+    //"declaration": true,
+    //"declarationDir": "./output/types",
+    //"declarationMap": true,
     "newLine": "lf",
     "pretty": true,
     "sourceMap": true
