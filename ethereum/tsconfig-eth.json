@@ -3,10 +3,10 @@
     // reference points
   ],
   //"files": [],
-  //"include": ["../backend/src/**/*"],
+  "include": ["../backend/src/**/*"],
   "compilerOptions": {
     "composite": true,
-    "rootDir": "../ethereum",
+    "rootDir": ".",
     "outDir": "./output",
     "experimentalDecorators": true,
     "isolatedModules": true,
