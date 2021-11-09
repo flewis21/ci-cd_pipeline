@@ -1,0 +1,23 @@
+{
+  "references": [
+    // reference points
+  ],
+  "extends": "./ethereum/tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "./ethereum/output/",
+    "rootDir": ".",
+    "strict": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipDefaultLibCheck": true,
+    "checkJs": true,
+    "allowJs": true,
+    "pretty": true
+  },
+  //"files": [],
+  "include": [],
+  "exclude": []
+}
