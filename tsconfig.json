@@ -16,7 +16,7 @@
     "checkJs": true,
     "allowJs": true
   },
-  "files": ["./backend/src/solc_example.ts"],
+  "files": ["//./backend/src/solc_example.ts"],
   "include": [],
   "exclude": []
 }
