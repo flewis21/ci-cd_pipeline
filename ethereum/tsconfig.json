@@ -8,7 +8,7 @@
   "files": [],
   "compilerOptions": {
     "composite": true,
-    "rootDir": ".",
+    "rootDir": "../backend/src",
     // "outDir": "./output",
     "experimentalDecorators": true,
     "isolatedModules": true,
