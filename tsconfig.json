@@ -14,7 +14,8 @@
     "forceConsistentCasingInFileNames": true,
     "skipDefaultLibCheck": true,
     "checkJs": true,
-    "allowJs": true
+    "allowJs": true,
+    "pretty": true
   },
   //"files": [],
   "include": [],
