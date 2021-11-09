@@ -1,5 +1,5 @@
 {
-  "extends": "./tsconfig-eth.json",
+  "extends": "../tsconfig-eth.json",
   "references": [
     // reference points
   ],
@@ -9,6 +9,6 @@
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
-    "rootDir": "."
+    "rootDir": "../"
   }
 }
