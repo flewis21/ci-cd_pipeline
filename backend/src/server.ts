@@ -19,7 +19,7 @@ app.use('/', [
   function (req: any, res: any, next: any) {
     if (req.url === '/') {
       express.static('public_html'),
-        res.status(200).render('_index', {
+        res.status(200).render('index', {
           title: 'My Family Tree - Part I',
           author: 'Pro Bono Volunteer Agency',
           short_description: 'Pro Bono Volunteer Agency',
