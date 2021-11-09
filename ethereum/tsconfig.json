@@ -7,7 +7,7 @@
     }
   ],
   "files": ["//../backend/src/solc_example.ts"],
-  "include": [**/*],
+  "include": ["**/*"],
   "exclude": ["node_modules"],
   "compilerOptions": {
     "outDir": "./output",
