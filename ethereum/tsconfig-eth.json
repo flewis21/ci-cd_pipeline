@@ -1,16 +1,13 @@
 {
   "references": [
     // reference points
-    {
-      "path": "../backend"
-    }
   ],
-  "files": [],
-  "include": ["../backend/src/**/*"],
+  //"files": [],
+  //"include": ["../backend/src/**/*"],
   "compilerOptions": {
     "composite": true,
-    "rootDir": "../backend/src",
-    // "outDir": "./output",
+    "rootDir": "../ethereum",
+    "outDir": "./output",
     "experimentalDecorators": true,
     "isolatedModules": true,
     // "noImplicitUseStrict": true,
