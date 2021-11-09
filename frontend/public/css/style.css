@@ -39,7 +39,8 @@ h1 {
   background: #8a8a8a;
 }
 
-* The navigation bar */ .navbar {
+/* The navigation bar */
+.navbar {
   overflow: hidden;
   background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
