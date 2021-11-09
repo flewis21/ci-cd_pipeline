@@ -21,7 +21,7 @@ app.use('/', [
       express.static('public_html'),
         res.status(200).render('index', {
           title: 'My Family Tree - Part I',
-          author: 'Pro Bono Volunteer Agency',
+          editor: 'Pro Bono Volunteer Agency',
           short_description: 'Pro Bono Volunteer Agency',
           sipoc_form:
             'https://docs.google.com/forms/d/e/1FAIpQLSf7eQty92OWCEw_YZ4Irf-PpjYboaKysgVLIBnxESn-TcRfnQ/viewform?embedded=true',
