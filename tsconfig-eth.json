@@ -2,7 +2,7 @@
   "references": [
     // reference points
   ],
-  "extends": "./ethereum/tsconfig.json",
+  "extends": "./ethereum/tsconfig-eth.json",
   "compilerOptions": {
     "composite": true,
     "outDir": "./ethereum/output/",
