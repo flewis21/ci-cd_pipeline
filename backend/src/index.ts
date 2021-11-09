@@ -106,4 +106,3 @@ const johnBmi = johnMass / (johnHeight * johnHeight);
 console.log(johnBmi);
 export const markHigherBmi = markBmi >= johnBmi;
 console.log(markHigherBmi);
-q;
