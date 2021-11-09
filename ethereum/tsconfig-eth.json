@@ -28,8 +28,8 @@
     // "skipLibCheck": true,
     // "noLib": false,
     "lib": ["esnext"],
-    // "allowNonTsExtentions": true,
-    //"noResolve": true,
+    "allowNonTsExtentions": true,
+    "noResolve": true,
 
     // Modules
     "module": "esnext",
@@ -45,7 +45,7 @@
     //"declarationDir": "./output/types",
     //"declarationMap": true,
     "newLine": "lf",
-    "pretty": true,
-    "sourceMap": true
+    "pretty": true
+    //"sourceMap": true
   }
 }
