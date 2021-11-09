@@ -2,7 +2,6 @@
   "references": [
     // reference points
   ],
-  // "extends": "./ethereum/tsconfig-eth.json",
   "compilerOptions": {
     "composite": true,
     "outDir": "./ethereum/output/",
@@ -12,7 +11,7 @@
     "esModuleInterop": true,
     "importHelpers": true,
     "forceConsistentCasingInFileNames": true,
-    "skipDefaultLibCheck": true,
+    //"skipDefaultLibCheck": true,
     "checkJs": true,
     "allowJs": true,
     "pretty": true
