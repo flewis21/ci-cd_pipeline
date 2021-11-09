@@ -22,6 +22,12 @@ app.use('/', [
         res.status(200).render('index', {
           title: 'My Family Tree - Part I',
           short_description: 'Pro Bono Volunteer Agency',
+          sipoc_form:
+            'https://docs.google.com/forms/d/e/1FAIpQLSf7eQty92OWCEw_YZ4Irf-PpjYboaKysgVLIBnxESn-TcRfnQ/viewform?embedded=true',
+          sipoc_slide:
+            'https://docs.google.com/presentation/d/e/2PACX-1vSq6HBWVkXDbQatjrtodxKlGSDJkrj0Uc70jRN6vhzDmvW3RPjysRGhnjCyGZ77vaKLl0IVqB3UDQO3/embed?start=false&loop=false&delayms=60000',
+          myScript: 'output/index.js',
+          script_type: 'module',
         });
     }
   },
