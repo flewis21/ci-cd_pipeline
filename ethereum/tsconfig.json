@@ -1,54 +1,15 @@
 {
+  "extends": "./tsconfig-eth.json",
   "references": [
     // reference points
     {
-      "path": "../backend"
+      "path": "../backend/"
     }
   ],
   "files": [],
-  "include": ["../backend/src/**/*"],
+  "include": [],
   "compilerOptions": {
-    "composite": true,
-    "rootDir": "../backend/src",
-    // "outDir": "./output",
-    "experimentalDecorators": true,
-    "isolatedModules": true,
-    // "noImplicitUseStrict": true,
-    // "alwaysStrict": true,
-    "noImplicitAny": true,
-    // "noImplicitReturns": true,
-    // "strictBindCallApply": true,
-    // "strictFunctionTypes": true,
-    // "strictPropertyInitialization": true,
-    "noEmitOnError": true,
-    // "noErrorTruncation": true,
-    //"noFallthroughCasesInSwitch": true,
-    //"noImplicitThis": true,
-    //"noUnusedLocals": true,
-    //"noUnusedParameters": true,
-    // "preserveConstEnums": true,
-    // "removeComments": true,
-    // "skipLibCheck": true,
-    // "noLib": false,
-    "lib": ["esnext"],
-    // "allowNonTsExtentions": true,
-    //"noResolve": true,
-
-    // Modules
-    "module": "esnext",
-    "moduleResolution": "node",
-    "target": "esnext",
-    "types": [],
-    "strictNullChecks": true,
-    // "suppressExcessPropertyErrors": true,
-    // "suppressImplicitAnyIndexErrors": true,
-
-    // debuggers
-    "declaration": true,
-    "declarationDir": "./output/types",
-    "declarationMap": true,
-    "newLine": "lf",
-    "pretty": true,
-    "sourceMap": true
+    "outDir": "./output",
+    "rootDir": "."
   }
 }
