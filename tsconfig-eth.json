@@ -19,8 +19,8 @@
     "checkJs": true,
     "allowJs": true,
     "pretty": true
-  },
+  }
   //"files": [],
-  "include": [],
-  "exclude": []
+  //"include": [],
+  //"exclude": []
 }
