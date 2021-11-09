@@ -3,12 +3,12 @@
   "references": [
     // reference points
   ],
-  "files": ["../backend/src/solc_example.ts"],
+  "files": ["./src/solc_example.ts"],
   "include": [],
   "exclude": [],
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
-    "rootDir": "../"
+    "rootDir": "./src"
   }
 }
