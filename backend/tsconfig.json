@@ -1,6 +1,9 @@
 {
   "references": [
     // reference points
+    {
+      "path": "../ethereum/"
+    }
   ],
   "files": [],
   "compilerOptions": {
