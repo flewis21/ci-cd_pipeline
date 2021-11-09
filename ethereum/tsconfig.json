@@ -2,13 +2,10 @@
   //"extends": "./tsconfig-eth.json",
   "references": [
     // reference points
-    {
-      "path": "..///backend/"
-    }
   ],
   "files": ["../backend/src/solc_example.ts"],
-  "include": ["**/*"],
-  "exclude": ["node_modules"],
+  "include": [],
+  "exclude": [],
   "compilerOptions": {
     "outDir": "./output",
     "rootDir": "."
