@@ -1,6 +1,7 @@
 {
   "name": "ethereum",
   "version": "1.0.0",
+  "main": "../backend/output/server"
   "scripts": {
     "dev": "$HOME/.nvm/versions/node/v16.4.0/bin/npx concurrently --kill-others-on-fail --restart-tries 0 -n LINT,CODE -c grey,blue \"npm run ts-lint\" \"NODE_ENV=development $HOME/.nvm/versions/node/v16.4.0/bin/npx nodemon -w\"",
     "ts-lint": "read -p \"`$HOME/.nvm/versions/node/v16.4.0/bin/npx ts-standard --verbose --fix`\"",
