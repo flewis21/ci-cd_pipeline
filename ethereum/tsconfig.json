@@ -6,7 +6,7 @@
     }
   ],
   "files": [],
-  "include": ["../backend/src/**/*"]
+  "include": ["../backend/src/**/*"],
   "compilerOptions": {
     "composite": true,
     "rootDir": "../backend/src",
