@@ -1,9 +1,6 @@
 {
   "references": [
     // reference points
-    {
-      "path": "//./ethereum"
-    }
   ],
   "extends": "./ethereum/tsconfig.json",
   "compilerOptions": {
