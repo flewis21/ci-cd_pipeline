@@ -9,7 +9,7 @@
   ],
 
   // pass files to tsconfig-base
-  "files": [],
+  "files": ["./src/server.ts"],
 
   // pass set options for module, outDir and tsrget to tsconfig-base.
   "compilerOptions": {
