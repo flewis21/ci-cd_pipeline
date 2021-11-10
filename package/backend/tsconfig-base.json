@@ -5,8 +5,8 @@
 
   // pass Set options for import and rootDir to root tsconfig-setting
   "complerOptions": {
-    "importHelpers": true,
-    "rootDir": "./src"
+    // "importHelpers": true,
+    "rootDir": "./"
   },
 
   // pass references to root tsconfig-setting
