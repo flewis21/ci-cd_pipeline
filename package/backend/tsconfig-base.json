@@ -15,5 +15,5 @@
   ],
 
   // pass include to root tsconfig-setting
-  "include": ["src/**/*.ts"]
+  "include": ["./src/**/*.ts"]
 }
