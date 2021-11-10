@@ -9,8 +9,8 @@
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
-    
-      // debuggers
+
+    // debuggers
     "declaration": true,
     "declarationDir": "./output/types",
     "declarationMap": true,
