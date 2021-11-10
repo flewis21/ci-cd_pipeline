@@ -17,7 +17,7 @@
     "target": "exnext",
 
     // root
-    "rootDir": "./src",
+    // "rootDir": "./src",
 
     // strict
     "strict": true
