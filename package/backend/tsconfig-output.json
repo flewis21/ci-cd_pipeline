@@ -1,5 +1,5 @@
 {
-  "extends": "../ethereum/tsconfig",
+  "extends": "./tsconfig-base.json",
   "references": [
     // reference points
   ],
