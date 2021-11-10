@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./frontend/public/output/",
+    "strict": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipDefaultLibCheck": true,
+    "checkJs": true,
+    "allowJs": true
+  }
+}
