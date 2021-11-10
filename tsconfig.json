@@ -4,19 +4,19 @@
   "references": [
     // reference points
     {
-      "path": "./backend/tsconfig.json"
+      "path": "./package/backend/tsconfig.json"
     },
     {
-      "path": "./ethereum/tsconfig.json"
+      "path": "./package/ethereum/tsconfig.json"
     },
     {
-      "path": "./frontend/tsconfig.json"
+      "path": "./package/frontend/tsconfig.json"
     },
     {
-      "path": "./sandbox/tsconfig.json"
+      "path": "./package/sandbox/tsconfig.json"
     },
     {
-      "path": "./simpleGit/tsconfig.json"
+      "path": "./package/simpleGit/tsconfig.json"
     }
   ]
 }
