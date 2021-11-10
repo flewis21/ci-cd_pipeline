@@ -3,7 +3,7 @@
   "references": [
     // reference points
   ],
-  "files": ["./src/solc_example.ts"],
+  "files": ["./src/solc_example.ts", "../backend/src/formatContract.ts"],
   "include": [],
   "exclude": [],
   "compilerOptions": {
