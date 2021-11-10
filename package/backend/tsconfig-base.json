@@ -6,5 +6,5 @@
   "references": [
     // reference points
   ],
-  "include": []
+  "include": ["src/**/*.ts"]
 }
