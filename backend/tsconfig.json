@@ -2,7 +2,7 @@
   "references": [
     // reference points
     {
-      "path": "../ethereum/"
+      "path": "../"
     }
   ],
   "files": [],
