@@ -1,11 +1,18 @@
 {
+  // Pass control over to root tscpmfog-setting/
   "extends": "../../tsconfig-setting.json",
+
+  // Set options for import and rootDir
   "complerOptions": {
     "importHelpers": true,
     "rootDir": "./src"
   },
+
+  // references
   "references": [
     // reference points
   ],
+
+  // include
   "include": ["src/**/*.ts"]
 }
