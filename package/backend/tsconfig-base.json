@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig-setting.json",
+  "complerOptions": {
+    "rootDir": "./src"
+  },
+  "references": [
+    // reference points
+  ],
+  "include": []
+}
