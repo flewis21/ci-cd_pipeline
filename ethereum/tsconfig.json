@@ -9,6 +9,14 @@
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
-    "rootDir": "../backend/src/"
+    "rootDir": "../backend/src/",
+    
+      // debuggers
+    "declaration": true,
+    "declarationDir": "./output/types",
+    "declarationMap": true,
+    "newLine": "lf",
+    "pretty": true
+    "sourceMap": true
   }
 }
