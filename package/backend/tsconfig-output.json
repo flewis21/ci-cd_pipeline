@@ -8,9 +8,7 @@
     "outDir": "./output",
     "rootDir": "./src",
 
-    "experimentalDecorators": true,
-    "strict": true,
-    "noEmitOnError": true
+    "strict": true
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]
