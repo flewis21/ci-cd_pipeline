@@ -15,13 +15,13 @@
   "compilerOptions": {
     "module": "commonJs",
     "outDir": "./output",
-    "target": "exnext",
+    "target": "exnext"
 
     // pass root to tscongfig-base
     // "rootDir": "./src",
 
     // pass strict to tsconfig-base
-    "strict": true
+    // "strict": true
   },
 
   // pass include to tsconfig-base
