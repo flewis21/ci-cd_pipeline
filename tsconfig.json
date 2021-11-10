@@ -1,4 +1,4 @@
-(
+{
   "files": [],
   "exclude": [],
   "references": [
@@ -19,4 +19,4 @@
       "path": "./simpleGit/tsconfig.json"
     }
   ]
-)
+}
