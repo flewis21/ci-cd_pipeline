@@ -1,0 +1,22 @@
+# Ignore all files
+**/**
+
+# except the extensions...
+!**/appsscript.json
+**/onOpen.ts
+**/macros.ts
+**/customFunctions.ts
+**/duplicateSpreadsheet.ts
+**/renameSpreadsheet.ts
+**/copyBook.ts
+**/customMenu.ts
+**/formatRowHeader.ts
+**/formatColumnHeader.ts
+**/formatDataset.ts
+!**/API.ts
+**/Code.ts
+!**/*.html
+
+# ignore even valid files if in...
+.git/**
+node_modules
