@@ -9,6 +9,7 @@
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
+    "rootDir": "../backend/src/",
 
     // debuggers
     "declaration": true,
