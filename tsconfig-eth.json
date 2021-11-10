@@ -5,7 +5,7 @@
   "compilerOptions": {
     "composite": true,
     "outDir": "./ethereum/output/",
-    "rootDir": "./backend/src/",
+    "rootDir": "./ethereum/",
     "strict": true,
     "isolatedModules": true,
     "esModuleInterop": true,
