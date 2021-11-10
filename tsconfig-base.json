@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "outDir": "./frontend/public/output/",
+    "outDir": ".noWhere",
     "strict": true,
     "isolatedModules": true,
     "esModuleInterop": true,
