@@ -3,7 +3,7 @@
   "references": [
     // reference points
     {
-      "path": "../"
+      "path": "./"
     }
   ],
   "files": ["../backend/src/solc_example.ts", "../backend/src/formatContract.ts"],
