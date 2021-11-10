@@ -45,7 +45,7 @@
     "declarationDir": "./output/types",
     "declarationMap": true,
     "newLine": "lf",
-    "pretty": true
+    "pretty": true,
     "sourceMap": true
   }
 }
