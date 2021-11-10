@@ -1,15 +1,31 @@
 {
+  // Pass control over to tsconfig-base
   "extends": "./tsconfig-base.json",
+
+  // references
   "references": [
     // reference points
   ],
+
+  // files
   "files": [],
+
+  // set options for module, outDir and tsrget.
   "compilerOptions": {
+    "module": "commonJs",
     "outDir": "./output",
+    "target": "exnext",
+
+    // root
     "rootDir": "./src",
 
+    // strict
     "strict": true
   },
-  "include": ["**/*.ts"],
+
+  // include
+  // "include": ["**/*.ts"],
+
+  // exclude
   "exclude": ["node_modules"]
 }
