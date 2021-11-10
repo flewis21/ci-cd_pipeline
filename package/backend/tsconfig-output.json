@@ -1,31 +1,32 @@
 {
+  // receive control from root tsconfig.json
   // Pass control over to tsconfig-base
   "extends": "./tsconfig-base.json",
 
-  // references
+  // pass references to tsconfig-base
   "references": [
     // reference points
   ],
 
-  // files
+  // pass files to tsconfig-base
   "files": [],
 
-  // set options for module, outDir and tsrget.
+  // pass set options for module, outDir and tsrget to tsconfig-base.
   "compilerOptions": {
     "module": "commonJs",
     "outDir": "./output",
     "target": "exnext",
 
-    // root
+    // pass root to tscongfig-base
     // "rootDir": "./src",
 
-    // strict
+    // pass strict to tsconfig-base
     "strict": true
   },
 
-  // include
+  // pass include to tsconfig-base
   // "include": ["**/*.ts"],
 
-  // exclude
+  // pass exclude to tsconfig-base
   "exclude": ["node_modules"]
 }
