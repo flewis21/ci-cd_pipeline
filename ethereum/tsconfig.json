@@ -5,11 +5,11 @@
   ],
   "files": ["../backend/src/solc_example.ts", "../backend/src/formatContract.ts"],
   "include": ["**/*", "../backend/src/*.ts"],
-  "exclude": ["node_modules"],
+  "exclude": ["node_modules". "../"],
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
-    "rootDir": "../backend/src/",
+    "rootDir": "../",
     
       // debuggers
     "declaration": true,
