@@ -15,7 +15,7 @@
     "target": "ESNext",
     "types": [],
     "declaration": true,
-    "declarationDir": "./output/types",
+    "declarationDir": "./package/backend/output/types",
     "declarationMap": true,
     "newLine": "lf",
     "pretty": true,
