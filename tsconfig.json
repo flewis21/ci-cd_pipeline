@@ -1,6 +1,6 @@
 {
   // files
-  "files": [],
+  "files": ["./package/backend/src/server.ts"],
 
   // exclude
   "exclude": [],
