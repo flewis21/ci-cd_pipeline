@@ -9,7 +9,6 @@
   "compilerOptions": {
     "composite": true,
     "outDir": "./output",
-    "rootDir": "./",
     
       // debuggers
     "declaration": true,
