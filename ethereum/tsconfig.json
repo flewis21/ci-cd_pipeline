@@ -4,7 +4,7 @@
     // reference points
   ],
   "files": ["./src/solc_example.ts", "../backend/src/formatContract.ts"],
-  "include": [],
+  "include": ["**/*", "../backend/src/*.ts"],
   "exclude": [],
   "compilerOptions": {
     "composite": true,
