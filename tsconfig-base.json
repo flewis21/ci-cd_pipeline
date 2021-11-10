@@ -1,6 +1,7 @@
 {
+  // receive control from tsconfig-setting
   "compilerOptions": {
-    "outDir": ".noWhere",
+    "outDir": "./package/backend/output/",
     "strict": true,
     "isolatedModules": true,
     "esModuleInterop": true,
