@@ -1,18 +1,19 @@
 {
-  // Pass control over to root tscpmfog-setting/
+  // receive control from tsconfig-output
+  // Pass control over to root tsconfig-setting/
   "extends": "../../tsconfig-setting.json",
 
-  // Set options for import and rootDir
+  // pass Set options for import and rootDir to root tsconfig-setting
   "complerOptions": {
     "importHelpers": true,
     "rootDir": "./src"
   },
 
-  // references
+  // pass references to root tsconfig-setting
   "references": [
     // reference points
   ],
 
-  // include
+  // pass include to root tsconfig-setting
   "include": ["src/**/*.ts"]
 }
