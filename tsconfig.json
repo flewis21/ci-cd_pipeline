@@ -4,7 +4,7 @@
   "references": [
     // reference points
     {
-      "path": "./package/backend/tsconfig.json"
+      "path": "./package/backend/tsconfig-output.json"
     },
     {
       "path": "./package/ethereum/tsconfig.json"
