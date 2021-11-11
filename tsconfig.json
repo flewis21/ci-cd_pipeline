@@ -3,7 +3,7 @@
   "files": ["./package/backend/src/server.ts"],
 
   // exclude
-  "exclude": [],
+  "exclude": ["node_modules"],
 
   //references
   "references": [
