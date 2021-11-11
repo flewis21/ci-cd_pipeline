@@ -45,6 +45,7 @@
     "module": "commonjs",
     "target": "es6",
     "moduleResolution": "node",
+    "lib": ["dom", "es6"],
 
     // Disable files before editing outDir
     // "outDir": "./package/backend/output",
