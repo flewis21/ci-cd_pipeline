@@ -32,6 +32,7 @@
 
   // pass set options to references
   "compilerOptions": {
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "outDir": "./package/backend/output"
   }
 }
