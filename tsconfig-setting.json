@@ -9,7 +9,6 @@
     "experimentalDecorators": true,
     "isolatedModules": true,
     "noEmitOnError": true,
-    "target": "ESNext",
     "types": [],
     "declaration": true,
     "declarationDir": "./package/backend/output/types",
