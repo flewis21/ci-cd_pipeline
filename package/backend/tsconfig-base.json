@@ -15,5 +15,8 @@
   ],
 
   // pass include to root tsconfig-setting
-  "include": ["./src/**/*.ts"]
+  "include": ["./src/**/*.ts"],
+
+  // exclude
+  "exclude": ["node_modules"]
 }
