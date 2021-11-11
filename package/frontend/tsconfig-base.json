@@ -1,7 +1,7 @@
 {
   // receive control from tsconfig-output
   // Pass control over to root tsconfig-setting/
-  "extends": "../../tsconfig-setting.json",
+  "extends": "../../../tsconfig-setting.json",
 
   // pass Set options for import and rootDir to root tsconfig-setting
   "complerOptions": {
@@ -15,5 +15,5 @@
   ],
 
   // pass include to root tsconfig-setting
-  "include": ["./**/src/**/*.ts"]
+  "include": ["../../backend/src/**/*.ts"]
 }
