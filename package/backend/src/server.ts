@@ -30,7 +30,7 @@ app.use('/1972/09/11', [
           myScript: 'output/index.js',
           myCss: 'css/style.css',
           css_type: 'text/css',
-          script_type: 'module',
+          script_type: 'text/javascript',
         });
     }
   },
