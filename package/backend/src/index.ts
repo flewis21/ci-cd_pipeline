@@ -94,7 +94,6 @@ const averageAge = (ageFabian + ageLorain) / 2
 console.log(ageFabian, ageLorain, averageAge);
 */
 
-// export const bmi = m / h ** 2; // mass / (height * height).
 let markHeight = 1.69;
 let markMass = 78;
 let johnHeight = 1.76;
@@ -103,5 +102,7 @@ const markBmi = markMass / markHeight ** 2;
 console.log(markBmi);
 const johnBmi = johnMass / (johnHeight * johnHeight);
 console.log(johnBmi);
+
+// BMI = mass / height ** 2; mass / (height * height)
 export const markHigherBmi = markBmi >= johnBmi;
 console.log(markHigherBmi);
