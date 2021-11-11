@@ -15,5 +15,5 @@
   ],
 
   // pass include to root tsconfig-setting
-  "include": ["../../backend/src/**/*.ts"]
+  "include": ["../backend/src/**/*.ts"]
 }
