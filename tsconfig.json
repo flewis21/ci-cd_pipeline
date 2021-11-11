@@ -1,6 +1,7 @@
 {
   // files
-  "files": ["./package/backend/src/server.ts"],
+  "files/": ["./package/backend/src/server.ts"],
+  "files": ["./package/backend/src/index.ts"],
 
   // exclude
   "exclude": ["node_modules"],
@@ -37,6 +38,7 @@
   // pass set options to references
   "compilerOptions": {
     "esModuleInterop": true,
-    "outDir": "./package/backend/output"
+    "outDir/": "./package/backend/output",
+    "outDir": "./package/frontend/public/output"
   }
 }
