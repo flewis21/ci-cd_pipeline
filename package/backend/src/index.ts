@@ -95,6 +95,7 @@ console.log(ageFabian, ageLorain, averageAge);
 */
 
 // BMI = mass / height ** 2; mass / (height * height)
+export {};
 let markHeight = 1.69;
 let markMass = 78;
 let johnHeight = 1.76;
