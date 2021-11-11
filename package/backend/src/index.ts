@@ -83,10 +83,9 @@ const ageFabian = now -1972;
 const ageLorain = now -1973;
 
 console.log(now - 1972 > now - 1973);
-*/
+
 console.log(25 - 10 - 5);
 
-/*
 let x, y;
 x = y = 25 - 10 -5; // x = y = 10, x = 10
 console.log(x, y);
