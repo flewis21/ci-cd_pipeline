@@ -6,7 +6,8 @@
   // pass Set options for import and rootDir to root tsconfig-setting
   "complerOptions": {
     // "importHelpers": true,
-    "rootDir": "./"
+    "rootDir": "./",
+    "esModileInterop": true
   },
 
   // pass references to root tsconfig-setting
