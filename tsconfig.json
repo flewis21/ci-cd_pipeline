@@ -28,5 +28,10 @@
       // Passes control to simpleGit tsconfig
       "path": "./package/simpleGit/tsconfig.json"
     }
-  ]
+  ],
+
+  // pass set options to references
+  "compilerOptions": {
+    "esModuleInterop": true
+  }
 }
