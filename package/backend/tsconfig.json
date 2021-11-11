@@ -1,3 +1,9 @@
 {
+  // pass control to tsconfig-base
   "extends": "./tsconfig-base.json",
+
+  // pass set options to tsconfig-base
+  "compilerOptions": {
+    "esModuleInterop": true
+  }
 }
