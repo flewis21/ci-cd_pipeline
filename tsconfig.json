@@ -42,7 +42,7 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "isolatedModules": true,
-    "module": "es6",
+    "module": "commonjs",
     "target": "es6",
     "moduleResolution": "node",
 
