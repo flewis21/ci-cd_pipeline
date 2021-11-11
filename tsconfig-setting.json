@@ -9,7 +9,6 @@
     "experimentalDecorators": true,
     "isolatedModules": true,
     "noEmitOnError": true,
-    "moduleResolution": "node",
     "target": "ESNext",
     "types": [],
     "declaration": true,
