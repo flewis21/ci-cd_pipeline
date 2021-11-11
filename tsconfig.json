@@ -39,6 +39,8 @@
   // pass set options to references
   "compilerOptions": {
     "esModuleInterop": true,
+    "isolatedModules": true,
+    "module": "umd",
     // "outDir": "./package/backend/output",
     "outDir": "./package/frontend/public/output"
   }
