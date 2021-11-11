@@ -40,7 +40,7 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "isolatedModules": true,
-    "module": "umd",
+    "module": "none",
     "moduleResolution": "node",
     // "outDir": "./package/backend/output",
     "outDir": "./package/frontend/public/output"
