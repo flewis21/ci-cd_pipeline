@@ -22,7 +22,7 @@
     },
     {
       // pass control to public tsconfig
-      "path": "./package/frontend/public/tsconfig.json
+      "path": "./package/frontend/public/tsconfig.json"
     },
     {
       // pass control to sandbox tsconfig
