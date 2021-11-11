@@ -14,6 +14,7 @@
   // pass set options for module, outDir and tsrget to tsconfig-base.
   "compilerOptions": {
     "module": "commonJs",
+    "esModuleInterop": true,
     "outDir": "./output",
     "target": "exnext"
 
