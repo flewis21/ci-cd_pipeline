@@ -9,23 +9,23 @@
   "references": [
     // reference points
     {
-      // Passes control to backend tsconfig-output
+      // pass control to backend tsconfig-output
       "path": "./package/backend/tsconfig-output.json"
     },
     {
-      // Passes control to ethereum tsconfig
+      // pass control to ethereum tsconfig
       "path": "./package/ethereum/tsconfig.json"
     },
     {
-      // Passes control to frontend tsconfig
+      // pass control to frontend tsconfig
       "path": "./package/frontend/tsconfig.json"
     },
     {
-      // Passes control to sandbox tsconfig
+      // pass control to sandbox tsconfig
       "path": "./package/sandbox/tsconfig.json"
     },
     {
-      // Passes control to simpleGit tsconfig
+      // pass control to simpleGit tsconfig
       "path": "./package/simpleGit/tsconfig.json"
     }
   ],
