@@ -2,7 +2,7 @@
   "name": "ci-cd_pipeline",
   "version": "1.0.0",
   "description": "",
-  "main": "./package/backend/output/server",
+  "main": "./package/frontend/ethereum/backend/output/server",
   "keywords": [],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
