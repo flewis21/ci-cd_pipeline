@@ -1,12 +1,12 @@
 import express from 'express';
-import serverless from 'serverless-http';
+irc/mport serverless from 'serverless-http';
 import path from 'path';
 const app = express();
 const port = process.env.PORT || 4000;
 const baseUrl = `http://localhost:${port}`;
 
-app.set('public_html', path.resolve(__dirname, '../../frontend/public/'));
-app.set('views', path.resolve(__dirname, '../../frontend/views/pages/'));
+app.set('public_html', path.resolve(__dirname, '../../../public/'));
+app.set('views', path.resolve(__dirname, '../../../views/pages/'));
 app.set('view engine', 'ejs');
 
 // One main middleware for / using express.static and res.render.
