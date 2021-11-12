@@ -1,5 +1,5 @@
 /*
-export const js = 'amazing';
+const js = 'amazing';
 
 console.log(40 + 8 + 23 - 10);
 
@@ -12,7 +12,7 @@ let firstname = 'Fabian';
 console.log(firstname);
 
 
-export let javascriptIsFun: any = true;
+let javascriptIsFun: any = true;
 console.log(javascriptIsFun);
 
 console.log(typeof true);
@@ -48,7 +48,7 @@ console.log(lastName);
 
 
 // Math Operators
-export const now = 2037;
+const now = 2037;
 const ageFabian = now -1972;
 const ageLorain = now -1973;
 console.log(ageFabian, ageLorain);
@@ -78,7 +78,7 @@ const isFullAge = ageLorain >= 18;
 console.log(now - 1972 > now - 1973);
 
 
-export const now = 2037;
+const now = 2037;
 const ageFabian = now -1972;
 const ageLorain = now -1973;
 
@@ -94,9 +94,9 @@ const averageAge = (ageFabian + ageLorain) / 2
 console.log(ageFabian, ageLorain, averageAge);
 */
 
+
+
 // BMI = mass / height ** 2; mass / (height * height)
-export = {};
-let exports = {};
 let markHeight = 1.69;
 let markMass = 78;
 let johnHeight = 1.76;
