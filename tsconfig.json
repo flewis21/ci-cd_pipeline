@@ -3,8 +3,8 @@
   "files": [],
 
   // Enable outDir again before enabling any one of these
-  "files": ["./package/backend/src/server.ts"],
-  // "files": ["./package/backend/src/index.ts"],
+  // "files": ["./package/backend/src/server.ts"],
+  "files": ["./package/backend/src/index.ts"],
 
   // exclude
   "exclude": ["node_modules"],
@@ -41,14 +41,17 @@
   // pass set options to references
   "compilerOptions": {
     "esModuleInterop": true,
-    "isolatedModules": true,
+    // "isolatedModules": true,
     "module": "commonjs",
     "target": "es6",
     "moduleResolution": "node",
     "lib": ["dom", "es6"],
+    "skipLibCheck": true,
+    "declaration": true,
+    "declarationDir": "./package/backend/output/@types",
 
     // Disable files before editing outDir
-    "outDir": "./package/backend/output"
-    // "outDir": "./package/frontend/public/output"
+    // "outDir": "./package/backend/output"
+    "outDir": "./package/frontend/public/output"
   }
 }
