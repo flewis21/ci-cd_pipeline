@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "type": "tsc -w",
-    "dev": "concurrently --kill-others-on-fail --restart-tries 0 -n LINT,CODE -c grey,blue \"npm run ts-lint\" \"NODE_ENV=development nodemon -w\"",
+    "dev": "concurrently --kill-others-on-fail --restart-tries 0 -n LINT,CODE -c grey,blue \"npm run format\" \"nodemon -w\"",
     "start": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\"",
     "compile_server": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\"",
     "compile_simpleGit": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\"",
@@ -16,7 +16,7 @@
     "sandbox_dev": "nodemon -w output sandbox/output/script",
     "server_dev": "nodemon -w output backend/output/server",
     "backend_dev": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,NODEMON -c gray,blue \"npm run type\" \"npm run dev\"",
-    "ts-lint": "read -p \"`ts-standard --verbose --fix`\"",
+    "ts-lint": "ts-standard --verbose --fix",
     "lint": "standard --verbose --fix",
     "format": "prettier --write",
     "simple": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\"",
