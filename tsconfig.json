@@ -4,8 +4,8 @@
 
   // Enable outDir again before enabling any one of these
   // "files": ["./package/frontend/ethereum/backend/src/server.ts"],
-  "files": ["./package/frontend/ethereum/backend/src/index.ts"],
-  // "files": ["./package/frontend/ethereum/backend/src/web3Dev.ts"],
+  // "files": ["./package/frontend/ethereum/backend/src/index.ts"],
+  "files": ["./package/frontend/ethereum/backend/src/web3Dev.ts"],
 
   // exclude
   "exclude": ["node_modules"],
