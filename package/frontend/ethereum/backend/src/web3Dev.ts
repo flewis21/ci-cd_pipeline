@@ -1,5 +1,6 @@
-import dotenv from 'dotenv';
 import Web3 from 'web3';
+import dotenv from 'dotenv';
+dotenv.config();
 const ropsten = process.env.ropsten1;
 const rpcURL = ropsten;
 const web3 = new Web3(rpcURL);

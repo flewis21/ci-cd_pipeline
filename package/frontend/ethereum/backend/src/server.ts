@@ -1,9 +1,13 @@
+import dotenv from 'dotenv';
 import express from 'express';
 import serverless from 'serverless-http';
 import path from 'path';
+dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
 const baseUrl = `http://localhost:${port}`;
+const css = process.env.CSS_1;
+const script = process.env.SCRIPT_2;
 
 app.set('public_html', path.resolve(__dirname, '../../../public/'));
 app.set('views', path.resolve(__dirname, '../../../views/pages/'));
@@ -20,17 +24,15 @@ app.use('/1972/09/11', [
     if (req.url === '/') {
       express.static('public_html'),
         res.status(200).render('index', {
-          title: 'My Family Tree - Part I',
-          editor: 'Pro Bono Volunteer Agency',
-          short_description: 'Pro Bono Volunteer Agency',
-          sipoc_form:
-            'https://docs.google.com/forms/d/e/1FAIpQLSf7eQty92OWCEw_YZ4Irf-PpjYboaKysgVLIBnxESn-TcRfnQ/viewform?embedded=true',
-          sipoc_slide:
-            'https://docs.google.com/presentation/d/e/2PACX-1vSq6HBWVkXDbQatjrtodxKlGSDJkrj0Uc70jRN6vhzDmvW3RPjysRGhnjCyGZ77vaKLl0IVqB3UDQO3/embed?start=false&loop=false&delayms=60000',
-          myScript: 'output/index.js',
-          myCss: 'css/style.css',
-          css_type: 'text/css',
-          script_type: 'text/javascript',
+          title: process.env.TITLE,
+          editor: process.env.EDITOR,
+          short_description: process.env.SHORT_DESCRIPTION,
+          sipoc_form: process.env.SIPOC_1,
+          sipoc_slide: process.env.SIPOC_2,
+          myScript: process.env.SCRIPT_1,
+          myCss: process.env.CSS_1,
+          css_type: process.env.CSS_TYPE_1,
+          script_type: process.env.SCRIPT_TYPE_2,
           exports_object: 'let exports = {}',
         });
     }
