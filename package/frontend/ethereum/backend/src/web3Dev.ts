@@ -1,4 +1,5 @@
 import Web3 from 'web3';
+import{ AbiItem } from 'web3-utils'; 
 import dotenv from 'dotenv';
 dotenv.config();
 const rpcURL = process.env.INFURA_1;
