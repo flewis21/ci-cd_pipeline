@@ -29,10 +29,10 @@ app.use('/1972/09/11', [
           short_description: process.env.SHORT_DESCRIPTION,
           sipoc_form: process.env.SIPOC_1,
           sipoc_slide: process.env.SIPOC_2,
-          myScript: process.env.SCRIPT_1,
+          myScript: process.env.SCRIPT_2,
           myCss: process.env.CSS_1,
           css_type: process.env.CSS_TYPE_1,
-          script_type: process.env.SCRIPT_TYPE_2,
+          script_type: process.env.SCRIPT_TYPE_3,
           exports_object: 'let exports = {}',
         });
     }
@@ -40,7 +40,16 @@ app.use('/1972/09/11', [
 ]);
 
 app.get('*', function (req, res) {
-  res.status(404).render('error', {});
+  res.status(404).render('index', {
+    title: '404 Page not found',
+    editor: 'N/A',
+    short_description: 'unknown html',
+    css_type: 'none',
+    myCss: 'none',
+    script_type: 'none',
+    myScript: 'none',
+    exports_object: 'none',
+  });
 });
 
 // Server
