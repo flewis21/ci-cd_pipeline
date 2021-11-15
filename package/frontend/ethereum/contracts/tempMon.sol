@@ -1,4 +1,4 @@
-pragma solidity ^0.5.12;
+pragma solidity ^0.8.9;
 
 contract TemperatureMonitor {
 	int8 public temperature;
