@@ -10,8 +10,5 @@
   "devDependencies": {
     "@types/google-apps-script": "^1.0.37",
     "typescript": "^3.8.2"
-  },
-  "dependencies": {
-    "web3": "^1.6.0"
   }
 }
