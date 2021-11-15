@@ -13,5 +13,10 @@
     "ethers": "^5.5.1",
     "solc": "^0.8.9",
     "web3": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.0.0",
+    "hardhat": "^2.6.8",
+    "ts-node": "^10.4.0"
   }
 }
