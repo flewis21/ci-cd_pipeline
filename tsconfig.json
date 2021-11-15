@@ -3,10 +3,10 @@
   "files": [],
 
   // Enable outDir again before enabling any one of these
-  // "files": ["./package/frontend/ethereum/backend/src/server.ts"],
+  "files": ["./package/frontend/ethereum/backend/src/server.ts"],
   // "files": ["./package/frontend/ethereum/backend/src/index.ts"],
   // "files": ["./package/frontend/ethereum/backend/src/web3Dev.ts"],
-  "files": ["./package/frontend/ethereum/backend/src/ether_index.ts"],
+  // "files": ["./package/frontend/ethereum/backend/src/ether_index.ts"],
 
   // exclude
   "exclude": ["node_modules"],
@@ -57,7 +57,7 @@
     "declarationDir": "./package/frontend/ethereum/backend/output/@types",
 
     // Disable files before editing outDir
-    // "outDir": "./package/frontend/ethereum/backend/output"
-    "outDir": "./package/frontend/public/output"
+    "outDir": "./package/frontend/ethereum/backend/output"
+    //"outDir": "./package/frontend/public/output"
   }
 }
