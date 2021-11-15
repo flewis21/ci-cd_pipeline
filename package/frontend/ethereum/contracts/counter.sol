@@ -1,4 +1,4 @@
-pragma solidty 0.8.9;
+pragma solidity ^0.8.9;
 
 contract Counter {
 	uint256 count = 0;
@@ -20,12 +20,12 @@ contract Counter {
 	}
 
 
-	function countDown() public returns (unint256) {
+	function countDown() public returns (uint256) {
 		uint256 newCount = count - 1;
 		require(newCount < count, "Uint256 underflow");
 
 
-		count = newCount
+		count = newCount;
 
 
 		emit CountedTo(count);
