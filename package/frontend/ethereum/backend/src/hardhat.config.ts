@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
+const nurl = process.env.INFURA_1;
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
@@ -8,12 +9,12 @@ module.exports = {
   networks: {
     hardhat: {},
     ropsten: {
-      url: process.env.INFURA_1,
+      url: `${nurl}`,
       accounts: [],
     },
   },
   solidity: {
-    version: '0.7.3',
+    version: '0.8.9',
   },
   paths: {
     sources: './contracts',
