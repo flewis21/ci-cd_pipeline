@@ -33,7 +33,9 @@ app.use('/1972/09/11', [
           myCss: process.env.CSS_1,
           css_type: process.env.CSS_TYPE_1,
           script_type: process.env.SCRIPT_TYPE_3,
-          exports_object: 'let exports = {}',
+          exports_object: process.env.SCRIPT_3,
+          s_type_1: process.env.SCRIPT_TYPE_3,
+          s_source_1: process.env.SCRIPT_4,
         });
     }
   },
