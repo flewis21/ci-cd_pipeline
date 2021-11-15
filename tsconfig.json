@@ -60,6 +60,7 @@
     // Disable files before editing outDir
     // "outDir": "./package/frontend/ethereum/backend/output"
     // "outDir": "./package/frontend/public/output"
-    "outDir": "./package/frontend/ethereum/output"
+    // "outDir": "./package/frontend/ethereum/output"
+    "outDir": "./package/frontend/ethereum"
   }
 }
