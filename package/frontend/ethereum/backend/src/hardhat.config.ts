@@ -1,4 +1,5 @@
 import dotenv from 'dotenv';
+import '@nomiclabs/hardhat-ethers';
 dotenv.config();
 const nurl = process.env.INFURA_1;
 /**
