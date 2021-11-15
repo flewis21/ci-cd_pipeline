@@ -10,13 +10,17 @@
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.3.2",
-    "ethers": "^5.5.1",
     "solc": "^0.8.9",
     "web3": "^1.6.0"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.22",
     "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.5.1",
     "hardhat": "^2.6.8",
+    "hardhat-ethers": "^1.0.1",
     "ts-node": "^10.4.0"
   }
 }
