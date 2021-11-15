@@ -8,19 +8,14 @@
     "type": "$HOME/.nvm/versions/node/v16.4.0/bin/npx tsc -w",
     "start": "$HOME/.nvm/versions/node/v16.4.0/bin/npx concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\""
   },
-  "dependencies": {
-    "@openzeppelin/contracts": "^4.3.2",
-    "solc": "^0.8.9",
-    "web3": "^1.6.0"
-  },
   "devDependencies": {
+    "@openzeppelin/contracts": "^4.3.3",
     "@types/chai": "^4.2.22",
     "@types/mocha": "^9.0.0",
     "chai": "^4.3.4",
-    "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.1",
-    "hardhat": "^2.6.8",
-    "hardhat-ethers": "^1.0.1",
+    "hardhat": "^0.0.7",
+    "solc": "^0.8.10",
     "ts-node": "^10.4.0"
   }
 }
