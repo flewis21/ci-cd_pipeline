@@ -6,7 +6,8 @@
   // "files": ["./package/frontend/ethereum/backend/src/server.ts"],
   // "files": ["./package/frontend/ethereum/backend/src/index.ts"],
   // "files": ["./package/frontend/ethereum/backend/src/web3Dev.ts"],
-  "files": ["./package/frontend/ethereum/backend/src/ether_index.ts"],
+  // "files": ["./package/frontend/ethereum/backend/src/ether_index.ts"],
+  "files": ["./package/frontend/ethereum/backend/src/hardhat.config.ts"],
 
   // exclude
   "exclude": ["node_modules"],
