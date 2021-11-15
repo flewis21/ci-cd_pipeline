@@ -8,6 +8,7 @@
   // "files": ["./package/frontend/ethereum/backend/src/web3Dev.ts"],
   // "files": ["./package/frontend/ethereum/backend/src/ether_index.ts"],
   "files": ["./package/frontend/ethereum/backend/src/hardhat.config.ts"],
+  // "files": ["./package/frontend/ethereum/node_modules/hardhat-ethers/"],
 
   // exclude
   "exclude": ["node_modules"],
@@ -60,7 +61,7 @@
     // Disable files before editing outDir
     // "outDir": "./package/frontend/ethereum/backend/output"
     // "outDir": "./package/frontend/public/output"
-    // "outDir": "./package/frontend/ethereum/output"
-    "outDir": "./package/frontend/ethereum"
+    "outDir": "./package/frontend/ethereum/output"
+    // "outDir": "./package/frontend/ethereum"
   }
 }
