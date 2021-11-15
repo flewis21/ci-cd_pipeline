@@ -7,3 +7,6 @@ const customHttpProvider = new ethers.providers.JsonRpcProvider(url);
 customHttpProvider.getBlockNumber().then((result) => {
 	console.log("Current block number: " + result);
 });
+.catch((error) 	=> {
+	conole.log(error);
+});
