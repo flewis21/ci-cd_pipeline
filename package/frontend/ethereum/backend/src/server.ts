@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import express from 'express';
-irc/mport serverless from 'serverless-http';
+import serverless from 'serverless-http';
 import path from 'path';
 dotenv.config();
 const app = express();
@@ -29,10 +29,10 @@ app.use('/1972/09/11', [
           short_description: process.env.SHORT_DESCRIPTION,
           sipoc_form: process.env.SIPOC_1,
           sipoc_slide: process.env.SIPOC_2,
-          myScript: process.env.SCRIPT_2,
+          myScript: process.env.SCRIPT_1,
           myCss: process.env.CSS_1,
           css_type: process.env.CSS_TYPE_1,
-          script_type: process.env.SCRIPT_TYPE_3,
+          script_type: process.env.SCRIPT_TYPE_2,
           exports_object: process.env.SCRIPT_3,
           s_type_1: process.env.SCRIPT_TYPE_3,
           s_source_1: process.env.SCRIPT_4,
