@@ -108,6 +108,7 @@ const markHigherBmi = markBmi >= johnBmi;
 console.log(markHigherBmi);
 */
 
+/*
 const a = 2;
 const b = 7;
 
@@ -138,3 +139,54 @@ console.log(Math.random());
 
 // 1-6
 console.log(Math.floor(Math.random() * 5) + 1);
+*/
+
+
+const matrix = [[0, 1, 2], [3, 4, 5], [6, 7, 8]];
+console.log(matrix.length);
+console.log(matrix[0]);
+console.log(matrix[1]);
+console.log(matrix[2]);
+console.log(matrix[1][2]);
+
+const arr = [0, 1, 2, 3, 4];
+arr.push(5);
+console.log(arr);
+arr.unshift(-1);
+console.log(arr);
+const value = arr.pop();
+console.log('Value is ' + value);
+console.log('Array is ' + arr);
+const value2 = arr.shift();
+console.log('Value is ' + value2);
+console.log('Array is ' + arr);
+
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const filtered = numbers.filter(x => x % 2 == 1);
+console.log('Numbers are ' + numbers);
+console.log('Filtered is ' + filtered);
+const powers = filtered.map(x => x ** 2);
+console.log('Powers are ' + powers);
+const sum = powers.reduce((prev, current) => prev + current, 0);
+console.log('Sum is ' + sum);
+
+
+
+const numbers2 = [0, 1, 3, 6, 7, 8, 9, 2, 4, 5, 31, -2];
+console.log('Numbers are ' + numbers2);
+numbers2.sort((a, b) => a - b);
+console.log('Sorted (a - b) is ' + numbers2);
+numbers2.sort((a, b) => b - a);
+console.log('Sorted (b - a) is ' + numbers2);
+
+
+function calculateOddPowersSum(arr) {
+	const powers = arr.filter(x => x % 2 === 1).map(x => x ** 2);
+	return powers.reduce((prev, current) => prev + current, 0);
+}
+
+console.log('Sum of numbers is ' + calculateOddPowersSum(numbers));
+console.log('Sum of numbers2 is ' + calculateOddPowersSum(numbers2));
+
+
