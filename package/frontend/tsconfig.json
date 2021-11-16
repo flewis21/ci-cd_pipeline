@@ -36,7 +36,6 @@
 
   // pass set options to references
   "compilerOptions": {
-    "composite": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "importHelpers": true,
