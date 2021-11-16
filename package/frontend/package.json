@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "1.0.0",
-  "main": "output/index",
+  "main": "./public/output/index",
   "keywords": [],
   "scripts": {
     "offline_dev": "serverless offline",
