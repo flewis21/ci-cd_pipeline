@@ -19,7 +19,7 @@ let options = {
   // }
 };
 
-function callback(error, response, body) {
+function callback(error, response, body) public {
   if (!error && response.statusCode == 200) {
     json = response.body;
     let obj = JSON.parse(json);
