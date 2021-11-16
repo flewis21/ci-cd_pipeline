@@ -18,7 +18,7 @@
     },
     {
       // pass control to frontend tsconfig
-      "path": "../../tsconfig.json"
+      "path": "../../tsconfig-src.json"
     },
     {
       // pass control to public tsconfig
