@@ -141,6 +141,7 @@ console.log(Math.random());
 console.log(Math.floor(Math.random() * 5) + 1);
 */
 
+/*
 const matrix = [
   [0, 1, 2],
   [3, 4, 5],
@@ -209,3 +210,36 @@ const arrow = (name, age) => {
 
 arrow('Alice', 24);
 arrow('Mel', 30);
+*/
+
+
+function power(a, b) {
+	return a ** b;
+}
+
+console.log(power(2, 2));
+console.log(power(2, 3));
+console.log(power(3, 2));
+console.log(power(3, 3));
+
+
+function powerfn(b) {
+	return (a) => a ** b;
+}
+
+const power2 = powerfn(2);
+const power3 = powerfn(3);
+
+console.log(power2(2));
+console.log(power3(2));
+console.log(power2(3));
+console.log(power3(3));
+
+
+function credentials(login, password) {
+	return () => calculateHash(login, password);
+}
+
+const hash = credentials('admin', '1234');
+
+console.log('Your hash is', hash);
