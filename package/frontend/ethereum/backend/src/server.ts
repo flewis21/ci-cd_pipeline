@@ -36,6 +36,9 @@ app.use('/1972/09/11', [
           exports_object: process.env.SCRIPT_3,
           s_type_1: process.env.SCRIPT_TYPE_3,
           s_source_1: process.env.SCRIPT_4,
+          image_author_1: process.env.AUTHOR_IMAGE_1,
+          image_author_2: process.env.AUTHOR_IMAGE_2,
+          mdn_express_1: process.env.EXPRESS_MDN_1,
         });
     }
   },
