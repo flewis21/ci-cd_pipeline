@@ -141,8 +141,11 @@ console.log(Math.random());
 console.log(Math.floor(Math.random() * 5) + 1);
 */
 
-
-const matrix = [[0, 1, 2], [3, 4, 5], [6, 7, 8]];
+const matrix = [
+  [0, 1, 2],
+  [3, 4, 5],
+  [6, 7, 8],
+];
 console.log(matrix.length);
 console.log(matrix[0]);
 console.log(matrix[1]);
@@ -163,15 +166,13 @@ console.log('Array is ' + arr);
 
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-const filtered = numbers.filter(x => x % 2 == 1);
+const filtered = numbers.filter((x) => x % 2 == 1);
 console.log('Numbers are ' + numbers);
 console.log('Filtered is ' + filtered);
-const powers = filtered.map(x => x ** 2);
+const powers = filtered.map((x) => x ** 2);
 console.log('Powers are ' + powers);
 const sum = powers.reduce((prev, current) => prev + current, 0);
 console.log('Sum is ' + sum);
-
-
 
 const numbers2 = [0, 1, 3, 6, 7, 8, 9, 2, 4, 5, 31, -2];
 console.log('Numbers are ' + numbers2);
@@ -180,13 +181,31 @@ console.log('Sorted (a - b) is ' + numbers2);
 numbers2.sort((a, b) => b - a);
 console.log('Sorted (b - a) is ' + numbers2);
 
-
 function calculateOddPowersSum(arr) {
-	const powers = arr.filter(x => x % 2 === 1).map(x => x ** 2);
-	return powers.reduce((prev, current) => prev + current, 0);
+  const powers = arr.filter((x) => x % 2 === 1).map((x) => x ** 2);
+  return powers.reduce((prev, current) => prev + current, 0);
 }
 
 console.log('Sum of numbers is ' + calculateOddPowersSum(numbers));
 console.log('Sum of numbers2 is ' + calculateOddPowersSum(numbers2));
 
+function dontKnow(name, age) {
+  console.log('Your name is', name, 'and your age is', age);
+}
 
+dontKnow('Alice', 24);
+dontKnow('Jeff', 30);
+
+const fn = function (name, age) {
+  console.log('Your name is', name, 'and your age is', age);
+};
+
+fn('Alice', 24);
+fn('Jeff', 30);
+
+const arrow = (name, age) => {
+  console.log('Your name is', name, 'and your age is', age);
+};
+
+arrow('Alice', 24);
+arrow('Mel', 30);
