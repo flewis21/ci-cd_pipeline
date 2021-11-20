@@ -1,10 +1,10 @@
 <h1>The Code Magazine</h1>
 <h2>The Basic Language of the Web: HTML</h2>
 
-<img src="<%- image_author_2 %>"  alt="Author's picture" width="50" height="50"/>
+<img src="<%- process.env.AUTHOR_IMAGE_2 || "images/virgo.jpg" %>"  alt="Author's picture" width="50" height="50"/>
 <p>My name is <strong>Fabian</strong>, and this is my very first webpage :D</p>
 
-<img src="<%- image_author_1 %>" alt="Principles of United Hearts VIP 11" width="500" height="200"/>
+<img src="<%- process.env.AUTHOR_IMAGE_1 || "images/uh1.png" %>" alt="Principles of United Hearts VIP 11" width="500" height="200"/>
 <p>My name is Fabian, and this is my very <em>first webpage</i> :D</em>
 
 <p>My name is Fabian, and this is my very first webpage :D</p>
@@ -36,7 +36,7 @@ first webpage :D</p>
 </ol>
 
 <p>You can learn more at
-<a href="<%- mdn_express_1 %>" target="_blank">Express Web Framework</a></p>
+<a href="<%- process.env.EXPRESS_MDN_1 || "https://about:blank" %>" target="_blank">Express Web Framework</a></p>
 
 <h3>Why should you learn HTML?</h3>
 
