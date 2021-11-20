@@ -23,38 +23,13 @@ app.use('/1972/09/11', [
   function (req: any, res: any, next: any) {
     if (req.url === '/') {
       express.static('public_html'),
-        res.status(200).render('index', {
-          title:'THe Basic Langusge of the Web: HTML' ||  process.env.TITLE,
-          editor: process.env.EDITOR,
-          short_description: process.env.SHORT_DESCRIPTION,
-          sipoc_form: process.env.SIPOC_1,
-          sipoc_slide: process.env.SIPOC_2,
-          myScript: process.env.SCRIPT_1,
-          myCss: process.env.CSS_1,
-          css_type: process.env.CSS_TYPE_1,
-          script_type: process.env.SCRIPT_TYPE_2,
-          exports_object: process.env.SCRIPT_3,
-          s_type_1: process.env.SCRIPT_TYPE_3,
-          s_source_1: process.env.SCRIPT_4,
-          image_author_1: process.env.AUTHOR_IMAGE_1,
-          image_author_2: process.env.AUTHOR_IMAGE_2,
-          mdn_express_1: process.env.EXPRESS_MDN_1,
-        });
+        res.status(200).render(process.env.WEBSITE_1 || 'index', {});
     }
   },
 ]);
 
 app.get('*', function (req, res) {
-  res.status(404).render('index', {
-    title: '404 Page not found',
-    editor: 'N/A',
-    short_description: 'unknown html',
-    css_type: 'none',
-    myCss: 'none',
-    script_type: 'none',
-    myScript: 'none',
-    exports_object: 'none',
-  });
+  res.status(404).render(process.env.WEBSITE_3 || 'error', {});
 });
 
 // Server
