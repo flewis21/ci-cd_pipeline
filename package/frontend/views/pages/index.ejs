@@ -17,8 +17,7 @@
 
 	</header>
 		
-		<script <%- script_type %> src="<%- myScript %>"></script>
-		<script><%- exports_object %></script>
+		<script type="<%- process.env.SCRIPT_TYPE_1 || "" %>" src="<%- process.env.SCRIPT_1 || "" %>"></script>
 		
 	</body>
 	
