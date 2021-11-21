@@ -212,9 +212,8 @@ arrow('Alice', 24);
 arrow('Mel', 30);
 */
 
-
 function power(a, b) {
-	return a ** b;
+  return a ** b;
 }
 
 console.log(power(2, 2));
@@ -222,9 +221,8 @@ console.log(power(2, 3));
 console.log(power(3, 2));
 console.log(power(3, 3));
 
-
 function powerfn(b) {
-	return (a) => a ** b;
+  return (a) => a ** b;
 }
 
 const power2 = powerfn(2);
@@ -235,9 +233,8 @@ console.log(power3(2));
 console.log(power2(3));
 console.log(power3(3));
 
-
 function credentials(login, password) {
-	return () => calculateHash(login, password);
+  return () => calculateHash(login, password);
 }
 
 const hash = credentials('admin', '1234');
