@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 dotenv.config();
+
 import request from 'request';
 
 const headers = {
@@ -19,10 +20,13 @@ let options = {
   // }
 };
 
-function callback(error, response, body) public {
+/*
+function callback(error, response, body) {
   if (!error && response.statusCode == 200) {
     json = response.body;
     let obj = JSON.parse(json);
     console.log(obj);
   }
 }
+
+*/
