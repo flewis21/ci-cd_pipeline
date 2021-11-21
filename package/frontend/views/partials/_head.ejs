@@ -1,12 +1,15 @@
+<head>
 
     <base target="_top">
 <meta charset="UTF-8" />
-<meta name="author" content="<%- process.env.EDITOR_1 || "CMOLewis" %>">
+<meta name="author" content="<%- author_1 || process.env.EDITOR_1 %>">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="<%- process.env.SHORT_DESCRIPTION_1 || "Test" %>">
-<meta name="keywords" content="gas, nodejs, aws">
+<meta name="description" content="<%- desc_1 || process.env.SHORT_DESCRIPTION_1 %>">
+<meta name="keywords" content="<%- keywords_1 || process.env.KEYWORDS_1 %>" >
 <lint rel="shortcut icon" href="#">
 <link rel="icon" href="#">
-<link type="<%- process.env.CSS_TYPE_1 || "text/css" %>" rel="stylesheet" href="<%- process.env.CSS_1 || "css/style.css" %>">
-<script type="<%- process.env.SCRIPT_TYPE_1 || "" %>" src="<%- process.env.SCRIPT_1 || "" %>"></script>
-<title><%- process.env.TITLE_1 || "Home" %></title>
+<link type="<%- c_type_1 || process.env.CSS_TYPE_1 %>" rel="stylesheet" href="<%- css_1 || process.env.CSS_1 %>">
+<script type="<%- s_type_1 || process.env.SCRIPT_TYPE_2 %>" src="<%- script_1 || process.env.SCRIPT_1 %>"></script>
+<title><%- title || process.env.TITLE_1 %></title>
+
+</head>

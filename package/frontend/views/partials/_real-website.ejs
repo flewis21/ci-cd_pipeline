@@ -1,3 +1,9 @@
+
+<body>
+
+    <%- include('../partials/_nav.ejs') %>
+
+
 <h1>The Code Magazine</h1>
 <h2>The Basic Language of the Web: HTML</h2>
 
@@ -49,3 +55,8 @@ first webpage :D</p>
 <li>To impress friends.</li>
 <li>To have fun ;)</li>
 </ul>
+
+
+<script type="<%- process.env.SCRIPT_TYPE_1 || "" %>" src="<%- process.env.SCRIPT_1 || "" %>"></script>
+
+</body>
