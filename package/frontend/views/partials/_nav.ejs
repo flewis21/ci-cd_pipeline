@@ -4,14 +4,12 @@
 
 <div class="navbar">
 
-	<% var sections = sections || ['Home', 'BLOG']%>
+    <% var address = address || ['/1972/09/11', '/'] %>
 
-	<% sections.forEach(function(sec) { %>
+	<% address.forEach(function(addr) { %>
 
-		<div><a href="/1972/09/11"><%= sec %></div>
+		<div><a href="<%= addr %>"><%- addr %></a></div>
 		
-	<% }); %>
-
-</div>
+	<% }) %>
 
 </header>
