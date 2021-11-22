@@ -65,7 +65,10 @@
   },
 
   // Enable outDir: ./package/frontend/ethereum/backend/output again before enabling any one of these
-  "files": ["./src/server.ts"]
+   "files": [
+      "./src/server.ts",
+      "./src/routes.ts"
+    ]
 
   // Enable outDir: ./package/frontend/public/output again before enabling any one of these
   // "files": ["./package/frontend/ethereum/backend/src/index.ts"]
