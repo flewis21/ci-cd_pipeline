@@ -39,19 +39,19 @@ app.use('/1972/09/11', [
 ]);
 
 router.get('*', function (req, res, next) {
-    res.redirect(404).render(process.env.WEBSITE_4 || 'first', {
-      title: 'BLOG!',
-      s_type_1: '??',
-      script_1: '??',
-      c_type_1: 'text/css',
-      css_1: '1972/09/11/css/style.css',
-      desc_1: 'Error',
-      author_1: 'Page',
-      keywords_1: 'error',
-    });
+  res.redirect(404).render(process.env.WEBSITE_4 || 'first', {
+    title: 'BLOG!',
+    s_type_1: '??',
+    script_1: '??',
+    c_type_1: 'text/css',
+    css_1: '1972/09/11/css/style.css',
+    desc_1: 'Error',
+    author_1: 'Page',
+    keywords_1: 'error',
   });
-  
-  app.get('*', function (req, res) {
+});
+
+app.get('*', function (req, res) {
   res.status(404).render(process.env.WEBSITE_3 || 'error', {
     title: '404!',
     s_type_1: '??',
