@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 import express from 'express';
+import router from './routes';
 import serverless from 'serverless-http';
 import path from 'path';
 dotenv.config();
