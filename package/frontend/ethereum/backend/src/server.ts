@@ -22,7 +22,7 @@ app.set('view engine', 'ejs');
 // Add middleware libraries.
 app.use(logger('dev'));
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 
 // One main middleware for / using express.static and res.render.
@@ -65,29 +65,29 @@ router.get('*', function (req, res, next) {
 });
 
 // Catch 404  and forward to error handler
-app.use(function(req, res, next) {
-    next(createError(404));
+app.use(function (req, res, next) {
+  next(createError(404));
 });
 
 // Error handling
-app.use(function(err, req, res, next) {
-    // Set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
-    
-    // Render the error page
-    // app.get('*', function (req, res) {
-    res.status(err.status || 500).render(process.env.WEBSITE_3 || 'error', {
-        title: '404!',
-        s_type_1: '??',
-        script_1: '??',
-        c_type_1: 'text/css',
-        css_1: '1972/09/11/css/style.css',
-        desc_1: 'Error',
-        author_1: 'Page',
-        keywords_1: 'error',
-    });
-    // });
+app.use(function (err, req, res, next) {
+  // Set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+  // Render the error page
+  // app.get('*', function (req, res) {
+  res.status(err.status || 500).render(process.env.WEBSITE_3 || 'error', {
+    title: '404!',
+    s_type_1: '??',
+    script_1: '??',
+    c_type_1: 'text/css',
+    css_1: '1972/09/11/css/style.css',
+    desc_1: 'Error',
+    author_1: 'Page',
+    keywords_1: 'error',
+  });
+  // });
 });
 
 // Server
