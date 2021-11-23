@@ -43,7 +43,7 @@
     "lib": ["dom", "es6"],
     "skipLibCheck": true,
     "declaration": true,
-    "declarationDir": "./output/@types",
+    "declarationDir": "./ethereum/backend/output/@types",
 
     // Disable for plain javascript
     // "isolatedModules": true,
