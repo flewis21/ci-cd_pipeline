@@ -1,13 +1,13 @@
 {
   // receive control from tsconfig-setting
   "compilerOptions": {
-    "outDir": "./package/backend/output/",
+    // "outDir": "./package/frontend/ethereum/backend/output/",
     "strict": true,
-    "isolatedModules": true,
+    // "isolatedModules": true,
     "esModuleInterop": true,
     "importHelpers": true,
     "forceConsistentCasingInFileNames": true,
-    "skipDefaultLibCheck": true,
+    // "skipDefaultLibCheck": true,
     "checkJs": true,
     "allowJs": true
   }
