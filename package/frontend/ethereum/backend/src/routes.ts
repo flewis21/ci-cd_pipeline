@@ -3,7 +3,7 @@ import express from 'express';
 const router = express.Router();
 
 // Require controller modules.
-import genre_controller from '../../public/output/genreController';
+import genre_controller from './genreController';
 
 // Page routes.
 
