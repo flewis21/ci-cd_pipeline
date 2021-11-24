@@ -5,9 +5,10 @@ import serverless from 'serverless-http';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
-import router from './routes';
-import indexRouter from './routesIndex';
-import usersRouter from './routesUsers';
+const router = require('./routes');
+const blogsRouter = require('./routesBlogs');
+const indexRouter = require('./routesIndex');
+const usersRouter = require('./routesUsers');
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
@@ -24,71 +25,37 @@ app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 
 // One main middleware for / using express.static and res.render.
-app.use('/Home', indexRouter);
-app.use('/users', usersRouter);
 app.use('/1972/09/11', [
-  // Use express.static first to look for a static resource.
-  express.static(app.get('public_html')),
-
-  // If not found render main index, but only for / else next.
-  // express.static('public_html'),
-  function (req: any, res: any, next: any) {
-    if (req.url === '/') {
-      express.static('public_html'),
-        res.status(200).render(process.env.WEBSITE_1 || 'index', {
-          title: '',
-          s_type_1: '',
-          script_1: '',
-          c_type_1: '',
-          css_1: '',
-          desc_1: '',
-          author_1: '',
-          keywords_1: '',
-        });
-    }
-  },
+    // Use express.static first to look for a static resource.
+    express.static(app.get('public_html')),
+    // If not found render main index, but only for / else next.
+    // express.static('public_html'),
+    indexRouter
 ]);
 
-router.get('*', function (req, res, next) {
-  res.redirect(404).render(process.env.WEBSITE_4 || 'first', {
-    title: 'BLOG!',
-    s_type_1: '??',
-    script_1: '??',
-    c_type_1: 'text/css',
-    css_1: '1972/09/11/css/style.css',
-    desc_1: 'Error',
-    author_1: 'Page',
-    keywords_1: 'error',
-  });
-});
+// Blogging
+app.use('/BLOG', blogsRouter);
+
+// User directory
+app.use('/users', usersRouter);
 
 // Catch 404  and forward to error handler
 app.use(function (req, res, next) {
-  next(createError(404));
-});
-
-// Error handling
-app.use(function (err, req, res, next) {
-  // Set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
-
-  // Render the error page
-  // app.get('*', function (req, res) {
-  res.status(err.status || 500).render(process.env.WEBSITE_3 || 'error', {
-    title: '404!',
-    s_type_1: '??',
-    script_1: '??',
-    c_type_1: 'text/css',
-    css_1: '1972/09/11/css/style.css',
-    desc_1: 'Error',
-    author_1: 'Page',
-    keywords_1: 'error',
+    next(createError(404));
   });
-  // });
-});
 
-// Server
+  // Error handling
+  app.use(function (err, req, res, next) {
+      // Set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
+
+    // Render the error page
+    res.status(err.status || 200);
+    res.render(process.env.WEBSITE_3 || 'error', {});
+
+
+    // Server
 app.listen(port, () => {
   console.log('Listening on:', baseUrl);
 });
