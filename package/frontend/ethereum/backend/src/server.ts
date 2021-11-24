@@ -9,6 +9,7 @@ const router = require('./routes');
 const blogsRouter = require('./routesBlogs');
 const indexRouter = require('./routesIndex');
 const usersRouter = require('./routesUsers');
+const defaultRouter = require('./routesDefault');
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
@@ -25,13 +26,10 @@ app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 
 // One main middleware for / using express.static and res.render.
-app.use('/1972/09/11', [
-    // Use express.static first to look for a static resource.
-    express.static(app.get('public_html')),
-    // If not found render main index, but only for / else next.
-    // express.static('public_html'),
-    indexRouter
-]);
+app.use('/1972/09/11', defaultRouter);
+
+// Random
+app.use('/', indexRouter);
 
 // Blogging
 app.use('/BLOG', blogsRouter);
@@ -41,21 +39,21 @@ app.use('/users', usersRouter);
 
 // Catch 404  and forward to error handler
 app.use(function (req, res, next) {
-    next(createError(404));
-  });
+  next(createError(404));
+});
 
-  // Error handling
-  app.use(function (err, req, res, next) {
-      // Set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = req.app.get('env') === 'development' ? err : {};
+// Error handling
+app.use(function (err, req, res, next) {
+  // Set locals, only providing error in development
+  res.locals.message = err.message;
+  res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-    // Render the error page
-    res.status(err.status || 200);
-    res.render(process.env.WEBSITE_3 || 'error', {});
+  // Render the error page
+  res.status(err.status || 500);
+  res.render(process.env.WEBSITE_3 || 'error');
+});
 
-
-    // Server
+// Server
 app.listen(port, () => {
   console.log('Listening on:', baseUrl);
 });

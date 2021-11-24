@@ -3,6 +3,8 @@ import dotenv from 'dotenv';
 dotenv.config();
 const router = express.Router();
 
+// If not found render main index, but only for / else next.
+
 /** GET users listing. */
 router.get('/', function (req: any, res: any, next: any) {
   if (req.url === '/') {
