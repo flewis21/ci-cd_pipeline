@@ -26,7 +26,10 @@ app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 
 // One main middleware for / using express.static and res.render.
-app.use('/1972/09/11', defaultRouter);
+app.use('/1972/09/11', 
+    // Use express.static first to look for a static resource.
+        express.static(app.get('public_html'))
+);
 
 // Random
 app.use('/', indexRouter);
