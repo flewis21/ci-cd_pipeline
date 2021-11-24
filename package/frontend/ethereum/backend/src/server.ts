@@ -5,11 +5,9 @@ import serverless from 'serverless-http';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
-const router = require('./routes');
 const blogsRouter = require('./routesBlogs');
 const indexRouter = require('./routesIndex');
 const usersRouter = require('./routesUsers');
-const defaultRouter = require('./routesDefault');
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
@@ -26,9 +24,10 @@ app.use(express.urlencoded({extended: false}));
 app.use(cookieParser());
 
 // One main middleware for / using express.static and res.render.
-app.use('/1972/09/11', 
-    // Use express.static first to look for a static resource.
-        express.static(app.get('public_html'))
+app.use(
+  '/1972/09/11',
+  // Use express.static first to look for a static resource.
+  express.static(app.get('public_html'))
 );
 
 // Random
