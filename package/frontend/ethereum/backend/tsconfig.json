@@ -71,7 +71,8 @@
     "./src/www.ts",
     "./src/routesIndex.ts",
     "./src/routesUsers.ts",
-    "./src/routesBlogs.ts"
+    "./src/routesBlogs.ts",
+    "./src/routesDefault.ts"
   ]
 
   // Enable outDir: ./package/frontend/public/output again before enabling any one of these
