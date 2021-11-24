@@ -68,7 +68,6 @@
   "files": [
     "./src/server.ts",
     "./src/routes.ts",
-    "./src/www.ts",
     "./src/routesIndex.ts",
     "./src/routesUsers.ts",
     "./src/routesBlogs.ts",
