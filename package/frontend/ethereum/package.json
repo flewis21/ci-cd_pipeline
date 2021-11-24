@@ -1,12 +1,13 @@
 {
   "name": "ethereum",
   "version": "1.0.0",
-  "main": "../backend/output/server",
+  "main": "./output/server",
   "scripts": {
-    "dev": "$HOME/.nvm/versions/node/v16.4.0/bin/npx concurrently --kill-others-on-fail --restart-tries 0 -n LINT,CODE -c grey,blue \"npm run ts-lint\" \"NODE_ENV=development $HOME/.nvm/versions/node/v16.4.0/bin/npx nodemon -w\"",
-    "ts-lint": "read -p \"`$HOME/.nvm/versions/node/v16.4.0/bin/npx ts-standard --verbose --fix`\"",
-    "type": "$HOME/.nvm/versions/node/v16.4.0/bin/npx tsc -w",
-    "start": "$HOME/.nvm/versions/node/v16.4.0/bin/npx concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\""
+    "dev": "concurrently --kill-others-on-fail --restart-tries 0 -n LINT,CODE -c grey,blue \"npm run format\" \"nodemon -w\"",
+    "ts-lint": "read -p \"`ts-standard --verbose --fix`\"",
+    "format": "prettier ../../../ --write",
+    "type": "tsc -w",
+    "start": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\""
   },
   "devDependencies": {
     "@openzeppelin/contracts": "^4.3.3",
