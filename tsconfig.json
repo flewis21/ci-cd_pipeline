@@ -18,7 +18,7 @@
     },
     {
       // pass control to frontend tsconfig
-      "path": "./package/frontend/tsconfig-src.json"
+      "path": "./package/frontend/tsconfig-base.json"
     },
     {
       // pass control to public tsconfig
@@ -32,47 +32,5 @@
       // pass control to simpleGit tsconfig
       "path": "./package/simpleGit/tsconfig.json"
     }
-  ],
-
-  // pass set options to references
-  "compilerOptions": {
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "importHelpers": true,
-    "moduleResolution": "node"
-    // "lib": ["dom", "es6"],
-    // "skipLibCheck": true,
-    // "declaration": true,
-    // "declarationDir": "./package/frontend/ethereum/backend/output/@types",
-
-    // Disable for plain javascript
-    // "isolatedModules": true,
-    // "module": "commonjs",
-    // "target": "es6",
-    // Enable for plain javascript
-    // "target": "es5",
-    // "module": "es2015",
-
-    // Disable files: [./package/frontend/ethereum/backend/src/server.ts] before editing outDir
-    // "outDir": "./package/frontend/ethereum/backend/output"
-
-    // Disable files: [./package/frontend/ethereum/backend/src/index.ts] before editing outDir
-    // "outDir": "./package/frontend/public/output"
-
-    // Disable files: [./package/frontend/ethereum/backend/src/hardhat.config.ts] before editing outDir
-    // "outDir": "./package/frontend/ethereum/output"
-    // "outDir": "./package/frontend/ethereum"
-  }
-
-  // Enable outDir: ./package/frontend/ethereum/backend/output again before enabling any one of these
-  // "files": ["./package/frontend/ethereum/backend/src/server.ts"]
-
-  // Enable outDir: ./package/frontend/public/output again before enabling any one of these
-  // "files": ["./package/frontend/ethereum/backend/src/index.ts"]
-
-  // Enable outDir: ./package/frontend/ethereum/output again before enabling any one of these
-  // "files": ["./package/frontend/ethereum/backend/src/web3Dev.ts"]
-  // "files": ["./package/frontend/ethereum/backend/src/infura_rpc.ts"]
-  // "files": ["./package/frontend/ethereum/backend/src/ether_index.ts"]
-  // "files": ["./package/frontend/ethereum/backend/src/hardhat.config.ts"]
+  ]
 }
