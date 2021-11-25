@@ -1,6 +1,6 @@
 {
-  // receive control from backend tsconfig-base
-  // pass control to tsconfig-base
+  // From referenced tsconfig-base
+  // To root tsconfig-base
   "extends": "./tsconfig-base.json",
 
   // pass set options to tsconfig-base
@@ -10,7 +10,7 @@
     // "isolatedModules": true,
     "noEmitOnError": true,
     "types": [],
-    "declaration": true,
+    // "declaration": true,
     // "declarationDir": "./package/frontend/ethereum/backend/output/@types",
     // "declarationMap": true,
     "newLine": "lf",
