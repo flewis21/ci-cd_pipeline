@@ -54,13 +54,13 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render(process.env.WEBSITE_3 || 'error', {
     title: 'ERROR 404',
-    s_type_1: '??',
-    script_1: '??',
-    c_type_1: 'text/css',
-    css_1: '/1972/09/11/css/style.css',
-    desc_1: 'Error',
+    s_type_1: '',
+    script_1: '',
+    c_type_1: '',
+    css_1: '',
+    desc_1: '',
     author_1: '',
-    keywords_1: 'error',
+    keywords_1: '',
   });
 });
 
