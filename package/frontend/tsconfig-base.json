@@ -6,7 +6,7 @@
   "complerOptions": {
     // "rootDir": ".",
     // Disable files: [./package/frontend/ethereum/backend/src/index.ts] before editing outDir
-    "outDir": ".public/output"
+    "outDir": "./public/output"
   },
 
   // pass references to root tsconfig-setting
