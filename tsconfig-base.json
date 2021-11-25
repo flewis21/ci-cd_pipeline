@@ -2,6 +2,7 @@
   // From root tsconfig-setting
   // pass set options to references
   "compilerOptions": {
+    "composite": true,
     // "outDir": "./package/frontend/ethereum/backend/output/",
     "strict": true,
     // "isolatedModules": true,
