@@ -2,8 +2,8 @@
   "name": "ci-cd_pipeline",
   "version": "1.0.0",
   "description": "",
-  "main": "./package/frontend/ethereum/backend/output/server",
   "keywords": [],
+  "main": "./package/frontend/public/output/index",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "type": "tsc -w",
