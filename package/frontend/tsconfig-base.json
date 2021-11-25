@@ -1,12 +1,12 @@
 {
-  // receive control from tsconfig-output
   // Pass control over to root tsconfig-setting/
   "extends": "../../tsconfig-setting.json",
 
   // pass Set options for import and rootDir to root tsconfig-setting
   "complerOptions": {
-    // "importHelpers": true,
-    "rootDir": "."
+    // "rootDir": ".",
+    // Disable files: [./package/frontend/ethereum/backend/src/index.ts] before editing outDir
+    "outDir": ".public/output"
   },
 
   // pass references to root tsconfig-setting
@@ -14,6 +14,9 @@
     // reference points
   ],
 
+  // Enable outDir: ./package/frontend/public/output again before enabling any one of these
+  "files": ["./ethereum/backend/src/index.ts"]
+
   // pass include to root tsconfig-setting
-  "include": ["../backend/src/**/*.ts"]
+  //"include": ["../backend/src/**/*.ts"]
 }
