@@ -1,14 +1,45 @@
 {
-  // receive control from tsconfig-setting
+  // From root tsconfig-setting
+  // pass set options to references
   "compilerOptions": {
     // "outDir": "./package/frontend/ethereum/backend/output/",
     "strict": true,
     // "isolatedModules": true,
-    "esModuleInterop": true,
-    "importHelpers": true,
     "forceConsistentCasingInFileNames": true,
     // "skipDefaultLibCheck": true,
     "checkJs": true,
-    "allowJs": true
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "moduleResolution": "node"
+    // "lib": ["dom", "es6"],
+    // "skipLibCheck": true,
+    // "declaration": true,
+    // "declarationDir": "./package/frontend/ethereum/backend/output/@types",
+
+    // Disable for plain javascript
+    // "isolatedModules": true,
+    // "module": "commonjs",
+    // "target": "es6",
+    // Enable for plain javascript
+    // "target": "es5",
+    // "module": "es2015",
+
+    // Disable files: [./package/frontend/ethereum/backend/src/server.ts] before editing outDir
+    // "outDir": "./package/frontend/ethereum/backend/output"
+
+    // Disable files: [./package/frontend/ethereum/backend/src/hardhat.config.ts] before editing outDir
+    // "outDir": "./package/frontend/ethereum/output"
+    // "outDir": "./package/frontend/ethereum"
   }
+
+  // Enable outDir: ./package/frontend/ethereum/backend/output again before enabling any one of these
+  // "files": ["./package/frontend/ethereum/backend/src/server.ts"]
+
+  // Enable outDir: ./package/frontend/ethereum/output again before enabling any one of these
+  // "files": ["./package/frontend/ethereum/backend/src/web3Dev.ts"]
+  // "files": ["./package/frontend/ethereum/backend/src/infura_rpc.ts"]
+  // "files": ["./package/frontend/ethereum/backend/src/ether_index.ts"]
+  // "files": ["./package/frontend/ethereum/backend/src/hardhat.config.ts"]
 }
