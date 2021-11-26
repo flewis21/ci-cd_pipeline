@@ -3,29 +3,14 @@
   // pass set options to references
   "compilerOptions": {
     "composite": true,
-    // "outDir": "./package/frontend/ethereum/backend/output/",
     "strict": true,
-    // "isolatedModules": true,
     "forceConsistentCasingInFileNames": true,
-    // "skipDefaultLibCheck": true,
     "checkJs": true,
     "allowJs": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "importHelpers": true,
     "moduleResolution": "node"
-    // "lib": ["dom", "es6"],
-    // "skipLibCheck": true,
-    // "declaration": true,
-    // "declarationDir": "./package/frontend/ethereum/backend/output/@types",
-
-    // Disable for plain javascript
-    // "isolatedModules": true,
-    // "module": "commonjs",
-    // "target": "es6",
-    // Enable for plain javascript
-    // "target": "es5",
-    // "module": "es2015",
 
     // Disable files: [./package/frontend/ethereum/backend/src/server.ts] before editing outDir
     // "outDir": "./package/frontend/ethereum/backend/output"
