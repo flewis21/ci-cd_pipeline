@@ -4,16 +4,12 @@
 
   // pass Set options for import and rootDir to root tsconfig-setting
   "complerOptions": {
+    "composite": true,
     "rootDir": "."
   },
 
   // pass references to root tsconfig-setting
   "references": [
     // reference points
-    {
-      "path": "./tsconfig-src"
-    }
-  ],
-
-  "exclude": ["node_modules", "./public/output"]
+  ]
 }
