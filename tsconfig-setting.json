@@ -7,20 +7,14 @@
   "compilerOptions": {
     "composite": true,
     "experimentalDecorators": true,
-    "isolatedModules": true,
     "noEmitOnError": true,
-    "types": [],
     "declaration": true,
-    "declarationDir": "./package/frontend/ethereum/backend/output/@types",
     "declarationMap": true,
     "newLine": "lf",
-    "pretty": true
-    // "sourceMap": true
+    "pretty": true,
+    "sourceMap": true
   },
   "reference": [
     // reference point
-    {
-      "path": "./package/frontend/tsconfig-base"
-    }
   ]
 }
