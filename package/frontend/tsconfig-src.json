@@ -1,3 +1,9 @@
 {
-  "extends": "./tsconfig-base.json"
+  "extends": "./tsconfig-base.json",
+  "compilerOptions": {
+    // Disable files: [./package/frontend/ethereum/backend/src/index.ts] before editing outDir
+    "outDir": "./public/output"
+  },
+  // Enable outDir: ./package/frontend/public/output again before enabling any one of these
+  "files": ["./ethereum/backend/src/index.ts"]
 }
