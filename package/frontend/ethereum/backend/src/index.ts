@@ -234,7 +234,7 @@ console.log(power2(3));
 console.log(power3(3));
 
 function credentials(login, password) {
-  return () => calculateHash(login, password);
+  // return () => calculateHash(login, password);
 }
 
 const hash = credentials('admin', '1234');
