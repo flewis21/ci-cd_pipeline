@@ -96,10 +96,10 @@ console.log(ageFabian, ageLorain, averageAge);
 
 /*
 // BMI = mass / height ** 2; mass / (height * height)
-let markHeight = 1.69;
-let markMass = 78;
-let johnHeight = 1.76;
-let johnMass = 85;
+const markHeight = 1.69;
+const markMass = 78;
+const johnHeight = 1.76;
+const johnMass = 85;
 const markBmi = markMass / markHeight ** 2;
 console.log(markBmi);
 const johnBmi = johnMass / (johnHeight * johnHeight);
@@ -212,6 +212,7 @@ arrow('Alice', 24);
 arrow('Mel', 30);
 */
 
+/*
 function power(a, b) {
   return a ** b;
 }
@@ -240,3 +241,17 @@ function credentials(login, password) {
 const hash = credentials('admin', '1234');
 
 console.log('Your hash is', hash);
+*/
+
+const firstName = 'Fabian';
+const job = 'Producer';
+const birthYear = 1972;
+const year = 2037;
+
+const fabian = "I'm " + firstName + ', a ' + (year - birthYear) + ' year old ' + job + '!';
+console.log(fabian);
+
+const fabianNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(fabianNew);
+
+console.log(`Just a regular string...`);

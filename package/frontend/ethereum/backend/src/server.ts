@@ -25,10 +25,14 @@ app.use(cookieParser());
 
 // One main middleware for / using express.static and res.render.
 app.use(
-  '/1972/09/11',
+  '/',
   // Use express.static first to look for a static resource.
   express.static(app.get('public_html'))
 );
+
+app.get('/', function (req: any, res: any, next: any) {
+    if (req.url === '/') {};
+});
 
 // Random
 app.use('/Home', indexRouter);
@@ -56,8 +60,8 @@ app.use(function (err, req, res, next) {
     title: 'ERROR 404',
     s_type_1: '',
     script_1: '',
-    c_type_1: '',
-    css_1: '',
+    c_type_1: 'text/css',
+    css_1: 'css/style.css',
     desc_1: '',
     author_1: '',
     keywords_1: '',

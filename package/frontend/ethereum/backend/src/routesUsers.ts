@@ -6,9 +6,9 @@ const router = express.Router();
 // If not found render main index, but only for / else next.
 
 /** GET users listing. */
+express.static('public_html'),
 router.get('/', function (req: any, res: any, next: any) {
   if (req.url === '/') {
-    express.static('public_html'),
       res.status(200).render(process.env.WEBSITE_1 || 'first', {
         title: 'Home!',
         s_type_1: '??',
