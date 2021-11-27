@@ -1,62 +1,59 @@
 
-<body>
-
+        <header>    
     <%- include('../partials/_nav.ejs') %>
+</heaser>
+
+    <h1>The Code Magazine</h1>
+    <h2>The Basic Language of the Web: HTML</h2>
+
+    <img src="<%- process.env.AUTHOR_IMAGE_2 || imageAuthor_1 %>"  alt="Author's picture" width="50" height="50"/>
+    <p>My name is <strong>Fabian</strong>, and this is my very first webpage :D</p>
+
+    <img src="<%- process.env.AUTHOR_IMAGE_1 || imagePage_1 %>" alt="Principles of United Hearts VIP 11" width="500" height="200"/>
+    <p>My name is Fabian, and this is my very <em>first webpage</i> :D</em>
+
+    <p>My name is Fabian, and this is my very first webpage :D</p>
 
 
-<h1>The Code Magazine</h1>
-<h2>The Basic Language of the Web: HTML</h2>
+    <h3>What is HTML?</h3>
+    <p>My name is Fabian, and 
+    <strong>T</strong>his 
+    <strong>I</strong>s 
+    <strong>M</strong>y 
+    <strong>V</strong>ery 
+    first webpage :D</p>
 
-<img src="<%- process.env.AUTHOR_IMAGE_2 || "images/virgo.jpg" %>"  alt="Author's picture" width="50" height="50"/>
-<p>My name is <strong>Fabian</strong>, and this is my very first webpage :D</p>
+    <p>My name is Fabian, and this is my very first webpage :D</p>
 
-<img src="<%- process.env.AUTHOR_IMAGE_1 || "images/uh1.png" %>" alt="Principles of United Hearts VIP 11" width="500" height="200"/>
-<p>My name is Fabian, and this is my very <em>first webpage</i> :D</em>
+    <!--
+    <h4>The Basic Languagge of the Web: HTML</h4>
+    <h5>The Basic Languagge of the Web: HTML</h5>
+    <h6>The Basic Languagge of the Web: HTML</h6>
+    <p>My name is Fabian, and this is my very first webpage :D</p> 
+    -->
 
-<p>My name is Fabian, and this is my very first webpage :D</p>
+    <p>In HTML, each element is made up of 3 parts</p>
 
+    <ol>
+	    <li>The opening tag</li>
+	    <li>The closing tag</li>
+	    <li>The actual element</li>
+    </ol>
 
-<h3>What is HTML?</h3>
-<p>My name is Fabian, and 
-<strong>T</strong>his 
-<strong>I</strong>s 
-<strong>M</strong>y 
-<strong>V</strong>ery 
-first webpage :D</p>
+    <p>You can learn more at
+    <a href="<%- process.env.EXPRESS_MDN_1 || https://about:blank %>" target="_blank">Express Web Framework</a></p>
 
-<p>My name is Fabian, and this is my very first webpage :D</p>
+    <h3>Why should you learn HTML?</h3>
 
-<!--
-<h4>The Basic Languagge of the Web: HTML</h4>
-<h5>The Basic Languagge of the Web: HTML</h5>
-<h6>The Basic Languagge of the Web: HTML</h6>
-<p>My name is Fabian, and this is my very first webpage :D</p> 
--->
+    <p>There are countless reasons for learning the fundamental language of the web. Here are 5 of them:</p>
 
-<p>In HTML, each element is made up of 3 parts</p>
-
-<ol>
-	<li>The opening tag</li>
-	<li>The closing tag</li>
-	<li>The actual element</li>
-</ol>
-
-<p>You can learn more at
-<a href="<%- process.env.EXPRESS_MDN_1 || "https://about:blank" %>" target="_blank">Express Web Framework</a></p>
-
-<h3>Why should you learn HTML?</h3>
-
-<p>There are countless reasons for learning the fundamental language of the web. Here are 5 of them:</p>
-
-<ul>
-<li>To be able to use the fundamental web dev language.</li>
-<li>To hand-craft beautiful websites instead of relying on tools like Wordpress or Wix.</li>
-<li>To build web applications.</li>
-<li>To impress friends.</li>
-<li>To have fun ;)</li>
-</ul>
+    <ul>
+        <li>To be able to use the fundamental web dev language.</li>
+        <li>To hand-craft beautiful websites instead of relying on tools like Wordpress or Wix.</li>
+        <li>To build web applications.</li>
+        <li>To impress friends.</li>
+        <li>To have fun ;)</li>
+    </ul>
 
 
-<script type="<%- process.env.SCRIPT_TYPE_1 || "" %>" src="<%- process.env.SCRIPT_1 || "" %>"></script>
-
-</body>
+    <script type="<%- process.env.SCRIPT_TYPE_1 || '' %>" src="<%- process.env.SCRIPT_1 || '' %>"></script>
