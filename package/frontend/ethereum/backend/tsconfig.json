@@ -43,7 +43,11 @@
     "lib": ["dom", "es6"],
     "skipLibCheck": true,
     "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
     "declarationDir": "./output/@types",
+    "types": [],
+    "watch": true,
 
     // Disable for plain javascript
     "isolatedModules": true,
