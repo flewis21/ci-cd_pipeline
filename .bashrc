@@ -92,12 +92,12 @@ fi
 #alias ll='ls -l'
 #alias la='ls -A'
 #alias l='ls -CF'
-alias cli='f() { ls -pfuxahit1rs --color=force && git -c color.status=always status; unset -f f; }; f'
+alias cli='f() { ls -pfuxahit1rs --color=force && git -c color.status=always status && git prune && git gc; unset -f f; }; f'
 alias gcen='f() { git add -f $1 && git commit -m "$1" && git push; unset -f f; }; f'
 alias gsta='f() { git stash --keep-index --include-untracked && git stash clear; unset -f f; }; f'
 alias clas='f() { cp -v $HOME/value-stream-maps/.clasp.json $HOME/value-stream-maps/ci-cd_pipeline/frontend/.; unset -f f; }; f'
-alias atra='f() { git pull && $micr $1 && $npxc prettier -w "$1"; unset -f f; }; f'
-PS1='`ls -pfuxahit1rs --color=force && git -c color.status=always status && git prune && git gc` \n\033[01;32m\]\d:>/<@>\<:\t[>\W<]\$ '
+alias atra='f() { $micr $1 && $npxc prettier -w "$1"; git add -f $1 && git commit -m "$1" && git push; unset -f f; }; f'
+PS1='`cli` \n\033[01;32m\]\d:>/<@>\<:\t[>\W<]\$ '
 
 
 # Alias definitions.
