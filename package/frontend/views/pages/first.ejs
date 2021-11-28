@@ -1,16 +1,14 @@
 <!Doctype HTML>
-<html>
-
-		<!-- use a title value given, or default tothe string 'untitled'. -->
+<html lang="en">
+    <head>
         <%- include('../partials/_head') %>
-		<title><%= title || 'Untitled'%></title>
-		<meta Charset="UTF-8">
-		
-	<body>
-
-        <%- include('../partials/_nav') %>
-
-		<h1>This is my first EJS file.</h1>
+    </head>
+    <body>
+        <header>
+            <%- include('../partials/_nav') %>
+        </header>
+        
+        <h1>This is my first EJS file.</h1>
 
 		<% var nums = [1,2,3] %>
 
