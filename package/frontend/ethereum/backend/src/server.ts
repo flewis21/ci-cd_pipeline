@@ -5,9 +5,9 @@ import serverless from 'serverless-http';
 import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
-const blogsRouter = require('./routesBlogs');
-const indexRouter = require('./routesIndex');
-const usersRouter = require('./routesUsers');
+import blogsRouter from './routesBlogs';
+import indexRouter from './routesIndex';
+import usersRouter from './routesUsers';
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
@@ -31,17 +31,18 @@ app.use(
 );
 
 app.get('/', function (req: any, res: any, next: any) {
-    if (req.url === '/') {};
+  if (req.url === '/') {
+  }
 });
 
 // Random
-app.use('/Home', indexRouter);
+app.use('/HOME', indexRouter);
 
 // Blogging
 app.use('/BLOG', blogsRouter);
 
 // User directory
-app.use('/users', usersRouter);
+app.use('/USERS', usersRouter);
 
 // Catch 404  and forward to error handler
 app.use(function (req, res, next) {

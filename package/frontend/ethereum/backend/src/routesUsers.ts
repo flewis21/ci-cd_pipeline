@@ -7,8 +7,8 @@ const router = express.Router();
 
 /** GET users listing. */
 express.static('public_html'),
-router.get('/', function (req: any, res: any, next: any) {
-  if (req.url === '/') {
+  router.get('/', function (req: any, res: any, next: any) {
+    if (req.url === '/') {
       res.status(200).render(process.env.WEBSITE_1 || 'first', {
         title: 'Home!',
         s_type_1: '??',
@@ -19,7 +19,7 @@ router.get('/', function (req: any, res: any, next: any) {
         author_1: 'Page',
         keywords_1: 'error',
       });
-  }
-});
+    }
+  });
 
 module.exports = router;

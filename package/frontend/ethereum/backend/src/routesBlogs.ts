@@ -9,16 +9,16 @@ const router = express.Router();
 // express.static('public_html'),
 router.get('/', function (req: any, res: any, next: any) {
   if (req.url === '/') {
-      res.status(200).render(process.env.WEBSITE_1 || 'first', {
-        title: 'BLOG!',
-        s_type_1: '??',
-        script_1: '??',
-        c_type_1: 'text/css',
-        css_1: 'css/style.css',
-        desc_1: 'Error',
-        author_1: 'Page',
-        keywords_1: 'error',
-      });
+    res.status(200).render(process.env.WEBSITE_1 || 'first', {
+      title: 'BLOG!',
+      s_type_1: '??',
+      script_1: '??',
+      c_type_1: 'text/css',
+      css_1: 'css/style.css',
+      desc_1: 'Error',
+      author_1: 'Page',
+      keywords_1: 'error',
+    });
   }
 });
 
