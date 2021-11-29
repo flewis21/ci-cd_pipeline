@@ -14,6 +14,7 @@
     // reference points
   ],
 
+  "files": []
   // pass include to root tsconfig-setting
-  "include": ["../ethereum/backend/src/**/*.ts"]
+  // "include": ["../ethereum/backend/src/**/*.ts"]
 }

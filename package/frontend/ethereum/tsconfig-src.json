@@ -3,8 +3,9 @@
   "references": [
     // reference points
   ],
-  "files": ["../backend/src/solc_example.ts", "../backend/src/formatContract.ts"],
-  "include": ["**/*", "../backend/src/*.ts"],
+  "files": [],
+  // "files": ["../backend/src/solc_example.ts", "../backend/src/formatContract.ts"],
+  // "include": ["**/*", "../backend/src/*.ts"],
   "exclude": ["node_modules", "./output"],
   "compilerOptions": {
     "composite": true,

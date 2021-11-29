@@ -1,11 +1,11 @@
 {
-  "extends": "../tsconfig",
+  // "extends": "../tsconfig",
   "compilerOptions": {
     "composite": true,
     "incremental": true,
 
     "experimentalDecorators": true,
-    "isolatedModules": true,
+    // "isolatedModules": true,
     // "noImplicitUseStrict": true,
     "strict": true,
     // "alwaysStrict": true,
@@ -36,7 +36,7 @@
     "types": [],
     "outDir": "./output",
     "rootDir": "./",
-    "ignorePatterns": ["**../"],
+    // "ignorePatterns": ["**../"],
 
     "strictNullChecks": true,
     // "suppressExcessPropertyErrors": true,

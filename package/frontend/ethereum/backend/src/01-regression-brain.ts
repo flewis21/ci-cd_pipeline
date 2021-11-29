@@ -1,2 +1,2 @@
-import abalone from '../converseAI/data/abalone.json';
-console.log(abalone);
+// import abalone from '../converseAI/data/abalone.json';
+// console.log(abalone);

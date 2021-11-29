@@ -36,7 +36,7 @@ contract.methods.balancOf(address).call((err, result) => {
 
 const web3 = new Web3(new Web3.providers.HttpProvider(process.env.INFURA_ID_1));
 
-web3.eth.getBalance('0x5A0b54D5dc17e0AadC383d2db43B0a0D3E029c4c', function (err, result) {
+web3.eth.getBalance('0x5A0b54D5dc17e0AadC383d2db43B0a0D3E029c4c', function (err: any, result: any) {
   if (err) {
     console.log(err);
   } else {

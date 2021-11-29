@@ -1,13 +1,13 @@
 import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
-const router = express.Router();
+const indexRouter = express.Router();
 
 // If not found render main index, but only for / else next.
 
 /** GET users listing. */
 // express.static('public_html'),
-router.get('/', function (req: any, res: any, next: any) {
+indexRouter.get('/', function (req: any, res: any, next: any) {
   if (req.url === '/') {
     res.status(200).render(process.env.WEBSITE_1 || 'index', {
       title: '',
@@ -24,4 +24,4 @@ router.get('/', function (req: any, res: any, next: any) {
   }
 });
 
-module.exports = router;
+export = indexRouter;
