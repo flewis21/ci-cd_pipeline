@@ -1,13 +1,13 @@
 import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
-const router = express.Router();
+const blogsRouter = express.Router();
 
 // If not found render main index, but only for / else next.
 
 /** GET users listing. */
 // express.static('public_html'),
-router.get('/', function (req: any, res: any, next: any) {
+blogsRouter.get('/', function (req: any, res: any, next: any) {
   if (req.url === '/') {
     res.status(200).render(process.env.WEBSITE_1 || 'first', {
       title: 'BLOG!',
@@ -22,4 +22,4 @@ router.get('/', function (req: any, res: any, next: any) {
   }
 });
 
-module.exports = router;
+export = blogsRouter;
