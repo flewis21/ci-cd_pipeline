@@ -5,7 +5,6 @@
     "outDir": "./public/output",
     "types": [],
     "declarationDir": "./ethereum/backend/output/@types",
-    "isolatedModules": true,
     "lib": ["dom", "es6"],
 
     // Disable for plain javascript
