@@ -54,6 +54,9 @@
     "target": "es5",
     "module": "es2015",
 
+    // root directory
+    "rootDir": "./ethereum/backend/src",
+
     // Disable files: [./package/frontend/ethereum/backend/src/server.ts] before editing outDir
     // "outDir": "./output"
 
