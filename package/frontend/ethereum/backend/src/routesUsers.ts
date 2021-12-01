@@ -11,10 +11,10 @@ express.static('public_html'),
     if (req.url === '/') {
       res.status(200).render(process.env.WEBSITE_1 || 'first', {
         title: 'Home!',
-        s_type_1: '??',
-        script_1: '??',
+        s_type_1: 'text/javascript',
+        script_1: 'output/index',
         c_type_1: 'text/css',
-        css_1: '1972/09/11/css/style.css',
+        css_1: 'css/style.css',
         desc_1: 'Error',
         author_1: 'Page',
         keywords_1: 'error',

@@ -46,7 +46,7 @@ app.use('/BLOG', blogsRouter);
 app.use('/USERS', usersRouter);
 
 // Catch 404  and forward to error handler
-app.use(function (req, res, next) {
+app.use(function (req: any, res: any, next: any) {
   next(createError(404));
 });
 
