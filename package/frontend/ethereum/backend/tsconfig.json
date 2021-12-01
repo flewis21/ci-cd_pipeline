@@ -2,6 +2,9 @@
   // Do not disable this!
   "files": [],
 
+  // include
+  "include": ["**/*.d.ts"],
+
   // exclude
   "exclude": ["node_modules"],
 
