@@ -2,7 +2,7 @@
             <!-- this is my nav.ejs partial! -->
             
             <div class="navbar">
-                <% var address = address || ['/1972/09/11', '/', 'BLOG'] %>
+                <% var address = address || ['BLOG'] %>
                 <% address.forEach(function(addr) { %>
                     <div><a href="<%= addr %>"><%- addr %></a></div>
                     <% }) %>
