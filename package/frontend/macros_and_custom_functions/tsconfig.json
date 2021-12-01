@@ -50,7 +50,7 @@
     // "stripInternal": false,
     "rootDir": "./src",
     "outDir": "./output",
-    "declarationDir": "../ethereum/backend/output/@types"
+    "declarationDir": "../ethereum/backend/output/@types",
 
     // Make Google Apps Script type definitions ambient
     // "noLib": false,
