@@ -32,5 +32,7 @@
       // pass control to simpleGit tsconfig
       "path": "./package/simpleGit/tsconfig.json"
     }
-  ]
+  ],
+
+  "include": ["**/*.d.ts"]
 }
