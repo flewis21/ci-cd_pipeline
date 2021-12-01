@@ -45,14 +45,18 @@
     "pretty": true,
     "sourceMap": true,
 
-
     // Disable files: [./package/frontend/ethereum/backend/src/hardhat.config.ts] before editing outDir
     // "outDir": "./package/frontend/ethereum/output"
     // "outDir": "./package/frontend/ethereum"
     "outDir": "./output"
   },
   // Enable outDir: ./package/frontend/ethereum/output again before enabling any one of these
-  "files": ["./package/frontend/ethereum/backend/src/web3Dev.ts", "./package/frontend/ethereum/backend/src/infura_rpc.ts", "./package/frontend/ethereum/backend/src/ether_index.ts", "./package/frontend/ethereum/backend/src/hardhat.config.ts"],
+  "files": [
+    "./package/frontend/ethereum/backend/src/web3Dev.ts",
+    "./package/frontend/ethereum/backend/src/infura_rpc.ts",
+    "./package/frontend/ethereum/backend/src/ether_index.ts",
+    "./package/frontend/ethereum/backend/src/hardhat.config.ts"
+  ],
   "include": [],
-  "exclude": [],
+  "exclude": []
 }
