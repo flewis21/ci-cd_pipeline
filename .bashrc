@@ -92,7 +92,7 @@ fi
 #alias ll='ls -l'
 #alias la='ls -A'
 #alias l='ls -CF'
-alias maje='f() { gcen $1 && gsta && atra $1; unset -f f; }; f'
+alias maje='f() { atra $1 && gcen $1 && gsta; unset -f f; }; f'
 alias cli='f() { ls -pfuxahit1rs --color=force && git -c color.status=always status; unset -f f; }; f'
 alias gcen='f() { git add -f $1 && git commit -m "$1" && git push; unset -f f; }; f'
 alias gsta='f() { git stash --keep-index --include-untracked && git stash clear; unset -f f; }; f'
