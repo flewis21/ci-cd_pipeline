@@ -13,6 +13,7 @@
     "rootDir": "../backend/src/",
 
     // debuggers
+    "noEmit": false,
     "declaration": true,
     "declarationDir": "./output/types",
     "declarationMap": true,
