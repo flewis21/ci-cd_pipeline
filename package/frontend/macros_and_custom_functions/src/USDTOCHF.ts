@@ -6,7 +6,7 @@
  * @return {number} swissFrancs The converted total of Swiss francs.
  * @customFunction
  */
-function USDTOCHF(dollars) {
+function USDTOCHF(dollars: number) {
   // Gets a cache that is common to all users of the script.
   var cache = CacheService.getScriptCache();
 

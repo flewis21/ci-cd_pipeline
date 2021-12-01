@@ -23,7 +23,7 @@ function formatColumnHeader() {
    * 		to update.
    * @param {number} numRows The size of the column header.
    */
-  function hyperlinkColumnHeaders_(rowsColumns) {
+  function hyperlinkColumnHeaders_(rowsColumns: number) {
     // Get header and url column indices.
     var headerColIndex = 1;
     var urlColIndex = columnIndexOf_('');

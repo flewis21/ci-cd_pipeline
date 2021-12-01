@@ -33,7 +33,7 @@ function createPeopleSheetVI() {
  * @param {number} episodeNumber The Star Wars film episode number.
  * 		This is only used in the sheet name.
  */
-function createResourceSheet_(resourceType, idNumber, episodeNumber) {
+function createResourceSheet_(resourceType: any, idNumber: number, episodeNumber: string) {
   // Fetch the basic film data from the API.
   var filmData = fetchApiResourceObject_('' + idNumber);
 
@@ -77,7 +77,7 @@ function createResourceSheet_(resourceType, idNumber, episodeNumber) {
  * @return {object} resourceObject the JSON object fetched
  * 		from the URL request to the API.
  */
-function fetchApiResourceObject_(url) {
+function fetchApiResourceObject_(url: any) {
   // Make request to API and get response.
   var response = UrlFetchApp.fetch(url, {muteHttpExceptions: true});
 
@@ -95,7 +95,7 @@ function fetchApiResourceObject_(url) {
  * @return {object} The created or existing sheet
  *		of the same name. This sheet becomes active.
  */
-function createNewSheet_(name) {
+function createNewSheet_(name: string) {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
 
   // Returns an existing sheet if it has the specified
@@ -121,7 +121,7 @@ function createNewSheet_(name) {
  * @param {object} resourceDataList The list of API
  * 	 resource objects containing data to add to the sheet.
  */
-function fillSheetWithData_(resourceSheet, objectKeys, resourceDataList) {
+function fillSheetWithData_(resourceSheet: any, objectKeys: any, resourceDataList: any) {
   // Set the dimensions of the data range being added to the sheet.
   var numRows = resourceDataList.length;
   var numColumns = objectKeys.length;
