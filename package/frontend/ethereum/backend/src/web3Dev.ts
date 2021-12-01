@@ -1,4 +1,4 @@
-import Web3 from 'web3';
+// import Web3 from 'web3';
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -34,12 +34,12 @@ contract.methods.balancOf(address).call((err, result) => {
 });
 */
 
-const web3 = new Web3(new Web3.providers.HttpProvider(process.env.INFURA_ID_1));
+// const web3 = new Web3(new Web3.providers.HttpProvider(process.env.INFURA_ID_1));
 
-web3.eth.getBalance('0x5A0b54D5dc17e0AadC383d2db43B0a0D3E029c4c', function (err: any, result: any) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log(web3.utils.fromWei(result, 'ether') + ' ETH');
-  }
-});
+// web3.eth.getBalance('0x5A0b54D5dc17e0AadC383d2db43B0a0D3E029c4c', function (err: any, result: any) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log(web3.utils.fromWei(result, 'ether') + ' ETH');
+//   }
+// });
