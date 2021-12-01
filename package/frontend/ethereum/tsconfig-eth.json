@@ -2,12 +2,10 @@
   "references": [
     // reference points
   ],
-  //"files": [],
-  "include": ["../backend/src/**/*"],
+  "files": [],
   "compilerOptions": {
     "composite": true,
-    "rootDir": ".",
-    "outDir": "./output",
+    // "rootDir": ".",
     "experimentalDecorators": true,
     "isolatedModules": true,
     // "noImplicitUseStrict": true,
@@ -28,7 +26,6 @@
     // "skipLibCheck": true,
     // "noLib": false,
     "lib": ["esnext"],
-    "allowNonTsExtentions": true,
     "noResolve": true,
 
     // Modules
@@ -46,6 +43,16 @@
     "declarationMap": true,
     "newLine": "lf",
     "pretty": true,
-    "sourceMap": true
-  }
+    "sourceMap": true,
+
+
+    // Disable files: [./package/frontend/ethereum/backend/src/hardhat.config.ts] before editing outDir
+    // "outDir": "./package/frontend/ethereum/output"
+    // "outDir": "./package/frontend/ethereum"
+    "outDir": "./output"
+  },
+  // Enable outDir: ./package/frontend/ethereum/output again before enabling any one of these
+  "files": ["./package/frontend/ethereum/backend/src/web3Dev.ts", "./package/frontend/ethereum/backend/src/infura_rpc.ts", "./package/frontend/ethereum/backend/src/ether_index.ts", "./package/frontend/ethereum/backend/src/hardhat.config.ts"],
+  "include": [],
+  "exclude": [],
 }
