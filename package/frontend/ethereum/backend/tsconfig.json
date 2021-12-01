@@ -42,6 +42,7 @@
     "moduleResolution": "node",
     "lib": ["dom", "es6"],
     "skipLibCheck": true,
+    "noEmit": false,
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
