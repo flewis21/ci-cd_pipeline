@@ -16,7 +16,7 @@
     // "strictFunctionTypes": true,
     // "strictPropertyInitialization": true,
 
-    //    "noEmitOnError": true,
+    "noEmitOnError": true,
     // "noErrorTruncation": true,
     //    "noFallThroughCasesInSwitch": true,
     //    "noImplicitTHis": true,
@@ -25,28 +25,29 @@
     // "preserveConstEnums": true,
     // "removeComments": true,
     // "skipLibCheck": true,
-    "module": "commonjs",
+    "module": "ES5",
     // "noLib": false,
-    //    "checkJs": true,
+    "checkJs": true,
     //    "lib": "esnext",
     //    "allowNonTsExtentions": true,
     //    "noResolve": true,
     // "allowSyntheticDefaultImports": true,
     "moduleResolution": "node",
     // "esModuleInterop": true,
-    "target": "ESNext",
+    "target": "ES5",
     "types": [],
 
-    "strictNullChecks": true,
+    // "strictNullChecks": true,
     // "suppressExcessPropertyErrors": true,
     // "suppressImplicitAnyIndexErrors": true,
 
-    //    "declaration": true,
-    // "declarationDir": "../types",
-    // "declarationMap": true,
-    //    "newLine": "lf",
-    "pretty": true
-    //    "sourceMap": true
+    "noEmit": false,
+    "declaration": true,
+    "declarationDir": "../types",
+    "declarationMap": true,
+    "newLine": "lf",
+    "pretty": true,
+    "sourceMap": true
   },
   "include": ["src/*.ts"],
   "exclude": ["node_modules"]
