@@ -2,6 +2,7 @@
   "extends": "./tsconfig-base.json",
   "compilerOptions": {
     // Disable files: [./package/frontend/ethereum/backend/src/index.ts] before editing outDir
+    "rootDir": "./ethereum/backend/src",
     "outDir": "./public/output",
     "types": [],
     "declarationDir": "./ethereum/backend/output/@types",
