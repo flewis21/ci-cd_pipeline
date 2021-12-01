@@ -21,6 +21,10 @@
       "path": "../../tsconfig-src.json"
     },
     {
+        // GAS project
+        "path": "../../macros_and_custom_functions/tsconfig.json"
+    },
+    {
       // pass control to public tsconfig
       "path": "../../public/tsconfig.json"
     },
