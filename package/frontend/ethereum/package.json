@@ -13,6 +13,7 @@
     "@openzeppelin/contracts": "^4.3.3",
     "@types/chai": "^4.2.22",
     "@types/mocha": "^9.0.0",
+    "@types/request": "^2.48.7",
     "chai": "^4.3.4",
     "ethers": "^5.5.1",
     "hardhat": "^0.0.7",
@@ -22,6 +23,7 @@
   "dependencies": {
     "mkdirp": "^1.0.4",
     "multiformats": "^9.4.10",
+    "request": "^2.88.2",
     "uuid": "^7.0.3"
   }
 }
