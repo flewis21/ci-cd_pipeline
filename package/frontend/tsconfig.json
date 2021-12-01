@@ -41,6 +41,7 @@
     "importHelpers": true,
     "moduleResolution": "node",
     "lib": ["dom", "es6"],
+    "noEmit": false,
     "skipLibCheck": true,
     "declaration": true,
     "declarationDir": "./ethereum/backend/output/@types",
