@@ -1,4 +1,5 @@
 import dotenv from 'dotenv';
+// @ts-ignore
 import createError from 'http-errors';
 import express from 'express';
 import serverless from 'serverless-http';
