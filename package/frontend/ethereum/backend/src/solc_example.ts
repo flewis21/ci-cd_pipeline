@@ -1,4 +1,5 @@
-import solc from 'solc';
+// @ts-ignore
+import * as solc from 'solc';
 import * as fs from 'fs';
 
 const solc_version = 'v0.4.16+commit.d7661dd9';
