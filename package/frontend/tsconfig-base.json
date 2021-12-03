@@ -5,7 +5,7 @@
   // pass Set options for import and rootDir to root tsconfig-setting
   "complerOptions": {
     "composite": true,
-    "rootDir": "."
+    "rootDir": "./ethereum/backend/src"
   },
 
   // pass references to root tsconfig-setting
