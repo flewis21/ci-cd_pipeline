@@ -11,6 +11,7 @@
  * @return The index of that column in the active sheet,
  * or -1 if the name isn't found.
  */
+// @ts-ignore
 function columnIndexOf_(colName) {
   // Get the current column names.
   var spreadsheet = SpreadsheetApp.getActive();
@@ -54,6 +55,7 @@ function formatDataset() {
 
   // Set border around all the data, and resize the
   // columns and rows to fit.
+  // @ts-ignore
   fullDataRange.setBorder();
 
   sheet.autoResizeColumns(1, fullDataRange.getNumColumns());
@@ -68,6 +70,7 @@ function formatDataset() {
  * @param {number} colIndex The index of the column
  *		to format.
  */
+// @ts-ignore
 function formatDates_(colIndex) {
   // Exit if the given column index is -1, indicating
   // the column to format isn't present in the sheet.

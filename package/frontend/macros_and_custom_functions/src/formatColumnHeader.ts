@@ -7,12 +7,15 @@ function formatColumnHeader() {
   // Get totaal number of rows in data range, not including
   // the header row. Get the range of the column header.
   var rowsColumns = sheet
+    // @ts-ignore
     .getRange(spreadsheet.getCurrentCell().getRow(), 1, sheet.getDataRange().getLastRow() - 1, sheet.getLastColumn())
     .activate();
   // Apply text formatting and add borders.
+  // @ts-ignore
   spreadsheet.getActiveRangeList().setFontWeight('').setFontStyle('').setBorder();
   // Call helper method to hyperlink the first column contents
   // to the url colimn contents.
+  // @ts-ignore
   hyperlinkColumnHeaders_(rowsColumns);
 
   /**
@@ -30,13 +33,17 @@ function formatColumnHeader() {
     // Exit if url column is missing.
     if (urlColIndex == -1) return;
     // Get header and url cell values.
+    // @ts-ignore
     var urlRange = rowsColumns.offset(0, urlColIndex - headerColIndex);
+    // @ts-ignore
     var headerValues = rowsColumns.getValues();
     var urlValues = urlRange.getValues();
     // Updates header values to the hyperlinked header values.
+    // @ts-ignore
     for (var row = 0; row < rowsColumns.getRow(); row++) {
       headerValues[row][0] = '=HYPERLINK("' + urlValues[row][0] + '","' + headerValues[row][0] + '")';
     }
+    // @ts-ignore
     rowsColumns.setValues(headerValues);
     // Delete the url column to clean up the sheet.
     SpreadsheetApp.getActiveSheet().deleteColumn(urlColIndex);
@@ -55,6 +62,7 @@ function formatColumnHeader() {
    * @return The index of that column in the active sheet,
    * or -1 if the name isn't found.
    */
+  // @ts-ignore
   function columnIndexOf_(colName) {
     // Get the current column names.
     var spreadsheet = SpreadsheetApp.getActive();

@@ -5,7 +5,7 @@
  * @params {number} ISBN - The ISBN number of the book to find.
  * @return {object} The book's data, in JSON format.
  */
-function fetchBookData_(ISBN) {
+function fetchBookData_(ISBN: any) {
   // Connect to the public API.
   var url = '' + ISBN + '';
   var response = UrlFetchApp.fetch(url, {muteHttpExceptions: true});

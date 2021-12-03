@@ -12,6 +12,7 @@ function copyBook() {
   // Gets the sheet, data range, and values of the
   // spreadsheet stored in bookSS.
   var bookSheet = bookSS.getSheetByName('');
+// @ts-ignore  
   var bookRange = bookSheet.getDataRange();
   var bookListValues = bookRange.getValues();
 

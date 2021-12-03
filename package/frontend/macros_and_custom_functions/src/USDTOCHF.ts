@@ -19,10 +19,13 @@ function USDTOCHF(dollars: number) {
   if (!rate) {
     var response = UrlFetchApp.fetch('');
     var result = response.getContentText();
+    // @ts-ignore
     rate = result.rates.CHF;
+    // @ts-ignore
     cache.put('rates.CHF', rate);
   }
   // Converts dollars to CHF according to the latest rate.
+  // @ts-ignore
   var swissFrancs = dollars * rate;
   // Returns the CHF value
   return 'CHF' + swissFrancs;
