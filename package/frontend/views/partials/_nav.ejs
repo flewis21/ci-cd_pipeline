@@ -1,9 +1,13 @@
+<!-- this is my nav.ejs partial! -->
 
-            <!-- this is my nav.ejs partial! -->
-            
-            <div class="navbar">
-                <% var address = address || ['BLOG'] %>
-                <% address.forEach(function(addr) { %>
-                    <div><a href="<%= addr %>"><%- addr %></a></div>
-                    <% }) %>
- 
+<div class="navbar">
+
+	<% var sections = sections || ['Home', 'Users', 'BLOG']%>
+
+	<% sections.forEach(function(sec) { %>
+
+		<div><a href="/1972/09/11"><%= sec %></div>
+		
+	<% }); %>
+
+</div>
