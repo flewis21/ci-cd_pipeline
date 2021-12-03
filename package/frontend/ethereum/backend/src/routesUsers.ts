@@ -9,8 +9,8 @@ const usersRouter = express.Router();
 express.static('public_html'),
   usersRouter.get('/', function (req: any, res: any, next: any) {
     if (req.url === '/') {
-      res.status(200).render(process.env.WEBSITE_1 || 'first', {
-        title: 'Home!',
+      res.status(200).render(process.env.WEBSITE_1 || 'index', {
+        title: 'Users!',
         s_type_1: 'text/javascript',
         script_1: 'output/index',
         c_type_1: 'text/css',
