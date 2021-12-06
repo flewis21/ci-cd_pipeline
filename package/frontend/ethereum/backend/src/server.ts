@@ -33,17 +33,24 @@ app.use(
 
 app.get('/', function (req: any, res: any, next: any) {
   if (req.url === '/') {
+// Random
+app.use('/HOME', indexRouter);
   }
 });
 
-// Random
-app.use('/HOME', indexRouter);
+app.get('/', function (req: any, res: any, next: any) {
+    if (req.url === '/') {
+  // Blogging
+  app.use('/BLOG', blogsRouter);
+}
+  });
 
-// Blogging
-app.use('/BLOG', blogsRouter);
-
-// User directory
-app.use('/USERS', usersRouter);
+app.get('/', function (req: any, res: any, next: any) {
+    if (req.url === '/') {
+  // User directory
+  app.use('/USERS', usersRouter);
+}
+  });
 
 // Catch 404  and forward to error handler
 app.use(function (req: any, res: any, next: any) {
