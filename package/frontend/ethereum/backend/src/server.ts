@@ -33,40 +33,17 @@ app.use(require('body-parser').json());
 app.use(
   '/',
   // Use express.static first to look for a static resource.
-  express.static(app.get('public_html'))
-);
-
-app.get('/', function (req: any, res: any, next: any) {
-  if (req.url === '/') {
-    switch (indexRouter) {
-      case indexRouter:
-        app.get('/', indexRouter);
-    }
-    //    app.get('/', function (req: any, res: any, next: any) {
-    //      case request('/')
-    // Random
-    //            app.get('/', indexRouter)
-  }
-});
-
-app.get('/BLOG', function (req: any, res: any, next: any) {
-  if (req.url === '/BLOG') {
-    // Blogging
-    app.use('/', blogsRouter);
-  }
-});
-
-app.get('/USERS', function (req: any, res: any, next: any) {
-  if (req.url === '/USERS') {
-    // User directory
-    app.use('/', usersRouter);
-  }
-});
-
-// Catch 404  and forward to error handler
-app.use(function (req: any, res: any, next: any) {
-  next(createError(404));
-});
+  [
+    express.static(app.get('public_html')),
+    app.use('/', indexRouter),
+    //      app.use('/', blogsRouter);
+    //      app.use('/', usersRouter);
+  ]
+),
+  // Catch 404  and forward to error handler
+  app.use(function (req: any, res: any, next: any) {
+    next(createError(404));
+  });
 
 // Error handling
 app.use(function (err: any, req: any, res: any, next: any) {
