@@ -9,6 +9,8 @@ import logger from 'morgan';
 import blogsRouter from './routesBlogs';
 import indexRouter from './routesIndex';
 import usersRouter from './routesUsers';
+import {URL} from 'url';
+import {ClientRequest, request} from 'http';
 dotenv.config();
 const app = express();
 const port = process.env.PORT || 4000;
@@ -20,9 +22,12 @@ app.set('view engine', 'ejs');
 
 // Add middleware libraries.
 app.use(logger('dev'));
+app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
-app.use(cookieParser());
+
+// using the JSON body parser
+app.use(require('body-parser').json());
 
 // One main middleware for / using express.static and res.render.
 app.use(
@@ -31,14 +36,17 @@ app.use(
   express.static(app.get('public_html'))
 );
 
-
 app.get('/', function (req: any, res: any, next: any) {
-  switch (home) {
-      case x:
-            if (req.url === '/') {
-                // Random
-                app.get('/', indexRouter)
-            }
+  if (req.url === '/') {
+    switch (indexRouter) {
+      case indexRouter:
+        app.get('/', indexRouter);
+    }
+    //    app.get('/', function (req: any, res: any, next: any) {
+    //      case request('/')
+    // Random
+    //            app.get('/', indexRouter)
+  }
 });
 
 app.get('/BLOG', function (req: any, res: any, next: any) {
