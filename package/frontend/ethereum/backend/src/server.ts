@@ -31,26 +31,29 @@ app.use(
   express.static(app.get('public_html'))
 );
 
+
 app.get('/', function (req: any, res: any, next: any) {
-  if (req.url === '/') {
-// Random
-app.use('/HOME', indexRouter);
+  switch (home) {
+      case x:
+            if (req.url === '/') {
+                // Random
+                app.get('/', indexRouter)
+            }
+});
+
+app.get('/BLOG', function (req: any, res: any, next: any) {
+  if (req.url === '/BLOG') {
+    // Blogging
+    app.use('/', blogsRouter);
   }
 });
 
-app.get('/', function (req: any, res: any, next: any) {
-    if (req.url === '/') {
-  // Blogging
-  app.use('/BLOG', blogsRouter);
-}
-  });
-
-app.get('/', function (req: any, res: any, next: any) {
-    if (req.url === '/') {
-  // User directory
-  app.use('/USERS', usersRouter);
-}
-  });
+app.get('/USERS', function (req: any, res: any, next: any) {
+  if (req.url === '/USERS') {
+    // User directory
+    app.use('/', usersRouter);
+  }
+});
 
 // Catch 404  and forward to error handler
 app.use(function (req: any, res: any, next: any) {
