@@ -1,15 +1,15 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import path from 'path';
+// import path from 'path';
 dotenv.config();
-const app = express();
+// const app = express();
 const usersRouter = express.Router();
 
 // If not found render main index, but only for / else next.
-app.set('views', path.resolve(__dirname, '../../../views/pages/'));
+// app.set('views', path.resolve(__dirname, '../../../views/pages/'));
 /** GET users listing. */
 // express.static('public_html'),
-app.use('/Users', function (req: any, res: any, next: any) {
+exports.list = function (req: any, res: any, next: any) {
   //  if (req.url === '/Home') {
   res.status(200).render(process.env.WEBSITE_1 || 'realwebsite', {
     title: 'Users!',
@@ -21,7 +21,8 @@ app.use('/Users', function (req: any, res: any, next: any) {
     author_1: 'Page',
     keywords_1: 'error',
   });
-  //    }
-});
+};
+//    }
+// });
 
 export = usersRouter;
