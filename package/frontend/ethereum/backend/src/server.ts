@@ -7,7 +7,7 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import blogsRouter from './routesBlogs';
-import site from './routesIndex';
+import indexRouter from './routesIndex';
 import usersRouter from './routesUsers';
 import {URL} from 'url';
 import {ClientRequest, request} from 'http';
@@ -30,13 +30,13 @@ app.use(express.urlencoded({extended: false}));
 app.use(require('body-parser').json());
 
 // One main middleware for / using express.static and res.render.
-app.use(
-  '/',
-  // Use express.static first to look for a static resource.
-  express.static(app.get('public_html'))
-);
+// app.use(
+//  '/',
+// Use express.static first to look for a static resource.
+//  express.static(app.get('public_html'))
+// );
 // General
-app.get('/', site.index),
+app.use('/', indexRouter),
   //      app.use('/', blogsRouter);
   //      app.use('/', usersRouter);
 
