@@ -7,7 +7,7 @@ import path from 'path';
 import cookieParser from 'cookie-parser';
 import logger from 'morgan';
 import blogsRouter from './routesBlogs';
-import indexRouter from './routesIndex';
+import site from './routesIndex';
 import usersRouter from './routesUsers';
 import {URL} from 'url';
 import {ClientRequest, request} from 'http';
@@ -33,13 +33,13 @@ app.use(require('body-parser').json());
 app.use(
   '/',
   // Use express.static first to look for a static resource.
-  [
-    express.static(app.get('public_html')),
-    app.use('/', indexRouter),
-    //      app.use('/', blogsRouter);
-    //      app.use('/', usersRouter);
-  ]
-),
+  express.static(app.get('public_html'))
+);
+// General
+app.get('/', site.index),
+  //      app.use('/', blogsRouter);
+  //      app.use('/', usersRouter);
+
   // Catch 404  and forward to error handler
   app.use(function (req: any, res: any, next: any) {
     next(createError(404));

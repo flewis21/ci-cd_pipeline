@@ -1,15 +1,15 @@
 import express from 'express';
 import dotenv from 'dotenv';
-import path from 'path';
+// import path from 'path';
 dotenv.config();
-const app = express();
+// const app = express();
 const blogsRouter = express.Router();
 
 // If not found render main index, but only for / else next.
-app.set('views', path.resolve(__dirname, '../../../views/pages/'));
+// app.set('views', path.resolve(__dirname, '../../../views/pages/'));
 /** GET users listing. */
 // express.static('public_html'),
-app.use('/BLOG', function (req: any, res: any, next: any) {
+exports.blog = function (req: any, res: any, next: any) {
   //  if (req.url === '/Home') {
   res.status(200).render(process.env.WEBSITE_1 || 'first', {
     title: 'BLOG!',
@@ -22,6 +22,6 @@ app.use('/BLOG', function (req: any, res: any, next: any) {
     keywords_1: 'error',
   });
   //  }
-});
+};
 
 export = blogsRouter;
