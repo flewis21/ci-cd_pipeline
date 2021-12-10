@@ -1,10 +1,10 @@
 version: 1.0
 runtime: nodejs12
 build:
-  commands:    
+  commands:
     build:
-      - npm install --production                                  
-run:                              
+      - npm install --production
+run:
   command: npm start
-  network: 
+  network:
     port: 4000
