@@ -10,19 +10,19 @@
     // reference points
     {
       // pass control to backend tsconfig-output
-      "path": "./package/frontend/ethereum/backend/tsconfig-backend.json"
+      "path": "./package/frontend/ethereum/backend/tsconfig-src.json"
     },
     {
       // pass control to ethereum tsconfig
-      "path": "./package/frontend/ethereum/tsconfig-ethereum.json"
+      "path": "./package/frontend/ethereum/tsconfig-src.json"
     },
     {
       // pass control to frontend tsconfig
-      "path": "./package/frontend/tsconfig-frontend.json"
+      "path": "./package/frontend/tsconfig-src.json"
     },
     {
       // pass control to public tsconfig
-      "path": "./package/frontend/public/tsconfig-public.json"
+      "path": "./package/frontend/public/tsconfig-src.json"
     },
     {
       // pass control to sandbox tsconfig
