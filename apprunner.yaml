@@ -5,6 +5,6 @@ build:
     build:
       - npm install --production
 run:
-  command: npm start
+  command: npm start -- "npm run testdrive -- ./package/frontend/ethereum/backend/output/server.js"
   network:
     port: 4000
