@@ -1,15 +1,11 @@
-service: backend
+service: voximplant
 package:
   patterns:
     - '!./output/**'
-    - '!./src/**'
     - '!./tsconfig.json'
-    - 'output/server.js'
-    - 'output/server.js.map'
+    - '!./apprunner.yaml'
     - 'output/index.js'
     - 'output/index.js.map'
-    - '../frontend/views/**'
-    - '../frontend/public/**'
 projectDir: ./
 
 frameworkVersion: '2'
@@ -24,7 +20,7 @@ provider:
 
 functions:
   app:
-    handler: output/server.handler
+    handler: output/index.handler
     events:
       - http:
           path: /{any+}
