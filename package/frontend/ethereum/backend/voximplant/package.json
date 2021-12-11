@@ -2,9 +2,17 @@
   "name": "voximplant",
   "version": "1.0.0",
   "description": "Vox implant applications",
-  "main": "../output/index.js",
+  "main": "./output/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "offline_dev": "serverless offline",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "type": "tsc -b -w",
+    "testdrive": "nodemon -w -- $1",
+    "dev": "concurrently --kill-others-on-fail --restart-tries 0 -n LINT,CODE -c grey,blue \"npm run format\" $1",
+    "start": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\" -- $1",
+    "ts-lint": "ts-standard --verbose --fix",
+    "lint": "standard --verbose --fix",
+    "format": "prettier ../../../../ --write"
   },
   "author": "",
   "license": "MIT"
