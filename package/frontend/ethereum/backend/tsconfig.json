@@ -1,6 +1,6 @@
 {
   // Do not disable this!
-  "files": [],
+  // "files": [],
 
   // include
   "include": ["**/*.d.ts"],
@@ -16,6 +16,10 @@
       "path": "./tsconfig-src.json"
     },
     {
+      // voximplant tsconfig
+      "path": "./voximplant/tsconfig-src.json"
+    },
+    {
       // pass control to ethereum tsconfig
       "path": "../tsconfig-src.json"
     },
@@ -29,7 +33,7 @@
     },
     {
       // pass control to public tsconfig
-      "path": "../../public/tsconfig.json"
+      "path": "../../public/tsconfig-src.json"
     },
     {
       // pass control to sandbox tsconfig
