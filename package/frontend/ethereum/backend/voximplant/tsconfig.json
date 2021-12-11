@@ -71,7 +71,7 @@
     // "module": "es2015",
 
     // Disable files: [./package/frontend/ethereum/backend/src/server.ts] before editing outDir
-    "outDir": "./voximplant/output",
+    "outDir": "./output",
     "rootDir": "../src"
   },
 
