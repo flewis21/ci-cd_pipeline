@@ -9,10 +9,11 @@ package:
     - 'output/index.js'
     - 'output/index.js.map'
 projectDir: ./
+configValidationMode: error
 
 frameworkVersion: '2'
 variablesResolutionMode: 20210326
-useDotenv: false
+useDotenv: true
 
 provider:
   name: aws
