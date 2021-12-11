@@ -122,7 +122,7 @@ if ! shopt -oq posix; then
 fi
 
 source /google/devshell/bashrc.google 
-sudo ./aws/install --update
+sudo ~/./aws/install --update
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
