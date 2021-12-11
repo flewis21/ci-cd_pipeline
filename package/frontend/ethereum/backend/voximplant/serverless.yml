@@ -12,7 +12,7 @@ projectDir: ./
 
 frameworkVersion: '2'
 variablesResolutionMode: 20210326
-useDotenv: true
+useDotenv: false
 
 provider:
   name: aws
