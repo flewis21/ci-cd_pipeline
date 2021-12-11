@@ -1,5 +1,6 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import serverless from 'serverless-http';
 const app = express();
 dotenv.config();
 
@@ -20,4 +21,4 @@ app.get('/', (req, res) => {
 app.listen(4000);
 console.log('listening to 4000 ...');
 
-module.exports = app;
+module.exports.handler = serverless(app);
