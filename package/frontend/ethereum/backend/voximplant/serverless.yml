@@ -4,6 +4,8 @@ package:
     - '!./output/**'
     - '!./tsconfig.json'
     - '!./apprunner.yaml'
+    - '../node_modules/express'
+    - '../node_modules/serverless-http'
     - 'output/index.js'
     - 'output/index.js.map'
 projectDir: ./
