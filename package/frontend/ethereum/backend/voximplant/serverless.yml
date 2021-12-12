@@ -31,7 +31,6 @@ functions:
 
 plugins:
 
-
 custom:
   serverless-offline:
     httpPort: 4050
