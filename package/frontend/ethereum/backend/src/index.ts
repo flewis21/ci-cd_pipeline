@@ -7,7 +7,7 @@ dotenv.config();
 app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
-let lastCustomerNumber: any = null;
+let lastCustomerNumber: unknown = null;
 
 app.post('/', (req, res) => {
   lastCustomerNumber = req.body.customerNumber;
