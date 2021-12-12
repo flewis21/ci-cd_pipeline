@@ -51,7 +51,7 @@
     "strict": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "importHelpers": true,
+    // "importHelpers": true,
     "moduleResolution": "node",
     "lib": ["dom", "esnext"],
     "skipLibCheck": true,
