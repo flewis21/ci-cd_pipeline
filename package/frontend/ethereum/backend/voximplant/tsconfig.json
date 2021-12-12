@@ -52,7 +52,7 @@
     "allowSyntheticDefaultImports": true,
     "importHelpers": true,
     "moduleResolution": "node",
-    "lib": ["dom", "es6"],
+    "lib": ["esnext"],
     "skipLibCheck": true,
     "noEmit": false,
     "declaration": true,
@@ -65,7 +65,7 @@
     // Disable for plain javascript
     "isolatedModules": true,
     "module": "commonjs",
-    "target": "es6",
+    "target": "esnext",
     // Enable for plain javascript
     // "target": "es5",
     // "module": "es2015",
