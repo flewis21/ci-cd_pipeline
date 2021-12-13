@@ -1,14 +1,14 @@
 service: voximplant
 package:
   patterns:
+    - '!../*'
     - '!./output/**'
     - '!./tsconfig.json'
     - '!./apprunner.yaml'
-    - '../node_modules/express'
-    - '../node_modules/serverless-http'
+    - '../node_modules/**'
     - 'output/index.js'
     - 'output/index.js.map'
-projectDir: ./
+projectDir: ../
 configValidationMode: error
 
 frameworkVersion: '2'
@@ -26,7 +26,7 @@ functions:
     handler: output/index.handler
     events:
       - http:
-          path: /{any+}
+          path: /
           method: ANY
 
 plugins:
