@@ -78,16 +78,4 @@
 
   // Enable outDir: ./package/frontend/ethereum/backend/output again before enabling any one of these
   "files": ["../src/index.ts"]
-
-  // Enable outDir: ./package/frontend/ethereum/backend/output again before enabling any one of these
-  // "files": ["./src/server.ts", "./src/routesIndex.ts", "./src/routesUsers.ts", "./src/routesBlogs.ts"]
-
-  // Enable outDir: ./package/frontend/public/output again before enabling any one of these
-  // "files": ["./package/frontend/ethereum/backend/src/index.ts"]
-
-  // Enable outDir: ./package/frontend/ethereum/output again before enabling any one of these
-  // "files": ["./package/frontend/ethereum/backend/src/web3Dev.ts"]
-  // "files": ["./package/frontend/ethereum/backend/src/infura_rpc.ts"]
-  // "files": ["./package/frontend/ethereum/backend/src/ether_index.ts"]
-  // "files": ["./package/frontend/ethereum/backend/src/hardhat.config.ts"]
 }
