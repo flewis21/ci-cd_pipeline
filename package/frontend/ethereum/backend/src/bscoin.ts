@@ -1,7 +1,6 @@
-import {sha256} from 'crypto-js/sha256';
-import {runInThisContext} from 'vm';
+import sha256 from 'crypto-js/sha256';
 class BlockCrypto {
-  constructor(index, current_time, info, nextHash = ' ') {
+  constructor(index: unknown, current_time: unknown, info: unknown, nextHash = ' ') {
     this.index = index;
     this.current_time = current_time;
     this.info = info;
