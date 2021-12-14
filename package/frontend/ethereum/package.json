@@ -3,15 +3,20 @@
   "version": "1.0.0",
   "main": "./output/server",
   "scripts": {
-    "dev": "concurrently --kill-others-on-fail --restart-tries 0 -n LINT,CODE -c grey,blue \"npm run format\" \"nodemon -w\"",
-    "ts-lint": "read -p \"`ts-standard --verbose --fix`\"",
-    "format": "prettier ../../../ --write",
-    "type": "tsc -w",
-    "start": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\""
+    "offline_dev": "serverless offline",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "type": "tsc -b -w",
+    "testdrive": "nodemon -w -- $1",
+    "dev": "concurrently --kill-others-on-fail --restart-tries 0 -n LINT,CODE -c grey,blue \"npm run format\" $1",
+    "start": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\" -- $1",
+    "ts-lint": "ts-standard --verbose --fix",
+    "lint": "standard --verbose --fix",
+    "format": "prettier ../../../ --write"
   },
   "devDependencies": {
     "@openzeppelin/contracts": "^4.3.3",
     "@types/chai": "^4.2.22",
+    "@types/crypto-js": "^4.0.2",
     "@types/mocha": "^9.0.0",
     "@types/request": "^2.48.7",
     "chai": "^4.3.4",
