@@ -57,6 +57,8 @@ class Blockchain {
   }
 }
 let bscoin = new Blockchain();
+
+console.log('bscoin mining processing........');
 bscoin.addNewBlock(new BlockCrypto(1, '11/13/2021', {sender: 'Black Daymare', recipient: 'Kyle Smith', quantity: 20}));
 bscoin.addNewBlock(
   new BlockCrypto(2, '12/13/2021', {sender: 'Brother Love', recipient: 'Shamon Brown', quantity: 349})
