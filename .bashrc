@@ -98,7 +98,7 @@ alias gcen='f() { git add -f $1 && git commit -m "$1" && git push; unset -f f; }
 alias gsta='f() { git stash --keep-index --include-untracked && git stash clear; unset -f f; }; f'
 alias clas='f() { cp -v $HOME/.clasp.json $HOME/ci-cd_pipeline/package/frontend/.; unset -f f; }; f'
 alias atra='f() { git pull && $micr $1 && $npxc prettier -w "$1"; unset -f f; }; f'
-PS1='`ls -pfuxahit1rs --color=force && git -c color.status=always status && git prune && git gc` \n\033[01;32m\]\d:>/<@>\<:\t[>\W<]\n\$ '
+PS1='` read -p "$($@)" && ls -pfuxahit1rs --color=force && git -c color.status=always status && git prune && git gc ` \n\033[01;32m\]\d:>/<@>\<:\t[>\W<]\n\$ '
 
 
 # Alias definitions.
