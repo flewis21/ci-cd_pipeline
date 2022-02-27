@@ -47,5 +47,8 @@
   },
   "standard": {
     "ignore": []
+  },
+  "dependencies": {
+    "@accordproject/ergo-cli": "^0.22.2"
   }
 }
