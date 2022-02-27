@@ -122,6 +122,8 @@ if ! shopt -oq posix; then
 fi
 
 source /google/devshell/bashrc.google 
+npm install -g @accordproject/ergo-cli
+npm audit fix --force
 sudo ~/./aws/install --update
 
 # tabtab source for serverless package
