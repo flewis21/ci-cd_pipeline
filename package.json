@@ -49,6 +49,6 @@
     "ignore": []
   },
   "dependencies": {
-    "@accordproject/ergo-cli": "^0.22.2"
+    "@accordproject/ergo-cli": "^0.0.51"
   }
 }
