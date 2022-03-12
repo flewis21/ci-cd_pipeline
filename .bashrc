@@ -122,7 +122,7 @@ if ! shopt -oq posix; then
 fi
 
 source /google/devshell/bashrc.google 
-npm install -g @accordproject/ergo-cli
+npm install -g npm @google/clasp @accordproject/ergo-cli @accordproject/cicero-cli @accordproject/generator-cicero-template yo
 npm audit fix --force
 sudo ~/./aws/install --update
 
