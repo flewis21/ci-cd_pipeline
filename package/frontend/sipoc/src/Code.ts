@@ -3,3 +3,12 @@ function doGet(e) {
   var params = JSON.stringify(e);
   return HtmlService.createHtmlOutput(params);
 }
+
+function addToSideBar(){
+  const htmlServ = HtmlService.createTemplateFromFile("my");
+  const html = htmlServ.evaluate();
+
+  const ui = FormsApp.getUi();
+  ui.showSidebar(html);
+  
+}
