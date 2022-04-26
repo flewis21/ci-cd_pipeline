@@ -122,18 +122,19 @@ if ! shopt -oq posix; then
 fi
 
 source /google/devshell/bashrc.google 
-npm install -g npm@latest @google/clasp @accordproject/ergo-cli @accordproject/cicero-cli @accordproject/generator-cicero-template yo --force
+# npm install -g npm@latest @google/clasp @accordproject/ergo-cli @accordproject/cicero-cli @accordproject/generator-cicero-template yo --force
 npm audit fix --force
 sudo ~/./aws/install --update
 
+
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
-[ -f /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/serverless.bash ] && . /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/serverless.bash
+# [ -f /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/serverless.bash ] && . /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/serverless.bash
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
-[ -f /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/sls.bash ] && . /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/sls.bash
+# [ -f /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/sls.bash ] && . /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/sls.bash
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
-[ -f /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/slss.bash ] && . /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/slss.bash
+# [ -f /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/slss.bash ] && . /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/slss.bash
 # Added by serverless binary installer
-export PATH="$HOME/.serverless/bin:$PATH"
+# export PATH="$HOME/.serverless/bin:$PATH"
