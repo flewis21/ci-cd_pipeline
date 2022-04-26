@@ -4,11 +4,10 @@ function doGet(e) {
   return HtmlService.createHtmlOutput(params);
 }
 
-function addToSideBar(){
-  const htmlServ = HtmlService.createTemplateFromFile("my");
+function addToSideBar() {
+  const htmlServ = HtmlService.createTemplateFromFile('my');
   const html = htmlServ.evaluate();
 
   const ui = FormsApp.getUi();
   ui.showSidebar(html);
-  
 }
