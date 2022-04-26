@@ -121,7 +121,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-source /google/devshell/bashrc.google 
 # npm install -g npm@latest @google/clasp @accordproject/ergo-cli @accordproject/cicero-cli @accordproject/generator-cicero-template yo --force
 npm audit fix --force
 sudo ~/./aws/install --update
@@ -138,3 +137,5 @@ sudo ~/./aws/install --update
 # [ -f /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/slss.bash ] && . /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/slss.bash
 # Added by serverless binary installer
 # export PATH="$HOME/.serverless/bin:$PATH"
+
+source /google/devshell/bashrc.google 
