@@ -34,6 +34,7 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # npm install -g npm@latest @google/clasp @accordproject/ergo-cli @accordproject/cicero-cli @accordproject/generator-cicero-template yo --force
+npm install -g @google/clasp
 npm audit fix --force
 sudo ~/./aws/install --update
 source $HOME/.bashrc
