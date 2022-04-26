@@ -121,11 +121,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# npm install -g npm@latest @google/clasp @accordproject/ergo-cli @accordproject/cicero-cli @accordproject/generator-cicero-template yo --force
-npm audit fix --force
-sudo ~/./aws/install --update
-
-
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
 # [ -f /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/serverless.bash ] && . /home/f_lewis20_allaccess19/ci-cd_pipeline/node_modules/tabtab/.completions/serverless.bash
