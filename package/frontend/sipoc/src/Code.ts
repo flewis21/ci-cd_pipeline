@@ -10,5 +10,4 @@ function addToSideBar() {
 
   const ui = FormsApp.getUi();
   ui.showSidebar(html);
-
-} 
+}
