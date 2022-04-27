@@ -4,4 +4,4 @@ function afterPageLoad(){
 }
 
 
-document.addEventListener{"DOMContentLoaded", afterPageLoad};
+document.addEventListener("DOMContentLoaded", afterPageLoad);
