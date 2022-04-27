@@ -1,7 +1,5 @@
-function afterPageLoad(){
-
-    document.getElementById("title").textContent = "After Page Load Hello";
+function afterPageLoad() {
+  document.getElementById('title').textContent = 'After Page Load Hello';
 }
 
-
-document.addEventListener("DOMContentLoaded", afterPageLoad);
+document.addEventListener('DOMContentLoaded', afterPageLoad);
