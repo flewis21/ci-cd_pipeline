@@ -35,6 +35,7 @@ fi
 
 # npm install -g npm@latest @google/clasp @accordproject/ergo-cli @accordproject/cicero-cli @accordproject/generator-cicero-template yo --force
 npm install -g @google/clasp
+npm install -g parcel-bundler
 npm audit fix --force
 sudo ~/./aws/install --update
 source $HOME/.bashrc
