@@ -1,20 +1,15 @@
 // Compiled using sipoc 1.0.0 (TypeScript 4.6.3)
-function doGet() {
+// Compiled using sipoc 1.0.0 (TypeScript 4.6.3)
+function doGet(e) {
+  Logger.log(e.parameter);
   //SlidesApp.getUi();
   //DriveApp.getRootFolder();
   //UrlFetchApp.fetch("");
-  return HtmlService.createTemplateFromFile('index').evaluate();
+  return HtmlService.createHtmlOutputFromFile('index');
 }
-
-function params(e) {
-  var params = JSON.stringify(e);
-  return HtmlService.createHtmlOutput(params);
-}
-
 function addToSideBar() {
-  const htmlServ = HtmlService.createTemplateFromFile('index');
-  const html = htmlServ.evaluate();
-
-  const ui = FormApp.getUi();
+  var htmlServ = HtmlService.createTemplateFromFile('index');
+  var html = htmlServ.evaluate();
+  var ui = FormApp.getUi();
   ui.showSidebar(html);
 }

@@ -10,5 +10,9 @@
         "functionName": "doGet"
       }
     ]
+  },
+  "webapp": {
+    "executeAs": "USER_DEPLOYING",
+    "access": "MYSELF"
   }
 }
