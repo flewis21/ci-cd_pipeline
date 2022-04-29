@@ -16,10 +16,13 @@ function scriptJs(name) {
   let markHeight = 1.69;
   // BMI = mass / height ** 2 = mass / (height * height);
   let johnBMI = johnMass / johnHeight ** 2;
+  Logger.log("John's BMI is " + johnBMI);
   let markBMI = markMass / (markHeight * markHeight);
+  Logger.log("Mark's BMI is " + markBMI);
   let markHigherBMI;
   if (markBMI > johnBMI) markHigherBMI = true;
   else markHigherBMI = false;
+  Logger.log("Marks's BMI greater than John's is " + markHigherBMI);
 
   // Logger.log(name + " clicked the button");
   // Logger.log(country);
