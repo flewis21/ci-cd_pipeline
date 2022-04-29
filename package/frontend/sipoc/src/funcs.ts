@@ -19,7 +19,7 @@ function scriptJs(name) {
   let markBMI = markMass / (markHeight * markHeight);
   let markHigherBMI;
   if (markBMI > johnBMI) markHigherBMI = true;
-  else markhigherBMI = false;
+  else markHigherBMI = false;
 
   // Logger.log(name + " clicked the button");
   // Logger.log(country);
