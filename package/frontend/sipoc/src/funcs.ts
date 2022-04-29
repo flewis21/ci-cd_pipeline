@@ -17,6 +17,7 @@ function scriptJs(name) {
   // BMI = mass / height ** 2 = mass / (height * height);
   let johnBMI = johnMass / johnHeight ** 2;
   let markBMI = markMass / (markHeight * markHeight);
+  let markHigherBMI;
   if (markBMI > johnBMI) markHigherBMI = true;
   else markhigherBMI = false;
 
