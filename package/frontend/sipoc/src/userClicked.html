@@ -1,0 +1,9 @@
+<script>
+  document.getElementById('btn').addEventListener('click', doStuff);
+
+  function doStuff() {
+    var myFirstName = document.getElementById('username').value;
+    google.script.run.scriptJs(myFirstName);
+    document.getElementById('username').value = '';
+  }
+</script>
