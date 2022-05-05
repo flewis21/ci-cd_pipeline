@@ -1,44 +1,257 @@
 <script>
-  let country = 'USA';
-  let continent = 'North America';
-  let population = 331.45 * 1000000;
-  console.log(country, continent, population);
+  'use strict';
+
+  function fruitProcessor(apples, oranges) {
+    console.log(`Juice with ${apples} apples and ${oranges} oranges! :D`);
+    return toBurn;
+  }
+
+  const applejuice = fruitProcessor(5, 0);
+  console.log(applejuice);
 
   /*
-  const testData0 = 0;
-  const testData1 = 1;
-  if (testData0 == testData1) {
-    const johnMass = 85;
-    const johnHeight = 1.76;
-    const markMass = 95;
-    const markHeight = 1.88;
+const bill = 40;
+
+const smallTip = bill < 50 ? bill * .1 : !bill;
+const regularTip = bill >= 50 && bill <= 300 ? bill * .15 : !bill;
+const bigTip = bill > 300 ? bill * .2 : !bill;
+if (smallTip) {
+  console.log(`You should give a \$${smallTip} tip, so pay \$${smallTip + bill}.`);
+} else if (regularTip) {
+  console.log(`You should give a \$${regularTip} tip, so pay \$${regularTip + bill}.`);
+} else {
+    console.log(`You should give a \$${bigTip} tip, so pay \$${bigTip + bill}.`);
+}
+
+
+
+/*
+const day = 'Thursday';
+
+if (day === 'Monday') {
+  // const day = 'Tuesday';
+  console.log(day);
+} else if (day === 'Tuesday') {
+  // const day = 'Wednesday';
+  console.log(day);
+} else if (day === 'Wednesday' || 'Thursday' === day) {
+  // const day = 'Friday';
+  console.log(day);
+} else if (day === 'Friday') {
+  // const day = 'Saturday';
+  console.log(day);
+} else if (day === 'Saturday' || 'Sunday' === day) {
+  // const day = 'Monday';
+  console.log(day);
+} else {
+  // const day = 'Groundhogday';
+  console.log("Groundhogday! Tomorrow's another day!");
+}
+
+
+/*
+const day = 'Monay';
+
+switch (day) {
+  case 'Monday':
+    console.log("It's Monday!");
+    console.log("It's summer!");
+    break;
+  case 'Tuesday':
+    console.log("It's Tuesday!");
+    break;
+  case 'Wednesday':
+  case 'Thursday':
+    console.log("It's the middle of the week!");
+    break;
+  case 'Friday':
+    console.log("This is the last day of the week!");
+    break;
+  case 'Saturday':
+  case 'Sunday':
+    console.log("This is the weekend! :D");
+    break;
+  default:
+    console.log("!")
+} 
+
+
+/*
+// average = sum / 3;
+const testData0 = true;
+const testData1 = true;
+const testData2 = true;
+const minimumScore = 100;
+
+if (!testData0 && testData1 && testData2) {
+
+  const scoreDolphins0 = 96;
+  const scoreKoalas0 = 88
+  const scoreDolphins1 = 108;
+  const scoreKoalas1 = 91;
+  const scoreDolphins2 = 89;
+  const scoreKoalas2 = 110;
+
+  const averageDolphins = (scoreDolphins0 + scoreDolphins1 + scoreDolphins2) / 3;
+  console.log(averageDolphins);
+
+  const averageKoalas = (scoreKoalas0 + scoreKoalas1 + scoreKoalas2) / 3;
+  console.log(averageKoalas);
+ 
+    if (averageDolphins !== averageKoalas && averageDolphins > averageKoalas && averageDolphins >= minimumScore) {
+      console.log(`Dolphins win with a ${averageDolphins} average`);      
+    } else if (averageDolphins !== averageKoalas && averageDolphins < averageKoalas && averageKoalas >= minimumScore) {
+      console.log(`Koalas win with a ${averageKoalas} average`);
+    } else if (averageDolphins == averageKoalas && averageKoalas >= minimumScore && averageDolphins >= minimumScore) {
+      console.log(`It's a draw! Dolphins scored (${averageDolphins}) and Koalas scored (${averageKoalas})`);
+    } else {
+      console.log("No winner of that round");
+    };
+} else if (testData0 && testData1 && testData2) {
+
+    const scoreDolphins0 = 97;
+    const scoreKoalas0 = 109
+    const scoreDolphins1 = 112;
+    const scoreKoalas1 = 95;
+    const scoreDolphins2 = 101;
+    const scoreKoalas2 = 123;
+
+    const averageDolphins = (scoreDolphins0 + scoreDolphins1 + scoreDolphins2) / 3;
+    console.log(averageDolphins);
+
+    const averageKoalas = (scoreKoalas0 + scoreKoalas1 + scoreKoalas2) / 3;
+    console.log(averageKoalas);
+
+      if (averageDolphins !== averageKoalas && averageDolphins > averageKoalas && averageDolphins >= minimumScore) {
+        console.log(`Dolphins win with a ${averageDolphins} average`);      
+      } else if (averageDolphins !== averageKoalas && averageDolphins < averageKoalas && averageKoalas >= minimumScore) {
+        console.log(`Koalas win with a ${averageKoalas} average`);
+      } else if (averageDolphins == averageKoalas && averageKoalas >= minimumScore && averageDolphins >= minimumScore) {
+        console.log(`It's a draw! Dolphins scored (${averageDolphins}) and Koalas scored (${averageKoalas})`);
+      } else {
+        console.log("No winner of that round");
+      };
+  } else if (testData0 && testData1 && testData2) {
+
+      const scoreDolphins0 = 97;
+      const scoreKoalas0 = 109
+      const scoreDolphins1 = 112;
+      const scoreKoalas1 = 95;
+      const scoreDolphins2 = 101;
+      const scoreKoalas2 = 106;
+
+      const averageDolphins = (scoreDolphins0 + scoreDolphins1 + scoreDolphins2) / 3;
+      console.log(averageDolphins);
+
+      const averageKoalas = (scoreKoalas0 + scoreKoalas1 + scoreKoalas2) / 3;
+      console.log(averageKoalas);
+
+        if (averageDolphins !== averageKoalas && averageDolphins > averageKoalas && averageDolphins >= minimumScore) {
+          console.log(`Dolphins win with a ${averageDolphins} average`);      
+        } else if (averageDolphins !== averageKoalas && averageDolphins < averageKoalas && averageKoalas >= minimumScore) {
+          console.log(`Koalas win with a ${averageKoalas} average`);
+        } else if (averageDolphins == averageKoalas && averageKoalas >= minimumScore && averageDolphins >= minimumScore) {
+          console.log(`It's a draw! Dolphins scored (${averageDolphins}) and Koalas scored (${averageKoalas})`);
+        } else {
+          console.log("No winner of that round");
+        };
+    };
+
+
+
+/*
+const hasDriversLicense = true;
+const hasGoodVision = true;
+const isTired = true;
+
+console.log(hasDriversLicense && hasGoodVision && isTired);
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+if (hasDriversLicense && hasGoodVision && !isTired) {
+  // if (hasDriversLicense && hasGoodVision) {
+    console.log("Sarah is able to drive!");
+  } else {
+    console.log("Someone else should drive...");
+  }
+// }
+
+
+
+/*
+const favourite = Number(prompt("What's you're favourite number?"));
+console.log(favourite);
+console.log(typeof favourite);
+
+
+if (favourite !== 23) {
+  console.log('Why not 23?')
+}
+
+
+/*
+if (favourite == 23) {
+  console.log('Cool! 23 is an amazing number!')
+} else if (favourite === 7) {
+  console.log('7 is also a cool number')
+} else if (favourite === 9) {
+  console.log('9 is also a cool number')
+} else {
+  console.log('Number is not 23, 7, or 9!')
+}
+
+
+
+/*
+const age = '18';
+if (age === 18) console.log("You just became an adult! :D (strict)");
+if (age == 18) console.log("You just became an adult! :D (loose)");
+
+
+
+/*  
+let country = 'USA';
+let continent = 'North America';
+let population = 331.45 * 1000000;
+console.log(country, continent, population)
+
+
+/*
+const testData0 = 0;
+const testData1 = 1;
+if (testData0 == testData1) {
+  const johnMass = 85;
+  const johnHeight = 1.76;
+  const markMass = 95;
+  const markHeight = 1.88;
+  // BMI = mass / height ** 2 = mass / (height * height);
+  const johnBMI = johnMass / johnHeight ** 2;
+  console.log("John's BMI is " + johnBMI);
+  const markBMI = markMass / (markHeight * markHeight);
+  console.log("Mark's BMI is " + markBMI);
+  let markHigherBMI = markBMI > johnBMI;
+    if (markHigherBMI) {
+      console.log(`Mark's BMI(${markBMI}) is higher than Johns's BMI(${johnBMI})!`)
+    } else {
+      console.log(`John's BMI(${johnBMI}) is higher than Mark's BMI(${markBMI})!`)
+    }
+} else {
+    const johnMass = 92;
+    const johnHeight = 1.95;
+    const markMass = 78;
+    const markHeight = 1.69;
     // BMI = mass / height ** 2 = mass / (height * height);
     const johnBMI = johnMass / johnHeight ** 2;
     console.log("John's BMI is " + johnBMI);
     const markBMI = markMass / (markHeight * markHeight);
     console.log("Mark's BMI is " + markBMI);
-    let markHigherBMI = markBMI > johnBMI;
+    let markHigherBMI = (markBMI > johnBMI);
       if (markHigherBMI) {
         console.log(`Mark's BMI(${markBMI}) is higher than Johns's BMI(${johnBMI})!`)
-      } else {
+      } else { 
         console.log(`John's BMI(${johnBMI}) is higher than Mark's BMI(${markBMI})!`)
       }
-  } else {
-      const johnMass = 92;
-      const johnHeight = 1.95;
-      const markMass = 78;
-      const markHeight = 1.69;
-      // BMI = mass / height ** 2 = mass / (height * height);
-      const johnBMI = johnMass / johnHeight ** 2;
-      console.log("John's BMI is " + johnBMI);
-      const markBMI = markMass / (markHeight * markHeight);
-      console.log("Mark's BMI is " + markBMI);
-      let markHigherBMI = (markBMI > johnBMI);
-        if (markHigherBMI) {
-          console.log(`Mark's BMI(${markBMI}) is higher than Johns's BMI(${johnBMI})!`)
-        } else { 
-          console.log(`John's BMI(${johnBMI}) is higher than Mark's BMI(${markBMI})!`)
-        }
-  }
-  */
+}
+*/
 </script>

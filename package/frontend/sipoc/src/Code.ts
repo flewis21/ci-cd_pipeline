@@ -11,8 +11,8 @@ function include(filename) {
   return HtmlService.createHtmlOutputFromFile(filename).getContent();
 }
 function addToSideBar() {
-  var htmlServ = HtmlService.createTemplateFromFile('index');
-  var html = htmlServ.evaluate();
-  var ui = FormApp.getUi();
+  const htmlServ = HtmlService.createTemplateFromFile('index');
+  const html = htmlServ.evaluate();
+  const ui = FormApp.getUi();
   ui.showSidebar(html);
 }
