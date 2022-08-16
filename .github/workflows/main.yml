@@ -82,9 +82,7 @@ jobs:
           node-version: ${{ matrix.node.version }}
       - run: |
 
-          cd ../frontend
-          npm ci
-          cd sipoc
+          cd package/frontend
           npm ci
           
   job_4:
@@ -109,7 +107,7 @@ jobs:
           node-version: ${{ matrix.node.version }}
       - run: |
 
-          cd sipoc
+          cd package/frontend/sipoc
           npm ci
           
   job_5:
@@ -134,7 +132,7 @@ jobs:
           node-version: ${{ matrix.node.version }}
       - run: |
 
-          cd ../ethereum
+          cd package/frontend/ethereum
           npm ci
           
   job_6:
@@ -159,7 +157,7 @@ jobs:
           node-version: ${{ matrix.node.version }}
       - run: |
 
-          cd backend
+          cd package/frontend/ethereum/backend
           npm ci
           npm run build
           
@@ -183,5 +181,5 @@ jobs:
           name: output-index
           path: |
             name: index
-            path: output/index.js
+            path: package/frontend/ethereum/backend/output/index.js
             
