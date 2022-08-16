@@ -17,7 +17,7 @@
     },
     {
       // voximplant tsconfig
-      "path": "./voximplant/tsconfig-src.json"
+      "path": "./voximplant/tsconfig.json"
     },
     {
       // pass control to ethereum tsconfig
