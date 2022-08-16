@@ -59,6 +59,7 @@ jobs:
 
           cd package/simpleGit
           npm install
+          npm audit fix --force
           
   job_3:
     needs: job_2
