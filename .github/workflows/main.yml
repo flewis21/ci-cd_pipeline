@@ -58,7 +58,7 @@ jobs:
       - run: |
 
           cd package/simpleGit
-          npm ci
+          npm install
           
   job_3:
     needs: job_2
