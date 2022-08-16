@@ -136,7 +136,7 @@ jobs:
           npm ci
           
   job_6:
-    needs: {job_1, job_2}
+    needs: [job_1, job_2]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -162,7 +162,7 @@ jobs:
           npm run build
           
   job_7:
-    needs: {job_1, job_3}
+    needs: [job_1, job_3]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
