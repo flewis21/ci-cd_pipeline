@@ -34,7 +34,9 @@ jobs:
       - name: Run a multi-line script
         run: |
         
-          cd package/frontend
+          cd package/simpleGit
+          npm install
+          cd ../frontend
           npm install
           cd sipoc
           npm install
