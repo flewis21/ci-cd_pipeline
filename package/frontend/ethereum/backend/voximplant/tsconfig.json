@@ -15,10 +15,10 @@
       // pass control to backend tsconfig-output
       "path": "../tsconfig-src.json"
     },
-    {
-      // voximplant tsconfig
-      // "path": "./voximplant/tsconfig-src.json"
-    },
+//     {
+//       voximplant tsconfig
+//       "path": "./voximplant/tsconfig-src.json"
+//     }
     {
       // pass control to ethereum tsconfig
       "path": "../../tsconfig-src.json"
@@ -34,15 +34,15 @@
     {
       // pass control to public tsconfig
       "path": "../../../public/tsconfig-src.json"
-    },
-    {
-      // pass control to sandbox tsconfig
-      "path": "../../../../sandbox/tsconfig.json"
-    },
-    {
-      // pass control to simpleGit tsconfig
-      "path": "../../../../simpleGit/tsconfig.json"
     }
+//     {
+//       pass control to sandbox tsconfig
+//       "path": "../../../../sandbox/tsconfig.json"
+//     }
+//     {
+//       pass control to simpleGit tsconfig
+//       "path": "../../../../simpleGit/tsconfig.json"
+//     }
   ],
 
   // set options
