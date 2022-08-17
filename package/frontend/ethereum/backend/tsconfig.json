@@ -73,7 +73,7 @@
 //     "outDir": "./output"
 
     // Disable files: [./package/frontend/ethereum/backend/src/index.ts] before editing outDir
-    "outDir": "./package/frontend/public/output"
+    "outDir": "../../public/output"
 
     // Disable files: [./package/frontend/ethereum/backend/src/hardhat.config.ts] before editing outDir
     // "outDir": "./package/frontend/ethereum/output"
