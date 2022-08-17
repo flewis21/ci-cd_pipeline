@@ -56,6 +56,6 @@
     // "noLib": false,
     // "skipLibCheck": false,
     "typeRoots": ["../node_modules/"],
-//     "types": ["google-apps-script"]
+    "types": ["google-apps-script"]
   }
 }
