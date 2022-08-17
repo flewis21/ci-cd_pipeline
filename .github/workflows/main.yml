@@ -58,7 +58,7 @@ jobs:
       - run: |
 
           cd package/frontend
-          npm ci
+          npm install
           
   job_3:
     needs: [job_1, job_2]
