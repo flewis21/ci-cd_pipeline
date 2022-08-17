@@ -23,15 +23,15 @@
     {
       // build public tsconfig
       "path": "./public/tsconfig.json"
-    },
-    {
-      // build sandbox tsconfig
-      "path": "../sandbox/tsconfig.json"
-    },
-    {
-      // build simpleGit tsconfig
-      "path": "../simpleGit/tsconfig.json"
     }
+//     {
+//       build sandbox tsconfig
+//       "path": "../sandbox/tsconfig.json"
+//     }
+//     {
+//       build simpleGit tsconfig
+//       "path": "../simpleGit/tsconfig.json"
+//     }
   ],
 
   // pass set options to references
