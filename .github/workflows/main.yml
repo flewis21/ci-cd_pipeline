@@ -33,7 +33,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node.version }}
-      - run: npm ci
+      - run: npm install
       
   job_2:
     needs: job_1
@@ -83,7 +83,7 @@ jobs:
       - run: |
 
           cd package/frontend/sipoc
-          npm ci
+          npm install
           
   job_4:
     needs: [job_1, job_2]
@@ -108,7 +108,7 @@ jobs:
       - run: |
 
           cd package/frontend/ethereum
-          npm ci
+          npm install
           
   job_5:
     needs: [job_1, job_2, job_4]
@@ -133,7 +133,7 @@ jobs:
       - run: |
 
           cd package/frontend/ethereum/backend
-          npm ci
+          npm install
           npm run build
           
   job_6:
