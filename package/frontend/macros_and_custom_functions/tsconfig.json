@@ -50,12 +50,12 @@
     // "stripInternal": false,
     "rootDir": "./src",
     "outDir": "./output",
-    "declarationDir": "../ethereum/backend/output/@types",
+    "declarationDir": "../ethereum/backend/output/@types"
 
     // Make Google Apps Script type definitions ambient
     // "noLib": false,
     // "skipLibCheck": false,
-    "typeRoots": ["../node_modules/"],
-    "types": ["google-apps-script"]
+//     "typeRoots": ["../node_modules/"]
+//     "types": ["google-apps-script"]
   }
 }
