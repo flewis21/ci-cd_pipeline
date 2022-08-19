@@ -16,7 +16,6 @@
     "lint": "standard --verbose --fix",
     "format": "prettier ../../../../../ --write",
     "alias-maje": "atra $1 && gcen $1 && gsta",
-    "alias-cli": "ls -pfuxahit1rs --color=force && git -c color.status=always status",
     "alias-gcen": "git pull --no-rebase && $npxc prettier -w \"$1\" && git add -f $1 && git commit -m \"$1\" && git push",
     "alias-gsta": "git stash --keep-index --include-untracked && git stash clear",
     "alias-clas": "cp -v $HOME/.clasp.json $HOME/ci-cd_pipeline/package/frontend/.",
