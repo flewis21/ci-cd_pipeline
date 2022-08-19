@@ -77,7 +77,7 @@
 
 //     Disable files: [./package/frontend/ethereum/backend/src/server.ts] before editing outDir
     "outDir": "./output",
-//     "rootDir": "../src"
+    "rootDir": "../"
   },
 
 //   Enable outDir: ./package/frontend/ethereum/backend/output again before enabling any one of these
