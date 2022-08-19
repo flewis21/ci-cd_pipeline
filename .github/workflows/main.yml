@@ -159,6 +159,7 @@ jobs:
       - run: |
 
           cd package/frontend/ethereum/backend/voximplant
+          npm install
           npm run build
           npm run gcen output
           
