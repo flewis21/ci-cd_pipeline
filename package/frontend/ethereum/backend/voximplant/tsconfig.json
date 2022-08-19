@@ -61,7 +61,7 @@
     "sourceMap": true,
     "declarationDir": "./output/@types",
     "types": [],
-      "typeRoots": ["../node_modules/@types"]
+      "typeRoots": ["../node_modules/@types"],
     "paths": {  
       "express": ["../node_modules/express/lib/express"]    
     },
