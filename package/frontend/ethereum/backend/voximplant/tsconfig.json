@@ -1,18 +1,18 @@
 {
-  // Do not disable this!
-  // "files": [],
+//   Do not disable this!
+//   "files": [],
 
-  // include
-  "include": ["../**/*.d.ts"],
+//   include
+//   "include": ["../**/*.d.ts"],
 
-  // exclude
+//   exclude
   "exclude": ["node_modules", "./output"],
 
-  //references
+//   references
   "references": [
-    // reference points
+//     reference points
     {
-      // pass control to backend tsconfig-output
+//       pass control to backend tsconfig-output
       "path": "../tsconfig-src.json"
     },
 //     {
@@ -20,11 +20,11 @@
 //       "path": "./voximplant/tsconfig-src.json"
 //     }
     {
-      // pass control to ethereum tsconfig
+//       pass control to ethereum tsconfig
       "path": "../../tsconfig-src.json"
     },
     {
-      // pass control to frontend tsconfig
+//       pass control to frontend tsconfig
       "path": "../../../tsconfig-src.json"
     },
 //     {
@@ -32,7 +32,7 @@
 //       "path": "../../../macros_and_custom_functions/tsconfig.json"
 //     }
     {
-      // pass control to public tsconfig
+//       pass control to public tsconfig
       "path": "../../../public/tsconfig-src.json"
     }
 //     {
