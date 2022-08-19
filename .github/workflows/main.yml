@@ -136,8 +136,8 @@ jobs:
           npm install
           npm run build
           
-  job_voximpllant:
-    needs: [job_ci-cd_pipeline]
+  job_voximplant:
+    needs: [job_backend]
 #     The type of runner that the job will run on
     runs-on: ubuntu-latest
 
