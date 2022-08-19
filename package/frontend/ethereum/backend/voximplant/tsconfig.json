@@ -3,7 +3,7 @@
   // "files": [],
 
   // include
-  // "include": ["**/*.d.ts"],
+  "include": ["../**/*.d.ts"],
 
   // exclude
   "exclude": ["node_modules", "./output"],
@@ -45,13 +45,13 @@
 //     }
   ],
 
-  // set options
+//   set options
   "compilerOptions": {
     "composite": true,
     "strict": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    // "importHelpers": true,
+//     "importHelpers": true,
     "moduleResolution": "node",
     "lib": ["dom", "esnext"],
     "skipLibCheck": true,
@@ -61,25 +61,25 @@
     "sourceMap": true,
     "declarationDir": "./output/@types",
     "types": [],
-      "typeRoots": ["../node_modules/@types"],
-    "paths": {  
-      "express": ["../node_modules/express/lib/express"]    
-    },
+//     "typeRoots": ["../node_modules/@types"],
+//     "paths": {  
+//       "express": ["../node_modules/express/lib/express"]    
+//     }
     "watch": true,
 
-    // Disable for plain javascript
+//     Disable for plain javascript
     "isolatedModules": true,
     "module": "commonjs",
     "target": "esnext",
-    // Enable for plain javascript
-    // "target": "es5",
-    // "module": "es2015",
+//     Enable for plain javascript
+//     "target": "es5",
+//     "module": "es2015",
 
-    // Disable files: [./package/frontend/ethereum/backend/src/server.ts] before editing outDir
+//     Disable files: [./package/frontend/ethereum/backend/src/server.ts] before editing outDir
     "outDir": "./output",
-    "rootDir": "../src"
+//     "rootDir": "../src"
   },
 
-  // Enable outDir: ./package/frontend/ethereum/backend/output again before enabling any one of these
+//   Enable outDir: ./package/frontend/ethereum/backend/output again before enabling any one of these
   "files": ["../src/index.ts"]
 }
