@@ -3,7 +3,7 @@
 //   "files": [],
 
 //   include
-//   "include": ["../**/*.d.ts"],
+  "include": ["../node_modules/**/"],
 
 //   exclude
   "exclude": ["./output"],
