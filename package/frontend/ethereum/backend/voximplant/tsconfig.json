@@ -63,7 +63,7 @@
     "types": [],
 //     "typeRoots": ["../node_modules/@types"],
     "paths": {  
-      "express": ["../node_modules/express"]    
+      "express": ["./node_modules/"]    
     },
     "watch": true,
 
