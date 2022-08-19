@@ -24,10 +24,10 @@
     "alias-mptr": "f() { $npxc prettier --watch --html-whitespace-sensitivity \"ignore\" \"$1\"; unset -f f; }; f"  
   },
   "devDependencies": {
-    "@types/express": "^4.17.13",
+    "@types/express": "^4.17.13"
   },
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.1"
   }
   "author": "",
   "license": "MIT"
