@@ -14,7 +14,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains multiple jobs called "job_"
-  job_1:
+  job_ci-cd_pipeline:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -35,8 +35,8 @@ jobs:
           node-version: ${{ matrix.node.version }}
       - run: npm install
       
-  job_2:
-    needs: job_1
+  job_frontend:
+    needs: job_ci-cd_pipeline
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -60,8 +60,8 @@ jobs:
           cd package/frontend
           npm install
           
-  job_3:
-    needs: [job_1, job_2]
+  job_sipoc:
+    needs: [job_ci-cd_pipeline, job_frontend]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -85,8 +85,8 @@ jobs:
           cd package/frontend/sipoc
           npm install
           
-  job_4:
-    needs: [job_1, job_2]
+  job_ethereum:
+    needs: [job_ci-cd_pipeline, job_frontend]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -110,8 +110,8 @@ jobs:
           cd package/frontend/ethereum
           npm install
           
-  job_5:
-    needs: [job_1, job_2, job_4]
+  job_backend:
+    needs: [job_ci-cd_pipeline, job_frontend, job_ethereum]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -136,8 +136,34 @@ jobs:
           npm install
           npm run build
           
-  job_6:
-    needs: [job_1, job_2, job_3, job_4, job_5]
+  job_voximpllant:
+#     needs: [job_backend]
+#     The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    strategy: 
+      matrix:
+        node-version: [16.x]
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3        
+
+
+      # Runs a set of commands using the runners shell
+      - name: Use Node.js ${{ matrix.node.version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node.version }}
+      - run: |
+
+          cd package/frontend/ethereum/backend/voximplant
+          npm run deploy
+          npm run gcen output
+          
+  job_deploy:
+    needs: [job_ci-cd_pipeline, job_frontend, job_sipoc, job_ethereum, job_backend]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -156,5 +182,5 @@ jobs:
           name: output-index
           path: |
             name: index
-            path: package/frontend/ethereum/backend/output/index.js
+            path: package/frontend/ethereum/backend/voximplant/output/index.js
             
