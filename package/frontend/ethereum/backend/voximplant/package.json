@@ -1,6 +1,5 @@
 {
   "name": "voximplant",
-  "version": "1.0.0",
   "description": "Vox implant applications",
   "main": "./output/index.js",
   "scripts": {
