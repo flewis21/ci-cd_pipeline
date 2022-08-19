@@ -63,7 +63,7 @@
     "types": [],
 //     "typeRoots": ["../node_modules/@types"],
     "paths": {  
-      "modules": ["../node_modules/"]    
+      "express": ["../node_modules/express"]    
     },
     "watch": true,
 
@@ -77,8 +77,8 @@
 
 //     Disable files: [./package/frontend/ethereum/backend/src/server.ts] before editing outDir
     "outDir": "./output",
-    "rootDir": "../**"
-  },
+    "rootDir": "../src",
+    "baseUrl": "../"  }
 
 //   Enable outDir: ./package/frontend/ethereum/backend/output again before enabling any one of these
   "files": ["../src/index.ts"]
