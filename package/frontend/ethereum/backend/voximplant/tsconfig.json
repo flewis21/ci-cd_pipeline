@@ -3,7 +3,7 @@
 //   "files": [],
 
 //   include
-  "include": ["../**/*.d.ts"],
+//   "include": ["../**/*.d.ts"],
 
 //   exclude
   "exclude": ["./output"],
@@ -11,30 +11,30 @@
 //   references
   "references": [
 //     reference points
-    {
+//     {
 //       pass control to backend tsconfig-output
-      "path": "../tsconfig-src.json"
-    },
+//       "path": "../tsconfig-src.json"
+//     }
 //     {
 //       voximplant tsconfig
 //       "path": "./voximplant/tsconfig-src.json"
 //     }
-    {
+//     {
 //       pass control to ethereum tsconfig
-      "path": "../../tsconfig-src.json"
-    },
-    {
+//       "path": "../../tsconfig-src.json"
+//     }
+//     {
 //       pass control to frontend tsconfig
-      "path": "../../../tsconfig-src.json"
-    },
+//       "path": "../../../tsconfig-src.json"
+//     }
 //     {
 //       GAS project
 //       "path": "../../../macros_and_custom_functions/tsconfig.json"
 //     }
-    {
+//     {
 //       pass control to public tsconfig
-      "path": "../../../public/tsconfig-src.json"
-    }
+//       "path": "../../../public/tsconfig-src.json"
+//     }
 //     {
 //       pass control to sandbox tsconfig
 //       "path": "../../../../sandbox/tsconfig.json"
