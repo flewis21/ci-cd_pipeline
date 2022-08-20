@@ -59,6 +59,7 @@ jobs:
 
           cd package/frontend
           npm install
+          npm list
           
   job_sipoc:
     needs: [job_ci-cd_pipeline, job_frontend]
@@ -84,6 +85,7 @@ jobs:
 
           cd package/frontend/sipoc
           npm install
+          npm list
           
   job_ethereum:
     needs: [job_ci-cd_pipeline, job_frontend]
@@ -109,6 +111,7 @@ jobs:
 
           cd package/frontend/ethereum
           npm install
+          npm list
           
   job_backend:
     needs: [job_ci-cd_pipeline, job_frontend, job_ethereum]
@@ -134,6 +137,7 @@ jobs:
 
           cd package/frontend/ethereum/backend
           npm install
+          npm list
           npm run build
           
   job_voximplant:
