@@ -54,7 +54,7 @@
 //     "importHelpers": true,
     "moduleResolution": "node",
     "lib": ["dom", "esnext"],
-    "skipLibCheck": true,
+//     "skipLibCheck": true,
     "noEmit": false,
     "declaration": true,
     "declarationMap": true,
