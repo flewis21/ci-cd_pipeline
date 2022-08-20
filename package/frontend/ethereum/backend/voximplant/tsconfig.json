@@ -46,10 +46,10 @@
 //   ],
 
 //   set options
-//   "compilerOptions": {
+  "compilerOptions": {
 //     "composite": true,
 //     "strict": true,
-//     "esModuleInterop": true,
+    "esModuleInterop": true
 //     "allowSyntheticDefaultImports": true,
 //     "importHelpers": true,
 //     "moduleResolution": "node",
@@ -79,7 +79,7 @@
 //     Disable files: [./package/frontend/ethereum/backend/src/server.ts] before editing outDir
 //     "outDir": "./output",
 //     "rootDir": "../src"
-//   },
+  },
 
 //   Enable outDir: ./package/frontend/ethereum/backend/output again before enabling any one of these
   "files": ["../src/index.ts"]
