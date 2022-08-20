@@ -49,7 +49,7 @@
   "compilerOptions": {
     "composite": true,
 //     "strict": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
 //     "allowSyntheticDefaultImports": true,
 //     "importHelpers": true,
 //     "moduleResolution": "node",
