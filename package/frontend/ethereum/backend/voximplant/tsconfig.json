@@ -47,7 +47,7 @@
 
 //   set options
   "compilerOptions": {
-//     "composite": true,
+    "composite": true,
 //     "strict": true,
     "esModuleInterop": true
 //     "allowSyntheticDefaultImports": true,
