@@ -1,0 +1,94 @@
+{
+  // Do not disable this!
+  // "files": [],
+
+  // include
+  "include": ["**/*.d.ts"],
+
+  // exclude
+  "exclude": ["node_modules", "./output"],
+
+  //references
+  "references": [
+    // reference points
+    {
+      // pass control to backend tsconfig-output
+      "path": "./tsconfig-src.json"
+    },
+    {
+      // voximplant tsconfig
+      "path": "./voximplant/tsconfig.json"
+    },
+    {
+      // pass control to ethereum tsconfig
+      "path": "../tsconfig-src.json"
+    },
+    {
+      // pass control to frontend tsconfig
+      "path": "../../tsconfig-src.json"
+    },
+    //     {
+    //       GAS project
+    //       "path": "../../macros_and_custom_functions/tsconfig.json"
+    //     }
+    {
+      // pass control to public tsconfig
+      "path": "../../public/tsconfig-src.json"
+    }
+    //     {
+    //       pass control to sandbox tsconfig
+    //       "path": "../../../sandbox/tsconfig.json"
+    //     }
+    //     {
+    //       pass control to simpleGit tsconfig
+    //       "path": "../../../simpleGit/tsconfig.json"
+    //     }
+  ],
+
+  // pass set options to references
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "lib": ["dom", "es6"],
+    "skipLibCheck": true,
+    "noEmit": false,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "declarationDir": "./output/@types",
+    "types": [],
+    "watch": true,
+
+    // Disable for plain javascript
+    "isolatedModules": true,
+    "module": "commonjs",
+    "target": "es6",
+    // Enable for plain javascript
+    // "target": "es5",
+    // "module": "es2015",
+
+    //     Disable files: [./package/frontend/ethereum/backend/src/server.ts] before editing outDir
+    //     "outDir": "./output"
+
+    // Disable files: [./package/frontend/ethereum/backend/src/index.ts] before editing outDir
+    "outDir": "../../public/output"
+
+    // Disable files: [./package/frontend/ethereum/backend/src/hardhat.config.ts] before editing outDir
+    // "outDir": "./package/frontend/ethereum/output"
+    // "outDir": "./package/frontend/ethereum"
+  },
+
+  //   Enable outDir: ./package/frontend/ethereum/backend/output again before enabling any one of these
+  //   "files": ["./src/server.ts", "./src/routesIndex.ts", "./src/routesUsers.ts", "./src/routesBlogs.ts"]
+
+  //   Enable outDir: ./package/frontend/public/output again before enabling any one of these
+  "files": ["./src/index.ts"]
+
+  // Enable outDir: ./package/frontend/ethereum/output again before enabling any one of these
+  // "files": ["./package/frontend/ethereum/backend/src/web3Dev.ts"]
+  // "files": ["./package/frontend/ethereum/backend/src/infura_rpc.ts"]
+  // "files": ["./package/frontend/ethereum/backend/src/ether_index.ts"]
+  // "files": ["./package/frontend/ethereum/backend/src/hardhat.config.ts"]
+}

@@ -1,0 +1,36 @@
+service: voximplant
+package:
+  patterns:
+    - '!../*'
+    - '!./output/**'
+    - '!./tsconfig.json'
+    - '!./apprunner.yaml'
+    - '../node_modules/**'
+    - 'output/index.js'
+    - 'output/index.js.map'
+projectDir: ../
+configValidationMode: error
+
+frameworkVersion: '2'
+variablesResolutionMode: 20210326
+useDotenv: true
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: ${opt:stage, 'dev'}
+  lambdaHashingVersion: 20201221
+
+functions:
+  app:
+    handler: output/index.handler
+    events:
+      - http:
+          path: /
+          method: ANY
+
+plugins:
+
+custom:
+  serverless-offline:
+    httpPort: 4050
