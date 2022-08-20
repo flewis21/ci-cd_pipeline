@@ -60,7 +60,7 @@
     "declarationMap": true,
     "sourceMap": true,
     "declarationDir": "./output/@types",
-    "types": ["node", "express", "serverless-http"],
+//     "types": ["node", "express", "serverless-http"],
 //     "typeRoots": ["../node_modules/@types"],
     "baseUrl": "../",
     "paths": {  
