@@ -62,10 +62,10 @@
     "declarationDir": "./output/@types",
 //     "types": ["node", "express", "serverless-http"],
 //     "typeRoots": ["../node_modules/@types"],
-    "baseUrl": "../",
-    "paths": {  
-      "express": ["./node_modules/"]    
-    },
+//     "baseUrl": "../",
+//     "paths": {  
+//       "express": ["./node_modules/"]    
+//     }
     "watch": true,
 
 //     Disable for plain javascript
