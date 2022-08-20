@@ -65,7 +65,7 @@
     "baseUrl": "../"  
     "paths": {  
       "express": ["./node_modules/"]    
-    }
+    },
     "watch": true,
 
 //     Disable for plain javascript
