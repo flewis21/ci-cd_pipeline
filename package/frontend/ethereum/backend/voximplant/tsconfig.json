@@ -6,7 +6,7 @@
   "include": ["../**/*.d.ts"],
 
 //   exclude
-  "exclude": ["./output"],
+  "exclude": ["./node_modules", "./output"],
 
 //   references
   "references": [
@@ -54,13 +54,13 @@
 //     "importHelpers": true,
     "moduleResolution": "node",
     "lib": ["dom", "esnext"],
-//     "skipLibCheck": true,
+    "skipLibCheck": true,
     "noEmit": false,
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
     "declarationDir": "./output/@types",
-    "types": [],
+    "types": ["express", "serverless-http"],
 //     "typeRoots": ["../node_modules/@types"],
     "baseUrl": "../",
     "paths": {  
