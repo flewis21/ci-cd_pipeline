@@ -65,7 +65,7 @@ jobs:
           npm run build
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          npm run alias-gcen output
+          npm run alias-gcen output/index.js
           
           
   job_deploy_ethereum:
