@@ -46,11 +46,11 @@ jobs:
           
       - run: |
 
-          cd ethereum/voximplant/backend
+          cd package/frontend/ethereum/voximplant/backend
           npm install
           npm list
       
-  job_ethereum:
+  job_deploy_ethereum:
     needs: [job_ci-cd_pipeline]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
@@ -72,7 +72,7 @@ jobs:
           node-version: ${{ matrix.node.version }}
 #       - run: |
       
-#           cd ~/ci-cd_pipeline/package/frontend/ethereum/
+#           cd package/frontend/ethereum/
           
 #       - run: |
       
@@ -104,7 +104,7 @@ jobs:
           node-version: ${{ matrix.node.version }}
 #       - run: |
       
-#           cd ~/ci-cd_pipeline/package/frontend/sipoc/
+#           cd package/frontend/sipoc/
           
 #       - run: |
       
@@ -136,7 +136,7 @@ jobs:
           node-version: ${{ matrix.node.version }}
       - run: |
       
-          cd ~/ci-cd_pipeline/package/frontend/ethereum/voximplant/
+          cd package/frontend/ethereum/voximplant/
           
       - run: |
       
