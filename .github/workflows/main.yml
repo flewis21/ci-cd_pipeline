@@ -63,6 +63,8 @@ jobs:
       
           cd package/frontend/ethereum/voximplant/
           npm run build
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
           npm run alias-gcen output
           
           
