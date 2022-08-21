@@ -66,6 +66,7 @@ jobs:
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           npm run alias-gcen output/index.js
+          npm run alias-gsta
           
           
   job_deploy_ethereum:
