@@ -10,7 +10,7 @@
     // reference points
     {
       // build backend tsconfig-output
-      "path": "./ethereum/backend/tsconfig-output.json"
+      "path": "./ethereum/voximplant/backend/tsconfig-output.json"
     },
     {
       // build ethereum tsconfig
@@ -44,7 +44,7 @@
     "noEmit": false,
     "skipLibCheck": true,
     "declaration": true,
-    "declarationDir": "./ethereum/backend/output/@types",
+    "declarationDir": "./ethereum/voximplant/backend/output/@types",
 
     // Disable for plain javascript
     // "isolatedModules": true,
@@ -55,7 +55,7 @@
     "module": "es2015",
 
     // root directory
-    "rootDir": "./ethereum/backend/src",
+    "rootDir": "./ethereum/voximplant/backend/src",
 
     // Disable files: [./package/frontend/ethereum/backend/src/server.ts] before editing outDir
     // "outDir": "./output"
@@ -72,7 +72,7 @@
   // "files": ["./src/server.ts"]
 
   // Enable outDir: ./package/frontend/public/output again before enabling any one of these
-  "files": ["./ethereum/backend/src/index.ts"]
+  "files": ["./ethereum/voximplant/backend/src/index.ts"]
 
   // Enable outDir: ./package/frontend/ethereum/output again before enabling any one of these
   // "files": ["./package/frontend/ethereum/backend/src/web3Dev.ts"]
