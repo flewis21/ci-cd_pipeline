@@ -36,36 +36,57 @@ jobs:
       - run: |
       
           pwd
+          
+      - run: |
+      
           npm install
+          
+      - run: |
+      
           npm list
           
       - run: |
           
-          pwd
           npm run cli
           
       - run: |
       
-          pwd
           cd package/frontend
-          npm install
-          npm list
           
       - run: |
       
           pwd
+          
+      - run: |
+      
+          npm install
+          
+      - run: |
+      
+          npm list
+          
+      - run: |
+      
           npm run cli
           
       - run: |
 
-          pwd
           cd package/frontend/ethereum/voximplant/backend
+          
+      - run: |
+
+          pwd
+          
+      - run: |
+
           npm install
+          
+      - run: |
+
           npm list
           
       - run: |
       
-          pwd
           npm run cli
           
       
@@ -176,16 +197,17 @@ jobs:
       - run: |
       
           pwd
+          
+      - run: |
+
           npm run cli
           
       - run: |
       
-          pwd
           npm run build
           
       - run: |
       
-          pwd
           npm run gcen output
           
   job_deploy_website:
