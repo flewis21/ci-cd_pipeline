@@ -8,6 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "type": "tsc -b -w",
     "build": "tsc -b",
+    "cli": "ls -pfuxahit1rs --color=force && git -c color.status=always status",
     "testdrive": "nodemon -w -- $1",
     "dev": "concurrently --kill-others-on-fail --restart-tries 0 -n LINT,CODE -c grey,blue \"npm run format\" $1",
     "start": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run type\" \"npm run dev\" -- $1",
