@@ -46,7 +46,7 @@ jobs:
           
       - run: |
 
-          cd ethereum/backend
+          cd ethereum/voximplant/backend
           npm install
           npm list
       
@@ -69,12 +69,18 @@ jobs:
       - name: Use Node.js ${{ matrix.node.version }}
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node.version }}          
+          node-version: ${{ matrix.node.version }}
 #       - run: |
       
-#           cd ~/ci-cd_pipeline/package/frontend/ethereum
-#           npm install
-#           npm list
+#           cd ~/ci-cd_pipeline/package/frontend/ethereum/
+          
+#       - run: |
+      
+#           npm run build
+          
+#       - run: |
+      
+#           npm run gcen output
           
   job_deploy_sipoc:
     needs: [job_ci-cd_pipeline]
@@ -95,10 +101,17 @@ jobs:
       - name: Use Node.js ${{ matrix.node.version }}
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node.version }}          
+          node-version: ${{ matrix.node.version }}
+#       - run: |
+      
+#           cd ~/ci-cd_pipeline/package/frontend/sipoc/
+          
 #       - run: |
       
 #           npm run build
+          
+#       - run: |
+      
 #           npm run gcen output
           
   job_deploy_voximplant:
@@ -120,10 +133,17 @@ jobs:
       - name: Use Node.js ${{ matrix.node.version }}
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node.version }}          
+          node-version: ${{ matrix.node.version }}
       - run: |
-
+      
+          cd ~/ci-cd_pipeline/package/frontend/ethereum/voximplant/
+          
+      - run: |
+      
           npm run build
+          
+      - run: |
+      
           npm run gcen output
           
   job_deploy_website:
