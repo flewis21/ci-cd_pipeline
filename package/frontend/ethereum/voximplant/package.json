@@ -15,7 +15,7 @@
     "deploy": "concurrently --kill-others-on-fail --restart-tries 0 -n COMPILER,CODE -c grey,blue \"npm run typed\" \"npm run dev\" -- $1",
     "ts-lint": "ts-standard --verbose --fix",
     "lint": "standard --verbose --fix",
-    "format": "prettier ../../../../../ --write",
+    "format": "prettier ../../../../ --write",
     "alias-maje": "atra $1 && gcen $1 && gsta",
     "alias-gcen": "git pull --no-rebase && $npxc prettier -w \"$1\" && git add -f \"$1\" && git commit -m \"$1\" && git push",
     "alias-gsta": "git stash --keep-index --include-untracked && git stash clear",
