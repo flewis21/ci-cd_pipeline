@@ -35,32 +35,38 @@ jobs:
           node-version: ${{ matrix.node.version }}
       - run: |
       
+          pwd
           npm install
           npm list
           
       - run: |
-      
-            npm run cli
+          
+          pwd
+          npm run cli
           
       - run: |
       
+          pwd
           cd package/frontend
           npm install
           npm list
           
       - run: |
       
-            npm run cli
+          pwd
+          npm run cli
           
       - run: |
 
+          pwd
           cd package/frontend/ethereum/voximplant/backend
           npm install
           npm list
           
       - run: |
       
-            npm run cli
+          pwd
+          npm run cli
           
       
   job_deploy_ethereum:
@@ -85,18 +91,22 @@ jobs:
           node-version: ${{ matrix.node.version }}
 #       - run: |
       
+#           pwd
 #           cd package/frontend/ethereum/
           
 #       - run: |
       
-#             npm run cli
+#           pwd
+#           npm run cli
           
 #       - run: |
       
+#           pwd
 #           npm run build
           
 #       - run: |
       
+#           pwd
 #           npm run gcen output
           
   job_deploy_sipoc:
@@ -121,18 +131,22 @@ jobs:
           node-version: ${{ matrix.node.version }}
 #       - run: |
       
+#           pwd
 #           cd package/frontend/sipoc/
           
 #       - run: |
       
-#             npm run cli
+#           pwd
+#           npm run cli
           
 #       - run: |
       
+#           pwd
 #           npm run build
           
 #       - run: |
       
+#           pwd
 #           npm run gcen output
           
   job_deploy_voximplant:
@@ -161,14 +175,17 @@ jobs:
           
       - run: |
       
-            npm run cli
+          pwd
+          npm run cli
           
       - run: |
       
+          pwd
           npm run build
           
       - run: |
       
+          pwd
           npm run gcen output
           
   job_deploy_website:
