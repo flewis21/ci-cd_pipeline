@@ -66,7 +66,7 @@ jobs:
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
           git pull --no-rebase
-          prettier -w output/index.js
+          npm run format
           git add -f output/index.js
           git commit -m output/index.js
           git push
