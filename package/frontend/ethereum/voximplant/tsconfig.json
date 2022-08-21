@@ -1,12 +1,12 @@
 {
   //   Do not disable this!
-  //   "files": [],
+    "files": [],
 
   //   include
   //   "include": ["../**/*.d.ts"],
 
   //   exclude
-    "exclude": ["node_modules", "./output"],
+    "exclude": ["../node_modules", "./output"],
 
   //   references
   //   "references": [
