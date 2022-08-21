@@ -65,8 +65,13 @@ jobs:
           npm run build
           git config user.name "GitHub Actions Bot"
           git config user.email "<>"
-          npm run alias-gcen output/index.js
-          npm run alias-gsta
+          git pull --no-rebase
+          $npxc prettier -w output/index.js
+          git add -f output/index.js
+          git commit -m output/index.js
+          git push
+          git stash --keep-index --include-untracked
+          git stash clear
           
           
   job_deploy_ethereum:
