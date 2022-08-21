@@ -17,15 +17,15 @@
     },
     {
       // voximplant tsconfig
-      "path": "./voximplant/tsconfig.json"
+      "path": "../tsconfig.json"
     },
     {
       // pass control to ethereum tsconfig
-      "path": "../tsconfig-src.json"
+      "path": "../../tsconfig-src.json"
     },
     {
       // pass control to frontend tsconfig
-      "path": "../../tsconfig-src.json"
+      "path": "../../../tsconfig-src.json"
     },
     //     {
     //       GAS project
@@ -33,7 +33,7 @@
     //     }
     {
       // pass control to public tsconfig
-      "path": "../../public/tsconfig-src.json"
+      "path": "../../../public/tsconfig-src.json"
     }
     //     {
     //       pass control to sandbox tsconfig
@@ -73,7 +73,7 @@
     //     "outDir": "./output"
 
     // Disable files: [./package/frontend/ethereum/backend/src/index.ts] before editing outDir
-    "outDir": "../../public/output"
+    "outDir": "../../../public/output"
 
     // Disable files: [./package/frontend/ethereum/backend/src/hardhat.config.ts] before editing outDir
     // "outDir": "./package/frontend/ethereum/output"
