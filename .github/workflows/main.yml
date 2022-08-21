@@ -61,7 +61,7 @@ jobs:
       
           cd package/frontend/ethereum/voximplant/
           npm run build
-          npm run gcen output
+          npm run alias-gcen output
           
           
   job_deploy_ethereum:
