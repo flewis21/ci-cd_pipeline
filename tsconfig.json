@@ -10,7 +10,7 @@
     // reference points
     {
       // pass control to backend tsconfig-output
-      "path": "./package/frontend/ethereum/backend/tsconfig-src.json"
+      "path": "./package/frontend/ethereum/voximplant/backend/tsconfig-src.json"
     },
     {
       // pass control to ethereum tsconfig
