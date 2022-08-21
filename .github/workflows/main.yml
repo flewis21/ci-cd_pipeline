@@ -207,12 +207,12 @@ jobs:
         node-version: [16.x]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
-    steps:
+#     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3        
+#       - uses: actions/checkout@v3        
 
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
+#       - name: Archive production artifacts
+#         uses: actions/upload-artifact@v3
 #         with:
 #           name: output-index
 #           path: |
