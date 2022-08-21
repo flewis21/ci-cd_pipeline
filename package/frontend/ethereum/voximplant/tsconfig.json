@@ -6,7 +6,7 @@
   //   "include": ["../**/*.d.ts"],
 
   //   exclude
-  //   "exclude": ["./output"],
+    "exclude": ["./node_modules", "./output"],
 
   //   references
   //   "references": [
