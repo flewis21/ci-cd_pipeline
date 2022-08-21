@@ -7,6 +7,7 @@
   "scripts": {
     "offline_dev": "serverless offline",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "cli": "ls -pfuxahit1rs --color=force && git -c color.status=always status",
     "type": "tsc -b -w",
     "testdrive": "nodemon -w -- $1",
     "dev": "concurrently --kill-others-on-fail --restart-tries 0 -n LINT,CODE -c grey,blue \"npm run format\" $1",
