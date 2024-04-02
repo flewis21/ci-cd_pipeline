@@ -20,8 +20,8 @@ export micr="$HOME/./micro"
 export NVM_DIR="/usr/local/nvm"
 export micr="$HOME/micro"
 export AWS_PROFILE="aws_package_user"
-export npmc="$NVM_DIR/versions/node/v20.11.0/bin/npm"
-export npxc="$NVM_DIR/versions/node/v20.11.0/bin/npx"
+export npmc="$NVM_DIR/versions/node/v20.11.1/bin/npm"
+export npxc="$NVM_DIR/versions/node/v20.11.1/bin/npx"
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
