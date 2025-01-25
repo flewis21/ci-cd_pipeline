@@ -16,12 +16,13 @@ if [ -n "$BASH_VERSION" ]; then
     fi
 fi
 
+export CNV_NUM="$(node -v | cut -d'v' -f2)"
 export micr="$HOME/./micro"
 export NVM_DIR="/usr/local/nvm"
 export micr="$HOME/micro"
 export AWS_PROFILE="aws_package_user"
-export npmc="$NVM_DIR/versions/node/v20.13.0/bin/npm"
-export npxc="$NVM_DIR/versions/node/v20.13.0/bin/npx"
+export npmc="$NVM_DIR/versions/node/v${CNV_NUM}/bin/npm"
+export npxc="$NVM_DIR/versions/node/v${CNV_NUM}/bin/npx"
 
 # set PATH so it includes user's private bin if it exists
 if [ -d "$HOME/bin" ] ; then
@@ -36,5 +37,13 @@ fi
 # npm install -g npm@latest @google/clasp @accordproject/ergo-cli @accordproject/cicero-cli @accordproject/generator-cicero-template yo --force
 npm install -g @google/clasp
 npm audit fix --force
+sudo apt-get update
+sudo apt-get install -y unzip
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
 sudo ~/./aws/install --update
+aws --version
+gcloud projects describe my-cors-project-dev --format="value(projectName)"
+gcloud projects describe my-cors-project-dev --format="value(projectNumber)"
+aws configure
 source $HOME/.bashrc
