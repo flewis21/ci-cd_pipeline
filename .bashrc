@@ -95,9 +95,10 @@ fi
 alias maje='f() { atra $1 && gcen $1 && gsta; unset -f f; }; f'
 alias cli='f() { ls -pfuxahit1rs --color=force && git -c color.status=always status; unset -f f; }; f'
 alias gcen='f() { git pull --no-rebase && $npxc prettier -w "$1" && git add -f "$1" && git commit -m "$1" && git push; unset -f f; }; f'
+alias noed='f() { git stash apply && git add -f "$1" && $npxc prettier --watch --html-whitespace-sensitivity "ignore" "$1" && cloudshell edit "$1" &&  git commit -m "$1" && git push && git stash --keep-index --include-untracked; unset -f f; }; f'  
 alias gsta='f() { git stash --keep-index --include-untracked && git stash clear; unset -f f; }; f'
 alias clas='f() { cp -v $HOME/.clasp.json $HOME/ci-cd_pipeline/package/frontend/.; unset -f f; }; f'
-alias atra='f() { git pull --no-rebase && $micr $1 && $npxc prettier -w "$1"; unset -f f; }; f'
+alias atra='f() { git pull --no-rebase && cloudshell edit $1 && $npxc prettier -w "$1"; unset -f f; }; f'
 alias mptr='f() { $npxc prettier --watch --html-whitespace-sensitivity "ignore" "$1"; unset -f f; }; f'
 PS1='` read -p "$($@)" && ls -pfuxahit1rs --color=force && git -c color.status=always status && git prune && git gc ` \n\033[01;32m\]\d:>/<@>\<:\t[>\W<]\n\$ '
 
