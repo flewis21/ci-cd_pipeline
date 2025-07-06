@@ -94,7 +94,7 @@ fi
 #alias l='ls -CF'
 alias maje='f() { atra $1 && gcen $1 && gsta; unset -f f; }; f'
 alias cli='f() { ls -pfuxahit1rs --color=force && git -c color.status=always status; unset -f f; }; f'
-alias gcen='f() { git pull --no-rebase && clasp pull && $npxc prettier -w "$1" && git add -f "$1" && git commit -m "$1" && git push; unset -f f; }; f'
+alias gcen='f() { git pull --no-rebase && $npxc prettier -w "$1" && git add -f "$1" && git commit -m "$1" && git push; unset -f f; }; f'
 alias gben='f() { git add -f "$1"; unset -f f; }; f'
 alias gaen='f() { git add -A && git commit -m "Pulled latest changes from Apps Script editor"; unset -f f; }; f'
 alias g9en='f() { git add -A && git commit -m "Applied stashed changes for new feature"; unset -f f; }; f'
