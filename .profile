@@ -35,7 +35,8 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # npm install -g npm@latest @google/clasp @accordproject/ergo-cli @accordproject/cicero-cli @accordproject/generator-cicero-template yo --force
-npm install -g @google/clasp
+npm install -cgi @google/clasp
+npm cache verify
 npm audit fix --force
 sudo apt-get update
 sudo apt-get install -y unzip
