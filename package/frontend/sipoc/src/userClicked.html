@@ -1,9 +1,0 @@
-<script>
-  document.getElementById('btn').addEventListener('click', doStuff);
-
-  function doStuff() {
-    const myValueStream = document.getElementById('username').value;
-    google.script.run.scriptJs(myValueStream);
-    document.getElementById('username').value = '';
-  }
-</script>
