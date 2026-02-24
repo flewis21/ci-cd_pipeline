@@ -21,15 +21,14 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    strategy: 
+    strategy:
       matrix:
         node-version: [16.x]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3        
-
+      - uses: actions/checkout@v3
 
       # Runs single commands using the runners shell
       - name: Use Node.js ${{ matrix.node.version }}
@@ -37,30 +36,30 @@ jobs:
         with:
           node-version: ${{ matrix.node.version }}
       - run: |
-      
+
           npm install
           npm list
-          
+
       - run: |
-      
+
           cd package/frontend
           npm install
           npm list
-          
+
       - run: |
 
           cd package/frontend/ethereum/voximplant/backend
           npm install
           npm list
-          
-# job_deploy_voximplant:          
+
+      # job_deploy_voximplant:
       # Runs single commands using the runners shell
       - name: Use Node.js ${{ matrix.node.version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node.version }}
       - run: |
-      
+
           cd package/frontend/ethereum/voximplant/
           npm run build
           git config user.name "GitHub Actions Bot"
@@ -72,62 +71,59 @@ jobs:
           git push
           git stash --keep-index --include-untracked
           git stash clear
-          
-          
+
   job_deploy_ethereum:
     needs: [job_ci-cd_pipeline]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    strategy: 
+    strategy:
       matrix:
         node-version: [16.x]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3        
-
+      - uses: actions/checkout@v3
 
       # Runs single commands using the runners shell
       - name: Use Node.js ${{ matrix.node.version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node.version }}
-#       - run: |
-      
-#           pwd
-#           cd package/frontend/ethereum/
-          
-#       - run: |
-      
-#           pwd
-#           npm run cli
-          
-#       - run: |
-      
-#           pwd
-#           npm run build
-          
-#       - run: |
-      
-#           pwd
-#           npm run gcen output
-          
+  #       - run: |
+
+  #           pwd
+  #           cd package/frontend/ethereum/
+
+  #       - run: |
+
+  #           pwd
+  #           npm run cli
+
+  #       - run: |
+
+  #           pwd
+  #           npm run build
+
+  #       - run: |
+
+  #           pwd
+  #           npm run gcen output
+
   job_deploy_sipoc:
     needs: [job_ci-cd_pipeline]
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
-    strategy: 
+    strategy:
       matrix:
         node-version: [16.x]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3        
-
+      - uses: actions/checkout@v3
 
       # Runs single commands using the runners shell
       - name: Use Node.js ${{ matrix.node.version }}
@@ -135,38 +131,38 @@ jobs:
         with:
           node-version: ${{ matrix.node.version }}
 #       - run: |
-      
+
 #           pwd
 #           cd package/frontend/sipoc/
-          
+
 #       - run: |
-      
+
 #           pwd
 #           npm run cli
-          
+
 #       - run: |
-      
+
 #           pwd
 #           npm run build
-          
+
 #       - run: |
-      
+
 #           pwd
 #           npm run gcen output
-          
+
 #   job_deploy_website:
 #     needs: [job_ci-cd_pipeline]
-    # The type of runner that the job will run on
+# The type of runner that the job will run on
 #     runs-on: ubuntu-latest
 
-#     strategy: 
+#     strategy:
 #       matrix:
 #         node-version: [16.x]
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
+# Steps represent a sequence of tasks that will be executed as part of the job
 #     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-#       - uses: actions/checkout@v3        
+# Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+#       - uses: actions/checkout@v3
 
 #       - name: Archive production artifacts
 #         uses: actions/upload-artifact@v3
@@ -175,4 +171,4 @@ jobs:
 #           path: |
 #             name: index
 #             path: package/frontend/ethereum/backend/voximplant/output/index.js
-            
+

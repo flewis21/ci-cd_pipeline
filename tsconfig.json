@@ -24,14 +24,14 @@
       // pass control to public tsconfig
       "path": "./package/frontend/public/tsconfig-src.json"
     }
-//     {
-//       pass control to sandbox tsconfig
-//       "path": "./package/sandbox/tsconfig.json"
-//     }
-//     {
-//       pass control to simpleGit tsconfig
-//       "path": "./package/simpleGit/tsconfig.json"
-//     }
+    //     {
+    //       pass control to sandbox tsconfig
+    //       "path": "./package/sandbox/tsconfig.json"
+    //     }
+    //     {
+    //       pass control to simpleGit tsconfig
+    //       "path": "./package/simpleGit/tsconfig.json"
+    //     }
   ],
 
   "include": ["**/*.d.ts"]
