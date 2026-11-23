@@ -40,6 +40,7 @@ npm cache verify
 npm audit fix --force
 sudo apt-get update
 sudo apt-get install -y unzip
+sudo apt-get install -y zstd
 curl -fsSL https://ollama.com/install.sh | sh
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
