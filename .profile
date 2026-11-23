@@ -36,11 +36,15 @@ fi
 
 # npm install -g npm@latest @google/clasp @accordproject/ergo-cli @accordproject/cicero-cli @accordproject/generator-cicero-template yo --force
 npm ci @google/clasp
+cd sc-cli
+npm install
+npm run build
+npm link  # Makes 'sc' available globally
+cd ~/
 npm cache verify
 npm audit fix --force
 sudo apt-get update
-sudo apt-get install -y unzip
-sudo apt-get install -y zstd
+sudo apt-get install -y unzip zstd
 curl -fsSL https://ollama.com/install.sh | sh
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
@@ -51,6 +55,6 @@ gcloud projects describe my-cors-project-dev --format="value(projectNumber)"
 aws configure
 ollama pull llama3.2  # Download model once
 ollama serve          # Start Ollama locally
-#sc-agent profile use ollama
-#sc-agent              # Works offline
+sc-agent profile use ollama
+sc-agent              # Works offline
 source $HOME/.bashrc
