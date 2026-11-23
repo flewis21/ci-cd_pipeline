@@ -35,13 +35,13 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # npm install -g npm@latest @google/clasp @accordproject/ergo-cli @accordproject/cicero-cli @accordproject/generator-cicero-template yo --force
-npm i --package-lock-only
-npm ci @google/clasp
 cd sc-cli
 npm install sc-cli
 npm run build
 npm link  # Makes 'sc' available globally
+sc config-init
 cd ~/
+npm ci @google/clasp
 npm cache verify
 npm audit fix --force
 sudo apt-get update
@@ -54,7 +54,6 @@ aws --version
 gcloud projects describe my-cors-project-dev --format="value(projectName)"
 gcloud projects describe my-cors-project-dev --format="value(projectNumber)"
 aws configure
-sc config-init
 #ollama pull llama3.2  # Download model once
 #ollama serve          # Start Ollama locally
 #sc-agent profile use ollama
