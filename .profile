@@ -40,6 +40,7 @@ npm cache verify
 npm audit fix --force
 sudo apt-get update
 sudo apt-get install -y unzip
+curl -fsSL https://ollama.com/install.sh | sh
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ~/./aws/install --update
@@ -47,8 +48,8 @@ aws --version
 gcloud projects describe my-cors-project-dev --format="value(projectName)"
 gcloud projects describe my-cors-project-dev --format="value(projectNumber)"
 aws configure
-ollama pull llama3.2  # Download model once
-ollama serve          # Start Ollama locally
-sc-agent profile use ollama
-sc-agent              # Works offline
+#ollama pull llama3.2  # Download model once
+#ollama serve          # Start Ollama locally
+#sc-agent profile use ollama
+#sc-agent              # Works offline
 source $HOME/.bashrc
