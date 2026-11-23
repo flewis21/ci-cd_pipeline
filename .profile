@@ -35,9 +35,10 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # npm install -g npm@latest @google/clasp @accordproject/ergo-cli @accordproject/cicero-cli @accordproject/generator-cicero-template yo --force
+npm i --package-lock-only
 npm ci @google/clasp
 cd sc-cli
-npm install
+npm install sc-cli
 npm run build
 npm link  # Makes 'sc' available globally
 cd ~/
