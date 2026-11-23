@@ -47,4 +47,8 @@ aws --version
 gcloud projects describe my-cors-project-dev --format="value(projectName)"
 gcloud projects describe my-cors-project-dev --format="value(projectNumber)"
 aws configure
+ollama pull llama3.2  # Download model once
+ollama serve          # Start Ollama locally
+sc-agent profile use ollama
+sc-agent              # Works offline
 source $HOME/.bashrc
