@@ -35,12 +35,12 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # npm install -g npm@latest @google/clasp @accordproject/ergo-cli @accordproject/cicero-cli @accordproject/generator-cicero-template yo --force
-cd sc-cli
-npm install sc-cli
-npm run build
-npm link  # Makes 'sc' available globally
-sc config-init
-cd ~/
+#cd sc-cli
+#npm install sc-cli
+#npm run build
+#npm link  # Makes 'sc' available globally
+#sc config-init
+#cd ~/
 npm ci @google/clasp
 npm cache verify
 npm audit fix --force
@@ -54,7 +54,8 @@ aws --version
 gcloud projects describe my-cors-project-dev --format="value(projectName)"
 gcloud projects describe my-cors-project-dev --format="value(projectNumber)"
 aws configure
-#ollama pull llama3.2  # Download model once
+#ollama pull 
+  # Download model once
 #ollama serve          # Start Ollama locally
 #sc-agent profile use ollama
 #sc-agent              # Works offline
